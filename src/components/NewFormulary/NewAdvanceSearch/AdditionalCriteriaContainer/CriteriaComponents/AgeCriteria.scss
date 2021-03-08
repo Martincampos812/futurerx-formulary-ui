@@ -1,0 +1,87 @@
+.root-age-limit-settings {
+  &__add-new-form-action {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  &__add-new-form-action-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #707683;
+    margin-left: 4.8px;
+    text-decoration: underline dashed;
+  }
+
+  .input-field-group {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+
+    &__label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.01em;
+      color: #323c47;
+      width: 64px;
+      padding-left: 20px;
+    }
+    &__dropdown-field {
+      margin-left: 30px;
+      margin-right: 10px;
+      .select-box {
+        .ant-select {
+          width: 265px;
+        }
+      }
+    }
+    &__text-field {
+      .setup-input-fields {
+        width: 120px !important;
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+.drug-detail-grid {
+  .body-checkbox {
+    border-spacing: 0px 11px;
+  }
+}
+
+.pa-grid-container {
+  padding: 0px 10px;
+  .highlight-selected-record-pinned-table {
+    table {
+      tbody {
+        tr.highlight-checked-record {
+          background-color: #ffcccc;
+          td {
+            background-color: #ffcccc;
+            .ant-checkbox-checked {
+              .ant-checkbox-inner {
+                background-color: #e76262;
+                border: 2px solid #e76262;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.age-limit-settings__add-new-form-action {
+  cursor: pointer;
+}

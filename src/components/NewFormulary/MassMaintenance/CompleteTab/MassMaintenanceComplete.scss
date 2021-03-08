@@ -1,0 +1,83 @@
+@import "../../../../assets/style.scss";
+
+.mass-maintenance-complete-root{
+    background-color: $color-white;
+    .mass-maintenance-selected-root{
+        padding: 10px 20px 20px 20px;
+        .frx-grid-container{
+            .frx-grid__grid-block{
+                padding: 0;
+                .ant-table{
+                    .ant-table-header{
+                        border-radius: 0;
+                        .ant-table-thead{
+                            .ant-table-cell{
+                                .ant-table-filter-trigger-container{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .ant-table-body{
+                        & > table{
+                            border-spacing: 0 0;
+                            border-collapse: separate;
+                            .ant-table-tbody{
+                                & > tr {
+                                    .ant-table-cell{
+                                        border-top: none;
+                                        border-radius: 0;
+                                        border-right: 1px solid $container-border-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.complete-header{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-bottom: 1px solid $container-border-color;
+    & > span{
+        color: #1D54B4;
+        font-size: $font-12;
+        font-weight: $font-weight-500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}
+
+.mass-maintenance-complete-action-root{
+    background-color: $color-white;
+    margin: 20px 0;
+    .action-info{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding: 20px;
+        & > span{
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: #666666;
+        }
+        .action-btn{
+            margin: 10px 0 0 0;
+            & > button{
+                width: auto;
+                text-transform: capitalize;
+                margin: 0 0 0 10px;
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                padding: 0 20px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

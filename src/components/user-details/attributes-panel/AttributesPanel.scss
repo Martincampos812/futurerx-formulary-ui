@@ -1,0 +1,80 @@
+.AttributesPanel {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 20px auto 10px auto;
+  padding: 0 11px 0 22px;
+}
+.AttributesPanel > div:last-child {
+  margin-left: auto;
+  margin-right: 10px;
+  color: rgba(79, 239, 201, 0.5);
+}
+.AttributesPanel > .title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 50px;
+  margin-right: 12px;
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #2055b5;
+}
+
+.phamacy-lock-in {
+  margin-bottom: 15px;
+}
+.phamacy-lock-in > h4 {
+  font-weight: normal;
+  margin-bottom: 10px !important;
+}
+.phamacy-lock-in > h4,
+p {
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #666666;
+}
+.FaRegFile {
+  text-align: center;
+  color: #7da0dd;
+  padding: 8px;
+}
+/* .attribute-tooltip {
+  width: 192px;
+  height: 36px;
+  border-radius: 18px;
+  box-shadow: 0 20px 80px 0;
+  backgroundcolor: "red";
+} */
+
+.tooltip-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.tooltip-data > div {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #666666;
+  /* margin-bottom: 10px; */
+}
+.tooltip-data > div.label {
+  text-align: left;
+  font-weight: normal;
+}

@@ -1,0 +1,48 @@
+@import "../../assets/style.scss";
+
+.authcommmondate-info-root {
+  margin-top: 10px;
+
+  .authcommmondate-info-root__content--data {
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+    .datefields {
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 29px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 50% 100%;
+        column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          line-height: 29px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          // margin-left: 16px;
+        }
+      }
+    }
+  }
+}

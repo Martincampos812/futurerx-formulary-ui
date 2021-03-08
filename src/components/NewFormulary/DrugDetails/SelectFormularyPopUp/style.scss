@@ -1,0 +1,221 @@
+.formulary-expanded-details.custom-formulary-expanded-details {
+  position: relative;
+  top: -12px;
+  &__container {
+    border: 1px solid#e5e5e5;
+    display: flex;
+  }
+
+  .formulary-expanded-details-left {
+    max-width: 137px;
+    width: 100%;
+    border-right: 1px solid #e5e5e5;
+
+    &__title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #707683;
+      padding-top: 53px;
+      padding-left: 30px;
+    }
+
+    &__list {
+      margin-top: 8px;
+    }
+
+    &__list-item {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #323c47;
+      cursor: pointer;
+      width: 137px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      padding-left: 14px;
+
+      &:hover {
+        background-color: #eef3f7;
+      }
+    }
+
+    &__list-item-indicator {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 8px;
+      margin-right: 8px;
+
+      &--active {
+        background: #80c483;
+      }
+
+      &--inactive {
+        background: #c4c4c4;
+      }
+    }
+
+    &__list-add-item {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 20px;
+      color: #1d54b4;
+      margin-top: 24px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .formulary-expanded-details-right {
+    width: 100%;
+    &__header {
+      height: 66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 30px;
+      padding: 24px 23px 22px 19px;
+    }
+    &__content_2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 30px;
+      padding: 24px 23px 22px 19px;
+      .custom-checkbox-label {
+        .custom-checkbox-svg-style {
+          .MuiIconButton-label {
+            svg {
+              width: 0.9em;
+            }
+          }
+        }
+        .MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: #323c47 !important;
+        }
+      }
+    }
+
+    &__content_1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+      padding: 24px 23px 22px 19px;
+      max-width: 30em;
+      .custom-dropdown-for-tire-info {
+        .select-box {
+          .ant-select-selector {
+            background-color: #e5e5e5;
+          }
+        }
+      }
+      .tire-info-holder {
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        padding: 1em;
+        .formulary-info-field {
+          display: inline-block;
+          .formulary-info-field__label {
+            display: inline-block;
+            margin-right: 1em;
+          }
+          .select-box {
+            display: inline-block;
+            min-width: 236px;
+            .ant-select-selector {
+              background-color: #e5e5e5;
+            }
+          }
+        }
+      }
+    }
+
+    &__tabs {
+      padding: 24px 23px 0px 19px;
+      .frx-mini-tabs-root {
+        position: unset;
+        border-bottom: 0px solid #e5e5e5;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+        background: #ffffff;
+        padding: 0;
+        min-width: 122px;
+        min-height: 30px;
+        .frx-mini-tabs-root__tabs {
+          background-color: #ffffff;
+          box-shadow: none;
+          border: 1px solid #2055b5;
+          flex-direction: row;
+          border-radius: 4px;
+          padding: 3px;
+          min-height: 24px;
+          min-width: 61px;
+          width: max-content;
+          .frx-mini-tabs-root__tabs__tab {
+            padding: 0;
+            font-size: 12px;
+            min-height: 24px;
+            min-width: 61px;
+            font-weight: bold;
+            color: #666666;
+            text-transform: capitalize;
+            opacity: unset;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .formulary-info-field {
+    &__label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #707683;
+      margin-bottom: 10px;
+    }
+
+    &__value {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #323c47;
+    }
+
+    &__required {
+      color: #f65a1c;
+      margin-left: 2px;
+    }
+  }
+  .select-formulary-popup-root__submit-btn {
+    width: 136px;
+    float: right;
+  }
+}

@@ -1,0 +1,155 @@
+@import "./../../../assets/style.scss";
+
+.formulary-info-search-main-container {
+  .formulary-info-search-tab-container {
+    .formulary-info-search-member-info-contianer,
+    .formulary-info-search-formulary-container,
+    .formulary-info-search-madicare-container,
+    .formulary-search-date-container {
+      margin-bottom: 8px;
+    }
+
+    .formulary-info-search-member-info-contianer,
+    .formulary-info-search-formulary-container,
+    .formulary-info-search-madicare-container,
+    .formulary-search-date-container {
+      .member-info-heading,
+      .formulary-info-heading,
+      .madicare-heading,
+      .date-heading {
+        padding-top: 12px;
+        text-align: left;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 9%;
+        color: #707683;
+      }
+
+      .member-info-search-field,
+      .formulay-info-search-field,
+      .madicare-search-field {
+        .member-search__input--dropdown {
+          height: 100% !important;
+          border: none !important;
+          .ant-select-suffix {
+            margin-right: 15px;
+          }
+          .ant-select-arrow {
+            right: 10px;
+          }
+        }
+        .ant-select-selector {
+          // .ant-select-selection-search {
+          .ant-select-selection-placeholder {
+            color: inherit;
+          }
+        }
+      }
+      .member-info-search-field,
+      .formulay-info-search-field,
+      .madicare-search-field {
+        .member-search__input,
+        .member-search__input--dropdown {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+          .ant-select-selector {
+            // .ant-select-selection-search {
+            .ant-select-selection-item {
+              color: black;
+            }
+            .ant-select-selection-placeholder {
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      .date-container {
+        .date-effectiveDate-contianer,
+        .date-dueDate-contianer {
+          padding-right: 5px;
+          .member-search__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin-bottom: 10px;
+            .ant-picker-input > input::placeholder {
+              font-size: 12px;
+              font-weight: $font-weight-normal;
+              // color: $input-text-placeholder;
+              color: #999999;
+              // text-indent: 10px;
+            }
+            .member-search__icon {
+              margin: 10px;
+            }
+            .MuiInput-input {
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .formulary-info-search-formulary-container {
+      .formulay-info-search-field {
+        .formuary-search-select-boxes {
+          .member-search__input--dropdown {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          width: 207px;
+        }
+      }
+    }
+    .formulary-info-search-madicare-container {
+      .madicare-search-field {
+        .formuary-search-select-boxes {
+          width: 207px;
+        }
+      }
+    }
+  }
+}

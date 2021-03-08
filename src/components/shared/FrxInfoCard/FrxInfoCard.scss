@@ -1,0 +1,144 @@
+@import "./../../../assets/style.scss";
+
+.csr-root {
+    
+    .frx-info-card-root {
+        min-width: 283px;
+        width: 100%;
+        height: 100%;
+
+        background: $white-color;
+        
+        padding: 21px 20px 14px 27px;
+
+        .MuiCardContent-root {
+            padding: 0;
+
+            .frx-info-card-root__heading {
+                font-size: $font-16;
+                color: $hyperlink-text-color;
+                border-bottom: 1px solid transparent;
+                line-height: 20px;
+                cursor: default;
+            }
+            .frx-info-card-root__heading--clickable {
+                color: $hyperlink-text-color;
+
+                padding: 0 1px;
+                border-bottom: 1px solid transparent;
+                border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                border-image-repeat: repeat;
+                border-image-slice: 4 4 4 4;
+
+                cursor: pointer;
+            }
+
+            .frx-info-card-root__content-list {
+                padding: 15px 0 0 0;
+
+                .frx-info-card-list-item-root {
+                    padding: 0;
+    
+                    .frx-info-card-list-item-root__column {
+                        font-size: $font-12;
+                        color: $primary-text-color;                        
+                        line-height: 14px;
+                        margin-bottom: 5px;
+                    }
+    
+                    .frx-info-card-list-item-root__column2 { 
+                        font-weight: $font-weight-bold;
+                    }
+
+                    .frx-info-card-list-item-root__column.frx-info-card-list-item-root__column--hyperlink {
+                        color: $hyperlink-text-color;
+                        font-weight: $font-weight-bold;
+
+                        padding: 0 1px;
+                        border-bottom: 1px solid transparent;
+                        border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                        border-image-repeat: repeat;
+                        border-image-slice: 4 4 4 4;
+
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.frx-info-card-list-item-root__tooltip-list{
+    padding-top: 2px;
+    max-width: 380px;
+    .ant-tooltip-content{
+        .ant-tooltip-inner{
+            background-color: $white-color;
+            color: $primary-text-color;
+            border: 1px solid $container-border-color;
+            box-sizing: border-box;
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+            border-radius: 5px;
+            padding: 0;
+            width: 380px;
+            .frx-info-card-list-item-root__tooltip-list--block{
+                padding: 0;
+                .frx-info-card-list-item-root__tooltip-list--block__innercontent{
+                    width: 380px;
+                    padding: 30px;
+                    border-bottom: 1px solid $container-border-color;
+                    .MuiListItem-gutters{
+                        padding: 0;
+                        .MuiListItemText-root{
+                            margin: 0;
+                            .MuiTypography-root{
+                                line-height: 24px;
+                                .frx-info-card-list-item-root__tooltip-block{
+                                    display: grid;
+                                    grid-template-columns: auto 138px;
+                                }
+                            }
+                        }
+                    }
+                    &__header{
+                        font-size: $font-12;
+                        font-weight: $font-weight-bold;
+                        color: $primary-text-color;
+                        line-height: 24px;
+                        margin: 0 0 10px 0;
+                    }
+                    &__label{
+                        font-size: $font-12;
+                    }
+                    &__labelvalue{
+                        font-size: $font-12;
+                        font-weight: $font-weight-bold;
+                    }
+                    .hyperlink-text{
+                        color: $hyperlink-text-color;
+                        font-size: $font-12;
+                        font-weight: $font-weight-bold;
+                        border-bottom: 1px solid transparent;
+                        border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                        border-image-repeat: repeat;
+                        border-image-slice: 4 4 4 4;
+                        width: fit-content;
+                        height: 21px;
+                    }
+                }
+                
+            }
+        }
+        .ant-tooltip-arrow{
+            top: -10.071068px;
+            .ant-tooltip-arrow-content{
+                width: 13px;
+                height: 13px;
+                top: 5px;
+                background-color: $white-color;
+                border: 1px solid $container-border-color;
+                box-shadow: none;
+            }
+        }
+    }
+}

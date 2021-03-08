@@ -1,0 +1,602 @@
+.drug-details-bottom{
+  .general-information-container{
+    .header{
+      justify-content: flex-start;
+    }
+  }
+}
+.general-information-container,
+.formulary-design-container,
+.supplemental-models-container,
+.tiers-information-container,
+.medicare-information-container {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.general-information-container h4,
+.formulary-design-container h4,
+.supplemental-models-container h4,
+.tiers-information-container h4,
+.medicare-information-container h4 {
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1d54b4;
+  padding: 15px;
+}
+.general-information-container{
+  .panel.header{
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .reporting-tag-group, .state-group{
+    margin-top: 0;
+  }
+  .MuiGrid-grid-xs-4{
+    flex-basis: 390px;
+    margin-right: 48px;
+    &:nth-child(3),&:nth-child(6),&:nth-child(9){
+      margin-right: 0;
+    }
+  }
+  .general-information-fields-wrapper{
+    > .MuiGrid-root.MuiGrid-container{
+      .setup-input-fields, .formulary-type-dropdown, .effective-date{
+        width: 100% !important;
+      }
+    }
+  }
+  .reporting-tag-group .root--ant-select-tag{
+    width: 390px;
+    + svg.ability-to-add-tags-edit-icon{
+      position: absolute;
+      right: 8px;
+      top: 34px;
+    }
+  }
+  .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    padding-right: 28px;
+    min-height: 35px;
+    height: auto;
+  }
+}
+.block-header{
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  padding: 14px 15px;
+  align-items: center;
+  h4{
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+  }
+  .right-side{
+    display: flex;
+    svg{
+      display: block;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.root--ant-select-tag {
+  width: 77%;
+  cursor: inherit;
+  .ant-select-selection-placeholder {
+    color: #1d54b4;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: underline dashed;
+    cursor: pointer;
+  }
+}
+
+.custom-input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  input {
+    margin-left: 26px;
+    margin-top: 0 !important;
+  }
+  svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.formulary-design-container,
+.general-information-container,
+.medicare-information-container {
+  .radio-group {
+    .radio-group-custom {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      label {
+        > span.MuiButtonBase-root {
+          padding-right: 12px;
+        }
+        input[type="radio"] + div {
+          height: 16px;
+          width: 16px;
+          border-radius: 50%;
+          background: white;
+          border: 2px solid #ddd;
+          svg {
+            display: none;
+          }
+        }
+        input[type="radio"]:checked + div {
+          background: #2055b5;
+          height: 16px;
+          width: 16px;
+          border-radius: 50%;
+          border: none;
+        }
+        span.MuiFormControlLabel-label {
+          font-size: 12px;
+          text-transform: none;
+          color: #323c47;
+        }
+      }
+      &.mr-80 {
+        label {
+          margin-right: 77px;
+        }
+      }
+    }
+  }
+}
+.setup-label label {
+  display: block;
+  font-size: 11.5px;
+  color: #707683;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  .astrict {
+    color: red;
+  }
+}
+
+.setup-input-fields,
+.formulary-type-dropdown,
+.effective-date {
+  width: 355px !important;
+  border-radius: 3px !important;
+  height: 35px !important;
+  background: #ffffff !important;
+  margin-bottom: 20px !important;
+}
+
+.setup-input-fields {
+  border: 1px solid #c4c4c4 !important;
+  position: initial;
+  &.other-input {
+    width: 175px !important;
+    margin-left: 26px;
+  }
+}
+
+::placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  color: #707683;
+}
+
+.general-information-fields-wrapper,
+.formulary-design-fields-wrapper,
+.tiers-information-fields-wrapper {
+  padding: 15px;
+}
+.tiers-information-fields-wrapper {
+  .tiers-dropdown-wrapper {
+    label {
+      text-transform: none;
+      margin-bottom: 0;
+      line-height: 12px;
+    }
+    .tier {
+      display: flex;
+      align-items: center;
+    }
+    .custom-tier-wrapper {
+      // border: 1px solid green;
+      .custom-tier {
+        border: 1px solid #e5e5e5;
+        outline: none;
+      }
+      .delete-icon {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.upload-button {
+  margin-bottom: 20px !important;
+  margin-top: 0px !important;
+}
+
+.input-link {
+  text-decoration: underline dashed !important;
+  color: #1d54b4;
+  font-weight: 500;
+  font-size: 12px;
+  display: block;
+  margin-top: 18px;
+}
+
+.radio-group {
+  display: flex;
+  &.marketing-material {
+    padding: 0 0 20px;
+  }
+  &.marketing-usp {
+    padding: 15px 0 20px;
+  }
+  &.marketing-open {
+    padding: 15px 0 20px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    margin-right: 58px;
+    span.label {
+      top: -2px;
+      color: #c4c4c4;
+    }
+    input:checked ~ span.label {
+      color: #323c47;
+    }
+  }
+}
+
+.setup-panel .panel {
+  border-bottom: none;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #707683;
+  padding: 0px;
+}
+
+.reporting-tag-icon {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+.add-tag-input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.add-tag {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-decoration: underline dashed !important;
+  color: #1d54b4;
+  font-weight: 500;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.add-tag:hover {
+  color: #1d54b4 !important;
+}
+
+.reporting-tag-group,
+.state-group {
+  margin-top: 20px;
+  position: relative;
+}
+.ability-to-add-tags-edit-icon {
+  cursor: pointer;
+  position: relative;
+  right: 25px;
+}
+.reporting-tag-group{
+  .root--ant-select-tag{
+    width: 355px;
+  }
+}
+.formulary-design-fields-wrapper ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  &.other-checkbox-wrapper {
+    display: block;
+  }
+}
+
+.checkbox-btn {
+  margin-top: 9px;
+}
+
+.uncheck-btn {
+  border-radius: 5px;
+  border: 1px solid #1d54b4;
+  background: #1d54b4;
+  padding: 0px;
+  width: 84px;
+  height: 25px;
+  color: #ffffff;
+  font-size: 12px;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  padding: 6px 12px;
+}
+
+.checkbox-ul {
+  padding-top: 35px !important;
+}
+
+.add-new-cbx {
+  margin-left: 10px;
+  width: 170px !important;
+  height: 30px !important;
+  border-radius: 3px !important;
+  margin-top: -5px !important;
+  border: 1px solid #c4c4c4 !important;
+}
+
+.hide-cbx {
+  visibility: hidden;
+}
+
+.checkbox-wrapper span {
+  margin-left: 13px;
+  padding-top: 2px;
+}
+
+.add-new-cbx-btn-wrapper {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 26px;
+  width: 75px;
+  cursor: pointer;
+}
+
+.add-new-text span {
+  font-size: 12px;
+  text-decoration: underline dashed;
+  color: #707683;
+  padding-left: 10px;
+}
+
+.add-new-cbx-btn {
+  padding-top: 2px;
+}
+
+.tiers-dropdown-wrapper {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.tier {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.tiers-dropdown-wrapper div:nth-last-child(1) {  
+  border-bottom: none;
+}
+.formulary-tier-dropdown {
+  width: 200px !important;
+}
+
+.custom-tier-wrapper {
+  justify-content: space-between;
+  width: 200px;
+}
+.custom-tier {
+  width: 180px;
+}
+.border-bottom {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.number-of-tier-dropdown {
+  width: 100% !important;
+}
+
+.tier-zero {
+  background: #e5e5e5;
+}
+
+.checkbox-wrapper .panel {
+  background: none !important;
+  margin-left: -25px;
+  margin-top: -3px;
+  border-bottom: none;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #707683;
+  padding: 0px;
+  height: 35px;
+}
+
+.btn-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-and-continue-btn button {
+  width: 135px !important;
+  margin-right: 0px !important;
+}
+
+.save-btn button {
+  width: 70px !important;
+}
+
+.astrict {
+  color: red;
+}
+
+.medicare-information-container {
+  .mb-16 {
+    margin-bottom: 16px;
+  }
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__checkbox-ul {
+    list-style: none;
+    padding-top: 0px !important;
+    padding-left: 0px;
+  }
+
+  .group {
+    // padding-top: 20px;
+    // padding-left: 20px;
+  }
+
+  .field-group {
+    margin-bottom: 8px;
+    &__label-container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-bottom: 6px;
+    }
+
+    &__tooltip-container {
+    }
+
+    &__radio-group {
+      display: flex;
+    }
+
+    &__text-field {
+      margin-bottom: 10px !important;
+    }
+
+    &__post-fix-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: #707683;
+    }
+  }
+}
+
+.input-link.clone-formulary-link {
+  margin-top: 15px !important;
+  pointer-events: none;
+}
+.input-link.select-formulary-link {
+  margin-top: 10px !important;
+  pointer-events: none;
+}
+.text-tran-none {
+  text-transform: none !important;
+}
+.radio-group {
+  label {
+    span.label {
+      text-transform: none;
+      color: #707683;
+      font-size: 12px;
+    }
+    span.checkmark {
+      height: 16px;
+      width: 16px;
+      border: 2px solid #ddd;
+      background: none;
+    }
+  }
+}
+.no-transform {
+  label {
+    span.label {
+      text-transform: none;
+      color: #707683;
+    }
+  }
+}
+
+.save-and-continue-btn button.tempBtn {
+  width: auto !important;
+  margin-left: 20px;
+  padding:0 20px;
+}
+.error-true{
+  .ant-select-selector{
+    border-color: red !important;
+  }
+}
+.clone-div{
+  .inner-div{
+    display: inline-block;
+    padding: 0 10px 0 0;
+    span.input-link{
+      display: inline-block;
+    }
+  }
+  &.error-true{
+    .inner-div{
+      padding: 3px 5px;
+      background: rgba(255,0,0,0.1);
+    }
+  }
+}
+.Mui-checked + span{
+  font-weight: 500;
+}
+.ant-checkbox-checked + span{
+  font-weight: 500;
+}
+.medicaid-information-container__checkbox-ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0 !important;
+}
+.formulary-basis-radio{
+  .radio-group-custom{
+    flex-direction: column !important;
+  }
+  label{
+    width: max-content;
+    &.Mui-disabled{
+      cursor: not-allowed;
+      .MuiIconButton-label{
+        div{
+          background: #e5e5e5 !important;
+        }
+      }
+      span.MuiFormControlLabel-label{
+        color: #d9d9d9 !important;
+      }
+    }
+  }
+}
+.import-fl-dialog{
+  .general-information-container .MuiGrid-grid-xs-4{
+    margin-right: 28px;
+    &:nth-child(3),&:nth-child(6),&:nth-child(9),&:nth-child(12){
+      margin-right: 0;
+    }
+  }
+}

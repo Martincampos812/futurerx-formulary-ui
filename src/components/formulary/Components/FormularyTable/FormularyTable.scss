@@ -1,0 +1,299 @@
+@import "../../../../assets/style.scss";
+
+.formulary-table-root{
+    position: relative;
+    bottom: 25px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    padding: 0 20px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .frx-grid-pagination{
+        grid-template-columns: auto auto;
+        padding: 0 20px;
+        .frx-grid-pagination__page-numbers{
+            display: none;
+        }
+        .frx-grid-pagination__items-per-page{
+            margin: 0 0 0 auto;
+        }
+    }
+    .frx-grid__grid-block__table-block{
+        .ant-table{
+            .ant-table-body{
+                // bottom: 0;
+                .ant-table-tbody{
+                    .ant-table-row{
+                        .ant-table-cell{
+                            height: 60px !important;
+                            .frx-grid-cell {
+                                .formulary-table-custom{
+                                    display: flex;
+                                    padding: 10px 0 0 0;
+                                    .formulary-table-custom-cell{
+                                    margin: 0 10px 0 0;
+                                    cursor: pointer;
+                                     }
+                                }
+                            }
+                        }
+                        .ant-table-cell:last-child{
+                            .frx-grid-cell {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.formulary-detailed-table-root{
+    background: $color-white;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    // margin: 30px 0 0 0;
+    padding: 0 0 20px 0;
+    &__header{
+        border-bottom: 1px solid $container-border-color;
+        height: 101px;
+        display: grid;
+        // grid-template-columns: auto auto auto auto auto;
+        // grid-template-columns: 10% 23.5% 13.5% 33.5% 19.5%;
+        grid-template-columns: 11% 24% 13.5% 32% 19.5%;
+        padding: 31px 0 29px;
+        &--fields{
+            display: grid;
+            height: 40px;
+            & > label{
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                line-height: 20px;
+                color: #999999;
+            }
+            &__labelvalue{
+                font-size: $font-12;
+                font-weight: $font-weight-bold;
+                line-height: 20px;
+                color: $primary-text-color;
+            }
+            .field-tier-cell{
+                margin: 5px 0;
+                cursor: pointer;
+                width: fit-content;
+            }
+            .field-limit-cell{
+                margin: 5px 0;
+                .formulary-table-custom{
+                    display: flex;
+                    .formulary-table-custom-cell{
+                        margin: 0 10px 0 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .icon-info{
+                margin: 8px 16px;
+                cursor: pointer;
+            }
+        }
+        &--fields:first-child{
+            // margin: 0 auto;
+            margin: 0 40px;
+        }
+        &--fields:last-child{
+            margin: 0 0 0 15px;
+        }
+        .drug-field{
+            display: flex;
+            .formulary-detailed-table-root__header--fields:first-child{
+                margin: 0;
+            }
+        }
+    }
+    &__searched{
+        padding: 20px 20px 0px;
+        &--heading{
+            font-size: $font-16;
+            font-weight: $font-weight-normal;
+            line-height: 30px;
+            color: $detailed-table-heading-text-color;
+            margin: 0;
+        }
+        .frx-grid-container{
+            .frx-grid{
+                .frx-grid__grid-block{
+                    padding: 0;
+                    .frx-grid__grid-block__table-block{
+                        .ant-table{
+                            .ant-table-header{
+                                border-radius: 0;
+                                .ant-table-thead{
+                                    & > tr{
+                                        // .ant-table-cell:first-child, .ant-table-cell:last-child{
+                                        //     border-radius: 0;
+                                        // }
+                                        .ant-table-cell{
+                                            border-radius: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .ant-table-body{
+                                position: unset !important;
+                                & > table{
+                                    border-collapse: separate;
+                                    border-spacing: 0;
+                                    .ant-table-tbody{
+                                        & > tr{
+                                            & > td{
+                                                border-top: none;
+                                                border-left: 1px solid $container-border-color;
+                                                height: 60px;
+                                                .frx-grid-cell {
+                                                    .formulary-table-custom{
+                                                        display: flex;
+                                                        padding: 10px 0 0 0;
+                                                        .formulary-table-custom-cell{
+                                                        margin: 0 10px 0 0;
+                                                        cursor: pointer;
+                                                         }
+                                                    }
+                                                }
+                                            }
+                                            & > td:first-child, td:last-child {
+                                                border-radius: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.formulary-detailed-header-tooltip,
+.formulary-detailed-header-tooltip-tier{
+    padding: 0 !important;
+    max-width: none !important;
+    .ant-tooltip-content{
+        .ant-tooltip-inner{
+            background-color: $color-white;
+            color: #707683;
+            font-size: $font-12;
+            font-weight: $font-weight-bold;
+            box-sizing: border-box;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            border: 1px solid $container-border-color;
+            // height: 105px;
+            padding: 25px 20px;
+            text-align: center;
+            .formulary-detailed-header-tooltip-limit,
+            .formulary-detailed-header-tooltip-limit-mo{
+                text-align: left;
+                & > label{
+                    color: #707683;
+                    line-height: 20px;
+                }
+                & > p{
+                    font-weight: $font-weight-normal;
+                    margin: 0;
+                    line-height: 20px;
+                    .formulary-detailed-header-tooltip-limit-PAbtn{
+                        margin: 0 5px;
+                        position: relative;
+                        top: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .ant-tooltip-arrow{
+            bottom: -4.071068px;
+            top: -12.071068px;
+            .ant-tooltip-arrow-content{
+                background-color: $color-white;
+                box-shadow: none;
+                width: 10px;
+                height: 10px;
+                border: 1px solid $container-border-color;
+                border-bottom: none;
+            }
+        }
+    }
+}
+.tooltip-mo{
+    max-width: 175px !important;
+}
+.tooltip-pa{
+    & > p{
+        position: relative;
+        bottom: 5px;
+    }
+}
+.formulary-detailed-header-tooltip{
+    width: 300px !important;
+}
+.formulary-detailed-header-tooltip-tier{
+    width: auto !important;
+}
+.formulary-detailed-header-tooltip-limit-mo{
+    width: auto !important;
+    text-align: center !important;
+}
+.frx-grid-cell__tooltip{
+    .formulary-detailed-header-tooltip-limit{
+        padding: 36px 30px;
+        margin: 0 auto;
+          text-align: left;
+          & > label{
+              color: #707683;
+              font-weight: $font-weight-bold;
+          }
+          & > p{
+              font-weight: $font-weight-normal;
+              margin: 0;
+              .formulary-detailed-header-tooltip-limit-PAbtn{
+                  margin: 0 5px;
+                  position: relative;
+                  top: 10px;
+                  cursor: pointer;
+              }
+          }
+    }
+}
+
+.formulary-table-breadcrumb{
+    margin: 30px 0 10px 0 !important;
+    .breadcrumb-label{
+        color: #AAAAAA;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+    }
+    .ant-breadcrumb-link{
+        font-size: $font-12;
+        line-height: 14px;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+        .breadcrumb-active{
+            color: $hyperlink-text-color;
+            font-weight: $font-weight-bold;
+            border-bottom: 1px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+            border-image-repeat: repeat;
+            border-image-slice: 4 4 4 4;
+            width: fit-content;
+        }
+    }
+    .ant-breadcrumb-separator{
+        margin: 0 0 0 10px;
+    }
+}

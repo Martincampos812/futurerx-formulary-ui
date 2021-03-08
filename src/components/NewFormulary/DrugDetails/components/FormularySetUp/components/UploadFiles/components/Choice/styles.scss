@@ -1,0 +1,22 @@
+#upload-choice {
+  .file-type {
+    width: 640px;
+    height: 212px;
+    padding: 12px 12px 0px 12px;
+  }
+  
+  .file-type__label {
+    text-transform: initial;  
+  }
+
+  .file-type__radio-group {
+    text-transform: capitalize;  
+  }
+
+  
+  .radio-group {
+    .radio-group-custom {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "is_validation_required": true,
+  "pa_group_description_name": "test-11",
+  "id_pa_type": 8,
+  "pa_criteria": "s",
+  "is_additional_criteria_defined": true,
+  "drug_list_ids": [],
+  "um_criteria": [
+    {
+      "sequence": 1,
+      "covered": {
+        "age": {
+          "min_age_condition": "GT",
+          "min_age_limit": "1",
+          "max_age_condition": "LT",
+          "max_age_limit": "10"
+        },
+        "gender": [],
+
+        "icd": { "look_back_days": "", "icds": "" },
+        "pharmacy_networks": "",
+        "prescriber_taxonomies": "",
+        "place_of_services": [],
+        "patient_residences": [],
+        "prerequisite_claims_history_lookbacks": [],
+        "removed_icds": [],
+        "removed_pharmacy_networks": [],
+        "removed_place_of_service": [],
+        "removed_patient_residence": [],
+        "removed_prescriber_taxonomy": []
+      },
+      "not_covered": {
+        "age": {
+          "min_age_condition": "",
+          "min_age_limit": "",
+          "max_age_condition": "",
+          "max_age_limit": ""
+        },
+        "gender": [],
+        "icd": { "look_back_days": "", "icds": "" },
+        "pharmacy_networks": "",
+        "prescriber_taxonomies": "",
+        "place_of_services": [],
+        "patient_residences": [],
+        "prerequisite_claims_history_lookbacks": [],
+        "removed_icds": [],
+        "removed_pharmacy_networks": [],
+        "removed_place_of_service": [],
+        "removed_patient_residence": [],
+        "removed_prescriber_taxonomy": []
+      }
+    },
+    {
+      "sequence": 2,
+      "covered": {
+        "age": {
+          "min_age_condition": "",
+          "min_age_limit": "",
+          "max_age_condition": "",
+          "max_age_limit": ""
+        },
+        "gender": [],
+        "icd": {
+          "look_back_days": "",
+          "icds": [
+            {
+              "name": "2W0-Placement, Anatomical Regions, Change",
+              "key": 163506,
+              "show": true,
+              "is_list": false,
+              "value": "2W0-Placement, Anatomical Regions, Change",
+              "type": "",
+              "text": "2W0-Placement, Anatomical Regions, Change"
+            }
+          ]
+        },
+        "pharmacy_networks": [
+          {
+            "name": "test",
+            "key": 2,
+            "show": true,
+            "is_list": false,
+            "value": "test",
+            "type": "",
+            "text": "test"
+          }
+        ],
+        "prescriber_taxonomies": [
+          {
+            "name": "Aux Bell",
+            "key": 3,
+            "show": true,
+            "is_list": false,
+            "value": "Aux Bell",
+            "type": "",
+            "text": "Aux Bell"
+          }
+        ],
+        "place_of_services": [],
+        "patient_residences": [],
+        "prerequisite_claims_history_lookbacks": [],
+        "removed_icds": [],
+        "removed_pharmacy_networks": [],
+        "removed_place_of_service": [],
+        "removed_patient_residence": [],
+        "removed_prescriber_taxonomy": []
+      },
+      "not_covered": {
+        "age": {
+          "min_age_condition": "",
+          "min_age_limit": "",
+          "max_age_condition": "",
+          "max_age_limit": ""
+        },
+        "gender": [],
+        "icd": { "look_back_days": "", "icds": "" },
+        "pharmacy_networks": "",
+        "prescriber_taxonomies": "",
+        "place_of_services": [],
+        "patient_residences": [],
+        "prerequisite_claims_history_lookbacks": [],
+        "removed_icds": [],
+        "removed_pharmacy_networks": [],
+        "removed_place_of_service": [],
+        "removed_patient_residence": [],
+        "removed_prescriber_taxonomy": []
+      }
+    }
+  ]
+}

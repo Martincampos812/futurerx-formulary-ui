@@ -1,0 +1,164 @@
+@import "./../../assets/style.scss";
+.csr-root{    
+    .formulary-root{
+        min-width: 1200px;
+        margin: 30px 60px;  
+        .formulary-tabs-info{
+            padding: 15px 20px 20px;
+            background: white;
+        }
+        .formulary-root-divider{
+            height: 10px;
+            width: 100%;
+            background: #eef3f7;
+        }
+        .frx-mini-tabs-root{
+            position: unset;
+            border-bottom: 0px solid #e5e5e5;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: none;
+            background: #ffffff;
+            padding: 0;
+            min-width: 122px;
+            min-height: 30px;
+            .frx-mini-tabs-root__tabs{
+                background-color: #ffffff;
+                box-shadow: none;
+                border: 1px solid #2055b5;
+                flex-direction: row;
+                border-radius: 4px;
+                padding: 3px;
+                min-height: 24px;
+                min-width: 61px;
+                width: max-content;
+                .frx-mini-tabs-root__tabs__tab{
+                    padding: 0;
+                    font-size: 12px;
+                    min-height: 24px;
+                    min-width: 61px;
+                    font-weight: bold;
+                    color: #666666;
+                    text-transform: capitalize;
+                    opacity: unset;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}
+label.custom-checkbox{
+    &.mb-16{
+        margin-bottom: 16px;
+    }
+    span.ant-checkbox{
+        margin-left: 0;
+        padding-top: 0;
+        span.ant-checkbox-inner{
+            margin-left: 0;
+            border: 2px solid #d5d5d5;
+            border-radius: 4px;
+        }
+        + span{
+            font-size: 12px;
+            color: #323C47;
+            padding-left: 0;
+            margin-left: 10px;
+            line-height: 16px;
+            text-transform: none;
+        }
+    }
+    &:hover, .ant-checkbox:hover{
+        .ant-checkbox-inner{
+            border-color: #2055B5;
+        }
+    }
+    .ant-checkbox-input:focus + .ant-checkbox-inner{
+        border-color: #d5d5d5;
+    }
+    span.ant-checkbox-checked {
+        .ant-checkbox-inner{
+            background: #2055B5;
+            border-color: #2055B5 !important;
+        }
+        &:after{
+            display: none;
+        }
+        &.ant-checkbox-disabled{
+            .ant-checkbox-inner{
+                background-color: #f5f5f5;
+                border-color: #d9d9d9 !important;
+            }
+        }
+    }
+}
+.ant-table-row-expand-icon-cell {
+    position: sticky !important;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.input-link {
+    margin-top: 0px !important;
+    cursor: pointer;
+}
+
+.formulary-step {
+    width: 30.04px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1F55B6;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    height: 35px;
+    border-radius: 3px;
+}
+.ant-table-cell{
+    .frx-mini-tabs-root {
+        position: unset;
+        border-bottom: 0px solid #e5e5e5;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+        background: #ffffff;
+        padding: 0;
+        min-width: 122px;
+        min-height: 30px;
+        .frx-mini-tabs-root__tabs {
+            background-color: #ffffff;
+            box-shadow: none;
+            border: 1px solid #2055b5;
+            flex-direction: row;
+            border-radius: 4px;
+            padding: 3px;
+            min-height: 24px;
+            min-width: 61px;
+            width: max-content;
+            .frx-mini-tabs-root__tabs__tab {
+                padding: 0;
+                font-size: 12px;
+                min-height: 24px;
+                min-width: 61px;
+                font-weight: bold;
+                color: #666666;
+                text-transform: capitalize;
+                opacity: unset;
+                border-radius: 2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.formulary-component-details {
+  .date-margin {
+    width: 10px;
+    background-color: #ffffff;
+    height: 2px;
+  }
+  .component-date-picker {
+    width: 173px !important
+  }
+}
+
+
+.ant-custom-select {
+  .ant-select-selector {
+    height: 36px;
+  }
+}
+
+.custom-disable {
+  background-color: #E5E5E5 !important;
+  pointer-events: none;
+}
+
+.select-tag {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding: 0px 10px;
+  color: #fff;
+  background: #684999;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
+.select-tag__grey {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding: 0px 10px;
+  color: #fff;
+  background: #707683;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+
+.select-tag-criteria {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  
+  color: #707683;
+  border-bottom: 1px dashed #707683;
+  margin:0px 3px;
+}

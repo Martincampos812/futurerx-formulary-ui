@@ -1,0 +1,25 @@
+.tier-replace-root {
+  .frx-grid-container
+    .frx-grid
+    .frx-grid__grid-block
+    .frx-grid__grid-block__table-block
+    .ant-table
+    .ant-table-header
+    .ant-table-thead
+    > tr
+    > th:nth-child(2) {
+    text-align: center;
+  }
+
+  .frx-grid-container
+    .frx-grid
+    .frx-grid__grid-block
+    .frx-grid__grid-block__table-block
+    .ant-table {
+    .ant-table-body {
+      tr > td:nth-child(2) {
+        text-align: center;
+      }
+    }
+  }
+}

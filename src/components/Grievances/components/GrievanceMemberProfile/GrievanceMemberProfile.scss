@@ -1,0 +1,36 @@
+@import "../../../../assets/style.scss";
+
+.grievance-member-wrapper{
+    margin: 0;
+    .MemberInfoContainer{
+        padding: 22px 0 0;
+    }
+    .tab-content{
+        padding: 11px 0 0 !important;
+    }
+    .hidden-content{
+        height: 0;
+        transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        &.open{
+            height: auto;
+            transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+        .membercostshare-container{
+            margin-bottom: 10px;
+        }
+    }
+}
+.toggle-member-wrapper{
+    text-align: center;
+    .member-toggle{
+        background: white;
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+        height: 23px;
+        width: 64px;
+        display: inline-block;
+        border-radius: 4px 4px 0 0;
+        cursor: pointer;
+    }
+    
+}

@@ -1,0 +1,299 @@
+@import "../../../../../../../assets/style.scss";
+
+.drug-grid-advance-search {
+  z-index: 999 !important;
+  .MuiDialog-paperWidthFalse {
+    width: 1200px;
+    height: 600px;
+    max-height: calc(100% - 0px);
+    margin: 0 auto;
+  }
+  .MuiDialogContent-root {
+    padding: 0px 0px 0px 0px !important;
+    width: 1200px;
+    height: 660px;
+    padding-left: 20px;
+    overflow-y: hidden;
+
+    .drug-grid-popup-root__dialog {
+      padding: 0px;
+      height: 100%;
+      // border-top: 1px solid $member-notes-border-color;
+
+      .member-notes-popup-root__dialog__categories {
+        margin-top: 20px;
+
+        .MuiList-padding {
+          padding-top: 0px;
+          font-weight: $font-weight-normal;
+          font-size: $font-12;
+          line-height: 24px;
+
+          .member-notes-popup-root__category-list__item {
+            height: 24px;
+            margin: 5px 0px 5px 0px;
+            padding: 0 0 0 20px;
+            cursor: pointer;
+            span {
+              margin-right: 8px;
+            }
+          }
+
+          .member-notes-popup-root__category-list__item__text {
+            .MuiTypography-root {
+              font-weight: $font-weight-normal;
+              font-size: $font-12;
+              line-height: 24px;
+              color: $list-text-color;
+            }
+          }
+
+          .member-notes-popup-root__category-list__item--active {
+            height: 24px;
+            margin: 5px 0px 5px 0px;
+            padding: 0 0 0 20px;
+            cursor: pointer;
+            background: $category-active-list-bg-color;
+          }
+
+          .member-notes-popup-root__category-list__item__text--active {
+            .MuiTypography-root {
+              font-weight: $font-weight-normal;
+              font-size: $font-12;
+              line-height: 24px;
+              color: $list-text-color;
+            }
+          }
+        }
+      }
+
+      .member-notes-popup-root__dialog__category-notes {
+        display: inline-block;
+        border-left: 1px solid $member-notes-border-color;
+        width: 100%;
+
+        .main-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .row-wrapper {
+            display: flex;
+            margin: 15px;
+            .search-wrapper {
+              width: 840px;
+              background: #f9f9f9;
+              margin-left: 10px;
+              border: 2px solid #80c483;
+              box-sizing: border-box;
+              border-radius: 5px;
+              .search-header {
+                border-bottom: 1px solid #e5e5e5;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #ffffff;
+                height: 52px;
+                font-size: 12px;
+                color: #1d54b4;
+                font-weight: 500;
+                padding: 20px;
+                align-items: center;
+                .panel {
+                  display: flex;
+                }
+                span {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 15px;
+                  line-height: 18px;
+                  color: #323c47;
+                }
+                .panel-tooltip {
+                  margin-left: 5px;
+                  line-height: 0;
+                }
+              }
+              .search-form {
+                background: #f9f9f9;
+                padding: 20px;
+                .MuiFormControlLabel-label,
+                span {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 12px;
+                  line-height: 25px;
+                  display: flex;
+                  align-items: center;
+                  letter-spacing: 0.01em;
+                  color: #000000;
+                }
+                .from-panel {
+                  display: flex;
+                  justify-content: space-between;
+                  button {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 3px 10px;
+                    width: 92px;
+                    height: 23px;
+                    background: #1d54b4;
+                    border-radius: 5px;
+                    span {
+                      font-family: Roboto;
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 12px;
+                      line-height: 14px;
+                      color: #ffffff;
+                    }
+                  }
+                }
+              }
+            }
+            .delete-wrapper,
+            .arrow-wrapper {
+              margin-left: 10px;
+              margin-top: 15px;
+            }
+          }
+        }
+
+        .member-notes-popup-root__dialog__category-notes_form {
+          line-height: 80px;
+          margin: 0 0 0 auto;
+          display: flex;
+          justify-content: flex-end;
+          padding: 12px;
+
+          .member-notes-popup-root__dialog__category-notes_form__input-field {
+            background: $white-color;
+            border: 1px solid $member-notes-border-color;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin: 0 10px 0 20px;
+            width: 440px;
+            height: 35px;
+            padding: 9px 0px 10px 10px;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            font-size: $font-12;
+            line-height: 16px;
+          }
+
+          .member-notes-popup-root__dialog__category-notes_form__submit-btn {
+            height: 35px;
+            width: 92px;
+            text-align: center;
+            margin: 0 0 0 10px;
+            padding: 0;
+            border-radius: 3px;
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            font-size: $font-12;
+            line-height: 35px;
+            align-items: center;
+            letter-spacing: 0.1px;
+            color: rgb(113, 146, 209);
+            border: 1px solid rgb(113, 146, 209);
+            background: $white-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+
+      .advanced-grid-search__btn-clear {
+        width: 76px !important;
+        height: 35px;
+        border: none !important;
+        padding: 0;
+        &--clearicon {
+          position: relative;
+        }
+        .MuiButton-label {
+          border: none !important;
+          top: 0px !important;
+        }
+        span {
+          position: relative;
+          line-height: 14px;
+          text-transform: capitalize;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          margin-left: 7px;
+          border-bottom: 1px solid transparent;
+          border-image: url("data:image/svg+xml,%3Csvg width='28' height='1' viewBox='0 0 28 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='28' y2='0.5' stroke='%23666666' stroke-dasharray='1 1'/%3E%3C/svg%3E%0A");
+          border-image-repeat: repeat;
+          border-image-slice: 4 4 4 4;
+        }
+      }
+
+      .member-notes-popup-root__dialog__category-notes_form__submit-btn {
+        height: 35px;
+        width: 92px;
+        text-align: center;
+        margin: 0 0 0 10px;
+        padding: 0;
+        border-radius: 3px;
+        font-style: normal;
+        font-weight: $font-weight-bold;
+        font-size: $font-12;
+        line-height: 35px;
+        align-items: center;
+        letter-spacing: 0.1px;
+        color: rgb(113, 146, 209);
+        border: 1px solid rgb(113, 146, 209);
+        background: $white-color;
+        cursor: pointer;
+      }
+    }
+  }
+  .form-wrapper-root {
+    height: 100%;
+  }
+  .right-content {
+    height: 100%;
+    position: relative;
+    .noForms {
+      height: calc(100% - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .formWrappers {
+      height: calc(100% - 80px);
+      overflow: auto;
+    }
+    .button-wrapper {
+      height: 80px;
+      border-top: 1px solid #e5e5e5;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      left: 0;
+      right: 0;
+      background: white;
+      bottom: 0;
+      position: absolute;
+      .Button {
+        background: #1d54b4;
+        color: white;
+        border-radius: 5px;
+        &.advanced-grid-search__btn-clear {
+          background: none;
+          border: none;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

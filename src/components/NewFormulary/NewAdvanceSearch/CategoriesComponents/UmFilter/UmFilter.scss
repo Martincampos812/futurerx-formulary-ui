@@ -1,0 +1,98 @@
+.__root-um-filter-container {
+  background: #f9f9f9;
+  //   background: #F9F9F9;
+  .__filter-list-container {
+    .__list-wraper {
+      //   border: 1px solid red;
+      //   width: 85%;
+      .__filter-list {
+        display: inline-block;
+        width: 300px;
+        // border: 1px solid gray;
+        // margin-right: 5%;
+        .__list-lable {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 24px;
+          /* identical to box height */
+
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+
+          /* Text Black */
+
+          color: #323c47;
+        }
+        // .MuiCheckbox-root {
+        //   border: 1px solid red;
+        //   .MuiIconButton-label {
+        //     border: 1px dotted blue;
+        //     input {
+        //       border: 1px dotted blue;
+        //     }
+        //     svg {
+        //       path {
+        //         border: 1px dotted blue;
+        //       }
+        //     }
+        //   }
+        // }
+        // .Mui-checked {
+        //   background-color: red;
+        // }
+      }
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 90%;
+
+        // alignItems: "flex-end",
+        // border: 1px solid green;
+        margin: 10px;
+        .__add-input-delete-container {
+          .__add-input {
+            width: 200px;
+            height: 35px;
+
+            /* White */
+
+            background: #ffffff;
+            /* Main Gray */
+
+            border: 1px solid #c4c4c4;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-right: 10px;
+          }
+          .delete-icon {
+            cursor: pointer;
+          }
+          .__add-button-container {
+            display: flex;
+            margin: 5px;
+            cursor: pointer;
+            .plus-icon {
+              //   margin-top: 10px;
+            }
+            .add-button > p {
+              //   margin-top: 10px;
+              margin-left: 10px;
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              /* identical to box height */
+
+              /* Light Black */
+              border-bottom: 1px dashed #707683;
+              color: #707683;
+            }
+          }
+        }
+      }
+    }
+  }
+}

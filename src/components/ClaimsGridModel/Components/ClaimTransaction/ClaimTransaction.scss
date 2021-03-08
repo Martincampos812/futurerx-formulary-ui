@@ -1,0 +1,285 @@
+@import "../../../../assets/style.scss";
+
+// accordion //
+.claim-transaction-root {
+  padding: 10px 20px;
+  overflow-y: scroll;
+  max-height: calc(100vh - 400px);
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  //for modals tabs css not applying have to check
+  &__actions {
+    display: flex;
+    height: 43px;
+    .frx-mini-tabs-root {
+      width: 17%;
+      position: unset;
+      margin: 0px;
+      border-bottom: 0px solid $container-border-color;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      box-sizing: border-box;
+      box-shadow: none;
+      background: $color-white;
+      padding: 0px !important;
+      // height: 50px;
+      .frx-mini-tabs-root__tabs {
+        background-color: $color-white;
+        box-shadow: none;
+        border: 1px solid $mini-tab-border-color;
+        flex-direction: row;
+        border-radius: 4px;
+        padding: 3px;
+        width: max-content;
+        min-height: 30px;
+        .frx-mini-tabs-root__tabs__tab {
+          padding: 0;
+          font-size: $font-12;
+          font-weight: $font-weight-bold;
+          color: $primary-text-color;
+          text-transform: capitalize;
+          opacity: unset;
+          border-radius: 2px;
+          min-height: 24px;
+          min-width: auto;
+          .MuiTab-wrapper {
+            text-transform: capitalize;
+            font-size: $font-12;
+            font-weight: $font-weight-bold;
+            line-height: 24px;
+            padding: 0 10px;
+          }
+        }
+        .frx-mini-tabs-root__tabs__tab.Mui-selected {
+          background-color: $button-tab-active-background-color;
+          .MuiTab-wrapper {
+            color: $color-white;
+            // border: 1px solid $button-tab-active-background-color;  ## border was creating alignment issue removing will resolve alignment issue
+            border-radius: 2px;
+          }
+        }
+        .frx-mini-tabs-root__tabs__tab:first-child {
+          margin-left: 0px;
+        }
+        .frx-mini-tabs-root__tabs__tab:last-child {
+          margin-right: 0px;
+        }
+
+        .MuiTabs-indicator {
+          display: none !important;
+        }
+      }
+
+      .dev-status.wip {
+        display: none;
+      }
+      .frx-mini-tabs-root__active-line {
+        position: unset;
+      }
+    }
+    & > label {
+      color: $search-text-input-color;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      line-height: 35px;
+      margin-right: 15px;
+    }
+    .select-box {
+      .ant-select {
+        width: 170px;
+      }
+    }
+    &--buttons {
+      margin: 0 0 0 auto;
+      line-height: 35px;
+      &__btn {
+        display: inline-block;
+        border: none;
+        background: white;
+        color: $primary-text-color;
+        font-size: $font-12;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        transition: 0.6s;
+      }
+    }
+  }
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+    .accordion-root {
+      margin-bottom: 10px;
+      &__rejected-icon {
+        margin: 0 0 0 10px;
+      }
+      .title {
+        cursor: pointer;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        color: $primary-text-color;
+        position: relative;
+        font-size: 12px;
+        background: $color-white;
+        text-align: left;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid $container-border-color;
+        border-radius: 5px;
+        padding: 0 22px 0 40px;
+        &::after {
+          content: "\f078";
+          font-family: "Font Awesome 5 Pro" !important;
+          font-size: 10px;
+          color: $primary-text-color;
+          font-weight: $font-weight-bold;
+          -webkit-transition: -webkit-transform 0.5s ease-in-out;
+          transition: -webkit-transform 0.5s ease-in-out;
+          transition: transform 0.5s ease-in-out;
+          transition: transform 0.5s ease-in-out,
+            -webkit-transform 0.5s ease-in-out;
+          position: absolute;
+          right: 30px;
+          font-family: monospace;
+        }
+      }
+      .title.is-expanded {
+        -webkit-transition: background 0.5s;
+        transition: background 0.5s;
+        background: $color-white;
+        color: $hyperlink-text-color;
+        font-weight: $font-weight-bold;
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .title.is-expanded::after {
+        content: "\f077";
+        font-family: "Font Awesome 5 Pro" !important;
+        font-weight: $font-weight-bold;
+        color: $primary-text-color;
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+      .content {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+        margin: 0;
+        border-top: 0;
+        background: $color-white;
+        & > p {
+          padding: 30px 0;
+          margin: 0;
+          opacity: 0;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+        }
+      }
+      .content.is-expanded {
+        max-height: fit-content;
+        overflow: hidden;
+        border: 1px solid $container-border-color;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .content.is-expanded {
+        & > p {
+          opacity: 1;
+        }
+      }
+      &__table {
+        padding: 0 0 30px 0;
+        &--header {
+          display: grid;
+          grid-template-columns: 25% 30% 30% 15%;
+          height: 50px;
+          line-height: 50px;
+          border-bottom: 1px solid $container-border-color;
+          margin: 0 0 10px 0;
+          .fields {
+            & > header {
+              font-size: $font-12;
+              color: $primary-text-color;
+              font-weight: $font-weight-normal;
+              letter-spacing: 0.5px;
+            }
+          }
+          & > .fields:first-child {
+            padding-left: 40px;
+          }
+        }
+        &__data {
+          height: 24px;
+          line-height: 24px;
+          display: grid;
+          grid-template-columns: 25% 30% 30% 15%;
+          text-align: left;
+          line-height: 24px;
+          height: 24px;
+          & > span {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+            text-transform: capitalize;
+          }
+          :first-child {
+            padding-left: 40px;
+          }
+        }
+        .value-error {
+          color: #e76262;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+    .response-status {
+      border: 1px solid $container-border-color;
+      padding: 20px 40px;
+      margin-bottom: 10px;
+      .fields {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        margin-bottom: 2px;
+        & > label,
+        span {
+          color: $primary-text-color;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          line-height: 24px;
+        }
+        & > span {
+          text-align: center;
+        }
+        .fields-status,
+        .fields-status-rejected {
+          background: #d5ffd7;
+          border: 1px solid #008a07;
+          box-sizing: border-box;
+          border-radius: 5px;
+          width: 75px;
+          text-align: center;
+          & > span {
+            color: #008a07;
+          }
+        }
+        .fields-status-rejected {
+          background-color: #fff5f0;
+          border: 1px solid #f65a1c;
+          & > span {
+            color: #f65a1c;
+          }
+        }
+      }
+    }
+    .accordion-response {
+      .accordion-root:nth-child(1n + 14) {
+        display: none;
+      }
+    }
+  }
+}

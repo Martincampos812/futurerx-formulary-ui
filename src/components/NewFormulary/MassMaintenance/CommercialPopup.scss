@@ -1,0 +1,133 @@
+.popup-container {
+  padding: 10px;
+
+  label {
+    display: block;
+    font-size: 12px;
+    color: #707683;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    .astrict {
+      color: red;
+    }
+  }
+
+  input {
+    width: 285px !important;
+    border-radius: 5px !important;
+    height: 42px !important;
+    border: 1px solid #c4c4c4;
+    background: #ffffff;
+  }
+
+  ::placeholder {
+    color: #323c47;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    color: #707683;
+
+    span {
+      color: black;
+    }
+  }
+
+  .action-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    Button {
+      width: auto;
+      padding: 0px 15px;
+    }
+  }
+
+  .cancel-btn {
+    background: #ffffff;
+    border: 1px solid #1d54b4;
+    color: #1d54b4;
+  }
+}
+
+.version-grid-container {
+  padding: 10px;
+
+  .version-grid-date-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+
+    .btn-icon {
+      padding-top: 20px;
+
+      button {
+        margin-right: 0px !important;
+        width: 67px;
+        height: 34px;
+      }
+
+      svg {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .version-grid-date {
+    width: 170px !important;
+    height: 34px;
+    border-radius: 3px !important;
+  }
+
+  .select-box .ant-select {
+    width: 170px !important;
+    height: 34px;
+    border-radius: 3px !important;
+  }
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 34px;
+  }
+
+  .version-grid-date-wrapper {
+    display: flex;
+
+    .form {
+      margin-right: 60px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: #707683;
+      line-height: 20px;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+    span {
+      color: red;
+      margin-left: 3px;
+    }
+  }
+
+  .action-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    Button {
+      width: auto;
+      padding: 0px 15px;
+    }
+  }
+
+  .cancel-btn {
+    background: #ffffff;
+    border: 1px solid #1d54b4;
+    color: #1d54b4;
+  }
+}

@@ -1,0 +1,208 @@
+@import "../../../../assets/colors.scss";
+@import "../../../../assets/fonts.scss";
+
+// .csr-root {
+.frx-grid-container {
+  .frx-grid {
+    .frx-grid__grid-block {
+      margin: 0 auto;
+      padding: 20px 0;
+      background-color: $color-white;
+      .frx-grid-pagination {
+        // display: none;
+      }
+      // Grid - Table //
+      .frx-grid__grid-block__table-block {
+        .ant-table {
+          .ant-table-header {
+            border: 1px solid $container-border-color;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            .ant-table-thead {
+              & > tr {
+                & > th {
+                  // max-height: 50px;
+                  height: 50px;
+                  border-right: 1px solid $container-border-color;
+                  border-left: none;
+                  border-top: none; // border-top/left none because anil heggde css effecting
+                  border-bottom: none;
+                  padding: 0 8px 0 8px; // 0 19 0 20 => 0 15 0 20 => 0 10 0 10 => 0 19 => 0 8 0 8
+                  line-height: 50px;
+                  .ant-table-filter-trigger-container {
+                    .frx-grid-filter-icon {
+                      position: relative;
+                      top: 3px;
+                    }
+                  }
+                  .ant-table-column-sorter-inner {
+                    .anticon-caret-up svg {
+                      visibility: hidden;
+                    }
+                    .anticon-caret-down svg {
+                      visibility: hidden;
+                    }
+                    .anticon-caret-down {
+                      position: absolute;
+                      top: 24px;
+                    }
+                    .anticon-caret-up {
+                      position: relative;
+                      top: 0px;
+                    }
+                  }
+                  .ant-table-column-sorter-up.active svg,
+                  .ant-table-column-sorter-down.active svg {
+                    visibility: visible;
+                    color: $primary-text-color;
+                    font-size: 10px;
+                    position: relative;
+                  }
+                  .frx-grid__multisort-order {
+                    // position: absolute;
+                    // right: 50px;
+                    font-size: 10px;
+                    color: $primary-text-color;
+                  }
+                }
+                & > th:first-child {
+                  padding: 0 18px 0 18px;
+                  display: block;
+                }
+                .ant-table-row-expand-icon-cell {
+                  border: none;
+                }
+                & .ant-table-column-sorters {
+                  // padding: 16px 0px;
+                  padding: 0;
+                  .ant-table-column-sorter {
+                    margin: 0px;
+                  }
+                  .frx-grid-header-cell__multisortorder {
+                    font-size: $font-10;
+                    font-weight: $font-weight-bold;
+                    color: $multisort-text-color;
+                    line-height: 12px;
+                    position: relative;
+                    left: 15px;
+                    bottom: 3px;
+                  }
+                }
+                & .ant-table-filter-column-title {
+                  // padding: 0 1.3em 0 0;
+                  padding: 0;
+                }
+              }
+            }
+          }
+          .ant-table-body {
+            overflow: auto !important;
+            // position: relative;
+            // bottom: 10px;
+            & > table {
+              border-collapse: unset;
+              border-spacing: 0 10px;
+            }
+            .ant-table-tbody,
+            .ant-table-summary {
+              & > tr {
+                & > td {
+                  padding: 0 18px;
+                  height: 50px;
+                  border-top: 1px solid $container-border-color;
+                  border-bottom: 1px solid $container-border-color;
+                  border-left: none;
+                  border-right: none; // border-right/left none because anil heggde css effecting
+                  margin-top: 10px;
+                  font-size: $font-12;
+                  font-weight: $font-weight-normal;
+                  color: $primary-text-color;
+                  .ant-table-expanded-row-fixed {
+                    padding: 0;
+                  }
+                }
+                & > td:first-child {
+                  border-left: 1px solid $container-border-color;
+                  border-top-left-radius: 4px;
+                  border-bottom-left-radius: 4px;
+                }
+                & > td:last-child {
+                  border-right: 1px solid $container-border-color;
+                  border-top-right-radius: 4px;
+                  border-bottom-right-radius: 4px;
+                }
+                .ant-table-row-expand-icon-cell {
+                  border-right: 1px solid $container-border-color;
+                  border-left: 1px solid $container-border-color;
+                }
+              }
+              // calls grid expandable //
+              .ant-table-expanded-row {
+                .ant-table-cell {
+                  padding: 0;
+                  border: none;
+                  background: none;
+                  .ant-table-expanded-row-fixed {
+                    padding: 0;
+                    margin: -11px 0;
+                    border: 1px solid $container-border-color;
+                    .callListDetails-root {
+                      margin: 0;
+                      .MuiGrid-root {
+                        padding: 0;
+                        .MuiGrid-container {
+                          padding: 0;
+                          margin: 0;
+                          width: 100%;
+                          // display: flex;
+                        }
+                      }
+                    }
+                    .callListDetails-root__mini-tab {
+                      padding: 20px 0;
+                      border-bottom: 1px solid $container-border-color;
+                    }
+                  }
+                }
+              }
+              // calls grid expandable //
+            }
+          }
+        }
+        // Grid - Table //
+      }
+    }
+
+    // for resizing
+
+    .react-resizable {
+      position: relative;
+      background-clip: padding-box;
+    }
+
+    .react-resizable-handle {
+      position: absolute;
+      right: -5px;
+      bottom: 0;
+      z-index: 1;
+      width: 10px;
+      height: 100%;
+      cursor: col-resize;
+    }
+
+    //end resizing
+  }
+  .frx-grid-cell {
+    &--entry-component {
+      cursor: pointer;
+      color: #2055b5;
+      font-weight: 700;
+      line-height: 14.06px;
+      border-bottom: 1px solid transparent;
+      border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+      border-image-repeat: repeat;
+      border-image-slice: 4 4 4 4;
+    }
+  }
+}
+// }

@@ -1,0 +1,108 @@
+.sub-navbar {
+  .MuiAppBar-root {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: "center";
+    background-color: #2055b5;
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+    height: 48px;
+    .MuiGrid-root {
+      padding-left: 22px;
+    }
+    .subNavBar-icon-select-dropdown-container {
+      display: inline-block;
+      border-left: 1px solid #043999;
+      // border-right: 1px solid #043999;
+      height: 100%;
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+    .subNavBar-icon-select-dropdown-container:last-child {
+      border-right: 1px solid #043999;
+    }
+    // span {
+    //   // background-color: red;
+    //   display: inline-block;
+    //   height: 100%;
+    //   padding: 0 0 0 15px;
+    //   // border-left: 1px solid green;
+    // }
+    // span > * {
+    //   // padding: 0 1px;
+    //   .antd-select {
+    //     background-color: transparent !important;
+    //     .ant-select-selector {
+    //       background-color: transparent;
+    //     }
+    //   }
+    // }
+    .subBar-dropdown-container {
+      // margin-left: 2px;
+
+      .ant-select-selector {
+        background-color: transparent !important;
+        border: none;
+        height: 100%;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+      }
+      .ant-select-arrow {
+        top: 48%;
+        right: 11px !important;
+      }
+      .ant-select-selection-placeholder {
+        color: #ffffff !important;
+      }
+    }
+    .subBar-dropdown-container .ant-select-selection-item {
+      font-weight: 400;
+      color: black;
+      font-size: 11px;
+    }
+
+    .subNavBar-search-icons {
+      margin-right: 45px;
+      cursor: pointer;
+    }
+  }
+}
+.frx-advance-serach {
+  // padding-right: 0;
+  z-index: 999 !important;
+
+  // height: 100% !important;
+  > .MuiDialog-container > .MuiDialog-paper > .frx-dialog-root__btn-actions > .frx-dialog-root__cancel-btn {
+    display: none;
+  }
+  > .MuiDialog-container > .MuiDialog-paper > .frx-dialog-root__btn-actions {
+    margin-right: 40px;
+  }
+
+  > .MuiDialog-container > .MuiDialog-paper > .frx-dialog-root__btn-actions > .frx-dialog-root__save-btn {
+    width: 99px;
+    // background: #e5e5e5;
+  }
+
+  .frx-dialog-root__heading {
+    border-bottom: 0;
+    .MuiTypography-root {
+      padding-top: 25px;
+      padding-left: 12px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #323c47;
+      text-transform: capitalize;
+    }
+  }
+  .MuiDialogContent-root {
+    padding: 0;
+  }
+}

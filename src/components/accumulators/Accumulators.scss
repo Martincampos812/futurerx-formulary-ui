@@ -1,0 +1,129 @@
+@import "./../../assets/style.scss";
+
+.csr-root {
+  .accumulators-root {
+    position: relative;
+
+    .accumulators-root__note-icon{
+      position: absolute;
+      top: 16px;
+      right: 22px;
+      z-index: 999;
+      cursor: pointer;
+    }
+    .accumulators-root__tabcontent{
+      padding: 20px 20px 0px 20px;
+      // min-height: 205px;
+
+      .accumulators-root__tabcontent__header{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        .frx-mini-tabs-root{
+          width: 199px;
+          .frx-mini-tabs-root__tabs {
+            min-height: 30px;
+            .frx-mini-tabs-root__tabs__tab {
+              min-height: 24px;
+              min-width: 81px;
+              .MuiTab-wrapper{
+                text-transform: none;
+              }
+            }
+          }
+        }
+        .accumulators-root__tabcontent__header__legend{
+          margin: 0 0 0 auto;
+          display: flex;
+          ul{
+            padding: 0px;
+            display: flex;
+            margin: 0 0 0 auto;
+            li{
+              font-size: 12px;
+              color: #666666;
+              margin-left: 25px;
+              list-style: none;
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              svg{
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .accumulators-root__tabcontent__body{
+        svg{
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .frx-tabs-root {
+
+      .frx-tabs-root__tabs {
+        background-color: $container-background-color;
+
+        .frx-tabs-root__tabs__tab {
+          border-right: 1px solid $container-border-color;
+          margin: 0px;
+          padding: 0 20px;
+          background-color: $folder-tab-inactive-background;
+
+          .MuiTab-wrapper {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+          }
+        }
+
+        .frx-tabs-root__tabs__tab.Mui-selected {
+          background-color: $white-color !important;
+          border-right: 1px solid $container-border-color !important;
+
+          .MuiTab-wrapper {
+            color: $hyperlink-text-color;
+            font-weight: $font-weight-normal;
+            background-color: $white-color;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+          }
+        }
+
+        .frx-tabs-root__tabs__tab:first-child {
+          margin-left: 0px;
+        }
+        .frx-tabs-root__tabs__tab:last-child {
+          margin-right: 0px;
+        }
+
+        .MuiTabs-indicator {
+          background: none !important;
+          height: 5px;
+          border-radius: 0;
+          z-index: 50;        
+        }
+      }
+
+      .frx-tabs-root__active-line {
+        position: unset;
+      }
+
+    }
+  }
+}
+
+.accumulators-root__grid-dialog-popup{
+  z-index: 999 !important;
+  .MuiDialog-paper{
+    height: 70%;
+    width: 90%;
+  }
+  .MuiDialogContent-root{
+    padding: 20px 20px 10px 20px !important;
+    overflow-y: hidden !important;
+  }
+}

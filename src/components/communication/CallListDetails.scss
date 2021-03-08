@@ -1,0 +1,140 @@
+@import "../../assets/style.scss";
+
+.callListDetails-root {
+    flex-grow: 1;
+    .callListDetails-root-info{
+        display: flex;
+        // grid-template-columns: 25% 38% 37%;
+        .callListDetails-root-task{
+            width: 27%;
+        }
+        .callListDetails-root-story{
+            width: 36%;
+        }
+        .callListDetails-root-notes{
+            width: 37%;
+        }
+    .paper-notes {
+        min-height: 578px;
+        max-height: 578px;
+        // min-width: 400px;
+        // max-width: 400px;
+        width: 96%;
+        overflow: scroll;
+        overflow-y: overlay;
+        // width: 100%;
+        // height: 100%;
+        box-shadow: none;
+        .frx-note-list-container-root {
+            // min-width: 400px;
+            min-height: 578px;
+            // width: 100%;
+            .MuiListSubheader-sticky {
+                background-color: #ffffff;
+                box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
+                width: 100%;
+                height: 66px;
+                background: #ffffff;
+                box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                /* Light Black */
+
+                color: #707683;
+                padding: 31px 0px 21px 30px;
+            }
+            .frx-note-item-root {
+                // min-width: 400px;
+                // width: 100%;
+                height: auto;
+            }
+            .note-item-divider {
+                // width: 338px;
+                margin: 0px 31px;
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 0px #999999;
+            border-radius: 3px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #999999;
+            border-radius: 3px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #999999;
+        }
+    }
+    .paper-story {
+        min-height: 578px;
+        // min-width: 438px;
+        max-height: 578px;
+        // max-width: 438px;
+        overflow-y: overlay;
+        overflow-x: hidden;
+        box-shadow: none;
+        border-right: 1px solid $container-border-color;
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 0px #999999;
+            border-radius: 3px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #999999;
+            border-radius: 3px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #999999;
+        }
+    }
+    .paper-task {
+        min-height: 578px;
+        max-height: 578px;
+        // min-width: 270px;
+        // max-width: 30%;
+        overflow-y: overlay;
+        overflow-x: hidden;
+        box-shadow: none;
+        border-right: 1px solid $container-border-color;
+        padding: 28px 0px 0 0px;
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 0px #999999;
+            border-radius: 3px;
+        }
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #999999;
+            border-radius: 3px;
+        }
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #999999;
+        }
+    }
+    }
+}

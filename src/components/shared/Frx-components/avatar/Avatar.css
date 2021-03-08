@@ -1,0 +1,19 @@
+.Avatar {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+  margin: 3px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: black;
+  background-color: slateblue;
+}

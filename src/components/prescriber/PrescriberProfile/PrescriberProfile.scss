@@ -1,0 +1,184 @@
+@import "./../../../assets/style.scss";
+
+.csr-root {
+  .member-components-container {
+    padding: 0px 0px;
+    .MuiGrid-container {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .membercostshare-container {
+      margin-top: 20px;
+    }
+  }
+  .prescriber-profile-root {
+    min-width: 1200px;
+    margin: 20px 60px;
+
+    box-sizing: border-box;
+    border: 1px solid $container-border-color;
+    border-radius: 10px;
+
+    background-color: $container-background-color;
+
+    .tab-content {
+      margin: 0;
+
+      width: 100%;
+
+      padding: 20px;
+    }
+    .formulary-tab-content {
+      padding: 23px 20px 20px;
+    }
+    .communication-member-profile-root {
+      margin-top: -11px;
+      .communication-root {
+        .frx-mini-tabs-root__tabs {
+          min-height: 30px;
+          width: unset;
+          .MuiTab-root {
+            min-width: 50px;
+            min-height: 30px;
+          }
+        }
+        .communication-root--legend {
+          display: none;
+        }
+        .communication-root--legend__accordion {
+          margin-top: 24px;
+        }
+        .MuiAccordionSummary-root {
+          border-bottom: 1px solid #e5e5e5;
+          pointer-events: none;
+        }
+        .MuiIconButton-edgeEnd {
+          display: none;
+        }
+      }
+    }
+    .auth-overrides-member-profile-root {
+      .auth-override-root {
+        display: none;
+      }
+      .MuiAccordionSummary-root {
+        border-bottom: 1px solid #e5e5e5;
+        pointer-events: none;
+      }
+      .MuiIconButton-edgeEnd {
+        display: none;
+      }
+      .MuiAccordionSummary-content {
+        margin: 0px;
+      }
+      .auth-override-root__accordion-summary {
+        display: flex;
+        &__heading {
+          font-size: $font-12;
+          font-weight: $font-weight-500;
+          text-transform: uppercase;
+          color: $primary-heading-text-color;
+          margin-right: 20px;
+        }
+        .auth-override-root__accordion-summary__heading {
+          line-height: 50px;
+        }
+        &__button {
+          &-auth,
+          &-override {
+            .MuiButtonBase-root {
+              border: 1px solid $hyperlink-text-color;
+              color: $hyperlink-text-color;
+              box-sizing: border-box;
+              border-radius: 3px;
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              width: 123px;
+              height: 35px;
+              line-height: 35px;
+              padding: 0;
+              letter-spacing: 0.01em;
+              text-transform: capitalize;
+            }
+            margin-top: 9px;
+          }
+          &-auth {
+            margin-right: 10px;
+            .MuiButtonBase-root {
+              width: 103px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .claims-root {
+    background-color: #ffffff;
+    min-width: 1160px;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    .grid {
+      padding: 0px 20px;
+    }
+    .claimsbuttongroup-root {
+      display: flex;
+      justify-content: flex-start;
+      background-color: #ffffff;
+      color: #2055b5;
+      // Typography
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      padding: 0px 22px;
+      height: 50px;
+      margin-bottom: 20px;
+      width: 100%;
+      border-bottom: 1px solid #e5e5e5;
+
+      .heading {
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0em;
+      }
+      .button {
+        margin: auto;
+        margin-left: 20px;
+        // border: solid 1px;
+        border-radius: 3px;
+      }
+
+      button {
+        // text-transform: none;
+        // color: #2055b5;
+        // width: 165px;
+        // height: 35px;
+        // border-radius: 3px;
+
+        // font-family: Roboto;
+        // font-size: 12px;
+        // font-style: normal;
+        // font-weight: 400;
+        // line-height: 35px;
+        // letter-spacing: 0.01em;
+        // text-align: left;
+        // padding: 0px;
+        // border: solid 1px;
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.acc-barr-container {
+  // min-height: 490px;
+}
+.acc-barr-container-graphCard{
+  // min-height: ;
+}

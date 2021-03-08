@@ -1,0 +1,140 @@
+.MuiTypography-h6 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px !important;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1d54b4;
+}
+.popup-container {
+  width: 580px;
+  background: #ffffff;
+  border-radius: 5px;
+
+  .newVersion {
+    .content {
+      .calender {
+        .ant-picker {
+          .ant-picker-input {
+            input {
+              height: auto !important;
+              border: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-wrapper {
+    &.newVersion {
+      margin-left: 20px;
+      margin-top: 13px;
+      #submission_month {
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border-radius: 3px;
+        width: 175px;
+        height: 35px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 35px;
+        color: #999999;
+      }
+      .ant-picker {
+        width: 170px;
+        height: 35px;
+      }
+      .invalid {
+        border: 1px solid red;
+      }
+    }
+    &.clone {
+      .input input {
+        width: 285px;
+      }
+      .invalid {
+        border: 1px solid red;
+      }
+    }
+    .content {
+      padding-left: 10px;
+      .actionlabel {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #707683;
+      }
+    }
+    .button {
+      margin-top: 85px;
+      margin-right: 20px;
+      justify-content: flex-end;
+      display: flex;
+      button {
+        margin-left: 10px;
+        background: #ffffff;
+        border: 1px solid #1d54b4;
+        box-sizing: border-box;
+        border-radius: 3px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        span {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.1px;
+          color: #1d54b4;
+          text-transform: capitalize;
+        }
+        &.visited {
+          background: #1d54b4;
+          border-radius: 3px;
+          span {
+            color: #ffffff;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+    .astrict {
+      color: red;
+      padding-left: 3px;
+    }
+    .label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.01em;
+      color: #707683;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+    .input {
+      input {
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 33px;
+        input:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

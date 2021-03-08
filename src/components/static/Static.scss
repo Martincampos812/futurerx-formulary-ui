@@ -1,0 +1,933 @@
+@import "../../assets/colors.scss";
+@import "../../assets/fonts.scss";
+
+.static-root,
+.dashboard-root {
+  // width: 90%;
+  min-width: 1200px;
+  margin: 20px 60px;
+  background-color: $container-background-color;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid $container-border-color;
+  box-sizing: border-box;
+  // Section/Navigation //
+  .container-maintab {
+    background: $color-white;
+    border-bottom: 1px solid $container-border-color;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: unset;
+    .tabs {
+      .tab {
+        padding: 0 0 0 20px;
+        min-width: 67.89px;
+        opacity: unset;
+        .MuiTab-wrapper {
+          font-size: $font-14;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          text-transform: capitalize;
+          line-height: 50px;
+        }
+      }
+      .active {
+        .MuiTab-wrapper {
+          color: $hyperlink-text-color;
+          font-weight: $font-weight-bold;
+          border-bottom: 2px solid $hyperlink-text-color; // not done yet //
+        }
+      }
+    }
+  }
+  .assets-root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 22px 20px;
+
+    // common css styles for section //
+    .infocard,
+    .select,
+    .section-attributes,
+    .section-clinicaldiagnosis,
+    .section-membernotifications,
+    .section-accumulator,
+    .section-barrier,
+    .section-chart,
+    .section-membercostshare {
+      background-color: $color-white;
+      display: block;
+      border: 1px solid $container-border-color;
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: none;
+    }
+
+    // common section headings //
+
+    .section-heading {
+      font-size: $font-12;
+      font-weight: $font-weight-500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 50px;
+      color: $primary-heading-text-color;
+      margin: 0;
+    }
+
+    // common section list labels //
+
+    .sectionlist-label {
+      font-size: $font-12;
+      font-weight: $font-weight-bold !important;
+      color: $primary-text-color;
+    }
+
+    // folder tab //
+
+    .folder-tab {
+      background-color: $folder-tab-inactive-background;
+      box-shadow: none;
+      flex-direction: row;
+      padding: 0 20px 0 0px;
+      border-bottom: 1px solid $container-border-color;
+      .tabs {
+        .tab {
+          color: $primary-text-color;
+          font-size: $font-12;
+          font-weight: $font-weight-500;
+          line-height: 50px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          padding: 0 20px;
+          border-right: 1px solid $container-border-color;
+          opacity: unset;
+        }
+        .active {
+          color: $hyperlink-text-color;
+          background-color: $color-white;
+          border-right: 1px solid $container-border-color;
+        }
+      }
+    }
+
+    // mini tab //
+
+    .mini-tab {
+      background-color: $color-white;
+      box-shadow: none;
+      border: 1px solid $hyperlink-text-color;
+      flex-direction: row;
+      border-radius: 4px;
+      padding: 3px;
+      .tabs {
+        .tab {
+          padding: 0;
+          font-size: $font-12;
+          font-weight: $font-weight-bold;
+          color: $primary-text-color;
+          line-height: 24px;
+          text-transform: capitalize;
+          opacity: unset;
+          // margin: 0 10px 0 0;
+        }
+        .active {
+          color: $color-white;
+          border: 1px solid $button-tab-active-background-color;
+          background-color: $button-tab-active-background-color;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    // Section/Member Summary //
+    .section-summary {
+      margin-bottom: 10px;
+      .select-formcontrol {
+        width: 627px;
+        height: 50px;
+      }
+      .user-avatar {
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        z-index: 999;
+        cursor: pointer;
+      }
+      .icon-member {
+        position: absolute;
+        top: 13px;
+        left: 70px;
+        z-index: 999;
+        cursor: pointer;
+      }
+      .select {
+        position: relative;
+        padding: 0 70px 0 96px;
+        background-color: $color-white;
+        .suffix-icon {
+          position: absolute;
+          top: 25px;
+          z-index: 999;
+          right: 20px;
+          cursor: pointer;
+        }
+        .MuiSelect-select {
+          font-size: $font-24;
+          padding: 0;
+          line-height: 50px;
+          font-weight: $font-weight-normal;
+          text-decoration: underline;
+          color: $hyperlink-text-color;
+          align-items: center;
+          display: flex;
+          &:focus {
+            background-color: $color-white;
+          }
+        }
+        .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+          border: none;
+        }
+        .MuiOutlinedInput-notchedOutline {
+          border: none;
+          top: 0;
+          padding: 0;
+        }
+      }
+      .member-summary-icons {
+        width: 125px;
+        // height: 50px;
+        // line-height: 50px;
+        // margin-left: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        .user-card,
+        .icon-audit,
+        .icon-alert,
+        .icon-notes {
+          margin-left: auto;
+          height: 50px;
+          line-height: 50px;
+          cursor: pointer;
+        }
+        .icon-alert {
+          height: 45px;
+          line-height: 45px;
+        }
+      }
+    }
+
+    // Section/Tags - Dropdown _ Service Year //
+    .section-tags {
+      line-height: 40px;
+      margin-bottom: 10px;
+      .list {
+        .label {
+          color: $color-white;
+          font-size: $font-12;
+          font-weight: $font-weight-bold;
+          height: 24px;
+          line-height: 24px;
+          background-color: $pill-inactive-color;
+          border-radius: 12px;
+          cursor: pointer;
+          margin: 0 20px 0 0;
+          .MuiChip-label {
+            padding: 0 10px;
+          }
+        }
+        .active {
+          background-color: $pill-active-color;
+          color: $color-white;
+          font-weight: $font-weight-bold;
+        }
+        .incomplete {
+          background-color: $pill-incomplete-color;
+          color: $color-white;
+          font-weight: $font-weight-bold;
+        }
+      }
+      .date-range {
+        width: 255px;
+        display: grid;
+        grid-template-columns: 65px 180px;
+        grid-column-gap: 10px;
+        margin: 0 0 0 auto;
+        & > label {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          line-height: 40px;
+          color: $primary-text-color;
+          margin: 0;
+        }
+        .space {
+          background: $color-white;
+          box-sizing: border-box;
+          height: 40px;
+          .date-rangepicker {
+            border: 1px solid $container-border-color;
+            border-radius: 3px;
+            padding: 0 15px 0 12px;
+            &:hover {
+              border: 1px solid $container-border-color;
+            }
+            .ant-picker-suffix {
+              margin: 4px 0;
+              cursor: pointer;
+            }
+            .ant-picker-range-separator {
+              padding: 0;
+            }
+            .ant-picker-input {
+              & > input {
+                color: $color-black;
+                font-size: $font-11;
+                font-weight: $font-weight-normal;
+                line-height: 40px;
+                cursor: pointer;
+                text-align: center;
+              }
+            }
+            .ant-picker-active-bar {
+              background: none;
+            }
+          }
+          .ant-picker-focused {
+            border: 1px solid $container-border-color;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    // Section/Cards //
+    .section-infocard {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      .infocard {
+        // display: block;
+        // box-sizing: border-box;
+        width: 282px;
+        height: 130px;
+        padding: 19px 20px 21px 25px;
+        .card-details {
+          // width: 282px;
+          // height: 130px;
+          // padding: 19px 20px 21px 25px;
+
+          .card-demographic,
+          .card-eligibility,
+          .card-providers,
+          .card-preferences {
+            box-shadow: none;
+            background: none;
+            .content {
+              padding: 0;
+              .hyperlink {
+                color: $hyperlink-text-color;
+                border-bottom: 1px dashed $hyperlink-text-color;
+              }
+              &:last-child {
+                padding: 0;
+              }
+              & > h5 {
+                font-size: $font-16;
+                font-weight: $font-weight-normal;
+                line-height: 19px;
+                cursor: pointer;
+                margin: 0 0 17px 0;
+                color: $primary-text-color;
+                width: fit-content;
+              }
+              & > label {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                height: 14px;
+                line-height: 14px;
+                color: $primary-text-color;
+                margin: 0 0 5px 0;
+                display: grid;
+                grid-template-columns: auto auto;
+                & > span {
+                  text-align: right;
+                }
+              }
+            }
+          }
+          .card-demographic,
+          .card-eligibility,
+          .card-providers,
+          .card-preferences {
+            .hyperlink {
+              color: $primary-heading-text-color;
+              width: fit-content;
+              margin: 0 0 0 auto;
+            }
+          }
+          .card-providers,
+          .card-preferences {
+            .hyperlink {
+              border-bottom: 1px dashed $primary-heading-text-color;
+            }
+          }
+        }
+      }
+    }
+
+    // Section/Attributes //
+    .section-attributes {
+      // height: 50px;
+      line-height: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      margin-bottom: 20px;
+      .attribute-heading {
+        margin: 0 20px 0 0;
+      }
+      .label {
+        background: $color-white;
+        border: 1px solid $container-border-color;
+        box-sizing: border-box;
+        border-radius: 12px;
+        font-size: $font-12;
+        font-weight: $font-weight-bold;
+        height: 24px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: $pills-two-inactive;
+        cursor: pointer;
+        margin: 0 10px 0 0;
+      }
+      .icon-notes {
+        margin: 0 0 0 auto;
+        display: block;
+        height: 50px;
+      }
+    }
+
+    // Section/Clinical DiagnosIs History and Member notifications //
+    .section-diagnosis-notifications {
+      margin-bottom: 20px;
+      .section-clinicaldiagnosis,
+      .section-membernotifications {
+        .diagnosisnotifications-heading {
+          border-bottom: 1px solid $container-border-color;
+          padding: 0 20px;
+          .notifications-icons {
+            display: grid;
+            grid-template-columns: auto auto;
+            .edit-icon,
+            .note-icon {
+              line-height: 50px;
+              height: 50px;
+              margin: 0 0 0 auto;
+            }
+          }
+          .diagnosis-header-search {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            .note-icon,
+            .edit-icon {
+              line-height: 50px;
+              height: 50px;
+              margin: 0 0 0 auto;
+            }
+          }
+          .diagnosis-search {
+            // width: 300px;
+            // height: 50px;
+            // line-height: 50px;
+            text-align: center;
+            display: flex;
+            margin: 10px 0 10px auto;
+            .search-inputfield {
+              border: 1px solid $search-input-field-border;
+              box-sizing: border-box;
+              text-indent: 12px;
+              font-size: $font-11;
+              font-weight: $font-weight-normal;
+              width: 258px;
+              height: 30px;
+              line-height: 30px;
+              color: $search-text-input-color;
+              border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;
+              outline: none;
+            }
+            & > div {
+              width: 41px;
+              height: 30px;
+              background-color: $search-input-button;
+              border-top-right-radius: 20px;
+              border-bottom-right-radius: 20px;
+              padding: 3px 0;
+              cursor: pointer;
+              .search-icon {
+                line-height: 30px;
+              }
+            }
+          }
+        }
+        .diagnosis-history {
+          overflow-y: scroll;
+          height: 165px;
+          padding: 0 20px;
+          .history,
+          .notifications-history {
+            display: grid;
+            grid-template-columns: 75px auto 75px;
+            border-bottom: 1px solid $container-border-color;
+            & > label {
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $primary-text-color;
+              line-height: 40px;
+              margin: 0;
+              text-align: left;
+            }
+            .history-type {
+              display: inline-block;
+              // max-width: 478px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+            .history-date {
+              text-align: right;
+            }
+          }
+          .notifications-history {
+            grid-template-columns: auto auto;
+          }
+        }
+      }
+    }
+
+    // Section/Accumulators + BarriersFrame //
+    .section-accumulators-barrier {
+      margin-bottom: 20px;
+      .section-accumulator {
+        .folder-tab {
+          .tabs {
+            .tab {
+            }
+            .active {
+              border-bottom: none;
+            }
+          }
+          .icon-note {
+            margin: 0 0 0 auto;
+            height: 50px;
+            line-height: 50px;
+          }
+        }
+        .stepper-block {
+          padding: 20px;
+          background-color: $color-white;
+          .list {
+            .mini-tab {
+              width: 199px;
+              .tabs {
+                min-height: 26px;
+                .MuiTabs-flexContainer {
+                  display: flex;
+                  margin: 0 auto;
+                }
+                .tab {
+                  min-width: auto;
+                  min-height: 24px;
+                  .MuiTab-wrapper {
+                    padding: 0 10px;
+                  }
+                }
+              }
+            }
+          }
+          .stepper-legend {
+            text-align: right;
+          }
+        }
+        .stepper {
+          display: block;
+          margin: 30px auto 0 auto;
+        }
+      }
+
+      .section-barrier {
+        .barrier-heading {
+          border-bottom: 1px solid $container-border-color;
+          padding: 0 20px;
+          .notifications-icons {
+            display: grid;
+            grid-template-columns: auto auto;
+            .edit-icon,
+            .note-icon {
+              line-height: 50px;
+              height: 50px;
+              margin: 0 0 0 auto;
+            }
+          }
+        }
+        .list {
+          padding: 0 20px;
+          & > label {
+            margin: 0;
+            line-height: 40px;
+            border-bottom: 1px solid $container-border-color;
+            display: grid;
+            grid-template-columns: auto auto;
+            .noaccess {
+              background: $color-white;
+              border: 1px solid $container-border-color;
+              box-sizing: border-box;
+              border-radius: 30px;
+              height: 28px;
+              line-height: 28px;
+              width: 100px;
+              text-align: center;
+              margin: 6px 0 6px auto;
+              .noaccess-icon {
+                margin: 0 7px 0 0;
+              }
+            }
+            & > span {
+              font-weight: $font-weight-normal !important;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    // Section/Pie-chart and bar-chart //
+    .section-chart {
+      margin-bottom: 20px;
+      .folder-tab {
+        .note-icon {
+          margin: 0 0 0 auto;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      .donut-bar-chart {
+        padding: 20px;
+        .chartmini-tab {
+          .mini-tab {
+            width: 136px;
+            .tabs {
+              min-height: 26px;
+              .MuiTabs-flexContainer {
+                display: flex;
+                margin: 0 auto;
+              }
+              .tab {
+                min-width: 60px;
+                min-height: 24px;
+                .MuiTab-wrapper {
+                  padding: 0 10px;
+                }
+              }
+            }
+          }
+        }
+        .donut-chart {
+          margin: 23px auto 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    // Section/Claim Form //
+    .seaction-claimform {
+      padding: 20px 0;
+      .claimform-header {
+        border-bottom: 1px solid $container-border-color;
+        border-top: 1px solid $container-border-color;
+        background-color: $color-white;
+        padding: 0 20px;
+        display: grid;
+        padding: 0 20px;
+        grid-template-columns: 45px 165px;
+        grid-column-gap: 20px;
+        .newtestclaim-btn {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-heading-text-color;
+          background-color: $color-white;
+          border: 1px solid $primary-heading-text-color;
+          height: 35px;
+          line-height: 35px;
+          align-items: center;
+          letter-spacing: 0.01em;
+          padding: 0;
+          text-transform: capitalize;
+          margin: 8px 0;
+          outline: none;
+        }
+      }
+      .claim-inputfields {
+        padding: 20px 20px 0px 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        .input-fields {
+          .input-row-1 {
+            margin-bottom: 10px;
+          }
+          .input-row-1,
+          .input-row-2 {
+            & > input {
+              background: $color-white;
+              border: 1px solid $input-field-border;
+              box-sizing: border-box;
+              border-radius: 3px;
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+              text-indent: 10px;
+              width: 170px;
+              height: 35px;
+              line-height: 14px;
+              outline: none;
+              margin: 0 10px 0 0;
+            }
+            .claim-select {
+              position: relative;
+              .MuiSelect-select {
+                padding: 10px 0 0 0;
+                background: $color-white;
+                border: 1px solid $input-field-border;
+                box-sizing: border-box;
+                border-radius: 3px;
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+                text-indent: 10px;
+                width: 170px;
+                height: 35px;
+                line-height: 14px;
+                outline: none;
+                margin: 0 10px 0 0;
+              }
+              .claim-select-suffix {
+                position: absolute;
+                right: 20px;
+              }
+              .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+                border: none;
+              }
+              .MuiOutlinedInput-notchedOutline {
+                border: none;
+                top: 0;
+                padding: 0;
+              }
+            }
+            .claim-datefield {
+              flex-direction: row;
+              .ant-space-item {
+                margin-bottom: 0 !important;
+              }
+              .date-rangepicker {
+                background: $color-white;
+                border: 1px solid $input-field-border;
+                box-sizing: border-box;
+                border-radius: 3px;
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+                text-indent: 10px;
+                width: 170px;
+                height: 35px;
+                line-height: 14px;
+                outline: none;
+                padding: 0;
+                margin: 0 10px 0 0;
+                padding: 0 10px 0 0;
+                &:hover {
+                  border: 1px solid $input-field-border;
+                  border-right-width: unset;
+                }
+                .ant-picker-input {
+                  & > input {
+                    border-right: none;
+                    font-size: $font-12;
+                    text-indent: 10px;
+                    &:hover {
+                      border-color: $input-field-border;
+                      border-right-width: unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .button-field {
+          margin: 0 0 0 auto;
+          line-height: 60px;
+          .button-search {
+            border: 1px solid $primary-btn-color;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background-color: $color-white;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            width: 75px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: $primary-btn-color;
+            padding: 0;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    // Section/Member Cost share  //
+    .section-membercostshare {
+      .membercostshare-heading {
+        padding: 0 20px;
+        border-bottom: 1px solid $container-border-color;
+        .note-icon {
+          margin: 0 0 0 auto;
+          display: block;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      .costshare-table {
+        padding: 20px;
+        .costsharemini-tab {
+          .mini-tab {
+            width: 541px;
+            .tabs {
+              min-height: 26px;
+              .MuiTabs-flexContainer {
+                display: flex;
+                margin: 0 auto;
+              }
+              .tab {
+                min-width: 60px;
+                min-height: 24px;
+                .MuiTab-wrapper {
+                  padding: 0 10px;
+                }
+              }
+            }
+          }
+        }
+        .costshare-status {
+          margin-top: 20px;
+          & > h5 {
+            font-weight: $font-weight-bold;
+            font-size: $font-16;
+            color: $primary-text-color;
+            margin: 0;
+            line-height: 24px;
+          }
+          .stage-heading {
+            margin-top: 20px;
+          }
+          & > label,
+          p {
+            font-size: $font-16;
+            color: $primary-text-color;
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            line-height: 24px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .basic-list {
+//   display: grid;
+//   grid-template-columns: 75px auto 75px;
+// }
+
+.basic-list-item {
+  display: grid;
+  grid-template-columns: 75px auto 75px;
+
+  .column {
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    color: $primary-text-color;
+    line-height: 40px;
+    margin: 0;
+    text-align: left;
+  }
+  .title {
+    font-weight: $font-weight-bold !important;
+  }
+  .long {
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .right {
+    text-align: right;
+  }
+}
+.basic-list-item.columns2 {
+  grid-template-columns: auto 75px !important;
+}
+
+// Section Member Cost Share Table //
+
+// .section-costshare-container {
+//   .table-container {
+//     border: 1px solid $container-border-color;
+//     .MuiTableHead-root {
+//       background-color: $membercostshare-header-color;
+//       .MuiTableRow-root {
+//         .MuiTableCell-head {
+//           color: $secondary-text-color;
+//           font-size: $font-12;
+//           font-weight: $font-weight-bold;
+//           height: 40px;
+//           line-height: 40px;
+//           padding: 0;
+//           text-align: left;
+//           border-right: 1px solid $container-border-color;
+//         }
+//       }
+//     }
+//     .MuiTableBody-root {
+//       .MuiTableRow-root {
+//         border-bottom: 1px solid $container-border-color;
+//         .MuiTableCell-root,
+//         .columncell-one {
+//           color: $secondary-text-color;
+//           font-size: $font-12;
+//           font-weight: $font-weight-normal;
+//           text-align: left;
+//           height: 40px;
+//           line-height: 40px;
+//           padding: 0;
+//           border-right: 1px solid $container-border-color;
+//         }
+//         .columncell-one {
+//           font-weight: $font-weight-bold;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// Section Member Cost Share Table //
+.done-sections {
+  border-bottom: 1px solid red;
+}

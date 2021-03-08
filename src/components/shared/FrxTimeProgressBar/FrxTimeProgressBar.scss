@@ -1,0 +1,55 @@
+.time-process{
+  &__container {
+    width: 198px;
+    height: 24px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    color: #666666;
+    position: relative;
+    z-index: 1;
+  }
+  
+  &__progress {
+    max-width: 200px;
+    height: 24px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: absolute;
+    left: -1px;
+    
+    &--25 {
+      background: rgba(128, 196, 131, 0.5);
+      border: 1px solid #80C483;
+    }
+
+    &--50 {
+      background: rgba(95, 128, 185, 0.5);
+      border: 1px solid #5F80B9;
+    }
+
+    &--75 {
+      background: rgba(244, 175, 100, 0.5);
+      border: 1px solid #F4AF64;
+    }
+
+    &--100 {
+      background: rgba(231, 98, 98, 0.5);
+      border: 1px solid rgba(246, 90, 28, 0.25);
+    }
+  }
+}

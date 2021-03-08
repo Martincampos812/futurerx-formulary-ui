@@ -1,0 +1,97 @@
+.PlanInformationConfiguration {
+  margin: 10px 0;
+  .planInformationConfiguration-card {
+    .MuiCardHeader-title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 60px;
+      /* identical to box height, or 500% */
+
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      color: #2055b5;
+      padding-left: 15px;
+    }
+    .planInformationConfiguration-card-header {
+      border-bottom: 1px solid#E5E5E5;
+      padding: 0 0 0 15px;
+    }
+    .planInformationConfiguration-card-container {
+      .lable-input-container {
+        max-width: 1200px;
+        margin-left: 15px;
+        .grid-container {
+          .grid-item-container {
+            .grid-items {
+              margin-bottom: 10px;
+              .label-div,
+              .input-div {
+                display: inline-block;
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                min-width: 200px;
+                color: #323c47;
+              }
+              .input-div {
+                text-align: left;
+                background: #ffffff;
+                /* Secondary Gray */
+
+                border: 1px solid #e5e5e5;
+                box-sizing: border-box;
+                border-radius: 3px;
+                min-width: 300px;
+                margin-left: 15px;
+                padding-left: 10px;
+                .input-element {
+                  width: 100%;
+                  text-align: left;
+                  font-family: "Roboto";
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 12px;
+                  line-height: 14px;
+                  min-height: 35px;
+                }
+                .input-multiline {
+                  // min-height: 250px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px;
+      .btn {
+        padding: 6px 20px;
+        width: 78px;
+        height: 35px;
+        background: #ffffff;
+        border: 1px solid #2055b5;
+        box-sizing: border-box;
+        border-radius: 3px;
+        color: #2055b5;
+        text-transform: capitalize;
+      }
+      .btn-save {
+        width: 67px;
+        background: #2055b5;
+        color: #ffffff;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .btn-cancel {
+      }
+    }
+  }
+}

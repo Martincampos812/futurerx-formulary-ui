@@ -1,0 +1,33 @@
+.demographics {
+  width: 608px;
+  height: 100%;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  .member-data > div.contactInfo_hyperlink {
+    width: 80px;
+    margin-right: 370px;
+    font-weight: bold !important;
+    color: #1D54b4;
+    border-bottom: 1px dotted #2055b5;
+    height: 16px;
+  }
+  .member-data > div.contactInfo_hyperlink_first {
+    width: 80px;
+    margin-right: 352px;
+    font-weight: bold !important;
+    color: #1D54b4 !important;
+    border-bottom: 1px dotted #2055b5;
+    height: 16px;
+  }
+}

@@ -1,0 +1,160 @@
+@import "../../../../assets/style.scss";
+.grn-tab-info {
+  padding: 20px;
+  .frx-note-item-root {
+    height: 78px;
+    padding: 20px 0px !important;
+
+    .MuiListItem-root {
+      padding-bottom: 0px;
+    }
+
+    .MuiListItemText-root {
+      margin: 0px 0px;
+    }
+
+    .MuiListItemAvatar-alignItemsFlexStart {
+      margin-top: 3px;
+    }
+
+    .MuiAvatar-root {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      margin: 0px 0px 2px 0px;
+      background-blend-mode: normal;
+    }
+
+    .frx-note-item-root__list-item__content {
+      font-weight: $font-weight-normal;
+      color: $list-text-color;
+      font-size: $font-12;
+      line-height: 16px;
+    }
+
+    .frx-note-item-root__list-item__chip {
+      width: auto;
+      height: 24px;
+      background: $color-white;
+      border: 1px solid $container-border-color;
+      box-sizing: border-box;
+      border-radius: 12px;
+      float: right;
+      margin-top: 8px;
+      margin-bottom: 6px;
+
+      .MuiChip-label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: $font-weight-bold;
+        font-size: $font-12;
+        line-height: 24px;
+        color: $list-chip-text-color;
+      }
+    }
+
+    .frx-note-item-root__list-item {
+      width: 100%;
+      padding: 0px 0px;
+      margin-bottom: 0px;
+      line-height: 20px;
+      font-size: $font-12;
+
+      .frx-note-item-root__list-item__heading {
+        font-weight: 500;
+        width: 58px;
+        height: 20px;
+        color: $list-primary-heading-color;
+      }
+
+      .frx-note-item-root__list-item__date {
+        font-weight: $font-weight-normal;
+        color: $list-date-color;
+        padding-left: 11px;
+      }
+    }
+  }
+
+  // ==========================================================
+
+  .rn__flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 16px;
+    .rn__input-field {
+      background: $white-color;
+      width: 425px;
+      height: 35px;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin: 0 10px 0 20px;
+      padding: 5px 12px 5px 12px;
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      font-size: $font-12;
+      line-height: 16px;
+    }
+    .rn__input-field:focus {
+      outline: none;
+    }
+    .rn__btn {
+      color: #ffffff;
+      background: #2055b5;
+      border: 1px solid #2055b5;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    .MuiButton-root {
+      margin-top: 0;
+      // margin-bottom: 30px;
+    }
+    .MuiButton-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.1px;
+      text-transform: none;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .__rn-container {
+    padding: 0 5px;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    .bg-white,
+    cdh1-mn-container {
+      width: 540px;
+    }
+  }
+  .title,
+  .mb-15 {
+    margin-left: 8px;
+    margin-top: 12px;
+    margin-bottom: 26px !important;
+  }
+  .top-div {
+    .MuiDivider-root {
+      margin-top: 10px;
+      margin-right: 5px;
+      margin-left: 5px;
+      width: 550px;
+      // background: #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+  .MuiDivider-root {
+    width: 550px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../../assets/style.scss";
+
+.calls-grid-root {
+    width: 100%;
+    .frx-grid-container{
+      .frx-grid{
+        .frx-grid__grid-block{
+          .ant-table{
+            .ant-table-container{
+              .ant-table-header{
+                .ant-table-thead{
+                  & > tr{
+                    .ant-table-cell.ant-table-row-expand-icon-cell{
+                      position: sticky;
+                      right: 0;
+                      z-index: 2;
+                      border-left: 1px solid $container-border-color;
+                    }
+                  }
+                }
+              }
+              .ant-table-body{
+                .ant-table-tbody{
+                  .ant-table-row{
+                    .ant-table-cell{
+                      .frx-grid-settings-cell{
+                        display: none;
+                      }
+                    }
+                    .ant-table-row-expand-icon-cell{
+                      position: sticky;
+                      right: 0;
+                      z-index: 2;
+                      background-color: $color-white;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+  

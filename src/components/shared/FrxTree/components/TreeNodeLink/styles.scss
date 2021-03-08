@@ -1,0 +1,21 @@
+.tree-node-link {
+  border: 1px solid #707683;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  &__label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #707683;
+    margin-right: 64px;
+  }
+}

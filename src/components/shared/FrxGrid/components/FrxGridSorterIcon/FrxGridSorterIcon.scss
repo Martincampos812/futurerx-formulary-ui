@@ -1,0 +1,35 @@
+@import "../../../../../assets/colors.scss";
+@import "../../../../../assets/fonts.scss";
+
+.frx-grid__grid-block__table-block {
+  
+    .frx-grid-sorter-icon-root {
+      // .ant-table
+      //   .ant-table-header
+      //   .ant-table-thead
+      //   > tr
+      //   > th
+      //   .ant-table-column-sorter-inner
+      //   .anticon-caret-up {
+      //   display: inline-block;
+      // }
+      // .ant-table
+      //   .ant-table-header
+      //   .ant-table-thead
+      //   > tr
+      //   > th
+      //   .ant-table-column-sorter-inner
+      //   .anticon-caret-down {
+      //   display: inline-block;
+      // }
+      &__sorter-up {
+        position: relative;
+        left: 16px;
+      }
+      &__sorter-down {
+        position: relative;
+        left: 16px;
+      }
+    }
+  
+}

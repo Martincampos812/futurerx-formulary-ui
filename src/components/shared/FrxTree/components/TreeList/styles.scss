@@ -1,0 +1,21 @@
+.tree-list-container {
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    color: #323c47;
+    font-weight: 400;
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 10px;
+  }
+}
+
+.tree-list-circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  margin-right: 6px;
+}

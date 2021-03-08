@@ -1,0 +1,386 @@
+@import "../../../../assets/style.scss";
+@import "../../../../assets/colors.scss";
+@import "../../../../assets/fonts.scss";
+
+.custom-panel-grid-root {
+  .frx-grid-settings-header-cell .frx-grid-settings-header-cell__settings-icon {
+    display: none;
+  }
+
+  .frx-grid-container
+    .frx-grid
+    .frx-grid__grid-block
+    .frx-grid__grid-block__table-block
+    .ant-table
+    .ant-table-header
+    .ant-table-thead
+    > tr
+    > th:nth-child(1) {
+    border-right: none;
+  }
+  .ant-table {
+    .ant-table-container {
+      .ant-table-header {
+        // border-radius: 5px 5px 0 0;
+        border-radius: 0;
+        & > table {
+          .ant-table-thead {
+            background-color: #f9f9f9;
+            height: 40px;
+            & > tr {
+              & > th {
+                border-right: 1px solid $container-border-color !important;
+                padding: 0 8px !important;
+                text-align: center;
+                .ant-table-filter-trigger-container {
+                  display: none;
+                }
+              }
+              & > th:nth-child(1) {
+                border-right: none !important;
+              }
+            }
+          }
+        }
+      }
+      .ant-table-body {
+        & > table {
+          border-collapse: separate !important;
+          border-spacing: 0 !important;
+          .ant-table-tbody,
+          .ant-table-row {
+            .ant-table-cell {
+              border: 1px solid $container-border-color;
+              // border-right: none;
+              border-radius: 0;
+              border-top: none;
+              padding: 0 20px;
+              height: 40px;
+              color: $grid-text-color;
+            }
+            .ant-table-cell:first-child {
+              text-align: center;
+              // border-radius: 0;
+            }
+            .ant-table-cell:last-child {
+              border-right: 1px solid $container-border-color;
+              // border-radius: 0;
+            }
+            .ant-table-cell:nth-child(1n + 4) {
+              text-align: center;
+            }
+            .ant-table-cell {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .frx-grid-container
+    .frx-grid
+    .frx-grid__grid-block
+    .frx-grid__grid-block__table-block
+    .ant-table
+    .ant-table-body
+    .ant-table-tbody
+    > tr
+    > td {
+    border-right: 1px solid $container-border-color;
+    border-radius: 0;
+  }
+
+  .ant-table-row {
+    .ant-table-cell {
+      border-right: 1px solid balck;
+    }
+  }
+
+  z-index: 999 !important;
+  .frx-mini-tabs-root {
+    position: unset;
+    // margin: 20px 0px 0px 20px;
+    border-bottom: 0px solid $container-border-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    background: $color-white;
+    padding: 0;
+    min-width: 122px;
+    min-height: 30px;
+    margin-top: -9px;
+    .frx-mini-tabs-root__tabs {
+      background-color: $color-white;
+      box-shadow: none;
+      border: 1px solid #2055b5;
+      flex-direction: row;
+      border-radius: 4px;
+      padding: 3px;
+      min-height: 24px;
+      min-width: 61px;
+      width: max-content;
+      .frx-mini-tabs-root__tabs__tab {
+        padding: 0;
+        font-size: $font-12;
+        min-height: 24px;
+        min-width: 61px;
+        font-weight: $font-weight-bold;
+        color: $primary-text-color;
+        text-transform: capitalize;
+        opacity: unset;
+        border-radius: 2px;
+        .MuiTab-wrapper {
+          text-transform: capitalize;
+          font-size: $font-12;
+          font-weight: $font-weight-bold;
+          line-height: 24px;
+          padding: 0 10px;
+        }
+      }
+      .frx-mini-tabs-root__tabs__tab.Mui-selected {
+        background-color: $button-tab-active-background-color;
+        .MuiTab-wrapper {
+          color: $color-white;
+          // border: 1px solid $button-tab-active-background-color;  ## border was creating alignment issue removing will resolve alignment issue
+          border-radius: 2px;
+        }
+      }
+      .frx-mini-tabs-root__tabs__tab:first-child {
+        margin-left: 0px;
+      }
+      .frx-mini-tabs-root__tabs__tab:last-child {
+        margin-right: 0px;
+      }
+
+      .MuiTabs-indicator {
+        display: none !important;
+      }
+    }
+
+    .dev-status.wip {
+      display: none;
+    }
+    .frx-mini-tabs-root__active-line {
+      position: unset;
+    }
+  }
+  .MuiDialogContent-root {
+    padding: 20px 10px 0px 9px;
+    width: 100%;
+  }
+  .MuiDialog-paper {
+    min-width: 880px;
+    min-height: 600px;
+    border-radius: 5px !important;
+    .frx-grid-container {
+      max-width: 860px;
+      .MuiGrid-container {
+        width: 100% !important;
+      }
+
+      .noSpacing {
+        .simple-search__first-row {
+          margin: 0px 0px;
+          margin-top: -20px;
+        }
+        .simple-search__input {
+          border-top: 0px;
+        }
+      }
+      .simple-search__first-row {
+        margin: 10px 0px;
+      }
+      .simple-search__input {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        margin-top: 0px;
+      }
+      .frx-grid-pagination {
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        // margin-left: -30px;
+        left: 0;
+        background-color: #fff;
+        border-radius: 0px;
+        grid-template-columns: auto auto auto auto auto auto;
+        .frx-grid-pagination__items-per-page {
+          position: absolute;
+          right: 20px;
+        }
+      }
+      .frx-grid-settings-header-cell {
+        display: none;
+      }
+      .closeIcon {
+      }
+      .openIcon {
+        display: none;
+      }
+      .selt {
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+      }
+      .not-selected {
+        display: none;
+      }
+      .expand-selected {
+        min-width: 860px;
+        max-width: 860px;
+
+        .ant-table-cell {
+          // border: 1px solid #e5e5e5 !important;
+          padding: 0px !important;
+          // column-span: 6;
+        }
+        .ant-table-expanded-row-fixed {
+          padding: 0px;
+          min-height: 230px;
+          min-width: 860px;
+          max-width: 860px;
+          .frx-note-list-container-root {
+            // background-color: red;
+            // min-width: 861px;
+            width: 100%;
+            .MuiAvatar-circle {
+              width: 31px;
+              height: 31px;
+              img {
+                margin: 0px;
+              }
+            }
+          }
+          // textarea {
+          //     // background-color: red;
+          //     height: 35px !important;
+          //     min-width: 735px !important;
+          //     background: #ffffff;
+          //     border: none;
+          //     box-shadow: 0px 0px 0px 1px #e5e5e5 inset;
+          //     box-sizing: border-box;
+          //     border-radius: 3px;
+          //     resize: none;
+          //     padding: 11px 0px 8px 10px;
+          //     font-style: normal;
+          //     font-weight: normal;
+          //     font-size: 12px;
+          //     line-height: 16px;
+          //     /* identical to box height, or 133% */
+
+          //     color: #999999;
+          //     // margin: 0px 0px 0px 10px !important;
+          // }
+        }
+        & ~ tr {
+          // pointer-events: none;
+        }
+      }
+      .ant-table-body {
+        // margin-top: 10px;
+
+        table {
+          table-layout: auto;
+
+          .ant-table-tbody {
+            max-height: 80%;
+            .ant-table-expanded-row {
+              td {
+                padding: 0px;
+              }
+            }
+            tr {
+              td:first-child {
+                padding-right: 5px !important;
+              }
+              &:hover > td {
+                background-color: inherit;
+              }
+              .ant-table-cell-fix-left,
+              .ant-table-cell-fix-right {
+                background-color: inherit;
+              }
+            }
+            table {
+              .ant-table-body {
+                table-layout: auto;
+              }
+            }
+          }
+        }
+      }
+      .ant-table-cell {
+        // padding:0px!important;
+        padding: 0px 24px 0px 20px !important;
+        text-align: left;
+        // min-width: 152px;
+        img {
+          margin-right: 10px;
+        }
+        .ant-table-filter-trigger-container {
+          min-width: 30px;
+        }
+      }
+      .frx-grid-cell {
+        font-size: 12px;
+        font-family: Roboto;
+        line-height: 18px;
+        // padding: 0px!important
+        &--entry-component {
+          cursor: pointer;
+          color: #2055b5;
+          font-weight: 700;
+          line-height: 14.06px;
+          border-bottom: 1px solid transparent;
+          border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+          border-image-repeat: repeat;
+          border-image-slice: 4 4 4 4;
+        }
+      }
+      .frx-grid {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        .frx-grid__grid-block {
+          .frx-grid__grid-block__table-block {
+            .ant-table {
+              .ant-table-header {
+                border-radius: 5px;
+                .ant-table-thead {
+                  tr {
+                    th:first-child {
+                      border-right: 0px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .borderTop {
+    padding: 0px 0px;
+    &::before {
+      content: "";
+      background-color: #fff;
+      border-top: 1px solid #e5e5e5;
+      height: 10px;
+      width: 100%;
+      position: absolute;
+      top: 119px;
+      right: 0;
+    }
+    .frx-grid {
+      margin-top: 30px !important;
+    }
+  }
+  .frx-dialog-root__heading {
+    h2 {
+      font-weight: 700;
+    }
+  }
+}

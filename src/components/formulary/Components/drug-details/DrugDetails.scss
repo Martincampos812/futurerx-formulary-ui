@@ -1,0 +1,117 @@
+@import "../../../../assets/style.scss";
+
+.drug-details {
+  //   width: 100%;
+  width: 100%;
+  height: 100%;
+  //   padding-bottom: 50px;
+
+  overflow: hidden;
+  .drug-details-main-grid {
+    .drug-details-grid-item:not(:last-child) {
+      border-right: 1px solid #e5e5e5;
+      .drug-details-grid-item-list {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 40px;
+
+        color: #707683;
+
+        .Mui-selected {
+          color: rgba(0, 0, 0, 0.85);
+        }
+      }
+    }
+
+    .drug-details-grid-item {
+      padding-right: 0;
+      padding-top: 10px;
+      .drug-details-grid-item-list {
+        cursor: pointer;
+        .drug-details-item-list-type {
+          height: 40px;
+          padding: 0 20px;
+          font-size: $font-16;
+          font-weight: $font-weight-normal;
+          color: #707683;
+          line-height: 40px;
+          //   padding-top: 5px;
+          //   padding-bottom: 5px;
+        }
+        .Mui-selected{
+          background-color: #EEF3F7;
+          color: #323C47;
+        }
+      }
+    }
+
+    .drug-details-grid-item-details-container {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 20px 37.5px 51px 37.5px;
+      //   height: 218px;
+      .drug-details-grid-item-heading {
+        color: #707683;
+        font-size: $font-16;
+        font-weight: $font-weight-bold;
+      }
+    }
+    .drug-details-grid-item-details-container
+      > .drug-details-grid-item-summary {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #707683;
+    }
+  }
+
+  .drug-details-grid-drug-image-container {
+    text-align: center;
+    padding: 10px 0 24px 0;
+    .drug-details-drug-image {
+      padding-top: 10%;
+    }
+    .drug-details-drug-image-note {
+      font-family: "Roboto";
+      font-style: italic;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 12px;
+      margin: 33px 0 0 0;
+    }
+  }
+}
+
+.frx-Drug-Details-Dialogpopup {
+  .MuiDialog-paper{
+    width: 1000px; 
+    margin: 0 auto;
+  }
+  .MuiDialogContent-root {
+    padding: 0;
+    // background-color: red;
+  }
+
+  .frx-dialog-root__heading{
+    height: 64px;
+    .MuiTypography-root {
+      color: #707683;
+      text-transform: capitalize;
+      font-size: $font-16;
+      font-weight: $font-weight-normal;
+      line-height: 64px;
+    }
+  } 
+  // .frx-dialog-root__close-icon {
+  //   display: none;
+  // }
+  .frx-dialog-root__btn-actions {
+    // display: none;
+  }
+}

@@ -1,0 +1,129 @@
+@import "../../../assets/colors.scss";
+@import "../../../assets/fonts.scss";
+
+.stats-summary-root {
+  min-height: 125px;
+
+  .stats-summary-box {
+    min-height: 90px;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    max-width: 750px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .stats-summary-heading {
+    margin-bottom: 15px;
+    // Typography
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $primary-text-color;
+    margin: 0;
+  }
+
+  .stats-summary-item {
+    height: 100%;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 17px 10px 12px 21px;
+  }
+
+  .ss-number {
+    margin-top: 5px;
+    // margin-left: 20px;
+    // TYpography
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    height: 40px;
+    letter-spacing: 0px;
+		text-align: left;
+		cursor: pointer;
+  }
+
+  .ss-label {
+    // margin-top: 15px;
+    // margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // TYpography
+    color: $primary-text-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: max-content;
+    max-width: 100%;
+    cursor: pointer;
+  }
+
+  .ss-rectangle {
+    height: 54px;
+    width: 2px;
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    background-color: #e5e5e5;
+  }
+
+  .ss-tooltiptext {
+    visibility: hidden;
+    // width: 120px;
+    background-color: $color-white;
+    color: $primary-text-color;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 9999;
+    left: 50px;
+  }
+
+  .ss-label:hover .ss-tooltiptext {
+    visibility: visible;
+  }
+}
+.FrxStatsSummary-tooltip {
+  color: black !important;
+  padding: 24px 37px !important;
+  font-family: Roboto!important;
+  font-style: normal!important;
+  font-weight: normal!important;
+  font-size: 14px!important;
+  line-height: 16px!important;
+
+  color: #666666!important;
+  text-transform: capitalize !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e5e5 !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 5px !important;
+  margin: 5px 0px!important;
+}
+
+.FrxStatsSummary-arrow{
+  color: #ffffff !important;
+  &::before{
+    border: 1px solid #e5e5e5 !important;
+  }
+}

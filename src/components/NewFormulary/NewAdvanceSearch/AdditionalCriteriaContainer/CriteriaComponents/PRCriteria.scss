@@ -1,0 +1,111 @@
+.root-pr-limit-settings {
+  &__add-new-form-action {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  &__add-new-form-action-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #707683;
+    margin-left: 4.8px;
+    text-decoration: underline dashed;
+  }
+
+  .input-field-group {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 20px;
+    }
+
+    &__select-all-action {
+      flex-direction: row;
+      padding: 3px 10px;
+      width: auto;
+      height: 20px;
+      background: #1d54b4;
+      border-radius: 5px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    &__label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.01em;
+      color: #323c47;
+    }
+
+    &__radio-field-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 10px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__radio-field {
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
+      .checkbox-label {
+        cursor: pointer;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #323c47;
+        padding: 0px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .Button {
+    float: right;
+    align-items: center;
+    text-align: center;
+    width: 71px;
+    height: 34px;
+    background: #1f55b6;
+    border-radius: 5px;
+  }
+}
+
+.tab-prremove {
+  .ant-table-wrapper {
+    width: 480px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,282 @@
+.Pharmacy {
+  position: relative;
+  width: 100%;
+  min-width: 1160px;
+  height: 163px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  .Pharmacy-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    width: 242px;
+    /* identical to box height */
+    height: 14px;
+    color: #2054b3;
+    margin-bottom: 29px;
+  }
+  .clr-btn-pharmacy {
+    position: absolute;
+    right: 10px;
+    button {
+      vertical-align: middle;
+      .MuiButton-label {
+        margin: 0px;
+      }
+    }
+  }
+  .searchButton {
+    button {
+      background: #2055b5;
+      border: 1px solid #2055b5;
+      .MuiButton-label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 35px;
+        /* identical to box height, or 292% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.PharmacyMapbox-container {
+  display: grid;
+  // grid-template-columns: 777px 373px;
+  grid-template-columns: 68% 29.5%;
+  column-gap: 10px;
+  grid-template-areas: "m t";
+  position: relative;
+  min-width: 100%;
+  height: 453px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 20px;
+  // overflow: overlay;
+  // &::-webkit-scrollbar {
+  //   width: 6px;
+  //   height: 6px;
+  // }
+  // /* Track */
+  // &::-webkit-scrollbar-track {
+  //   box-shadow: inset 0 0 0px #999999;
+  //   border-radius: 3px;
+  // }
+  // /* Handle */
+  // &::-webkit-scrollbar-thumb {
+  //   background: #999999;
+  //   border-radius: 3px;
+  // }
+  // /* Handle on hover */
+  // &::-webkit-scrollbar-thumb:hover {
+  //   background: #999999;
+  // }
+  .map-container {
+    grid-area: m;
+    min-width: 777px;
+    height: 453px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px !important;
+    display: block;
+
+    div {
+      border-radius: 5px;
+    }
+  }
+  .alignLeft {
+    grid-area: m !important;
+    max-width: 373px;
+  }
+  .map-container-info {
+    grid-area: t;
+    height: 453px;
+    min-width: 373px;
+    width: 100%;
+    .map-data {
+      min-width: 373px;
+      width: 100%;
+      height: 453px;
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: #666666;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px !important;
+    }
+    .member-data {
+      padding: 10px;
+      .row {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        .highlight {
+          width: max-content !important;
+          min-width: max-content !important;
+          max-width: max-content !important;
+          color: #1f55b6 !important;
+          border-image: url("data:image/svg+xml,%3Csvg width='74' height='2' viewBox='0 0 74 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.542969' y1='0.993408' x2='73.4989' y2='0.993408' stroke='%231F55B6' stroke-dasharray='1 1'/%3E%3C/svg%3E%0A");
+          border-bottom: 1px solid transparent;
+          border-image-repeat: repeat;
+          border-image-slice: 4 4 4 4;
+          cursor: pointer;
+        }
+        div {
+          &:first-child {
+            min-width: 132px;
+            width: 132px;
+            display: inline-block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #666666;
+            vertical-align: top;
+          }
+          &:last-child {
+            min-width: 122px;
+            width: 122px;
+            display: inline-block;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 14px;
+            color: #666666;
+            margin-left: 7px;
+          }
+        }
+        .timeRow-root {
+          min-width: 141px !important;
+          width: 141px !important;
+          .timeRow {
+            display: grid;
+            grid-template-columns: 20px 101px;
+            column-gap: 20px;
+            width: 100%;
+            div {
+              &:first-child {
+                min-width: 20px;
+                width: 20px;
+                display: inline-block;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 9px;
+                line-height: 24px;
+                text-align: right;
+                text-transform: capitalize;
+                color: #666666;
+                vertical-align: top;
+              }
+              &:last-child {
+                min-width: 101px;
+                width: 101px;
+                display: inline-block;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #666666;
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+        .lastDay {
+          margin-left: -6px;
+        }
+        .closeDay {
+          margin-left: -5px !important;
+        }
+      }
+    }
+    // .map-data > div.member-data {
+    //   line-height: 24px;
+    // }
+    // .member-data > div.pharmacyIdText {
+    //   color: #1d54b4;
+    //   width: 75px;
+    //   height: 20px;
+    //   margin-right: 135px;
+    //   border-bottom: 1px dotted;
+    //   // padding-left: 30px;
+    //   font-weight: bold !important;
+    // }
+    // .member-data > div.npiIdText {
+    //   color: #1d54b4;
+    //   width: 75px;
+    //   height: 20px;
+    //   margin-right: 140px;
+    //   border-bottom: 1px dotted;
+    //   // padding-left: 30px;
+    //   font-weight: bold !important;
+    // }
+    // div.keyValue {
+    //   width: 50% !important;
+    //   margin-left: 20px;
+    // }
+    // div.value {
+    //   padding-left: 30px;
+    // }
+    .hours-container {
+      position: relative;
+      left: 19%;
+      top: -7%;
+    }
+    .hoursBox {
+      display: flex;
+    }
+    .monthsTitle {
+      min-width: 40px;
+      font-size: 9px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+    .timeTitle {
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
+}
+.info-button {
+  position: absolute;
+  right: 35px;
+  background: #ffffff;
+  border: 1px solid #1d54b4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  color: #1d54b4;
+}
+
+@media only screen and (min-width: 1600px) {
+  .PharmacyMapbox-container {
+    grid-template-columns: 68% 31.5%;
+  }
+}

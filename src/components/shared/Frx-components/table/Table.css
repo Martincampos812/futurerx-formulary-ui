@@ -1,0 +1,45 @@
+.Table {
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.Table-Title {
+  background: #eaf0f6;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #6f6e6e;
+  width: 100%;
+  padding: 5px;
+}
+.customers {
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+
+.customers tbody,
+td,
+.customers thead,
+th {
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+}
+
+.customers tr:nth-child(even) {
+  background: #eaf0f6;
+}
+
+.customers tr:hover {
+  background-color: #ddd;
+}
+
+.customers th {
+  text-align: left;
+  background: #1d54b4;
+  color: white;
+  width: 20xp;
+}

@@ -1,0 +1,53 @@
+export const getEligibilityCOBGridData = () => {
+    return [
+      {
+        id: 1,
+        key: 1,
+        beginDate: "06/22/2020",
+        endDate: "06/22/2020",
+        flag: "Y",
+        personCode: "01",
+        ohiID: "K52L19DS3",
+        bin:"1222",
+        pcn:"3222",
+        groupId:"4222",
+      },
+      {
+        id: 2,
+        key: 2,
+        beginDate: "06/22/2020",
+        endDate: "06/22/2020",
+        flag: "Y",
+        personCode: "01",
+        ohiID: "K52L19DS3",
+        bin:"1222",
+        pcn:"3222",
+        groupId:"4222",
+      },
+      {
+        id: 3,
+        key: 3,
+        beginDate: "06/22/2020",
+        endDate: "06/22/2020",
+        flag: "Y",
+        personCode: "01",
+        ohiID: "K52L19DS3",
+        bin:"1222",
+        pcn:"3222",
+        groupId:"4222",
+      },
+      {
+        id: 4,
+        key: 4,
+        beginDate: "06/22/2020",
+        endDate: "06/22/2020",
+        flag: "Y",
+        personCode: "01",
+        ohiID: "K52L19DS3",
+        bin:"1222",
+        pcn:"3222",
+        groupId:"4222",
+      },
+    ];
+  };
+  

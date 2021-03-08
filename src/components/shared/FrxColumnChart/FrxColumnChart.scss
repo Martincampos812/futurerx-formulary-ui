@@ -1,0 +1,157 @@
+.FrxColumnChart-root {
+    background: #ffffff;
+    min-height: 470px;
+    padding: 21px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    .graphArea {
+        width: 100%;
+        display: grid;
+        float: left;
+        grid-template-columns: repeat(12, auto);
+        min-height: 380px;
+        column-gap: 10px;
+        text-align: center;
+        height: calc(100% - 68px);
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        .unSelected {
+            span > button {
+                opacity: 1;
+                background: #eef3f7 !important;
+            }
+            svg {
+                opacity: 1;
+            }
+        }
+        .Selected {
+            span > button {
+                background-color: #2055b5 !important;
+                color: #ffffff;
+                .MuiButton-label {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 20px;
+                    /* identical to box height, or 167% */
+
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+
+                    /* Background – White */
+
+                    color: #ffffff !important;
+                }
+            }
+        }
+        .barDiag {
+            min-width: 98px !important;
+            span {
+                button {
+                    min-width: 94px !important;
+                    min-height: 26px !important;
+                    border-radius: 5px !important;
+                    border: none;
+                    .MuiButton-label {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 20px;
+                        /* identical to box height, or 167% */
+
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+
+                        /* Text – Medium Grey */
+
+                        color: #707683;
+                    }
+                }
+            }
+            .barlabel {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                /* identical to box height, or 167% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+
+                /* Text – Medium Grey */
+
+                color: #707683;
+            }
+            .ToolTip {
+                margin: -180px 0px 0px -55px;
+                height: 140px;
+                display: none!important;
+            }
+        }
+    }
+    .filterArea {
+        position: relative;
+        min-height: 30px;
+        display: grid;
+        justify-content: right;
+        align-content: flex-end;
+        grid-template-columns: 93px 93px 93px;
+        column-gap: 3px;
+        margin-bottom: 30px;
+        button.unfiltered {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            box-sizing: border-box;
+            border-radius: 5px;
+            .MuiButton-label {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                /* identical to box height, or 167% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+
+                /* Text – Light Grey */
+
+                color: #aaaaaa;
+            }
+        }
+        button.filtered {
+            border-radius: 5px;
+            .MuiButton-label {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 20px;
+                /* identical to box height, or 167% */
+
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+
+                /* Background – White */
+
+                color: #ffffff;
+            }
+        }
+    }
+}

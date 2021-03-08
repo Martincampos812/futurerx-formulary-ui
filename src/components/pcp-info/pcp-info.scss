@@ -1,0 +1,46 @@
+.pcpsummary {
+    width: 608px;
+    height: 229px !important;
+    margin-top: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    color: #666666;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .pcp-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  
+    margin-bottom: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  
+  .pcp-data > div.keyValue {
+    width: 30%;
+  }
+
+  .keyValue_padding_left{
+      padding-left: 10px;
+  }
+  
+  .value {
+    width: 100%;
+    // padding-left: 20px;
+    font-weight: bold !important;
+  }
+  
+  

@@ -1,0 +1,55 @@
+.pie-chart-root {
+  width: 100%;
+  height: 100%;
+  min-width: 202px;
+  min-height: 202px;
+  text-align: center;
+  cursor: default;
+}
+
+.step--done__text {
+  // text-decoration-line: underline;
+  // text-decoration-style: dotted;
+  // text-decoration-color: red;
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.step--active__text {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.Arc-tooltip {
+  color: black !important;
+  padding: 22px 35px !important;
+  font-family: Roboto !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+
+  color: #666666 !important;
+  text-transform: capitalize !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e5e5 !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 5px !important;
+  margin: 0px 5px !important;
+
+}
+.circle-tooltip {
+  margin: 0px 20px !important;
+}
+.Arc-arrow {
+  color: #ffffff !important;
+  &::before {
+    border: 1px solid #e5e5e5 !important;
+  }
+}

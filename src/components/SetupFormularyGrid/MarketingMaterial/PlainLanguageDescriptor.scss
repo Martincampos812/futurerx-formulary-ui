@@ -1,0 +1,104 @@
+.plain-language-container {
+  padding: 15px 0px;
+}
+
+.list-wrapper label {
+  display: block;
+  font-size: 12px;
+  color: #707683;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.list-name-wrapper {
+  display: flex;
+}
+
+.list-wrapper input {
+  width: 270px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+}
+
+.list-dropdown {
+  width: 270px !important;
+}
+
+.list-wrapper .create-list-btn button {
+  font-size: 12px;
+  color: #ffffff;
+  background: #1f55b6;
+  border-radius: 5px;
+  width: 99px;
+  height: 34px;
+  margin-top: 24px;
+  margin-right: 0px;
+}
+
+.apply-btn button {
+  font-size: 12px;
+  color: #ffffff;
+  background: #1f55b6;
+  border-radius: 5px;
+  width: 71px;
+  height: 34px;
+  margin-top: 24px;
+  margin-right: 8px;
+}
+
+.clone-btn button {
+  margin-right: 1px !important;
+}
+
+.plain-language-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.75fr;
+  border: 1px solid #e5e5e5;
+  margin: 50px 0px;
+}
+
+.plain-border-bottm {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.plain-headings {
+  padding: 15px;
+  background: #f9f9f9;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #707683;
+}
+
+.plain-language-grid-container input {
+  width: 197px !important;
+}
+
+.plain-category,
+.plain-category-desc,
+.plain-class {
+  border-right: 1px solid #e5e5e5;
+}
+
+.plain-text {
+  padding: 13px 15px;
+  font-size: 12px;
+  line-height: 13px;
+  color: #323c47;
+  text-transform: uppercase;
+}
+
+.plain-input {
+  padding: 3px;
+}
+
+.plain-class-desc input {
+  width: 320px !important;
+}
+
+.plain-height {
+  height: 42px;
+}

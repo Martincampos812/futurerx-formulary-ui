@@ -1,0 +1,9 @@
+.notes-pop-over {
+  z-index: 9999;
+  min-width: 400px;
+  min-height: 380px;
+  border: 1px solid black;
+  background-color: #fff;
+  color: black;
+  overflow-y: auto;
+}

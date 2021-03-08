@@ -1,0 +1,78 @@
+.test-claims-grid-root {
+  width: 100%;
+  .frx-grid-container {
+    .clear-btn-grid {
+      position: absolute;
+      right: 10px;
+      button {
+        vertical-align: middle;
+        .MuiButton-label {
+          margin: 0px;
+        }
+      }
+    }
+    .clr-testClaims-btn {
+      position: absolute;
+      right: 10px;
+      button {
+        vertical-align: middle;
+        .MuiButton-label {
+          margin: 0px;
+        }
+      }
+    }
+    .claims-search {
+      .claims-search__input--date {
+        width: 110px !important;
+        .ant-picker-input {
+          input {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            min-width: 53px;
+            line-height: 14px;
+            color: #999999;
+            max-width: 90%;
+          }
+          .ant-picker-suffix {
+            // width: 18px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .frx-grid{
+      .frx-grid__grid-block{
+        padding: 10px 0 20px 0;
+      }
+    }
+  }
+}
+
+.advanced-search-calls-grid {
+  width: 100%;
+  .frx-grid-container {
+    .frx-grid {
+      .frx-grid__grid-block {
+        .ant-table {
+          .ant-table-container {
+            .ant-table-body {
+              .ant-table-tbody {
+                .ant-table-row {
+                  .ant-table-cell {
+                    .frx-grid-settings-cell {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ant-table-container table > thead > tr:first-child th:first-child {
+  min-width: 50px;
+}

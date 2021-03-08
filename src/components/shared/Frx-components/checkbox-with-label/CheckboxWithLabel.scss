@@ -1,0 +1,13 @@
+.checkbox-with-label {
+  margin-bottom: 4px;
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #707683;
+  }
+}

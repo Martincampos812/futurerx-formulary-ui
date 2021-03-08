@@ -1,0 +1,345 @@
+.MapView-root {
+  display: grid;
+  grid-template-columns: auto 373px;
+  grid-template-areas: "m i";
+  column-gap: 10px;
+  width: 100%;
+  min-width: 1200px;
+  margin-top: 20px;
+  // overflow: overlay;
+  .MapView-root__mapbox {
+    width: 100%;
+    height: 597px;
+    min-width: 737px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    display: block;
+    // padding: 1px;
+    // box-shadow: inset 0px 0px 0px 1px #E5E5E5;
+    // grid-area: m;
+    div {
+      border-radius: 5px;
+    }
+  }
+  .MapView-root__mapbox_info {
+    width: 100%;
+    min-width: 373px;
+    display: block;
+    grid-area: i;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    // overflow: scroll;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0px #c4c4c4;
+      border-radius: 3px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #c4c4c4;
+      border-radius: 3px;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #c4c4c4;
+    }
+    .MapView-root__mapbox_info_cost {
+      min-height: 249px;
+      border-bottom: 1px solid #e5e5e5;
+
+      .MapView-root__mapbox_info_cost_heading {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px 20px 17px 20px;
+        div {
+          &:first-child {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            color: #323c47;
+          }
+          &:last-child {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: right;
+            color: #323c47;
+          }
+        }
+      }
+
+      .MapView-root__mapbox_info_cost_title {
+        display: flex;
+      }
+      .MapView-root__mapbox_info_cost_title > div {
+        width: 68px;
+        height: 14px;
+        margin-left: 48px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #707683;
+      }
+      .MapView-root__mapbox_info_cost_title > div + div {
+        width: 68px;
+        height: 14px;
+        margin-left: 169px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #707683;
+      }
+      .MapView-root__mapbox_info_data {
+        // display: flex;
+        .row {
+          display: grid;
+          grid-template-columns: auto auto;
+          column-gap: 45px;
+          width: 100%;
+          padding: 0px 20px 0px 20px;
+          margin-bottom: 22px;
+          &:first-child {
+            text-transform: uppercase;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #707683;
+            margin-bottom: 16px;
+            letter-spacing: 0.2px;
+
+            .left {
+              padding-left: 28px;
+            }
+          }
+          &:last-child {
+            margin-bottom: 16px;
+          }
+          .left {
+            min-width: 190px;
+            width: 100%;
+            font-family: Roboto !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-size: 12px !important;
+            line-height: 14px !important;
+            /* identical to box height */
+
+            /* Text Black */
+
+            color: #323c47;
+            .input--checkbox {
+              display: flex;
+              align-items: center;
+              font-family: Roboto !important;
+              font-style: normal !important;
+              font-weight: normal !important;
+              font-size: 12px !important;
+              line-height: 14px !important;
+              & + span {
+                padding: 0px 10px;
+              }
+              
+              .ant-checkbox {
+                margin-right: 4px;
+              }
+              .ant-checkbox-inner {
+                border: 2px solid #d5d5d5;
+                box-sizing: border-box;
+                border-radius: 4px;
+                // padding: 4.8px 3.5px 4.5px 3.7px;
+                &::after {
+                  left: 3.7px;
+                  top: 0px;
+                  width: 5px;
+                  height: 10px;
+                  border: solid white;
+                  border-width: 0 2px 2px 0;
+                  -webkit-transform: rotate(45deg);
+                  -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
+                  /* Rectangle 5.4 */
+                }
+                // background-color: #1D54B4;
+              }
+              .ant-checkbox-checked .ant-checkbox-inner {
+                border: 2px solid #1d54b4;
+                box-sizing: border-box;
+                border-radius: 4px;
+                background-color: #1d54b4;
+              }
+            }
+          }
+          .right {
+            min-width: 68px;
+            width: 100%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            /* identical to box height */
+
+            text-align: right;
+
+            /* Text Black */
+
+            color: #323c47;
+          }
+        }
+      }
+      // .MapView-root__mapbox_info_data > div {
+      //   margin-left: 20px;
+      // }
+      // .MapView-root__mapbox_info_data > div + div > div {
+      //   margin-left: 75px;
+      //   margin-top: 11px;
+      // }
+      .offer-title {
+        margin-left: 48px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #707683;
+        margin-bottom: 16px;
+      }
+      .flu_short {
+        display: flex;
+        margin-left: 20px;
+      }
+      .drugnames--checkbox {
+        height: 35px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        margin-left: 1px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: #666666;
+        & + span {
+          padding: 0px 10px;
+        }
+        .ant-checkbox-inner {
+          border: 2px solid #d5d5d5;
+          box-sizing: border-box;
+          border-radius: 4px;
+        }
+      }
+    }
+    .MapView-root__mapbox_info_pharmacy_details {
+      // position: absolute;
+      height: 347px;
+      .member-data {
+        // padding: 0px;
+        padding: 20px 30px;
+        margin-bottom: 0px;
+        .row {
+          display: grid;
+          margin-bottom: 15px;
+          grid-template-columns: auto auto;
+          .oprTitle {
+            vertical-align: top;
+            padding-top: 5px;
+          }
+          .highlight {
+            width: max-content !important;
+            min-width: max-content !important;
+            max-width: max-content !important;
+            color: #1f55b6 !important;
+            border-image: url("data:image/svg+xml,%3Csvg width='74' height='2' viewBox='0 0 74 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.542969' y1='0.993408' x2='73.4989' y2='0.993408' stroke='%231F55B6' stroke-dasharray='1 1'/%3E%3C/svg%3E%0A");
+            border-bottom: 1px solid transparent;
+            border-image-repeat: repeat;
+            border-image-slice: 4 4 4 4;
+          }
+          div {
+            &:first-child {
+              min-width: 132px;
+              width: 132px;
+              display: inline-block;
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              color: #666666;
+              vertical-align: top;
+            }
+            &:last-child {
+              min-width: 122px;
+              width: 122px;
+              display: inline-block;
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 12px;
+              line-height: 14px;
+              color: #666666;
+              margin-left: 7px;
+            }
+          }
+          .timeRow-root {
+            min-width: 141px !important;
+            width: 141px !important;
+            .timeRow {
+              display: grid;
+              grid-template-columns: 20px 101px;
+              column-gap: 20px;
+              width: 100%;
+
+              div {
+                &:first-child {
+                  min-width: 20px;
+                  width: 20px;
+                  display: inline-block;
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 9px;
+                  line-height: 24px;
+                  text-align: right;
+                  text-transform: capitalize;
+                  color: #666666;
+                  vertical-align: top;
+                }
+                &:last-child {
+                  min-width: 101px;
+                  width: 101px;
+                  display: inline-block;
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 12px;
+                  line-height: 24px;
+                  text-transform: uppercase;
+                  color: #666666;
+                }
+              }
+              &:last-child {
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

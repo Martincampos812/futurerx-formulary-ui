@@ -1,0 +1,125 @@
+@import "../../../../../../../assets/style.scss";
+
+.frx-override-result-root {
+  z-index: 0 !important;
+}
+.frx-override-result-root .MuiDialogContent-root {
+  max-width: none !important;
+}
+.override-container {
+  width: 765px;
+  height: 250px;
+  padding-top: 0px;
+  .override-wrapper {
+    margin-top: 10px;
+  }
+  .version-grid-date-wrapper {
+    display: flex;
+
+    .form {
+      margin-right: 60px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: #707683;
+      line-height: 20px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    span {
+      color: #999999;
+      margin-left: 3px;
+    }
+  }
+
+  .label-wrapper {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-transform: none !important;
+  }
+
+  .override-search__input {
+    position: relative;
+    float: left;
+    padding: 7px 10px;
+    width: 245px;
+    margin-right: 10px;
+    background: $color-white;
+    border: 1px solid $input-field-border;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    color: $input-text-placeholder;
+    height: 35px;
+    line-height: 14px;
+    outline: none;
+    & > input::placeholder {
+      font-size: 12px;
+      font-weight: $font-weight-normal;
+      color: black;
+    }
+    .member-search__icon {
+      margin: 10px;
+    }
+    .MuiInput-input {
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      border-bottom: 0;
+    }
+  }
+
+  .treeview-container {
+    width: 477px;
+    height: 214px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    overflow-y: scroll;
+  }
+  .set-treeview-magin {
+    margin-left: 30px;
+  }
+  .formulary-info-field__value .input-link {
+    text-decoration: underline dotted !important;
+    margin-left: 5px;
+    color: #1d54b4;
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+    margin-top: 9px !important;
+    float: left;
+  }
+  .set-margin {
+    margin-top: 22px;
+  }
+  .set-top-margin {
+    margin-top: 20px;
+  }
+  .set-input-control-dimenion {
+    width: 350px;
+    height: 35px;
+    z-index: 10000000 !important;
+  }
+  .set-radio-dimension {
+    width: 150px;
+    float: left;
+    position: relative;
+    span {
+      color: #323c47 !important;
+      text-transform: none;
+    }
+  }
+  .set-label-margin {
+    margin-bottom: 0px !important;
+  }
+  .back-arrow {
+    margin-top: 5px;
+    float: left;
+    color: #1d54b4;
+  }
+} //end main container

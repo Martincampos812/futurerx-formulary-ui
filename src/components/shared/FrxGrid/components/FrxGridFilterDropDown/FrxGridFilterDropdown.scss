@@ -1,0 +1,98 @@
+@import "../../../../../assets/colors.scss";
+@import "../../../../../assets/fonts.scss";
+
+.ant-table-filter-dropdown{
+    width: 247px;
+.frx-grid-filter-dropdown{
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 16px #00000026;
+    border: 1px solid $container-border-color;
+    .frx-grid-filter-dropdown__filters{
+        font-weight: 500;
+        padding: 12px 14px;
+        display: flex;
+        align-items: center;
+        letter-spacing: .01em;
+        color: $color-white;
+        background-color: $hyperlink-text-color;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        .frx-grid-filter-dropdown__filters__close-icon{
+            margin: 0 0 0 auto;
+            cursor: pointer;
+        }
+    }
+    .frx-grid-filter-dropdown__filter-block{
+        padding: 20px;
+        .frx-grid-filter-dropdown__filter-block__select{
+            width: 200px;
+            border: 1px solid $container-border-color;
+            border-radius: 5px;
+            .ant-select-selector{
+                height: 40px;
+                border: none !important;
+                background: none;
+                .ant-select-selection-item{
+                    line-height: 40px;
+                    color: $primary-text-color;
+                    font-size: $font-12;
+                }
+            }
+            // Removing default border color on hover//
+            &:not(.ant-select-disabled):hover .ant-select-selector{
+                border-color: $container-border-color !important;
+            }
+        }
+        .frx-grid-filter-dropdown__filter-block__value-block{
+            margin-top: 20px;
+            .frx-grid-filter-dropdown__filter-block__value-block__label{
+                color: $primary-text-color;
+                text-transform: uppercase;
+                font-size: $font-10;
+                font-weight: $font-weight-normal;
+            }
+            .frx-grid-filter-dropdown__filter-block__value-block__input{
+                width: 200px;
+                height: 40px;
+                border: 1px solid $container-border-color;
+                border-radius: 5px;
+                font-size: $font-12;
+            }
+            .MuiInput-input{
+                text-indent: 10px;
+                color: $primary-text-color;
+            }
+            // Removing default bottom line //
+            .MuiInput-underline:before, .MuiInput-underline:after{
+                border-bottom: none;
+            }
+        }
+    }
+    .filter-btns{
+        display: table;
+        margin: 20px 0 0 auto;
+        .clear-button,.filter-button{
+            width: 62px;
+            height: 18px;
+            line-height: 11px;
+            font-size: $font-12;
+            border-radius: 5px;
+            border: 1px solid $container-border-color;
+        }
+        .clear-button{
+            color: $primary-text-color;
+            margin-right: 10px;
+        }
+        .filter-button{
+            color: $color-white;
+            background-color: $hyperlink-text-color;
+        }
+        .ant-btn:hover, .ant-btn:focus{
+            color: $hyperlink-text-color;
+            border-color: $hyperlink-text-color;
+            background: none;
+        }
+    }
+}
+}

@@ -1,0 +1,29 @@
+.d-tree {
+  .d-flex {
+    // display: flex;
+    // flex-direction: column;
+  }
+}
+
+.d-tree-node {
+  //   padding: 0.75rem 1.25rem;
+  .d-flex {
+    display: flex;
+    .d-inline {
+      display: inline-block;
+    }
+  }
+}
+
+.d-tree-container {
+  list-style: none;
+  padding: 0;
+}
+
+.d-tree-node {
+  padding: 0.75rem 1.25rem;
+}
+
+.d-tree-toggler.active {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,85 @@
+@import "../../../../../assets/style.scss";
+
+.frx-grid-settings-cell__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .frx-grid-settings-cell__icon--expanded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+  }
+  .frx-grid-settings-cell__icon--non-expanded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+    cursor: pointer;
+    // NOTE: ON HOVER IS NOT USED NOW
+    // &:hover{
+    //     -webkit-transform: rotate(360deg);
+    //     transform: rotate(90deg);
+    // }
+  }
+}
+
+.frx-grid-settings-cell {
+  cursor: pointer;
+  .ant-checkbox-wrapper {
+    .ant-checkbox {
+      .ant-checkbox-inner {
+        width: 16px;
+        height: 16px;
+        border: 2px solid #d5d5d5;
+        border-radius: 4px;
+      }
+      .ant-checkbox-input {
+        opacity: 0 !important;
+      }
+    }
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: #1d54b4;
+        border: none;
+      }
+      .ant-checkbox-inner::after {
+        top: 1px;
+        width: 5.714286px;
+        border: 2px solid $color-white;
+        border-left: 0;
+        border-top: 0;
+      }
+    }
+  }
+  .ant-radio-wrapper {
+    .ant-radio {
+      .ant-radio-inner {
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
+        border-color: #dddddd;
+        &::after {
+          top: -2px;
+          left: -1px;
+          background-color: #1d54b4;
+          width: 20px;
+          height: 20px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  
+}
+.tri-dot-drop-down-wrapper{
+  font-size: 12px;
+  line-height: 35px;
+  color: #666;
+  cursor: pointer;
+  font-weight: normal;
+  p{
+    font-weight: normal;
+  }
+}

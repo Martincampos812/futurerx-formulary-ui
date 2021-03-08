@@ -1,0 +1,101 @@
+.pharmacy-contact-info {
+  width: 608px;
+  height: 665px !important;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  // flex-direction: column;
+  color: #666666;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+.pharmacy-contact-data {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: -56%;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.pharmacy-contact-mailing-info{
+  width: 608px;
+  height: 210px !important;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  // flex-direction: column;
+  color: #666666;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+.pharmacy-contact-mailing-data{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top:0;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.pharmacy-contact-data > div.keyValue {
+  width: 30%;
+}
+
+.pharmacy-contact-data{
+  .keyValue_left_title {
+    margin-left: -20px !important;
+  }
+}
+
+
+.pharmacy-contact-data {
+  div.value {
+    width: 100%;
+    font-weight: bold !important;
+    margin-left: -15px;
+  }
+} 
+
+.hoursBox-container {
+  margin-top: 20px;
+}
+.hoursBox {
+  display: flex;
+  margin-left: -30px;
+}
+.monthsTitle {
+  min-width: 40px;
+  font-size: 9px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.timeTitle {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.pharmacy-inner-grid{
+    position: absolute;
+    top: 47%;
+}

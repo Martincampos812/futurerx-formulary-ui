@@ -1,0 +1,272 @@
+@import "../../../../../../assets/style.scss";
+
+.drug-detail-LA-root {
+  .drug-detail-la-container {
+    box-sizing: border-box;
+    border-radius: 5px 5px 0px 0px;
+    background: #ffffff;
+    .la-header {
+      height: 52px;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 11px 0px 11px 20px;
+      span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #1d54b4;
+      }
+    }
+    .drug-detail-la-inner {
+      .drug-type {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .limited-access {
+        background: #f9f9f9;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border-radius: 5px;
+        .limited-access-header {
+          height: 50px;
+          background: #ffffff;
+          border-bottom: 1px solid #e5e5e5;
+          box-sizing: border-box;
+          border-radius: 5px 5px 0px 0px;
+          padding-top: 10px;
+          padding-left: 19px;
+          span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: #1d54b4;
+          }
+        }
+        .limited-access-inner {
+          padding: 10px;
+          .first {
+            padding: 10px;
+            .rowheader {
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              box-sizing: border-box;
+              border-radius: 3px 3px 0px 0px;
+              .MuiGrid-item {
+                border-right: 1px solid #e5e5e5;
+                height: 40px;
+              }
+            }
+            .rowcontent {
+              background: #ffffff;
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              box-sizing: border-box;
+              border-radius: 0px 0px 3px 3px;
+              .MuiGrid-item {
+                border-right: 1px solid #e5e5e5;
+                height: 40px;
+              }
+            }
+            span {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              color: #707683;
+              padding: 0 20px;
+              &.text-left {
+                justify-content: flex-start;
+              }
+            }
+          }
+
+          .second {
+            padding: 10px;
+            margin-top: 10px;
+            .rowcontent {
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              box-sizing: border-box;
+              border-radius: 3px 3px 0px 0px;
+              background: #ffffff;
+            }
+            span {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tier-dropdown {
+    padding: 20px;
+    border-top: 1px solid #e5e5e5;
+
+    .select-box {
+      margin-right: 20px;
+    }
+
+    .select-box .ant-select {
+      width: 100%;
+    }
+
+    button {
+      margin: 24px 10px 10px 0;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: #707683;
+      line-height: 20px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    .astrict {
+      color: red;
+    }
+  }
+}
+.tier-definition-popup-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #e5e5e5;
+  width: 630px;
+
+  .heading {
+    background: #f9f9f9;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #707683;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px;
+  }
+
+  .border-right {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .tier-number,
+  .tier-descripption {
+    padding: 5px 15px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .tier-description-dropdown {
+    width: 300px;
+  }
+}
+.tier-checkbox .ant-checkbox-inner {
+  padding: 0px !important;
+  background: #80c483 !important;
+  height: 20px !important;
+  width: 20px !important;
+  border-radius: 50px !important;
+  border: 1px solid #80c483 !important;
+}
+
+.tier-grid-container {
+  padding: 0px 20px;
+}
+
+.tier-checkbox .top {
+  background: #f9f9f9;
+}
+
+.tier-grid-container .ant-checkbox.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #1d54b4;
+  border: 2px solid #1d54b4;
+}
+
+.tier-grid-remove-container {
+  padding: 20px;
+}
+
+.tier-grid-remove-container .ant-table-wrapper {
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+
+.tier-modify-panel .modify-panel {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tier-grid-remove-container th {
+  border-right: 1px solid #e5e5e5;
+}
+
+.tier-grid-remove-container td {
+  border-right: 1px solid #e5e5e5;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707683 !important;
+  font-weight: 400 !important;
+}
+
+.tier-grid-remove-container th {
+  border-right: 1px solid #e5e5e5;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707683 !important;
+  font-weight: 400 !important;
+}
+.tier-defination-grid{
+  .frx-grid-settings-header-cell{
+    display: none;
+  }
+  .ant-table-header{
+    border-radius: 0 !important;
+    border-bottom: none !important;
+    th:first-child{
+      border-radius: 0 !important;
+      border-right: none !important;
+    }
+  }
+  .ant-table-body{
+    table{
+      border-spacing: 0 !important;
+      td{
+        border-right: 1px solid #e5e5e5 !important;
+      }
+      td:first-child, td:last-child{
+        border-radius: 0 !important;
+      }
+      td:first-child{
+        border-right: 1px solid #e5e5e5 !important;
+      }
+    }
+  }
+}
+.tier-dialog-popup {
+  z-index: 0 !important;
+}
+.mini-tabs{
+  z-index: 0;
+}
+.tier-popup-btn{
+  display: flex;
+  justify-content: flex-end;
+}

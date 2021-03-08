@@ -1,0 +1,202 @@
+@import "./../../../assets/style.scss";
+.ClaimsInfoSearch {
+  .test-claim-info-search {
+    .test-claim-information-contianer {
+      margin-top: 10px;
+
+      .test-claim-status-dhuHistory-container {
+        .test-claim-duhHistory {
+          padding-left: 10px;
+        }
+        .test-claim-status,
+        .test-claim-duhHistory {
+          // margin-left: 5px;
+          .member-search__input--dropdown {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .test-claim-info-member-info-container {
+    .member-info-test-claim-button {
+      // text-align: right;
+      height: 35px;
+      .test-claim-button {
+        margin-left: 18px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        //   line-height: 35px;
+        color: #5f80b9;
+        height: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .test-claim-info-member-info-container,
+  .test-claim-information-contianer,
+  .test-claim-date-container {
+    //   margin-top: 10px;
+    .member-info-heading,
+    .test-claim-information-heading,
+    .date-heading {
+      padding-top: 12px;
+      text-align: left;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      padding-left: 9%;
+      color: #707683;
+    }
+    .member-info-search-field,
+    .test-claim-information-search-field {
+      .member-search__input,
+      .member-search__input--dropdown {
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        //   text-indent: 10px;
+        width: 100%;
+        height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin-bottom: 8px;
+        & > input::placeholder {
+          font-size: 12px;
+          font-weight: $font-weight-normal;
+          // color: $input-text-placeholder;
+          color: black;
+          // text-indent: 10px;
+        }
+        .member-search__icon {
+          margin: 10px;
+        }
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          border-bottom: 0;
+        }
+        .ant-select-selector {
+          height: 100%;
+          border: none;
+          // width: 50% !important;
+          span {
+            .ant-tag {
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              //   line-height: 20px;
+              height: 20px;
+
+              text-align: center;
+              letter-spacing: 0.2px;
+              text-transform: uppercase;
+
+              // padding-left: 3px;
+              // padding-right: 3px;
+              padding: 0 15px 20px;
+              background-color: #684999;
+              border-radius: 15px;
+              color: #ffffff;
+
+              // width: 106px;
+            }
+          }
+        }
+        .ant-select-selector {
+          // .ant-select-selection-search {
+          .ant-select-selection-placeholder {
+            color: inherit;
+          }
+        }
+      }
+      .test-claim-type-dropdown {
+        margin-top: 10px;
+        .member-search__input--dropdown {
+          .ant-select-selector {
+            height: 100%;
+            border: none;
+          }
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          .ant-select-selector
+            > .ant-select-selection-searchr
+            > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+        }
+      }
+
+      .medicater-dropdown {
+        width: 207px;
+      }
+      .claims-grid-search-filds-container {
+        margin-top: 30px;
+        .claim-ndc,
+        .claim-ddid,
+        .claim-contract_id,
+        .claim-group_id {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .date-container {
+      .date-dueDate-contianer {
+        padding-left: 8px;
+      }
+      .date-effectiveDate-contianer,
+      .date-dueDate-contianer {
+        .member-search__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 10px;
+          .ant-picker-input > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: #999999;
+            // text-indent: 10px;
+          }
+        }
+      }
+    }
+  }
+}

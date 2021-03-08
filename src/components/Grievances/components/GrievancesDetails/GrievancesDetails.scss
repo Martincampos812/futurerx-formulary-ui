@@ -1,0 +1,38 @@
+@import "../../../../assets/style.scss";
+
+.grievance-details{
+    padding: 5px 0 20px;
+    .mb-15{
+        margin-bottom: 15px;
+    }
+    .details-header{
+        .heading{
+            font-weight: $font-weight-500;
+            font-size: 15px;
+            line-height: 18px;
+            color:$primary-text-color;
+        }
+    }
+    .label{
+        font-size: 12px;
+        line-height: 14px;
+        color: $primary-text-color;
+        display: block;
+    }
+    p{
+        font-weight: $font-weight-bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: $primary-text-color;
+        &.dateTime{
+            display: flex;
+            .date{
+                margin-right: 20px;
+            }
+        }
+        &.color-blue{
+            color: #1D54B4;
+            text-decoration: underline;
+        }
+    }
+}

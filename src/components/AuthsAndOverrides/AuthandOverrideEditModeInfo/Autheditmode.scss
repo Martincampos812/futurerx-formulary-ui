@@ -1,0 +1,1691 @@
+@import "../../../assets/style.scss";
+
+.authedit-info-root {
+  padding: 0 20px 20px 20px;
+  margin: 0px;
+  .important {
+    color: #e56365 !important;
+  }
+  .ant-picker-dropdown {
+    z-index: 99999;
+  }
+  .authedit-info-spacegrid {
+    padding: 10px 12px 0px 12px !important;
+  }
+  .authedit-info-errorspacegrid {
+    padding-top: 10px !important;
+  }
+  .authedit-date-picker__panel {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px 0 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 12px;
+    color: #2055b5;
+    &-close-icon {
+      float: right;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+  }
+  .member-search__date-calender {
+    z-index: 9999999;
+  }
+
+  .importantdata {
+    color: #e56365 !important;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 20px;
+  }
+  .prespace {
+    margin: 10px 0px;
+  }
+  .addmoreproduct {
+    display: flex;
+    .addMore {
+      min-width: 80px;
+      height: 24px;
+      padding: 0px;
+      border: none;
+      background: #f9f9f9;
+      cursor: pointer;
+      svg {
+        width: 17px;
+        height: 17px;
+        vertical-align: middle;
+      }
+      .addMore--text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #666666;
+        border-bottom: 1px dashed;
+        margin-left: 5px;
+        text-transform: capitalize !important;
+      }
+      &:hover {
+        background: #f9f9f9;
+      }
+    }
+    .addmoreicon {
+      vertical-align: middle;
+      margin-right: 5px;
+      margin-left: -15px;
+    }
+  }
+  .editflex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+    .custom-close-btn {
+      color: #2055b5;
+      background: #ffffff;
+      border: 1px solid #2055b5;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+    .custom-action-btn {
+      color: #ffffff;
+      background: #2055b5;
+      border: 1px solid #2055b5;
+      box-sizing: border-box;
+      border-radius: 3px;
+    }
+  }
+  .authedit-info-root__btn-actions {
+    float: right;
+    margin-bottom: 10px;
+    & > Button {
+      color: $hyperlink-text-color;
+      border: none;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      line-height: 24px;
+      padding: 0 0 0 18px;
+    }
+  }
+  .authedit-info-root__content {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    // margin-bottom: 20px;
+    .authedit-info-root__content--status__paid {
+      background-color: #80c483;
+      border-radius: 5px;
+      min-width: 215px;
+      min-height: 215px;
+      padding: 89px 10px;
+      cursor: pointer;
+      & > h1 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: $font-30;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+    .authedit-info-root__content--data {
+      background: #f9f9f9;
+      // min-width: 800px;
+      border: 1px solid $container-border-color;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 10px 20px 10px 20px;
+      margin-left: 10px;
+      .category__input--dropdown {
+        .ant-select-selector {
+          height: 100%;
+          border: none;
+        }
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        //   text-indent: 10px;
+        width: 100%;
+        // height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin-bottom: 8px;
+        .ant-select-selector
+          > .ant-select-selection-searchr
+          > input::placeholder {
+          font-size: 12px;
+          font-weight: $font-weight-normal;
+          // color: $input-text-placeholder;
+          color: black;
+          // text-indent: 10px;
+        }
+      }
+
+      .start-date-picker__input,
+      .end-date-picker__input {
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        text-indent: 10px;
+        width: 100%;
+        height: 30px;
+        line-height: 14px;
+        outline: none;
+        .ant-picker-input {
+          & > input {
+            color: #999999;
+            font-size: $font-11;
+          }
+        }
+
+        // .ant-picker-input & > input::placeholder {
+        //   font-size: 12px;
+        //   font-weight: $font-weight-normal;
+        //   // color: $input-text-placeholder;
+        //   color: #999999;
+        //   // text-indent: 10px;
+        // }
+        // & > input {
+        //   font-size: 12px;
+        //   font-weight: $font-weight-normal;
+        //   // color: $input-text-placeholder;
+        //   color: #999999 !important;
+        //   // text-indent: 10px;
+        // }
+      }
+      .rightfields {
+        margin-left: 35px;
+      }
+      .leftfields {
+        margin-right: 35px;
+      }
+      .fields {
+        .fieldsdata {
+          display: grid;
+          grid-template-columns: 35% 65%;
+          // column-gap: 16px;
+          & > label,
+          span {
+            text-align: left;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+          }
+          & > label {
+            line-height: 38px;
+          }
+          & > span {
+            font-weight: $font-weight-bold;
+            // margin-left: 16px;
+            margin-top: 5px;
+          }
+          .higlighted-value {
+            color: $hyperlink-text-color !important;
+            border-bottom: 1px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+            border-image-repeat: repeat;
+            border-image-slice: 4 4 4 4;
+            width: fit-content;
+            height: 26px;
+          }
+        }
+      }
+      .datefields {
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          line-height: 29px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          // margin-left: 16px;
+        }
+        .fieldsdata {
+          display: grid;
+          grid-template-columns: 50% 100%;
+          column-gap: 16px;
+          & > label,
+          span {
+            text-align: left;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+            line-height: 29px;
+          }
+          & > span {
+            font-weight: $font-weight-bold;
+            // margin-left: 16px;
+          }
+        }
+      }
+      .authedit-info-root__input {
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        text-indent: 10px;
+        width: 100%;
+        // height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin: 0 10px 0 0;
+        & > input {
+          text-indent: 10px;
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+          }
+        }
+      }
+      .MuiInput-underline:after,
+      .MuiInput-underline:before {
+        border-bottom: none;
+      }
+      .MuiInput-underline:before {
+        border-bottom: none;
+      }
+      .MuiInput-underline:hover:not(.Mui-disabled):before {
+        border-bottom: none;
+      }
+    }
+  }
+  .authedit-info-root__contentdatesection--data {
+    // background: #f9f9f9;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+
+    .datefields {
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 29px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 50% 100%;
+        column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          line-height: 29px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          // margin-left: 16px;
+        }
+      }
+    }
+    .fieldspre {
+      display: grid;
+      grid-template-columns: 25% 50%;
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+      }
+      & > label {
+        line-height: 29px;
+      }
+      & > span {
+        // font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+    }
+    &__table {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 48% 48% 2%;
+      border: none;
+      border-radius: 5px;
+      .spacepad {
+        margin: 0px 10px 0px 10px;
+      }
+      .tablefields {
+        & > header {
+          text-align: left;
+          position: relative;
+          & > p {
+            font-size: 12px;
+            color: $primary-text-color;
+            font-weight: normal;
+            line-height: 24px;
+            margin: 5px 0px 5px 0px;
+            & > span {
+              color: #e76262;
+            }
+          }
+          & > span {
+            font-size: 12px;
+            font-weight: normal;
+            color: #e76262;
+            float: right;
+            line-height: 0;
+            position: absolute;
+            top: 13px;
+            right: 8px;
+          }
+        }
+        & > span {
+          height: 50px;
+          font-size: $font-12;
+          color: $primary-text-color;
+        }
+
+        .authtableedit-info-root__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          text-indent: 10px;
+          width: 100%;
+          // height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin: 0 10px 0 0;
+          & > input {
+            text-indent: 10px;
+            .MuiInput-input {
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+            }
+          }
+        }
+        .MuiInput-underline:after,
+        .MuiInput-underline:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+          border-bottom: none;
+        }
+      }
+      .delicon {
+        margin-top: 41px;
+      }
+      .fields:last-child {
+        border-right: none;
+      }
+    }
+    .authedit-info-root__input {
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      text-indent: 10px;
+      width: 100%;
+      // height: 35px;
+      line-height: 14px;
+      outline: none;
+      margin: 0 10px 0 0;
+      & > input {
+        text-indent: 10px;
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+        }
+      }
+    }
+    .MuiInput-underline:after,
+    .MuiInput-underline:before {
+      border-bottom: none;
+    }
+    .MuiInput-underline:before {
+      border-bottom: none;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: none;
+    }
+    .category__input--dropdown {
+      .ant-select-selector {
+        height: 100%;
+        border: none;
+      }
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      //   text-indent: 10px;
+      width: 100%;
+      // height: 1.1876em;
+      line-height: 14px;
+      outline: none;
+      margin-bottom: 8px;
+      .ant-select-selector
+        > .ant-select-selection-searchr
+        > input::placeholder {
+        font-size: 12px;
+        font-weight: $font-weight-normal;
+        // color: $input-text-placeholder;
+        color: black;
+        // text-indent: 10px;
+      }
+      .ant-select-selector {
+        & > span {
+          text-align: left;
+        }
+      }
+    }
+  }
+  .authedit-info-root__datecontent--data {
+    background: #f9f9f9;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+
+    .datefields {
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 29px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 50% 100%;
+        column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          line-height: 29px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          // margin-left: 16px;
+        }
+      }
+    }
+    .fieldspre {
+      display: grid;
+      grid-template-columns: 25% 50%;
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+      }
+      & > label {
+        line-height: 29px;
+      }
+      & > span {
+        // font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+    }
+    &__table {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 48% 48% 2%;
+      border: none;
+      border-radius: 5px;
+      .spacepad {
+        margin: 0px 10px 0px 10px;
+      }
+      .tablefields {
+        & > header {
+          text-align: left;
+          position: relative;
+          & > p {
+            font-size: 12px;
+            color: $primary-text-color;
+            font-weight: normal;
+            line-height: 24px;
+            margin: 5px 0px 5px 0px;
+            & > span {
+              color: #e76262;
+            }
+          }
+          & > span {
+            font-size: 12px;
+            font-weight: normal;
+            color: #e76262;
+            float: right;
+            line-height: 0;
+            position: absolute;
+            top: 13px;
+            right: 8px;
+          }
+        }
+        & > span {
+          height: 50px;
+          font-size: $font-12;
+          color: $primary-text-color;
+        }
+
+        .authtableedit-info-root__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          text-indent: 10px;
+          width: 100%;
+          // height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin: 0 10px 0 0;
+          & > input {
+            text-indent: 10px;
+            .MuiInput-input {
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+            }
+          }
+        }
+        .MuiInput-underline:after,
+        .MuiInput-underline:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+          border-bottom: none;
+        }
+      }
+      .delicon {
+        margin-top: 41px;
+      }
+      .fields:last-child {
+        border-right: none;
+      }
+    }
+    .authedit-info-root__input {
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      text-indent: 10px;
+      width: 100%;
+      // height: 35px;
+      line-height: 14px;
+      outline: none;
+      margin: 0 10px 0 0;
+      & > input {
+        text-indent: 10px;
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+        }
+      }
+    }
+    .MuiInput-underline:after,
+    .MuiInput-underline:before {
+      border-bottom: none;
+    }
+    .MuiInput-underline:before {
+      border-bottom: none;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: none;
+    }
+    .category__input--dropdown {
+      .ant-select-selector {
+        height: 100%;
+        border: none;
+      }
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      //   text-indent: 10px;
+      width: 100%;
+      // height: 1.1876em;
+      line-height: 14px;
+      outline: none;
+      margin-bottom: 8px;
+      .ant-select-selector
+        > .ant-select-selection-searchr
+        > input::placeholder {
+        font-size: 12px;
+        font-weight: $font-weight-normal;
+        // color: $input-text-placeholder;
+        color: black;
+        // text-indent: 10px;
+      }
+      .ant-select-selector {
+        & > span {
+          text-align: left;
+        }
+      }
+    }
+  }
+  .authedit-info-root__content--data-section {
+    background: #f9f9f9;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    margin: 10px 0px;
+    .fields {
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 43% 57%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 38px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          // margin-left: 16px;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+
+        .higlighted-value {
+          color: $hyperlink-text-color !important;
+          border-bottom: 1px solid transparent;
+          border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+          border-image-repeat: repeat;
+          border-image-slice: 4 4 4 4;
+          width: fit-content;
+          height: 26px;
+        }
+      }
+    }
+    .fieldssection {
+      display: grid;
+      grid-template-columns: 80% 10%;
+      // column-gap: 16px;
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 38px;
+      }
+      & > span {
+        // font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+    }
+    .fieldsdata {
+      display: grid;
+      grid-template-columns: 50% 100%;
+      // column-gap: 16px;
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 29px;
+      }
+      & > span {
+        // font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+    }
+    .fieldwithblank {
+      display: grid;
+      grid-template-columns: 65% 15%;
+      // column-gap: 16px;
+      margin-top: 20px;
+      & > label,
+      span {
+        text-align: right;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        margin-top: 56px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        text-align: left;
+        // margin-left: 16px;
+      }
+    }
+    .leftfields {
+      margin-left: 35px;
+    }
+    .fieldsend {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      // column-gap: 16px;
+      // margin-top: 20px;
+      & > label,
+      span {
+        text-align: right;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+      }
+      & > label {
+        line-height: 29px;
+        // margin-right: 10px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        text-align: left;
+        // margin-left: 16px;
+      }
+    }
+    .fieldmultisend {
+      display: grid;
+      grid-template-columns: 76% 24%;
+      // column-gap: 16px;
+      // margin-top: 20px;
+      & > label,
+      span {
+        text-align: right;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+      }
+      & > label {
+        line-height: 29px;
+        margin-right: 10px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        text-align: left;
+        // margin-left: 16px;
+      }
+    }
+    .category__input--dropdown {
+      .ant-select-selector {
+        height: 100%;
+        border: none;
+      }
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      //   text-indent: 10px;
+      width: 100%;
+      // height: 35px;
+      line-height: 14px;
+      outline: none;
+      margin-bottom: 8px;
+      .ant-select-selector
+        > .ant-select-selection-searchr
+        > input::placeholder {
+        font-size: 12px;
+        font-weight: $font-weight-normal;
+        // color: $input-text-placeholder;
+        color: black;
+        // text-indent: 10px;
+      }
+      .ant-select-selector {
+        & > span {
+          text-align: left;
+        }
+      }
+    }
+    .fieldsfirst {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      // column-gap: 16px;
+      // column-gap: 16px;
+      // margin-top: 20px;
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+      }
+      & > label {
+        line-height: 29px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 50% 100%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          line-height: 29px;
+        }
+        & > span {
+          // font-weight: $font-weight-bold;
+          // margin-left: 16px;
+        }
+      }
+    }
+    .fieldscenter {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      // column-gap: 16px;
+      // margin-top: 20px;
+      & > label,
+      span {
+        text-align: left;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 29px;
+      }
+      & > span {
+        font-weight: $font-weight-bold;
+        // margin-left: 16px;
+      }
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 50% 100%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          line-height: 29px;
+        }
+        & > span {
+          // font-weight: $font-weight-bold;
+          // margin-left: 16px;
+        }
+      }
+    }
+
+    .presribe {
+      display: grid;
+      grid-template-columns: 50% 100%;
+      column-gap: 16px;
+    }
+    .authedit-info-root__input {
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      text-indent: 10px;
+      width: 100%;
+      // height: 35px;
+      line-height: 14px;
+      outline: none;
+      margin: 0 10px 0 0;
+      & > input {
+        text-indent: 10px;
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+        }
+      }
+    }
+    .MuiInput-underline:after,
+    .MuiInput-underline:before {
+      border-bottom: none;
+    }
+    .MuiInput-underline:before {
+      border-bottom: none;
+    }
+    .MuiInput-underline:hover:not(.Mui-disabled):before {
+      border-bottom: none;
+    }
+    &__table {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 25% 73% 2%;
+      border: none;
+      border-radius: 5px;
+      .spacepad {
+        margin: 0px 10px 0px 10px;
+      }
+      .tablefields {
+        & > header {
+          text-align: left;
+          position: relative;
+          & > p {
+            font-size: 12px;
+            color: $primary-text-color;
+            font-weight: normal;
+            line-height: 24px;
+            margin-bottom: 5px;
+            & > span {
+              color: #e76262;
+            }
+          }
+          & > span {
+            font-size: 12px;
+            font-weight: normal;
+            color: #e76262;
+            float: right;
+            line-height: 0;
+            position: absolute;
+            top: 13px;
+            right: 8px;
+          }
+        }
+        & > span {
+          height: 50px;
+          font-size: $font-12;
+          color: $primary-text-color;
+        }
+        .authedittable-info-root__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          text-indent: 10px;
+          width: 100%;
+          // height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin: 0 10px 0 0;
+          & > input {
+            text-indent: 10px;
+            .MuiInput-input {
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+            }
+          }
+        }
+
+        .MuiInput-underline:after,
+        .MuiInput-underline:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline:before {
+          border-bottom: none;
+        }
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+          border-bottom: none;
+        }
+      }
+      .fields:last-child {
+        border-right: none;
+      }
+    }
+  }
+  .delicon {
+    margin-top: 35px;
+    cursor: pointer;
+  }
+  .deliconout {
+    margin-top: 7px;
+    cursor: pointer;
+  }
+  .authadmin-info-root__content--data {
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    background: #f9f9f9;
+    .authadmin-info-root__content--data-section {
+      display: grid;
+      grid-template-columns: 32% 34% 32%;
+      column-gap: 10px;
+      .prespace {
+        margin: 10px 0px;
+      }
+      .fieldscenter {
+        margin-left: 30px;
+      }
+      .fields {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 30px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+      }
+      .fieldscenter {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 30px;
+          text-align: right;
+          margin-right: 20px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+      }
+      .endfields {
+        display: grid;
+        grid-template-columns: 50% 51%;
+        // column-gap: 10px;
+        & > label,
+        span {
+          text-align: right;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 30px;
+          margin-right: 10px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .authadmin-info-root__content--data-sectionrow {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 32% 68%;
+      column-gap: 10px;
+      .prespace {
+        margin: 10px 0px;
+      }
+      .fields {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 30px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+        .category__input--dropdown {
+          .ant-select-arrow {
+            margin-top: -5px !important;
+          }
+          .ant-select-selector {
+            height: 100%;
+            border: none;
+            & > span {
+              // background: black;
+              text-align: left;
+            }
+          }
+
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          // height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          .ant-select-selector
+            > .ant-select-selection-searchr
+            > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          & > span {
+            text-align: left;
+          }
+        }
+      }
+      .fieldsright {
+        display: grid;
+        grid-template-columns: 75% 24%;
+        // column-gap: 10px;
+        & > label,
+        span {
+          text-align: right;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 30px;
+          margin-right: 20px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+        .category__input--dropdown {
+          .ant-select-selector {
+            height: 100%;
+            border: none;
+            & > span {
+              // background: black;
+              text-align: left;
+            }
+          }
+
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          // height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          .ant-select-selector
+            > .ant-select-selection-searchr
+            > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          & > span {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .authclinical-info-root__content--data {
+    background: #f9f9f9;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+
+    .fieldsleft {
+      margin-right: 30px;
+    }
+    .fieldsright {
+      margin-left: 30px;
+    }
+    .fields {
+      .fieldsdata {
+        display: grid;
+        grid-template-columns: 48% 52%;
+        // column-gap: 16px;
+        & > label,
+        span {
+          text-align: left;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+        & > label {
+          line-height: 38px;
+        }
+        & > span {
+          font-weight: $font-weight-bold;
+          // margin-left: 16px;
+          .authedit-info-root__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            // height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 10px 0 0;
+            & > input {
+              text-indent: 10px;
+              .MuiInput-input {
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                color: $input-text-placeholder;
+              }
+            }
+          }
+          .MuiInput-underline:after,
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:before {
+            border-bottom: none;
+          }
+          .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: none;
+          }
+        }
+
+        .higlighted-value {
+          color: $hyperlink-text-color !important;
+          border-bottom: 1px solid transparent;
+          border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+          border-image-repeat: repeat;
+          border-image-slice: 4 4 4 4;
+          width: fit-content;
+          height: 26px;
+        }
+      }
+    }
+    .category__input--dropdown {
+      .ant-select-arrow {
+        margin-top: -5px !important;
+      }
+      .ant-select-selector {
+        height: 100%;
+        border: none;
+        & > span {
+          // background: black;
+          text-align: left;
+        }
+      }
+
+      background: $color-white;
+      border: 1px solid $input-field-border;
+      box-sizing: border-box;
+      border-radius: 3px;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      //   text-indent: 10px;
+      width: 100%;
+      // height: 35px;
+      line-height: 14px;
+      outline: none;
+      margin-bottom: 8px;
+      .ant-select-selector
+        > .ant-select-selection-searchr
+        > input::placeholder {
+        font-size: 12px;
+        font-weight: $font-weight-normal;
+        // color: $input-text-placeholder;
+        color: black;
+        // text-indent: 10px;
+      }
+      & > span {
+        text-align: left;
+      }
+    }
+  }
+
+  // .ant-select-dropdown {
+  //   border: 2px solid #000;
+  // }
+  .dateclander {
+    z-index: 3000;
+  }
+}
+.ant-picker-dropdown {
+  z-index: 99999 !important;
+}
+.AuthEditSearch-dropdown-select_dropdown.ant-select-dropdown {
+  border-top: 0px solid #ffffff !important;
+  border-radius: 0px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  z-index: 9999999;
+  box-shadow: none;
+  .rc-virtual-list-holder {
+    overflow-y: overlay;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0px #999999;
+      border-radius: 3px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #999999;
+      border-radius: 3px;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #999999;
+    }
+  }
+  .ant-select-item-option {
+    display: block !important;
+
+    .ant-select-item-option-content {
+      height: 35px !important;
+      word-break: break-word !important;
+      height: auto !important;
+      object-fit: cover;
+      white-space: normal;
+      line-height: 14px !important;
+      padding: 10px 0px;
+    }
+  }
+
+  .ant-select-item-option {
+    display: block !important;
+
+    .ant-select-item-option-content {
+      height: 35px !important;
+      word-break: break-word !important;
+      height: auto !important;
+      object-fit: cover;
+      white-space: normal;
+      line-height: 14px !important;
+      // padding: 10px 0px;
+      width: 100%;
+    }
+  }
+}

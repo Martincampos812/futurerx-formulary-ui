@@ -1,0 +1,117 @@
+@import "../../../assets/style.scss";
+
+.claim-result-root {
+  margin-bottom: 10px;
+  // z-index: 99999 !important;
+  // .MuiDialog-root {
+  //   z-index: 99999 !important;
+  //   // width: 1000px;
+  //   // height: 800px;
+  //   // max-height: calc(100% - 0px);
+  //   // margin: 0 auto;
+  // }
+  .claim-detail-root {
+    padding: 0px 0px 10px 0px;
+    max-height: 100%;
+    // overflow-y: scroll;
+    // max-height: calc(100vh - 400px);
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .claim-transaction-root {
+    padding: 10px 20px;
+    max-height: 100%;
+    // overflow-y: scroll;
+    // max-height: calc(100vh - 400px);
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .head-container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left-flexbox {
+      display: inline-flex;
+      .claim-text {
+        margin: 0 10px;
+        .claim-text-key {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 50px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: #666666;
+        }
+        .claim-text-value {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 50px;
+          color: #2055b5;
+        }
+      }
+      .sequence {
+        display: inline-flex;
+        flex-direction: row;
+        // justify-content: ;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 35px;
+        color: #666666;
+        margin-top: 10px;
+        margin-left: 30px;
+        .sequence-text {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 35px;
+          color: #666666;
+          margin-right: 5px;
+        }
+        .sequence-dd {
+          width: auto;
+        }
+      }
+    }
+    .right-flexbox {
+      display: inline-flex;
+      justify-content: flex-end;
+      margin: 10px;
+      .flip-svg-container {
+        cursor: pointer;
+        margin: auto;
+        padding: auto;
+        .flip-svg {
+          margin-top: 5px;
+          margin-left: 5px;
+          height: 15px;
+          width: 15px;
+        }
+      }
+      .new-test-claim-btn {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+// .frx-tabs-root-icon {
+//   // display: flex;
+//   // justify-content: flex-end;
+//   margin: 0;
+//   padding: 0;
+//   .frx-tabs-root-icon-item {
+//     float: right;
+//   }
+// }

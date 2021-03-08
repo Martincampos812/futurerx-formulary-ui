@@ -1,0 +1,66 @@
+{
+  "um_criteria": [
+    {
+      "sequence": 1,
+      "covered": {
+        "age": {
+          "min_age_condition": "GT",
+          "min_age_limit": "45",
+          "max_age_condition": "LT",
+          "max_age_limit": "60"
+        },
+        "gender": ["M"],
+        "icd": { "look_back_days": "22", "icds": "" },
+        "place_of_services": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "patient_residences": [1, 2, 3, 4, 5, 6, 7],
+        "prerequisite_claims_history_lookbacks": [
+          {
+            "lookback_name": "GP1",
+            "id_lookback_level": "DRUG",
+            "lookback_drug": [
+              {
+                "id": 543252,
+                "text": "9025055400D520",
+                "value": "9025055400D520",
+                "is_list": "false"
+              },
+              {
+                "id": 543249,
+                "text": "2717001500D220",
+                "value": "2717001500D220",
+                "is_list": "false"
+              },
+              {
+                "id": 544133,
+                "text": "Lipitor TABS 10 MG",
+                "value": "Lipitor TABS 10 MG",
+                "is_list": "false"
+              }
+            ],
+            "lookback_period": "1",
+            "number_of_fills": "1",
+            "number_of_days_supply_per_fill": "1",
+            "removed_lookback_drug": []
+          }
+        ],
+        "removed_icds": [],
+        "removed_pharmacy_networks": []
+      },
+      "not_covered": {
+        "age": {
+          "min_age_condition": "",
+          "min_age_limit": "",
+          "max_age_condition": "",
+          "max_age_limit": ""
+        },
+        "gender": [],
+        "icd": { "look_back_days": "", "icds": "" },
+        "place_of_services": [],
+        "patient_residences": [],
+        "prerequisite_claims_history_lookbacks": [],
+        "removed_icds": [],
+        "removed_pharmacy_networks": []
+      }
+    }
+  ]
+}

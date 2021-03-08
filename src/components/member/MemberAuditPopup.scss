@@ -1,0 +1,119 @@
+@import "../../assets/style.scss";
+
+.member-audit-popup-root {
+    z-index: 999 !important;
+    .frx-mini-tabs-root {
+        position: unset;
+        // margin: 20px 0px 0px 20px;
+        border-bottom: 0px solid $container-border-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+        background: $color-white;
+        padding: 0;
+        min-width: 122px;
+        min-height: 30px;
+        .frx-mini-tabs-root__tabs {
+            background-color: $color-white;
+            box-shadow: none;
+            border: 1px solid #2055b5;
+            flex-direction: row;
+            border-radius: 4px;
+            padding: 3px;
+            min-height: 24px;
+            min-width: 61px;
+            width: max-content;
+            .frx-mini-tabs-root__tabs__tab {
+                padding: 0;
+                font-size: $font-12;
+                min-height: 24px;
+                min-width: 61px;
+                font-weight: $font-weight-bold;
+                color: $primary-text-color;
+                text-transform: capitalize;
+                opacity: unset;
+                border-radius: 2px;
+                .MuiTab-wrapper {
+                    text-transform: capitalize;
+                    font-size: $font-12;
+                    font-weight: $font-weight-bold;
+                    line-height: 24px;
+                    padding: 0 10px;
+                }
+            }
+            .frx-mini-tabs-root__tabs__tab.Mui-selected {
+                background-color: $button-tab-active-background-color;
+                .MuiTab-wrapper {
+                    color: $color-white;
+                    // border: 1px solid $button-tab-active-background-color;  ## border was creating alignment issue removing will resolve alignment issue
+                    border-radius: 2px;
+                }
+            }
+            .frx-mini-tabs-root__tabs__tab:first-child {
+                margin-left: 0px;
+            }
+            .frx-mini-tabs-root__tabs__tab:last-child {
+                margin-right: 0px;
+            }
+
+            .MuiTabs-indicator {
+                display: none !important;
+            }
+        }
+
+        .dev-status.wip {
+            display: none;
+        }
+        .frx-mini-tabs-root__active-line {
+            position: unset;
+        }
+    }
+    .MuiDialogContent-root {
+        padding: 20px 20px 0 20px;
+        width: 100%;
+    }
+    .MuiDialog-paper {
+        min-width: 800px;
+        min-height: 474px;
+        height: 474px;
+        .frx-grid-container {
+            max-width: 760px;
+            .ant-table-body{
+                table{
+                    table-layout: inherit;
+                }
+            }
+            .ant-table-cell{
+                // padding:0px!important;
+                padding: 0px 24px 0px 20px!important;
+                text-align: left;
+                img{
+                    margin-right: 10px;
+                }
+                .ant-table-filter-column-title{
+                    min-width: 130px;
+                }
+                .ant-table-filter-trigger-container{
+                    min-width: 30px;
+                }
+            }
+            .frx-grid-cell {
+                font-size: 12px;
+                font-family: Roboto;
+                line-height: 24px;
+                // padding: 0px!important
+                &--entry-component {
+                    cursor: pointer;
+                    color: #2055b5;
+                    font-weight: 700;
+                    line-height: 14.06px;
+                    border-bottom: 1px solid transparent;
+                    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                    border-image-repeat: repeat;
+                    border-image-slice: 4 4 4 4;
+                }
+            }
+        }
+    }
+}

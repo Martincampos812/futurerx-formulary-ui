@@ -1,0 +1,12 @@
+.claims-history-root{
+    padding: 10px;
+    overflow-y: scroll;
+    max-height: calc(100vh - 400px);
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .frx-grid__grid-block{
+        padding-top: 10px !important;
+    }
+}

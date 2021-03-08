@@ -1,0 +1,35 @@
+.Comment-card2 {
+  background-color: white;
+  /* padding: 1rem 1.5rem; */
+  /* border: 1px solid #e5e5e5; */
+  border-radius: 5px;
+  /* margin-bottom: 0.5rem; */
+}
+
+.Comment-card .title2 {
+  color: #333 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  padding: 0 !important;
+}
+
+.Comment-card .date2 {
+  color: #a3a3a3;
+  font-size: 11px;
+}
+
+.ant-collapse-icon-position-right
+  > .ant-collapse-item
+  > .ant-collapse-header
+  .ant-collapse-arrow {
+  right: 16px;
+  left: auto;
+  top: 10px;
+}
+
+.no-avatar {
+  border-radius: 50%;
+  height: 29px;
+  width: 29px;
+  border: 1px dashed #666666;
+}

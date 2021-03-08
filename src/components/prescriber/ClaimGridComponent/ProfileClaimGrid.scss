@@ -1,0 +1,147 @@
+@import "../../../assets/style.scss";
+
+.profile-claim-grid-root{
+    background: $color-white;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px !important;
+    .frx-grid-container{
+        .profile-claim-grid-search{
+        display: flex;
+        padding: 0;
+    &__first-row{
+        display: flex;
+        position: relative;
+        margin: 0 0 10px 0;
+        .profile-claim-grid-search__input-field{
+            position: relative;
+        }
+        .profile-claim-grid-search__input{
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 20px;
+            width: 168px;
+            height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin: 0 12px 0 0;
+            // position: relative;
+            .ant-picker-input {
+                & > input {
+                  border-right: none;
+                  font-size: $font-12;
+                  font-weight: $font-weight-normal;
+                  color: $input-text-placeholder;
+                }
+                .ant-picker-clear{
+                  display: none;
+                }
+              }
+        }
+        .select-box{
+            .profile-claim-grid-search__input{
+                .ant-select-selection-placeholder {
+                    font-size: $font-12;
+                    font-weight: $font-weight-normal;
+                    color: $input-text-placeholder;
+                    line-height: 33px;
+                  }
+                  .ant-select-selector {
+                    border: none !important;
+                    padding: 0 !important;
+                    text-indent: 10px;
+                    .ant-select-selection-item {
+                      padding: 0;
+                      line-height: 35px;
+                    }
+                    .ant-select-selection-placeholder{
+                      line-height: 33px;
+                    }
+                  }
+            }
+        }
+        .profile-claim-grid-search__icon{
+            position: absolute;
+            top: 11px;
+            left: 12px;
+        }
+    }
+    .profile-claim-grid-search__action{
+        margin: 0 0 0 auto;
+        .profile-claim-grid-search__btn-clear{
+            width: 76px !important;
+            height: 35px;
+            border: none !important;
+            padding: 0;
+        &--clearicon{
+            position: relative;
+            top: 6px;
+        }
+        .MuiButton-label{
+            border: none !important;
+            top: -5px !important;
+        }
+        span{
+            position: relative;
+            top: 5px;
+            line-height: 14px;
+            text-transform: capitalize;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+            margin-left: 7px;
+            border-bottom: 1px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg width='28' height='1' viewBox='0 0 28 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='28' y2='0.5' stroke='%23666666' stroke-dasharray='1 1'/%3E%3C/svg%3E%0A");
+            border-image-repeat: repeat;
+            border-image-slice: 4 4 4 4;
+        }
+        }
+        .profile-claim-grid-search__btn-search{
+            width: 77px !important;
+            background-color: $color-white;
+            color: #5F80B9 !important;
+            border: 1px solid #C2CFE0;
+            text-transform: capitalize;
+            font-weight: normal;
+        }
+    }
+   
+}
+    }
+    .frx-grid{
+        .frx-grid__grid-block{
+            padding: 0;
+            .ant-table{
+                .ant-table-container{
+                    .ant-table-header{
+                        border-radius: 0;
+                    }
+                    .ant-table-body{
+                        & > table{
+                            border-spacing: 0;
+                            .ant-table-tbody{
+                                .ant-table-row{
+                                    .ant-table-cell{
+                                        border-top: none;
+                                        border-right: 1px solid $container-border-color;
+                                        height: 59px;
+                                        &:first-child, &:last-child{
+                                            border-radius: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

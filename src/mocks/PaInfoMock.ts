@@ -1,0 +1,10 @@
+const paInfoObject = {
+  id: 1,
+  title: "Astorvastatin",
+  indication:
+    "All FDA-approved Indications, Some Medically-accepted Indications Gastric mucosa-associated lymphoid tissue (MALT) lymphoma, non-gastric MALT lymphoma, hairy cell leukemia, and lymphoplasmacytic lymphoma, follicular lymphoma, primary central nervous system lymphoma, AIDS-related B-cell lymphoma, histologic transformation of marginal zone lymphoma to diffuse large B-cell lymphoma, diffuse large B-cell lymphoma, post-transplant lymphoproliferative disorders",
+  medicalInfo:
+    "For mantle cell lymphoma: 1) the requested drug will be used in a patient who has received at least one prior therapy, OR 2) the requested drug will be used in combination with rituximab as pretreatment to induction therapy with RHyperCVAD (cyclophosphamide, vincristine, doxorubicin, and dexamethasone) regimen. For gastric MALT lymphoma and non-gastric MALT lymphoma: 1) disease is recurrent, refractory, or progressive, AND 2) the requested drug will be used as second-line or subsequent therapy. For hairy cell leukemia: the requested drug will be used as a single agent for disease progression. For primary central nervous system lymphoma: the disease is relapsed or refractory disease. For nodal marginal zone lymphoma or splenic marginal zone lymphoma: 1) disease is refractory or progressive, AND 2) the requested drug will be used as second-line or subsequent therapy. For histologic transformation of marginal zone lymphoma to diffuse large B-cell lymphoma: the requested drug will be used in patients who have received prior chemoimmunotherapy. For diffuse large B-cell lymphoma: 1) disease is progressive or refractory AND 2) the requested drug will be used as second-line or subsequent therapy. For AIDS-related B-cell lymphoma: the requested drug will be used as second-line or subsequent therapy for relapsed disease. For post-transplant lymphoproliferative disorders: 1) the disease is partially responsive, persistent, or progressive AND 2) the requested drug will be used in patients who have received prior chemoimmunotherapy.",
+  coverage_duration: "1 year",
+};
+export default paInfoObject;

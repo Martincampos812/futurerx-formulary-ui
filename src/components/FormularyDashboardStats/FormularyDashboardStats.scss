@@ -1,0 +1,26 @@
+.formulary-dashboard-stats-outer-container {
+  margin-bottom: 11px;
+  .inner-container {
+    padding: 27px 40px 60px 40px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .title {
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #1D54B4;
+    padding: 37px 0px 0px 40px;
+  }
+  
+  .stats-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+}

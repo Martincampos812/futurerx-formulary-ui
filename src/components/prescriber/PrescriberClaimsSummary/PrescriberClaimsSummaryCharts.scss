@@ -1,0 +1,64 @@
+@import "../../../assets/style.scss";
+
+.FrxChart-content-prescriber__claimssummary{
+    background-color: $color-white;
+    border: 1px solid $container-border-color;
+    border-radius: 5px;
+    margin: 10px 0px 0 0 !important;
+    height: auto;
+    & > h4{
+        text-transform: uppercase;
+        color: $hyperlink-text-color;
+        letter-spacing: 0.5px;
+        font-size: $font-12;
+        font-weight: $font-weight-500;
+        line-height: 50px;
+        border-bottom: 1px solid $container-border-color;
+        padding: 0 20px;
+        margin: 0;
+    }
+    &-donut{
+        display: flex;
+        padding: 16px 40px;
+        justify-content: center;
+        .donut{
+            margin: 0 auto;
+        }
+        .claimssummary-legend{
+            margin: auto 0;
+            .stats-summary-root{
+                width: 200px;
+                .stats-summary-box{
+                    .stats-summary-item{
+                        &:first-child {
+                            .ss-number {
+                                border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%2359B35E' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                                border-bottom: 1px solid transparent;
+                                border-image-repeat: repeat;
+                                border-image-slice: 4 4 4 4;
+                                width: fit-content;
+                            }
+                        }
+                        &:nth-child(2) {
+                            .ss-number {
+                                border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%23F65A1C' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                                border-bottom: 1px solid transparent;
+                                border-image-repeat: repeat;
+                                border-image-slice: 4 4 4 4;
+                                width: fit-content;
+                            }
+                        }
+                        .ss-number{
+                            height: 36px;
+                        }
+                        .ss-label{
+                            text-transform: uppercase;
+                            font-size: $font-12;
+                            color: $primary-text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

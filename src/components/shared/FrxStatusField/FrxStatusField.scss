@@ -1,0 +1,196 @@
+$not-available: #e76262;
+$selling: #5f80b9;
+$sell: #1fbbc4;
+
+.status-field-block {
+  &__container {
+    height: 34px;
+    width: 77px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__variant-1 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $selling;
+      color: $selling;
+    }
+
+    &--fill {
+      background: $selling;
+      border: 1px solid $selling;
+      color: #ffffff;
+    }
+  }
+
+  &__variant-2 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $sell;
+      color: $sell;
+    }
+
+    &--fill {
+      background: $sell;
+      border: 1px solid $sell;
+      color: #ffffff;
+    }
+  }
+
+  &__variant-3 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $not-available;
+      color: $not-available;
+    }
+
+    &--fill {
+      background: $not-available;
+      border: 1px solid $not-available;
+      color: #ffffff;
+    }
+  }
+  &__variant-4 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $not-available;
+      color: $not-available;
+    }
+    &--fill {
+      background: #92B2EB;
+      border: 1px solid #92B2EB;
+      color: #ffffff;
+    }
+  }
+  &__variant-5 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $not-available;
+      color: $not-available;
+    }
+    &--fill {
+      background: #E5E5E5;
+      border: 1px solid #E5E5E5;
+      color:#323C47;
+    }
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+}
+
+.status-field-pill {
+  &__container {
+    height: 20px;
+    width: 106px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__variant-1 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $selling;
+      color: $selling;
+    }
+
+    &--fill {
+      background: $selling;
+      border: 1px solid $selling;
+      color: #ffffff;
+    }
+  }
+
+  &__variant-2 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $sell;
+      color: $sell;
+    }
+
+    &--fill {
+      background: $sell;
+      border: 1px solid $sell;
+      color: #ffffff;
+    }
+  }
+
+  &__variant-3 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $not-available;
+      color: $not-available;
+    }
+
+    &--fill {
+      background: $not-available;
+      border: 1px solid $not-available;
+      color: #ffffff;
+    }
+  }
+
+  &__variant-4 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid $not-available;
+      color: $not-available;
+    }
+
+    &--fill {
+      background: #684999; //$not-available;
+      border: 1px solid #684999;//$not-available;
+      color: #ffffff;
+    }
+  }
+  &__variant-5 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid #707683;
+      color: #707683;
+    }
+    &--fill {
+      background: #707683; //$not-available;
+      border: 1px solid #707683;//$not-available;
+      color: #ffffff;
+    }
+  }
+  &__variant-6 {
+    &--outline {
+      background: #ffffff;
+      border: 1px solid #707683;
+      color: #707683;
+    }
+    &--fill {
+      background: #92B2EB; //$not-available;
+      border: 1px solid #92B2EB;//$not-available;
+      color: #ffffff;
+    }
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+  }
+}

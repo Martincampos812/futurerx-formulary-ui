@@ -1,0 +1,85 @@
+@import "../../assets/style.scss";
+
+.audit-grid-root{
+    padding: 20px;
+    .frx-grid-container{
+        .frx-grid{
+            .frx-grid-pagination{
+                grid-template-columns: auto auto auto auto;
+                border-bottom: 1px solid $container-border-color;
+                border-radius: 5px;
+                .frx-grid-pagination__items-per-page{
+                    margin: 0 0 0 auto;
+                }
+                .frx-grid-pagination__page-numbers{
+                    margin: 0 auto 0 24px;
+                }
+            }
+            &__grid-block__table-block{
+                .ant-table{
+                    .ant-table-container{
+                        .ant-table-header{
+                            border-radius: 5px 5px 0 0;
+                                & > table{
+                                .ant-table-thead{
+                                    background-color: #F9F9F9;
+                                    height: 40px;
+                                    & > tr{
+                                        & > th{
+                                            border-right: 1px solid $container-border-color !important;
+                                            padding: 0 8px !important;
+                                            .ant-table-filter-trigger-container{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .ant-table-body{
+                            & > table{
+                                border-collapse: separate;
+                                border-spacing: 0;
+                                .ant-table-tbody, .ant-table-summary {
+                                    .ant-table-row{
+                                        .ant-table-cell{
+                                            border: 1px solid $container-border-color;
+                                            border-right: none;
+                                            border-top: none;
+                                            padding: 0 20px;
+                                            height: 40px;
+                                            color: $grid-text-color;
+                                        }
+                                        .ant-table-cell:first-child{
+                                            text-align: right;
+                                            border-radius: 0
+                                        }
+                                        .ant-table-cell:last-child{
+                                            border-right: 1px solid $container-border-color;
+                                            border-radius: 0
+                                        }
+                                        .ant-table-cell:nth-child(1n+4) {
+                                            text-align: right;
+                                        }
+                                    }
+                                }
+                                .ant-table-summary{
+                                    .ant-table-row{
+                                        background-color: $grid-row-bg-color;
+                                        .ant-table-cell{
+                                            font-weight: $font-weight-bold;
+                                        }
+                                        .ant-table-cell:first-child{
+                                            text-align: left;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }        
+}

@@ -1,0 +1,87 @@
+@import "../../assets/style.scss";
+
+.PA-content{
+    .claims-accordion{
+        &-summary{
+            &-button{
+                & > Button{
+                    width: auto !important;
+                    padding: 0 20px !important;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+    }
+    .FrxChart-content{
+        .stats-summary-root {
+            width: 515px !important;
+            min-width: 496px !important;
+            .stats-summary-box{
+                height: 91px;
+                min-height: auto;
+                padding: 21px 20px 15px 0;
+                .stats-summary-item{
+                    padding: 0 0 0 15px;
+                    .ss-rectangle{
+                        top: 0;
+                    }
+                    .ss-label{
+                        font-size: $font-12;
+                        color: #999999;
+                    }
+                    &:first-child {
+                        .ss-number {
+                            border-image: url("data:image/svg+xml,%3Csvg width='16' height='1' viewBox='0 0 16 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-4.37114e-08' y1='0.5' x2='16' y2='0.499999' stroke='%23666666' stroke-dasharray='1 1'/%3E%3C/svg%3E ") !important;
+                            border-bottom: 1px solid transparent !important;
+                            border-image-repeat: repeat !important;
+                            border-image-slice: 4 4 4 4 !important;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .ss-number {
+                            border-image: url("data:image/svg+xml,%3Csvg width='16' height='1' viewBox='0 0 16 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-4.37114e-08' y1='0.5' x2='16' y2='0.499999' stroke='%2359B35E' stroke-dasharray='1 1'/%3E%3C/svg%3E ") !important;
+                            border-bottom: 1px solid transparent !important;
+                            border-image-repeat: repeat !important;
+                            border-image-slice: 4 4 4 4 !important;
+                        }
+                    }
+                    &:nth-child(3){
+                        .ss-number {
+                        border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%23F65A1C' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                        border-bottom: 1px solid transparent;
+                        border-image-repeat: repeat;
+                        border-image-slice: 4 4 4 4;
+                        }
+                    }
+                    &:nth-child(4){
+                        .ss-number {
+                        border-image: url("data:image/svg+xml,%3Csvg width='16' height='1' viewBox='0 0 16 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-4.37114e-08' y1='0.5' x2='16' y2='0.499999' stroke='%23666666' stroke-dasharray='1 1'/%3E%3C/svg%3E%0A");
+                        border-bottom: 1px solid transparent;
+                        border-image-repeat: repeat;
+                        border-image-slice: 4 4 4 4;
+                        }
+                    }
+                    &:last-child {
+                        .ss-number {
+                            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055B5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                            border-bottom: 1px solid transparent;
+                            border-image-repeat: repeat;
+                            border-image-slice: 4 4 4 4;
+                        }
+                    }
+                }
+            }
+        }
+        .barChart-container{
+            .barDiag{
+                .ToolTip{
+                    height: 158px;
+                    margin: -190px 0px 0px -55px; 
+                    // this is not the goodway to assign margin, somebody assigned like this in 
+                    // claim chart tooltip have to change.
+                }
+            }
+        }
+    }
+    
+}

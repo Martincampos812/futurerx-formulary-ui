@@ -1,0 +1,44 @@
+.PA-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
+  .list-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #707683;
+    margin-right: 2rem;
+  }
+  .ant-select-arrow {
+    margin-right: 0px !important;
+  }
+}
+
+.pa-grid-container {
+  padding: 0px 10px;
+}
+
+.pa-settings-grid-container .frx-grid-container {
+  background: #ffffff;
+  padding: 10px;
+}
+
+.input-element {
+  .bordered {
+    padding: 5px;
+    width: 410px;
+    p {
+      font-size: 12px;
+      display: inline;
+      color: #2055b5;
+      text-decoration: underline dotted;
+      cursor: pointer;
+    }
+  }
+  .hide-edit-icon {
+    float: right;
+    font-size: 8px;
+    cursor: pointer;
+  }
+}

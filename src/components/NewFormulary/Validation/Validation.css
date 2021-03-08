@@ -1,0 +1,140 @@
+@import "../../../assets/style.scss";
+
+.validation .title {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #1d54b4;
+  padding: 37px 0px 0px 40px;
+}
+
+.validation .container {
+  padding: 27px 40px 60px 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.collapse {
+  margin-bottom: 13px;
+}
+
+.custom {
+  background-color: white;
+}
+
+.custom .ant-collapse-content-box {
+  padding: 0;
+}
+
+.divider {
+  background-color: #dbdbdb;
+  height: 1px;
+  border: 0;
+}
+
+.row {
+  background-color: #f9f9f9;
+  height: 450px;
+  max-height: 450px;
+  overflow-y: none;
+}
+
+.col-1 {
+  padding: 20px;
+  height: 450px;
+  /* background-color: white; */
+
+  /* min-height: 360px; */
+}
+
+.col-1 > .validation-row > .validation-col {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #707683;
+}
+.col-1 > .scrolling {
+  margin-top: 10px;
+  height: 380px;
+  overflow: scroll;
+}
+
+.col-2 {
+  padding: 20px;
+  height: 450px;
+  /* min-height: 360px; */
+  background-color: white;
+}
+
+.col-2 > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #707683;
+}
+
+.col-2 > .btn-lg {
+  width: 360px;
+  /* height: 30px; */
+  /* left: 760px;
+  top: 530px; */
+  margin-right: 10px;
+  background: #ffffff;
+  /* border: 1px solid #e5e5e5; */
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.col-2 > .scrolling {
+  padding: 0;
+  height: 330px;
+  overflow: scroll;
+}
+
+.formulary-root-validation > .continue-btn-wrapper {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.formulary-root-validation > .continue-btn-wrapper > .continue-btn {
+  width: 120px;
+  background: #1f55b6;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.formulary-root-validation > .continue-btn-wrapper > .continue-btn > span {
+  color: #ffffff;
+  text-transform: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1px;
+}

@@ -1,0 +1,266 @@
+.formulary-expanded-details {
+  position: relative;
+  top: -11px;
+  &__container {
+    border: 1px solid#e5e5e5;
+    display: flex;
+  }
+}
+
+
+.formulary-expanded-details-left {
+  max-width: 137px;
+  width: 100%;
+  border-right:1px solid #E5E5E5;
+  
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #707683;
+    padding-top: 53px;
+    padding-left: 30px;
+  }
+  
+  &__list {
+    margin-top: 8px;
+  }
+  
+  &__list-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #323C47;
+    cursor: pointer;
+    width: 137px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    
+    &:hover {
+      background-color: #EEF3F7;
+    }
+  }  
+  
+  &__list-item-indicator {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-right: 8px;
+    
+    &--active {
+      background: #80C483;
+    }
+
+    &--inactive {
+      background: #C4C4C4;
+    }
+  }  
+  
+  &__list-add-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1D54B4;
+    margin-top: 24px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+}
+
+.formulary-expanded-details-right {
+
+
+  width: 100%;
+  &__header {
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;;
+  }
+  
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    padding: 24px 23px 22px 19px ;
+  }
+  
+  &__tabs {
+    padding: 24px 23px 0px 19px ;
+  }
+}
+
+.formulary-info-field {
+  &__label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #707683;
+    margin-bottom: 10px;
+  }
+
+  &__value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #323C47;
+  }
+  
+  &__required {
+    color: #f65a1c;
+    margin-left: 2px;
+  }
+}
+.view-fl-btn{
+  background: #2055b5;
+  color: white;
+  padding: 0 20px;
+  width: auto;
+  margin-right: 0;
+}
+.view-fl-field{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.radio-group {
+  .radio-group-custom {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    label {
+      > span.MuiButtonBase-root {
+        padding-right: 12px;
+      }
+      input[type="radio"] + div {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: white;
+        border: 2px solid #ddd;
+        svg {
+          display: none;
+        }
+      }
+      input[type="radio"]:checked + div {
+        background: #2055b5;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        border: none;
+      }
+      span.MuiFormControlLabel-label {
+        font-size: 12px;
+        text-transform: none;
+      }
+      &.Mui-disabled{
+        input[type="radio"] + div {
+          background: #e5e5e5;
+        }
+        input[type="radio"]:checked + div{
+          background: #2055b5;
+        }
+      }
+    }
+    &.mr-80 {
+      label {
+        margin-right: 77px;
+      }
+    }
+    &.mr-40{
+      margin-right: 40px;
+    }
+  }
+}
+
+.formulary-expanded-details-right__content{
+  .checkbox-antd{
+    span.ant-checkbox-checked .ant-checkbox-inner{
+      background: #2055B5;
+      border-color: #2055B5 !important;
+    }
+    // .ant-checkbox-checked .ant-checkbox-disabled {
+    // }
+  }
+  .radio-group {
+    .radio-group-custom {
+      label {
+        margin-right: 40px;
+        span.MuiFormControlLabel-label{
+          color: #aaaaaa;
+        }
+        span.Mui-checked + span{
+          color: #323C47;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.table-expanded-sticky-wrapper{
+  .formulary-expanded-details-right__content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 19px;
+    .formulary-info-field{
+      width: calc(100% / 3);
+    }
+    .supplemental-models-container{
+      border: none;
+      .formulary-design-fields-wrapper{
+        padding: 0;
+        .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner{
+          background: #2055B5;
+        }
+      }
+    }
+    .tiers-information-container{
+      width: 100%;
+      border: none;
+      .tiers-information-fields-wrapper.setup-label{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        .tiers-dropdown-wrapper{
+          border-color: #e5e5e5;
+        }
+      }
+    }
+  }
+}
+.clone-popup{
+  .ant-table-cell{
+    .supplemental-models-container{
+      border: none;
+      .formulary-design-fields-wrapper{
+        padding: 20px 20px 0;
+        .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner{
+          background: #2055B5;
+        }
+      }
+    }
+    .tiers-information-container{
+      border: none;
+      .tiers-information-fields-wrapper.setup-label{
+        padding: 20px 20px 10px;
+      }
+    }
+  }
+}
+

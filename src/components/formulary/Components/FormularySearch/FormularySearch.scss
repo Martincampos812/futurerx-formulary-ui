@@ -1,0 +1,233 @@
+@import "../../../../assets/style.scss";
+
+.formulary-search-root{
+   padding: 0;
+   &__header{
+       height: 50px;
+       line-height: 50px;
+       border-bottom: 1px solid $container-border-color;
+       display: flex;
+       padding: 0 20px;
+      &--heading{
+        font-size: $font-12;
+        font-weight: $font-weight-500;
+        text-transform: uppercase;
+        color: $hyperlink-text-color;
+        margin: 0;
+      } 
+      &--button{
+        margin: 7px 0 6px auto !important;
+        padding: 0 !important;
+        width: 92px;
+        height: 35px;
+        border: 1px solid $button-border-color !important;
+        border-radius: 5px !important;
+        box-sizing: border-box !important;
+        .MuiButton-label{
+            color: $button-text-color;
+            font-size: $font-12;
+            line-height: 35px;
+            font-weight: $font-weight-normal;
+
+        }
+      }
+   }
+   &__information{
+       padding: 20px;
+       width: 100%;
+       &--data{
+        padding: 10px 0;
+        background: $formulary-info-bg;
+        border: 1px solid $container-border-color;
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        &__fields{
+            display: grid;
+            border-right: 1px solid $container-border-color;
+            padding: 0 0 0 20px;
+            & > label{
+                color: #999999;
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                line-height: 20px;
+            }
+            & > span{
+                color: $primary-text-color;
+                font-size: $font-16;
+                font-weight: $font-weight-normal;
+                line-height: 20px;
+            }
+        }
+        &__fields:last-child{
+            border-right: none;
+        }
+       }
+        &--actions{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            margin: 20px 0 0 0;
+            &__inputs{
+                display: flex;
+                width: 90%;
+                border: 1px solid $container-border-color;
+                box-sizing: border-box;
+                border-radius: 3px;
+                position: relative;
+            .search-formulary, .search-formulary-select{
+             border: none;
+             padding: 0;
+            }
+            .search-formulary{
+                width: 50%;
+                font-size: $font-12;
+                line-height: 14px;
+                letter-spacing: 0.1px;
+                font-weight: $font-weight-bold;
+                color: $primary-text-color;
+                padding: 0 0 0 32px;
+                outline: none;
+                position: relative;
+            }
+            .search-formulary::placeholder{
+                color: $search-input-color;
+                font-weight: $font-weight-normal;
+            }
+            .search-formulary-icon{
+                position: absolute;
+                top: 11px;
+                left: 12px;
+            }
+            .input-devider-border{
+                border-right: 1px solid $container-border-color;
+                height: 20px;
+                margin: 6px 0;
+            }
+            .select-box{
+                // border-left: 1px solid $container-border-color;
+                width: 50%;
+                margin-right: 10px;
+                .search-formulary-select{
+                    width: 100%;
+                    .ant-select-selector{
+                        border: none;
+                        padding: 0 0 0 20px;
+                        .ant-select-selection-item{
+                            line-height: 35px;
+                        }
+                    }
+                    .ant-select-arrow{
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .search-formulary-button{
+            // width: 95px; 
+            width: 9%;
+            padding: 0;
+            background-color: #1D54B4;
+            border-radius: 3px;
+            margin: 0 0 0 auto;
+            .MuiButton-label{
+                font-size: $font-12;
+                font-weight: $font-weight-500;
+                line-height: 35px;
+                letter-spacing: 0.01em;
+                text-align: center;
+                text-transform: capitalize;
+                color: $color-white;
+            }
+            &:hover{
+                background: #1D54B4;
+            }
+        }
+    }
+    &--description{
+        font-size: $font-10;
+        font-weight: $font-weight-normal;
+        font-style: italic;
+        letter-spacing: 0.1px;
+        color: $search-input-color;
+        line-height: 12px;
+    }
+   }
+   .formulary-filtered-options, .no-options {
+    display: block;
+    list-style: none;
+    width: 50%;
+    transition: width 0.3s;
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    z-index: 999;
+    padding: 0;
+    border: 1px solid $container-border-color;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    li {
+        display: block;
+        margin: 0px auto;
+        padding: 0px 20px;
+        font-size: $font-12;
+        width: 100%;
+        border-radius: 2px;
+        color: $primary-text-color;
+        font-weight: $font-weight-normal;
+        line-height: 35px;
+        &:hover {
+            font-weight: $font-weight-bold;
+            color: $hyperlink-text-color;
+            cursor: pointer;
+            transition: 0.3s all;
+        }
+    }
+    & > span{
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        padding: 0 20px;
+        line-height: 35px;
+        color: $primary-text-color;
+    }
+    li.option-active {
+        font-size: $font-12;
+        background: whitesmoke;
+        color: $hyperlink-text-color;
+        font-weight: $font-weight-bold;
+    }
+  }  
+}
+
+.search-formulary-select-options{
+    // width: 38.5% !important;
+    // min-width: 520px !important;
+    // border-top: none !important;
+    top: 394px !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    .ant-select-item:first-child{
+        .ant-select-item-option-content{
+            color: $hyperlink-text-color !important;
+            font-weight: $font-weight-500;
+        }
+    }
+    .ant-select-item{
+        padding: 0 20px !important;
+        .ant-select-item-option-content{
+            color: #707683 !important;
+            line-height: 35px;
+        }
+    }
+    .ant-select-item-option-selected{
+        background-color: #EEF3F7 !important;
+        .ant-select-item-option-content{
+            color: $primary-text-color;
+            background-color: #EEF3F7 !important;
+        }
+    }
+}

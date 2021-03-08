@@ -1,0 +1,176 @@
+@import "./../../../assets/style.scss";
+
+.PharmacyInfoSearch {
+  .phramacy-search-tab-container {
+    .pharmacy-search-pharmacy-information-container {
+      margin-top: 2%;
+    }
+  }
+
+  .phramacy-search-tab-container,
+  .pharmacy-search-pharmacy-information-container {
+    .member-info-heading,
+    .pharmacy-informatin-heading {
+      padding-top: 12px;
+      text-align: left;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      padding-left: 9%;
+      color: #707683;
+    }
+
+    .member-info-search-field,
+    .pharmacy-information-search-fields {
+      .member-search__input {
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        //   text-indent: 10px;
+        width: 100%;
+        height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin-bottom: 8px;
+        & > input::placeholder {
+          font-size: 12px;
+          font-weight: $font-weight-normal;
+          // color: $input-text-placeholder;
+          color: black;
+          // text-indent: 10px;
+        }
+        .member-search__icon {
+          margin: 10px;
+        }
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          border-bottom: 0;
+        }
+      }
+      .pharamcy-search-select-filed {
+        // margin-bottom: 10px;
+        width: 208px;
+        .member-search__input--dropdown {
+          height: 100% !important;
+          border: none !important;
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .ant-select-selector {
+            // .ant-select-selection-search {
+            .ant-select-selection-placeholder {
+              color: inherit;
+            }
+          }
+        }
+      }
+      .pharamcy-search-state-zip-container {
+        // width: 535px;
+        .member-search__input--dropdown {
+          height: 100% !important;
+          border: none !important;
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+          .ant-select-arrow {
+            // top: 37%;
+          }
+          .ant-select-selector {
+            // .ant-select-selection-search {
+            .ant-select-selection-placeholder {
+              color: inherit;
+            }
+          }
+        }
+        // display: inline-block;
+        // width: 250px;
+      }
+      .pharamcy-search-zipcode-input {
+        margin-left: 8px;
+
+        .member-search__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 33px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

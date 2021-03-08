@@ -1,0 +1,123 @@
+@import "../../../assets/style.scss";
+
+.cost-share-details_content{
+    padding: 50px 0 30px;
+
+    .row input::placeholder
+    {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+    }
+    .row input {
+        width: 170px;
+        height: 35px;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        left: 748px;
+        top: 44px;        
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 35px;
+        color: #999999;
+    }
+
+    .ant-collapse-content-box{
+        padding: 0;
+    }
+    .ant-collapse{
+        border-radius: 5px;
+    }
+    .ant-collapse-item:last-child > .ant-collapse-content, 
+    .ant-collapse > .ant-collapse-item:last-child, 
+    .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header{
+        border-radius: 0 0 5px 5px;
+    }
+    .ant-collapse-header{
+        padding-left: 20px !important;
+        font-size: 12px;
+        .ant-collapse-arrow{
+            left: auto !important;
+            right: 20px;
+        }
+    }
+    .headings,.body{
+        display: flex;
+        .item{
+            border-left: 1px solid #e5e5e5;
+            line-height: 40px;
+            padding: 0 20px;
+            background: #f9f9f9;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #707683;
+            position: relative;
+            &:first-child{
+                border-left: none;
+            }
+        }
+        .tier-number{
+            width: 175px;
+        }
+        .tier-desc{
+            width: 330px;
+        }
+        .cost-share{
+            width: 211px;
+        }
+
+        .cost-share *{            
+            text-transform: none;
+        }
+        .cost-val{
+            width: 225px;
+        }
+    }
+    .body{
+        display: block;
+        .row{
+            display: flex;
+            width: 100%;
+            border-top: 1px solid #e5e5e5;
+            .item{
+                color: #323C47;
+                background: white;
+                &.tier-desc{
+                    line-height: 14px;
+                    text-transform: none;
+                    padding: 12px 20px;
+                }
+                .select-box {
+                    display: flex;
+                    height: 40px;
+                    align-items: center;
+                    .ant-select{
+                        width: 100%;
+                        .ant-select-selection-item{
+                            line-height: 35px;
+                        }
+                        &:not(.ant-select-customize-input) .ant-select-selector{
+                            height: 35px;
+                        }
+                    }
+                }
+                &.cost-val{
+                    .prefix{
+                        position: absolute;
+                        top: 0;
+                        left: 7px;
+                        color: #323C47;
+                        &.percent{
+                            left: auto;
+                            right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

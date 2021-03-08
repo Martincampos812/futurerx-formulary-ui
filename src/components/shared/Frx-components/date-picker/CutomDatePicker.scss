@@ -1,0 +1,170 @@
+@import "../../../../assets/style.scss";
+
+/* .customDatePickerWidth {
+  position: relative;
+} */
+
+//  .react-datepicker__input-container > input {
+//   width: 100%;
+
+//   border: none;
+//   width: 205px;
+//   height: 35px;
+
+//   background: #ffffff;
+//   border: 1px solid #e5e5e5;
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   margin-bottom: 10px;
+// }
+// .DatePicker {
+//   position: absolute;
+//   z-index: 1;
+//   right: 10px;
+//   top: 10px;
+//   color: #888080;
+// } 
+
+// Common ant-picker customization as per figma //
+
+
+.ant-picker{
+  width: 125px;
+  height: 22px;
+  // margin-left: 10px !important;
+}
+// .ant-picker-suffix{
+//   width: 10px !important;
+// }
+.ant-picker:hover, .ant-picker-focused{
+  border-color: #e5e5e5 !important;
+}
+.ant-picker-clear{
+  display: none;
+}
+
+.ant-picker-dropdown{
+  position: relative;
+  width: 307px;
+  .ant-picker-panel-container{
+    border-radius: 5px;
+    .frx-date-picker__panel{
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px 0 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 12px;
+      color: #2055B5;
+      &-close-icon{
+        float: right;
+        margin: 20px 0;
+        cursor: pointer;
+      }
+    }
+    .ant-picker-date-panel, .ant-picker-year-panel, .ant-picker-month-panel, .ant-picker-decade-panel, .ant-picker-time-panel{
+      width: 307px;
+      .ant-picker-header{
+        padding: 0 16px 0 16px;
+        border-bottom: none;
+        .ant-picker-header-super-prev-btn, .ant-picker-header-super-next-btn{
+          display: none;
+        }
+        .ant-picker-header-prev-btn{
+          order: 1;
+        }
+        .ant-picker-header-next-btn{
+          order: 2;
+        }
+        .ant-picker-header-prev-btn, .ant-picker-header-next-btn{
+          .ant-picker-next-icon, .ant-picker-prev-icon{
+            &::before{
+              width: 10px;
+              height: 10px;
+              border-width: 2.5px 0 0 2.5px;
+              border-color: #707683;
+            }
+          }
+        }
+        .ant-picker-suffix{
+          width: 10px !important;
+        }
+        .ant-picker-header-view{
+          text-align: left;
+          color: #707683;
+          font-size: 18px;
+          font-weight: bold;
+          & > button{
+            &:hover{
+              color: #1F55B6;
+            }
+          }
+        }
+      }
+      
+      .ant-picker-body{
+        width: 307px;
+        padding: 13px 13px 16px 14px;
+        .ant-picker-content{
+          & > thead{
+            width: 288px;
+            & > tr{
+              & > th{
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                border: none;
+                color: #707683;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 40px;
+              }
+            }
+          }
+          & > tbody{
+            & > tr{
+              .ant-picker-cell{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                padding: 0;
+                border: 1px solid #DFDFDF;
+                color: #707683;
+                font-size: 12px;
+                font-weight: normal;
+              }
+              .ant-picker-cell-selected, .ant-picker-cell-today{
+                .ant-picker-cell-inner{
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  border-radius: 0;
+                  border: 1px solid #DFDFDF;
+                  font-weight: 600;
+                  color: #ffffff;
+                  background: #1F55B6;
+                 &::before{
+                   border: none;
+                 }
+                 &:hover{
+                   background-color: #1F55B6;
+                   color: #ffffff;
+                 }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ant-picker-footer{
+      display: none;
+    }
+  }
+}
+
+.date-time-picker-dropdown{
+  
+}

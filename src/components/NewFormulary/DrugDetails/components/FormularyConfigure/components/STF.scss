@@ -1,0 +1,65 @@
+@import "../../../../../../assets/style.scss";
+
+.stf-root {
+  .modify-wrapper {
+    .settings-form {
+      .group {
+        .marketing-material,
+        .radio-group {
+          padding-top: 0 !important;
+        }
+      }
+    }
+    .select-drug-from-table {
+      .white-bg {
+        .header,
+        .space-between {
+          display: flex !important;
+          justify-content: flex-end !important;
+        }
+      }
+    }
+  }
+}
+.bordered .stf-root {
+  .settings-form {
+    .group {
+      padding: 0 0 20px 0;
+
+      // .ant-space .ant-space-horizontal .ant-space-align-center {
+      //   .ant-space-item {
+      .radio-group {
+        padding-top: 0;
+      }
+      // }
+      // }
+    }
+  }
+  .input-element {
+    .bordered {
+      padding: 5px;
+      width: 370px;
+      p {
+        font-size: 12px;
+        display: inline;
+        color: #2055b5;
+        text-decoration: underline dotted;
+        cursor: pointer;
+      }
+    }
+    .hide-edit-icon {
+      float: right;
+      font-size: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.step-therapy-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  .new-group-des {
+    width: fit-content !important;
+  }
+}

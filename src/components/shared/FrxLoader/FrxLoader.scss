@@ -1,0 +1,21 @@
+
+
+.frx-loader {
+  width: 100%;
+  height: 100%;
+  background-color: #00000030 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+	
+	&__img{
+	display: block;
+  width: 80px;
+  height: 80px;
+	}
+}
+
+

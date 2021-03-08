@@ -1,0 +1,16 @@
+.radioWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .labelWrapper{
+        width: 105px;
+    }
+    label{
+        margin-left: 0 !important;
+    }
+}
+.umedit-label{
+    font-size: 12px;
+    color: #323c47;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}

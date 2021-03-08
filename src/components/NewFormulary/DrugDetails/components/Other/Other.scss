@@ -1,0 +1,38 @@
+.age-limit-settings {
+  padding-bottom: 80px;
+  &__add-new-form-action {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  &__add-new-form-action-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #707683;
+    margin-left: 4.8px;
+    text-decoration: underline dashed;
+  }
+}
+
+.other-label {
+  padding: 15px;
+}
+
+.other-label label {
+  display: block;
+  font-size: 12px;
+  color: #707683;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  .astrict {
+    color: red;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../../../../../assets/style.scss";
+
+.pde-status-dialogue-root{
+    .MuiDialog-container{
+        .MuiDialog-paper{
+            width: 700px;
+            .frx-dialog-root__heading{
+                border: none;
+                height: 34px;
+                .frx-dialog-root__close-icon{
+                    height: 34px;
+                    line-height: 34px;
+                }
+            }
+            .MuiDialogContent-root{
+                padding: 0 20px 20px 20px;
+                overflow: hidden;
+                .pde-status-dialogue-root__info{
+                    border: 1px solid $container-border-color;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    margin: 0 0 0 12px;
+                    &--header{
+                        border-bottom: 1px solid $container-border-color;
+                        padding: 0 20px;
+                        height: 56px;
+                        display: grid;
+                        grid-template-columns: 20% 60% 20%;
+                        & > span{
+                            font-size: $font-12;
+                            font-weight: $font-weight-bold;
+                            color: $primary-text-color;
+                            line-height: 56px;
+                        }
+                    }
+                    &--list{
+                        overflow-y: scroll;
+                        max-height: calc(70vh - 0px);
+                        &__fields{
+                        display: grid;
+                        grid-template-columns: 20% 61% 19%;
+                        padding: 0 20px;
+                        & > span{
+                            font-size: $font-12;
+                            font-weight: $font-weight-normal;
+                            color: $primary-text-color;
+                            line-height: 24px;
+                            text-align: left;
+                            text-transform: uppercase;
+                        }
+                        & > span:last-child{
+                            font-weight: $font-weight-bold;
+                        }
+                    }
+                }   
+                }
+            }
+        }
+    }
+}

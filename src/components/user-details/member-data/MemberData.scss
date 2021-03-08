@@ -1,0 +1,51 @@
+.member-data {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.member-data > div.keyValue {
+  width: 100%;
+  /* margin-left: -12px; */
+}
+.member-data > div.editKeyValue {
+  width: 140px;
+}
+.member-data > div.contactInfo {
+  width: 30%;
+}
+
+.member-data > div.prc-contact-text {
+  width: 550px;
+}
+
+.member-data > div.value {
+  width: 100%;
+  padding-left: 12px;
+  font-weight: bold !important;
+  word-break: break-word;
+}
+
+// .member-data > div.contactInfo_hyperlink{
+//   color:blue !important;
+//   width: 100%;
+//   padding-left: 12px;
+//   font-weight: bold !important;
+// }
+
+.ant-input{
+  width: 127px;
+  height: 22px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px;
+  color: #666666;
+}
+

@@ -1,0 +1,53 @@
+.select-formulary-dropdown {
+  &__input-element {
+    margin-top: 6px;
+
+    cursor: pointer;
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .bordered {
+      // .hide-edit-icon {
+      //   display: none;
+      // }
+      // background: #eef3f7;
+      border: 1px solid #e5e5e5;
+      height: 35px;
+      // width: 338px;
+      width: auto !important;
+      height: 35px;
+
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      box-sizing: border-box;
+      border-radius: 3px;
+      text-decoration: underline dotted #1d54b4;
+      .inner-font {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        // line-height: 14px;
+        color: #1d54b4;
+        // border-bottom: 1px dashed #1d54b4;
+      }
+
+      .no-inner-font {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #323c47;
+      }
+    }
+    .bg-green {
+      background-color: #d5ffd7;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.PlanInformation {
+    margin: 10px 0;
+  .planInformation-card {
+
+    .MuiCardHeader-title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 60px;
+      /* identical to box height, or 500% */
+
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      color: #2055b5;
+      padding-left: 15px;
+    }
+    .planInformation-card-header {
+      border-bottom: 1px solid#E5E5E5;
+      padding: 0 0 0 15px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px;
+      .btn {
+        padding: 6px 20px;
+        width: 103px;
+        height: 35px;
+        background: #ffffff;
+        border: 1px solid #2055b5;
+        box-sizing: border-box;
+        border-radius: 3px;
+        color: #2055b5;
+        text-transform:capitalize;
+
+      }
+      .btn-save {
+        // min-width: 67px;
+        background: #2055b5;
+        color: #ffffff;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .btn-cancel {
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../../../../assets/style.scss";
+
+.frx-grid-date-filter{
+    width: 247px;
+.frx-grid-date-filter__header{
+    font-weight: 500;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: .01em;
+    color: $color-white;
+    background-color: $hyperlink-text-color;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .rx-grid-date-filter__header__close-icon{
+        margin: 0 0 0 auto;
+        cursor: pointer;
+    }
+}
+.frx-grid-date-filter__content__filters{
+    padding: 20px;
+    &__select{
+        width: 200px;
+        border: 1px solid $container-border-color;
+        border-radius: 5px;
+        .ant-select-selector{
+            height: 40px !important;
+            border: none !important;
+            background: none;
+            .ant-select-selection-placeholder, .ant-select-selection-item{
+                line-height: 40px;
+                color: $primary-text-color;
+                font-size: $font-12;
+            }
+        }
+        // Removing default border color on hover//
+        &:not(.ant-select-disabled):hover .ant-select-selector{
+            border-color: $container-border-color !important;
+        }
+    }
+    &__inputs{
+        margin-top: 20px;
+        &__title{
+            color: $primary-text-color;
+            text-transform: uppercase;
+            font-size: $font-10;
+            font-weight: $font-weight-normal;
+        }
+        &__range-picker{
+            width: 200px;
+            height: 40px;
+            border: 1px solid $container-border-color;
+            border-radius: 5px;
+            font-size: $font-12;
+        }
+        &__date-picker{
+            width: 200px;
+            height: 40px;
+            border: 1px solid $container-border-color;
+            border-radius: 5px;
+            font-size: $font-12;
+            .ant-picker-input{
+                & > input{
+                    font-size: $font-12;
+                }
+            }
+        }
+    }
+}
+.frx-grid-date-filter__content__action{
+    display: table;
+    margin: 0px 25px 0px auto;
+    padding: 0 0 20px 0;
+    .frx-grid-date-filter__content__action__btn{
+        width: 62px;
+        height: 18px;
+        line-height: 11px;
+        font-size: $font-12;
+        border-radius: 5px;
+        border: 1px solid $container-border-color;
+        &--clear{
+            color: $primary-text-color;
+            margin-right: 10px;
+        }
+        &--apply{
+        color: $color-white;
+        background-color: $hyperlink-text-color;
+        }
+    }
+    .ant-btn:hover, .ant-btn:focus{
+        color: $hyperlink-text-color;
+        border-color: $hyperlink-text-color;
+        background: none;
+    }
+}
+}

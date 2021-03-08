@@ -1,0 +1,31 @@
+.compare-formularies-container {
+  .bordered,
+  .pointer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6px;
+  }
+}
+
+.compare-table-root {
+  margin-top: 8px;
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inner-container {
+  }
+}
+.compare-grid-header-download{
+  justify-content: space-between;
+  padding: 0 20px !important;
+  .action-wrapper{
+    display: flex;
+    .item-download{
+      margin-left: 20px;
+      display: flex;
+    }
+  }
+}

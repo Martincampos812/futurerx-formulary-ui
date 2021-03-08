@@ -1,0 +1,104 @@
+@import "../../../assets/style.scss";
+
+.prescriber-root{
+  background: $color-white;
+  border: 1px solid $container-border-color;
+  border-radius: 5px;
+  padding: 40px;
+  height: 180px;
+  margin-top: 0 !important;
+  .prescriber-root--namecontainer{
+    display:flex;
+    flex-direction:row;
+    .prescriber-root--photo{
+      margin: 0 41px 0 0;
+    }
+    .prescriber-name-container{
+      margin: auto 0;
+      .name-row-container{
+        display:flex;
+        flex-direction:row;
+        margin: 0 0 13px 0;
+        .prescriber-root--activestatus{
+          margin-left: 11px;
+        }
+        .prescriber-root--name{
+          width: fit-content;
+          height: 20px;
+          font-size: $font-24;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          color: $prescriber-address-text-color;
+        }
+      }
+      .prescriber-root--specialist{
+        width: fit-content;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        height: 20px;
+        line-height: 20px;
+        display: flex;
+        color: $prescriber-address-text-color;
+        .prescriber-root--specialist--bullet{
+          width: 4px;
+          height: 4px;
+          align-self: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          background: $prescriber-address-text-color;
+          border-radius:4px;
+        }
+      }
+    }
+  }
+  .calendar-icons-container{
+    margin: auto;
+    .calender-row{
+      display:flex;
+      flex-direction:row-reverse;
+      .icons-container{
+        width: 145px;
+        height: 40px;
+        border: 1px solid $container-border-color;
+        border-radius: 5px;
+        background-color: #F9F9F9;
+        margin: 0 0 0 21px;
+        line-height: 42px;
+        padding: 0 17px 0 17px;
+        & > svg{
+          cursor: pointer;
+          &:first-child{
+            margin: 0 30px 0 0;
+            position: relative;
+            top: 3px;
+          }
+          &:nth-child(2){
+            margin: 0 30px 0 0px;
+          }
+        }
+      }
+    }
+    .prescriber-root--calendarselect{
+      width: 200px;
+      margin-left:10px;
+      font-size: $font-11;
+      line-height: 40px;
+      color: $color-black;
+    }
+  .prescriber-root--calendar{
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    color: $primary-text-color;
+    line-height: 40px;
+    }
+  }
+}
+
+
+
+
+
+
+
+

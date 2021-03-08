@@ -1,0 +1,19 @@
+.Comment-card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.Comment-card .title {
+  color: #333 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  padding: 0 !important;
+}
+
+.Comment-card .date {
+  color: #a3a3a3;
+  font-size: 11px;
+}

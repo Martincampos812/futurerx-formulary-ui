@@ -1,0 +1,96 @@
+@import "../../../assets/style.scss";
+
+.frx-note-item-root {
+  height: 78px;
+  padding: 20px 8px 20px 21px !important;
+
+  .frx-note-item-root__list-item-unique {
+    width: 100%;
+    padding: 0px 0px;
+    margin-bottom: 0px;
+    line-height: 15px;
+    font-size: $font-12;
+    .frx-note-item-root__list-item__date-unique {
+      font-weight: $font-weight-normal;
+      height: 15px;
+      color: #707683;
+    }
+    // margin: 0;
+    // padding: 0;
+    .frx-note-item-root__list-item__title {
+      margin: 0;
+      padding: 0;
+      font-weight: $font-weight-normal;
+      height: 15px;
+      color: #707683;
+    }
+  }
+  .MuiListItem-root {
+    padding-bottom: 0px;
+  }
+
+  .MuiListItemText-root {
+    margin: 0px 0px;
+  }
+
+  .MuiListItemAvatar-alignItemsFlexStart {
+    margin-top: 3px;
+  }
+
+  .MuiAvatar-root {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    margin: 0px 0px 2px 0px;
+    background-blend-mode: normal;
+  }
+
+  .frx-note-item-root__list-item__content {
+    font-weight: $font-weight-normal;
+    color: $list-text-color;
+    font-size: $font-12;
+    line-height: 16px;
+  }
+
+  .frx-note-item-root__list-item__chip {
+    width: auto;
+    height: 24px;
+    background: $color-white;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 12px;
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 6px;
+
+    .MuiChip-label {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: $font-weight-bold;
+      font-size: $font-12;
+      line-height: 24px;
+      color: $list-chip-text-color;
+    }
+  }
+
+  .frx-note-item-root__list-item {
+    width: 100%;
+    padding: 0px 0px;
+    margin-bottom: 0px;
+    line-height: 20px;
+    font-size: $font-12;
+
+    .frx-note-item-root__list-item__heading {
+      font-weight: 500;
+      width: 58px;
+      height: 20px;
+      color: $list-primary-heading-color;
+    }
+
+    .frx-note-item-root__list-item__date {
+      font-weight: $font-weight-normal;
+      color: $list-date-color;
+      padding-left: 11px;
+    }
+  }
+}

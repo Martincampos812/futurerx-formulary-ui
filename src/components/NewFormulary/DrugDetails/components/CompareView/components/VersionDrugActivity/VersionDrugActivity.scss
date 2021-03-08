@@ -1,0 +1,98 @@
+.version-drug-activity-container h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #707683;
+    padding-left: 10px;
+  }
+
+  .formulary-list-search {
+    border: 1px solid #e5e5e5;
+    outline: none;
+    border-radius: 2px;
+
+    .member-search__icon {
+      margin: 10px;
+    }
+
+    input {
+      font-size: 12px;
+      font-weight: normal;
+      color: #999999;
+      border-bottom: 0;
+      padding: 0;
+    }
+
+    .member-search__input .member-search__icon {
+      margin: 10px;
+    }
+  }
+
+  .input-control {
+    float: left;
+  //  width: 41%;
+    &.set-right-margin {
+      margin-right: 10px;
+    }
+}
+
+  .version-drug-activity-container{
+
+    .add-file-button {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        span{
+            margin-right: 10px;
+        }
+    }
+    .add-file-button:hover {
+        cursor: pointer;
+        background: #ffffff;
+        color:#1d54b4;
+      }
+    .add-file-button,
+    .select-box {
+      margin-right: 0px !important;
+    }
+  
+    .ant-select {
+        width: 328px !important;
+    }
+    .input-element{
+        .ant-select-selector{
+            background: #d5ffd7 !important;
+            padding: 0px !important;
+            border: none;
+           // height: 28px !important;
+        }
+    }
+   
+    .ant-select-selection-item{
+        font-weight: 500 !important;
+        font-size: 12px !important;
+        letter-spacing: 0.01em !important;
+        color: #323C47 !important;
+    }
+    .formulary-form .input-element .bordered{
+        text-decoration: none !important;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #323C47;
+
+        &.set-top-padding{
+            padding-top: 6px;
+        }
+
+    }
+    p{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+  }
+
+  .version-drug-activity-container{
+      margin-top: 10px;
+  }
+

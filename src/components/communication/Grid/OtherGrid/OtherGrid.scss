@@ -1,0 +1,19 @@
+.other-grid-root {
+    width: 100%;
+  .frx-grid-container{
+    .frx-grid {
+      .frx-grid__grid-block__table-block{
+        .ant-table{
+          .ant-table-body > table {
+            .ant-table-tbody > tr > td:first-child{
+              .frx-grid-settings-cell{
+                // display: none;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }   
+}
+  

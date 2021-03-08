@@ -1,0 +1,377 @@
+@import "./../../assets/style.scss";
+
+.csr-root {
+  .ml-10{
+    margin-left: 10px;
+  }
+  .member-profile-root .tab-content.grievances-tab-content {
+    padding: 20px 20px 20px 20px !important;
+
+    &.new-grievance-tab-content {
+      padding: 11px 0 20px 0 !important;
+    }
+  }
+  .common-btn{
+    text-transform: none;
+    color: #2055b5;
+    height: 35px;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 0px 20px;
+    border: solid 1px;
+    &.w-165{
+        width: 165px;
+    }
+}
+.newGrievancesAccordian-heading{
+    min-height: 0;
+    margin: 0;
+    padding: 0 16px 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+    &.Mui-expanded{
+          min-height: 0;
+          margin: 0;
+    }
+    .MuiAccordionSummary-content{
+        margin: 0;
+        &.Mui-expanded{
+            margin: 0;
+        }
+    }
+}
+.newGrievanceContent-details{
+   padding: 0; 
+}
+  .member-profile-root.new-grievance-root {
+    border: none;
+    background: none;
+    .grievances-member-profile-root {
+      background: none;
+      border: none;
+    }
+    .new-grievance-top {
+      background: #f9f9f9;
+      box-sizing: border-box;
+      padding: 20px 20px 0;
+      margin: -20px -20px 10px;
+      border: 1px solid #e5e5e5;
+      border-top: none;
+    }
+  }
+
+  .grievance-module {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    span {
+      color: #2055b5;
+      // Typography
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 50px;
+      letter-spacing: 0em;
+      margin-right: 20px;
+    }
+    .new-grievance-button {
+      text-transform: none;
+      color: #2055b5;
+      // width: 165px;
+      padding: 0 20px;
+      height: 35px;
+      border-radius: 3px;
+      line-height: 35px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      border: solid 1px;
+      .MuiButton-label{
+        margin: 0;
+        text-transform: capitalize;
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+  }
+  .grievances-root {
+    min-width: 1160px;
+    margin: 0;
+    width: 100%;
+    position: unset;
+    border-bottom: 0px solid #e5e5e5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    padding: 0 !important;
+    .grievance-module {
+      background: white;
+    }
+    .breadcrum {
+      font-size: 12px;
+      line-height: 14px;
+      span {
+        margin-right: 5px;
+      }
+      .color-blue {
+        color: #1d54b4;
+        text-decoration: dotted;
+        font-weight: $font-weight-500;
+        cursor: pointer;
+      }
+    }
+    .new-grievance-root {
+      margin: 0 -20px;
+      width: calc(100% + 40px);
+      border: 1px solid #e5e5e5;
+      border-radius: 10px 10px 0 0;
+    }
+    .grievances-header {
+      padding: 0;
+      border-radius: 10px 10px 0 0;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .grievances_header-heading {
+        height: 50px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 50px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #2055b5;
+      }
+    }
+    .grievances-content {
+      background: #f9f9f9;
+      box-sizing: border-box;
+      padding: 20px;
+
+      .case-header {
+        padding: 0 20px;
+        color: #2055b5;
+        font-weight: $font-weight-500;
+        font-size: 12px;
+        line-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e5e5;
+        .title {
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+        .caseId {
+          display: flex;
+          align-items: center;
+          .case-id {
+            border-radius: 23px;
+            background: #684999;
+            padding: 0 10px;
+            margin-left: 10px;
+            height: 24px;
+            display: inline-block;
+            color: white;
+            line-height: 24px;
+          }
+        }
+        .caseStatus {
+          display: flex;
+          align-items: center;
+          .case-status {
+            border-radius: 23px;
+            padding: 0 10px;
+            margin-left: 10px;
+            height: 24px;
+            display: inline-block;
+            color: white;
+            line-height: 24px;
+            &.closed {
+              background: #e76262;
+            }
+            &.open {
+              background: #59b35e;
+            }
+          }
+        }
+      }
+      .border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .grievance-wrapper {
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border-radius: 5px;
+        .left-section {
+          padding: 0;
+          border-right: 1px solid #e5e5e5;
+        }
+      }
+      p {
+        padding-right: 30px;
+        &.mb-15 {
+          margin-bottom: 15px;
+        }
+        &.color-blue {
+          color: #1d54b4;
+          text-decoration: underline; 
+        }
+        a.color-blue{
+          color: #1d54b4;
+          text-decoration: underline;
+        }
+        &.icon-text {
+          display: flex;
+          justify-content: space-between;
+          padding-right: 34px;
+        }
+        .cs-aor-link{
+          margin-left: 10px;
+        }
+      }
+      .grievance-accordian {
+        .MuiAccordion-root:before {
+          display: none;
+        }
+        .note-icon {
+          position: absolute;
+          right: 58px;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-top: 2px;
+        }
+        .MuiPaper-elevation1 {
+          box-shadow: none;
+          border-bottom: 1px solid #e5e5e5;
+          margin: 0;
+          &.notification-accordian {
+            border-bottom: none;
+          }
+        }
+        .accordian-heading {
+          padding: 10px 20px;
+          min-height: 0;
+          > div {
+            margin: 0;
+            padding: 0;
+          }
+          p {
+            font-weight: $font-weight-500;
+            font-size: 15px;
+            line-height: 18px;
+            color: $primary-text-color;
+            display: flex;
+            width: 100%;
+            padding: 0;
+          }
+          .number-of-issues {
+            span {
+              font-size: 12px;
+              line-height: 14px;
+              color: $primary-text-color;
+              font-weight: normal;
+              &.issue-number {
+                font-weight: $font-weight-500;
+                padding-left: 17px;
+              }
+            }
+          }
+        }
+        .MuiAccordionDetails-root {
+          padding: 0 20px;
+          &:before {
+            display: none;
+          }
+        }
+        .issue-resolution-accordian {
+          .note-icon {
+            right: 38px;
+          }
+          .accordian-heading {
+            justify-content: flex-end;
+            > div.MuiAccordionSummary-content {
+              position: absolute;
+              left: 20px;
+              right: 20px;
+            }
+          }
+        }
+      }
+    }
+    .new-grievances-tabs {
+      .ant-tabs-nav-list {
+        width: 100%;
+        .ant-tabs-tab {
+          width: 24%;
+          text-align: center;
+          letter-spacing: 0.6px;
+        }
+        > div:nth-child(4) {
+          border-right: none;
+        }
+        > div:nth-child(3) {
+          width: 28%;
+        }
+        > div:first-child {
+          text-align: left;
+        }
+      }
+      .grievance-tabs-info {
+        .mb-15 {
+          margin-bottom: 15px;
+        }
+        .title {
+          font-size: 15px;
+          line-height: 17px;
+          font-weight: $font-weight-500;
+          color: $primary-text-color;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .icon-wrapper {
+            .note-icon {
+              margin-right: 30px;
+            }
+          }
+          &.pt-5 {
+            padding-top: 5px;
+          }
+        }
+        .label {
+          font-size: 12px;
+          line-height: 14px;
+          color: $primary-text-color;
+          display: block;
+        }
+        .text {
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: bold;
+          color: $primary-text-color;
+        }
+        .dateTime {
+          display: flex;
+          .date {
+            margin-right: 20px;
+          }
+        }
+        .case-summar-info,
+        .tabs-info {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

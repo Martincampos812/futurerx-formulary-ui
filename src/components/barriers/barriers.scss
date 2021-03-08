@@ -1,0 +1,45 @@
+@import "../../assets/style.scss";
+
+.barriers-root {
+    height: 100%;
+    background: $white-color;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 10px;
+
+    .barriers-root__header {
+        height: 50px;
+        border-bottom: 1px solid $container-border-color;
+        position: relative;
+        padding: 0px 22px 0px 20px;
+
+        .barriers-root__header-text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: $font-weight-500;
+            font-size: $font-12;
+            line-height: 50px;
+            margin-right: 180px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: $primary-heading-text-color;
+        }
+
+        .barriers-root__header__icon-container {
+            float: right;
+            height: 50px;
+            line-height: 50px;
+
+            .barriers-root__header--editicon {
+                margin-left: 20.800px !important;
+                cursor: pointer;
+            }
+
+            .barriers-root__header--noteicon {
+                margin-left: 20.800px !important;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.formulary-versions {
+  .ant-select-selector {
+    background-color: #fff5f0 !important;
+    height: 100% !important;
+    padding-top: 2.25px !important;
+    border-right: 1px solid #f65a1c !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+
+    .ant-select-selection-item,
+    .ant-select-selection-placeholder {
+      color: #f65a1c !important;
+      text-decoration: underline;
+    }
+  }
+}
+
+.version-wrapper {
+  .item--version-history {
+    cursor: pointer;
+  }
+}
+
+.formularydetailstop-root__grid-dialog-popup {
+  z-index: 999 !important;
+}

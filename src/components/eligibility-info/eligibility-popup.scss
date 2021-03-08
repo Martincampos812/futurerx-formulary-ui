@@ -1,0 +1,210 @@
+.eligibility-info {
+  width: 608px;
+  height: 354px !important;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  // flex-direction: column;
+  color: #666666;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  overflow: overlay;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px #999999;
+    border-radius: 3px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 3px;
+    border-right: 4px solid white;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+  }
+}
+.eligibility-data {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 35%;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.eligibilityEditAddData{
+    display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 37%;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.eligibility-data > div.keyValue {
+  width: 30%;
+}
+.keyValue_edit{
+  font-weight: bold !important;
+}
+.keyValue_edit_right{
+   margin-left: 15px;
+   font-weight: bold !important;
+}
+.ant-form{
+  line-height: revert;
+}
+
+.value_edit {
+  width: 100%;
+
+  .ant-input{
+    left: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum', "tnum";
+    position: relative;
+    display: inline-block;
+    width: 127px;
+    height: 22px;
+    padding: 4px 11px;
+    color: #666666;
+    font-size: 12px !important;
+    font-family: Roboto;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    font-weight: normal;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .ant-picker {
+    width:127px;
+    height:22px;
+    .ant-picker-input{
+      font-size: 10px !important;
+    } 
+  }
+}
+
+
+.value_add {
+  width: 100%;
+
+  .ant-input{
+    left: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum', "tnum";
+    position: relative;
+    display: inline-block;
+    width: 127px;
+    height: 22px;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: normal;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .ant-picker {
+    width:127px;
+    height:22px;
+    margin-left: 10px;
+    .ant-picker-input{
+      font-size: 10px !important;
+    } 
+  }
+}
+
+.keyValue_add_title {
+  font-weight: bold;
+  font-size: 12px !important;
+  color:#666666
+}
+.keyValue_add_title_right{
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 12px !important;
+  color:#666666
+}
+
+.value {
+  width: 100%;
+  font-weight: bold !important;
+}
+.eligibility-btn-container{
+    display: flex;
+    margin-top: 25px;
+}
+.cancel-button {
+  min-width: 90px;
+  height: 35px;
+  border: 1px solid #3f51b5;
+  margin-left: -37px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #666666;
+}
+.save-button {
+  width: 70px;
+  height: 35px;
+  border: 1px solid #3f51b5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #3f51b5 !important;
+  color: #fff;
+}
+.close-button{
+    min-width: 75px;
+  height: 35px;
+  border: 1px solid #3f51b5;
+  margin-left: 50px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #3f51b5;
+}

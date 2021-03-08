@@ -1,0 +1,127 @@
+@import "../../../assets/style.scss";
+
+.frx-dialog-root__heading {
+  height: 60px;
+  border-bottom: 1px solid $container-border-color;
+  padding: 0 20px !important;
+  .MuiTypography-root {
+    padding: 0;
+    font-weight: $font-weight-500;
+    font-size: $font-12;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $dialog-heading;
+    line-height: 60px;
+  }
+
+  .MuiDialogTitle-root{
+    padding: 20px 0px 0px 20px;
+  }
+  
+  
+  .frx-dialog-root__close-icon{
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+}
+
+.frx-dialog-root__btn-actions{
+  padding-bottom: 20px !important;
+  padding-right: 20px !important; 
+
+  .frx-dialog-root__cancel-btn, .frx-dialog-root__save-btn{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 35px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 35px;
+    padding: 0;
+  }
+  .frx-dialog-root__cancel-btn{
+    // width: 78px;
+    height: 35px;
+    padding-top: 0px;
+    background: $color-white;
+    border: 1px solid $primary-heading-text-color;
+    color: $primary-heading-text-color;
+  }
+  .frx-dialog-root__save-btn{
+    // width: 67px;
+    height: 35px;
+    padding: 0px 8px;
+    background: $primary-heading-text-color;
+    color: $color-white;
+    &:hover{
+      background-color: $primary-heading-text-color;
+    }
+  }
+}
+
+// Dialogue Mini tab styling //
+
+  .frx-mini-tabs-root {
+    position: unset;
+    margin: 0px;
+    border-bottom: 0px solid $container-border-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    background: $color-white;
+    padding: 0;
+    .frx-mini-tabs-root__tabs {
+      background-color: $color-white;
+      box-shadow: none;
+      border: 1px solid $mini-tab-border-color;
+      flex-direction: row;
+      border-radius: 4px;
+      padding: 3px;
+      width: max-content;
+      .frx-mini-tabs-root__tabs__tab {
+        padding: 0;
+        font-size: $font-12;
+        font-weight: $font-weight-bold;
+        color: $primary-text-color;
+        text-transform: capitalize;
+        opacity: unset;
+        border-radius: 2px;
+        .MuiTab-wrapper {
+          text-transform: capitalize;
+          font-size: $font-12;
+          font-weight: $font-weight-bold;
+          line-height: 24px;
+          padding: 0 10px;
+        }
+      }
+      .frx-mini-tabs-root__tabs__tab.Mui-selected {
+        background-color: $button-tab-active-background-color;
+        .MuiTab-wrapper {
+          color: $color-white;
+          // border: 1px solid $button-tab-active-background-color;  ## border was creating alignment issue removing will resolve alignment issue
+          border-radius: 2px;
+        }
+      }
+      .frx-mini-tabs-root__tabs__tab:first-child {
+        margin-left: 0px;
+      }
+      .frx-mini-tabs-root__tabs__tab:last-child {
+        margin-right: 0px;
+      
+      .MuiTabs-indicator {
+        display: none !important;
+      }
+    
+    .dev-status.wip {
+      display: none;
+    }
+    .frx-mini-tabs-root__active-line {
+      position: unset;
+    }
+  }
+}
+}
+// Dialogue Mini tab styling //

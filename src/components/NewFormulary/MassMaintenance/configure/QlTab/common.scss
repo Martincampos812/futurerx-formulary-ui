@@ -1,0 +1,88 @@
+.ql-replace-container {
+  background-color: #ffffff;
+  padding: 13px 20px 30px 20px;
+}
+
+.fill-limit-settings-container {
+  background-color: #ffffff;
+  padding: 13px 10px 15px 20px;
+}
+
+.panel-note {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #323c47;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  // margin-right: 5px;
+  .select-box {
+    margin-top: 6px;
+    .ant-select {
+      width: 373px !important;
+    }
+  }
+  .radio-group {
+    margin-top: 15px;
+    // .radio-group {
+    .container {
+      input:disabled {
+        cursor: not-allowed;
+      }
+    }
+    // }
+  }
+  .formulary-list-search {
+    width: 100%;
+    margin-top: 6px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding-left: 10px;
+    input:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .error_class {
+    // input:required {
+    border: 1px solid red;
+    // }
+  }
+}
+.drug-detail-LA-root {
+  .select-drug-from-table {
+    margin-top: 10px;
+  }
+  .frx-grid-container
+    .frx-grid
+    .frx-grid__grid-block
+    .frx-grid__grid-block__table-block
+    .ant-table
+    .ant-table-header
+    .ant-table-thead
+    > tr
+    > th {
+    line-height: 50px;
+    //was normal
+    .ant-table-filter-column {
+      // display: flex;
+      // align-items: center;
+    }
+  }
+}
+// .frx-grid-container
+//   .frx-grid
+//   .frx-grid__grid-block
+//   .frx-grid__grid-block__table-block
+//   .ant-table
+//   .ant-table-header
+//   .ant-table-thead
+//   > tr
+//   > th {
+//   line-height: normal;
+// }

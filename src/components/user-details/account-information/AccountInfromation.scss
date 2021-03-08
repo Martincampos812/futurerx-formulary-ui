@@ -1,0 +1,50 @@
+.Account-info {
+  /* width: 375px; */
+  /* background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px; */
+}
+.account-heading {
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+
+  letter-spacing: 0.1px;
+
+  color: #666666;
+  margin: 0 0 20px 0;
+  /* margin-left: 25px;
+  margin-top: 15px; */
+}
+.accountFields {
+  /* padding: 15px; */
+}
+.accountFields > .fields{
+  margin-bottom: 10px;
+}
+
+.fields > label {
+  line-height: 2.2;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.accountFields > .fields > label {
+  /* margin: 10px; */
+  font-weight: normal;
+  line-height: 35px;
+}
+
+.accountFields > .fields {
+  display: flex;
+  justify-content: space-between;
+}
+.requiredFields::after {
+  content: "*";
+  color: red;
+}

@@ -1,0 +1,32 @@
+.pt-10{
+    padding-top: 10px;
+}
+.QL-root{
+    .ql-remove-grid{
+        background-color: white;
+        padding: 0 10px;
+        .frx-grid__meta-block__heading{
+            display: none;
+        }
+        .frx-grid-container{
+            .frx-grid{
+                .frx-grid__grid-block{
+                    padding: 10px 0;
+                    .ant-table .ant-table-header .ant-table-thead > tr > th.ant-table-selection-column{
+                        display: table-cell;
+                        padding: 0 18px !important;
+                        vertical-align: middle;
+                    }
+                    .frx-grid-pagination{
+                        .frx-grid-pagination__page-numbers{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.quntity-limits-sec{
+
+}

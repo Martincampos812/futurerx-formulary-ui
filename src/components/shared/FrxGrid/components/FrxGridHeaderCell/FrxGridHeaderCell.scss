@@ -1,0 +1,53 @@
+@import "../../../../../assets/colors.scss";
+@import "../../../../../assets/fonts.scss";
+
+.frx-grid__grid-block__table-block {
+  .frx-grid-header-cell {
+    .frx-grid-header-cell__unpin-icon,
+    .frx-grid-header-cell__pin-icon {
+      color: $primary-text-color;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    //removing ant sorter icons
+    .ant-table
+      .ant-table-header
+      .ant-table-thead
+      > tr
+      > th
+      .ant-table-column-sorter-inner
+      .anticon-caret-up {
+      display: none;
+    }
+    .ant-table
+      .ant-table-header
+      .ant-table-thead
+      > tr
+      > th
+      .ant-table-column-sorter-inner
+      .anticon-caret-down {
+      display: none;
+    }
+  }
+  .frx-grid-header-cell__header-name {
+    font-size: $font-12;
+    font-weight: $font-weight-500;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    line-height: 14.06px;
+    cursor: pointer;
+
+    &--upper {
+      text-transform: uppercase;
+    }
+
+    &--lower {
+      text-transform: lowercase;
+    }
+
+    &--sentence {
+      text-transform: capitalize;
+    }
+  }
+}

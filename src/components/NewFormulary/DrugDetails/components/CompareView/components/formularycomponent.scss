@@ -1,0 +1,117 @@
+.compare-formularies-container-component {
+    .limited-access {
+        background: #f9f9f9;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .cost-share-details_content {
+        padding:0px !important;
+    }
+    
+    table {
+        width:100%;
+    }
+
+    .table-row {
+        display: block !important;
+    }
+    
+    table, th, td {
+        border: 1px solid #e5e5e5;
+        border-collapse: collapse;
+        padding:13px !important;
+        font-size: 12px;
+        color: #323C47;
+    }
+
+    .item {
+        border-bottom: 1px solid #e5e5e5;
+        border-left:0px !important;
+        padding: 2px 20px !important;
+    }
+
+    .ant-collapse-item:last-child > .ant-collapse-content {
+        border-radius: 0px !important;
+    }
+
+    .tb-tier {
+        background-color: rgba(31, 187, 196, 0.4) !important;
+    }
+
+    .tb-category {
+        background-color: rgba(10, 123, 225, 0.4) !important;
+    }
+
+    .tb-pa {
+        background-color: #FFF5F0;
+    }
+    
+    .tb-st {
+        background: rgba(244, 175, 100, 0.4) !important;
+    }
+
+    .tb-ql {
+        background: rgba(213, 255, 215, 0.5);
+    }
+
+    .tb-add {
+        background: rgba(248, 144, 144, 0.4);
+    }
+
+    .tb-dd {
+        background: rgba(224, 237, 81, 0.4);
+    }
+
+    .tb-otc {
+        background: rgba(104, 73, 153, 0.2);
+    }
+
+    .tb-ed {
+        background: rgba(128, 196, 131, 0.4);
+    }
+
+    .fa {
+        margin-right: 7px;
+    }
+
+    .tb-vbid {
+        background: rgba(112, 118, 131, 0.3);
+    }
+    
+
+    .custom-table tr td:nth-child(1),table tr th:nth-child(2) {
+        text-align:center !important;
+        color:blue;
+    }
+
+
+
+    .main-container-formulary {
+        padding: 15px !important;
+        width: 100% !important;
+        background-color: #fff !important;
+    }
+
+    .border-right {
+        border-right: 1px solid #e5e5e5;
+    }
+
+    .bg-formulary {
+        padding:17px !important;
+        background-color: #EDF3F6 !important;
+    }
+
+    .checkbox-text,.base-formulary {
+        font-size: 12px !important;
+        color: #707683 !important;
+        text-decoration:underline;
+        text-decoration-style: dotted;
+    }
+
+    .base-formulary {
+        text-align: center !important;
+        text-decoration: none !important;
+    }
+}

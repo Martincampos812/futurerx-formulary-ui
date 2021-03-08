@@ -1,0 +1,205 @@
+.hideHeading {
+  .frx-dialog-root__heading {
+    display: none;
+  }
+}
+.grid-compare-popup-root {
+  z-index: 999 !important;
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .custom-close-btn {
+      color: #2055b5 !important;
+      background: #ffffff !important;
+      border: 1px solid #2055b5 !important;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin-right: 10px;
+      padding: 0px;
+      .MuiButton-label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 35px;
+        /* identical to box height, or 292% */
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1px;
+
+        color: #2055b5;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+    }
+    .custom-action-btn {
+      color: #ffffff !important;
+      background: #2055b5 !important;
+      border: 1px solid #2055b5 !important;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin-right: 20px;
+      width: 90px;
+      height: 35px;
+      padding: 0px;
+      .MuiButton-label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 35px;
+        /* identical to box height, or 292% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1px;
+
+        color: #ffffff;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        text-transform: capitalize;
+      }
+    }
+    .MuiButton-root {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .MuiButton-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      /* identical to box height */
+
+      color: #999999;
+    }
+  }
+  .frx-dialog-root__btn-actions {
+    button {
+      padding: 0px 10px;
+      text-transform: capitalize;
+      font-weight: normal;
+    }
+  }
+  .MuiDialogContent-root {
+    padding: 0px !important;
+    width: 1160px;
+    .frx-dialog-root__heading {
+      display: block;
+      &:first-child {
+        height: 80px;
+
+        padding-top: 20px !important;
+      }
+    }
+
+    .MuiDialogContent-root {
+    }
+  }
+  .frx-grid-container {
+    margin: 20px 0;
+    padding: 0px 20px;
+    .clear-btn-grid {
+      position: absolute;
+      right: 10px;
+      button {
+        vertical-align: middle;
+        .MuiButton-label {
+          margin: 0px;
+        }
+      }
+    }
+    .clr-testClaims-btn {
+      position: absolute;
+      right: 10px;
+      button {
+        vertical-align: middle;
+        .MuiButton-label {
+          margin: 0px;
+        }
+      }
+    }
+    .frx-grid{
+      .frx-grid__grid-block{
+        padding: 15px 0 20px 0;
+      }
+    }
+  }
+  .grid-compare-dropdown,
+  .grid-compare-dropdowntest {
+    width: 170px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #999999;
+  }
+  .grid-compare-dropdowntest {
+    .ant-select-arrow {
+      margin-top: -8px !important;
+    }
+  }
+}
+.grid-compare-select-drpDwn {
+  z-index: 999999999 !important;
+}
+.grid-compare-select-drpDwn {
+  // margin-top: -10px!important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border: 1px solid #dddddd !important;
+  border-top: 0px !important;
+  height: max-content;
+  overflow: hidden;
+
+  .ant-select-item-option {
+    padding: 0px !important;
+    height: 14px;
+    line-height: 14px !important;
+    overflow: hidden;
+    margin: 0px;
+    .ant-select-item-option-content {
+      font-family: Roboto !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 12px !important;
+      line-height: 35px !important;
+      /* identical to box height, or 292% */
+
+      color: #666666 !important;
+      // margin: 10px 32px!important;
+      padding: 0px 10px;
+    }
+  }
+}
+.frx-claims-result-root {
+  .MuiDialogContent-root .scroll-bar {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .MuiDialogContent-root {
+    padding: 0px !important;
+
+    .frx-dialog-root__heading {
+      border-bottom: none;
+    }
+  }
+}

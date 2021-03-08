@@ -1,0 +1,21 @@
+@import "../../assets/style.scss";
+.auths-overrides-grid-root {
+  width: 100%;
+  .frx-grid-container {
+    .clear-btn-grid {
+      position: absolute;
+      right: 10px;
+      button {
+        vertical-align: middle;
+        .MuiButton-label {
+          margin: 0px;
+        }
+      }
+    }
+    .frx-grid {
+      .frx-grid__grid-block {
+        padding: 15px 0;
+      }
+    }
+  }
+}

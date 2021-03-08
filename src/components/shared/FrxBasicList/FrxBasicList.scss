@@ -1,0 +1,118 @@
+@import "../../../assets/style.scss";
+
+.csr-root {
+  .frx-basic-list-root {
+    cursor: default;
+    padding: 0px 15px 0px 20px;
+    overflow-y: scroll;
+    height: 100%;
+    background: $white-color;
+
+    .frx-basic-list-item-root {
+      display: grid;
+      grid-template-columns: 75px auto 75px;
+      border-bottom: 1px solid $container-border-color;
+
+      .column {
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $primary-text-color;
+        line-height: 40px;
+        margin: 0;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 2px;
+      }
+
+      .title {
+        font-weight: $font-weight-bold !important;
+      }
+
+      .long {
+        display: inline-block;
+      }
+
+      .right {
+        text-align: right;
+      }
+
+      .chip {
+        height: 28px;
+        width: 104px;
+        margin-top: 5px;
+        position: absolute;
+        right: -11px;
+
+        .MuiChip-label{
+          padding-left: 10px;
+        }
+
+        .red-dot {
+          position: relative;
+          float: left;
+          padding-right: 0px;
+          margin-right: 90px;
+          margin-top: 2px;
+        }
+      }
+
+      .chip-label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .tooltip {
+        position: relative;
+      }
+    }
+
+    .frx-basic-list-item-root:last-child {
+      border-bottom: 1px solid $container-border-color;
+    }
+
+    .frx-basic-list-item-root.columns2 {
+      grid-template-columns: auto 120px !important;
+      position: relative;
+    }
+  }
+}
+.frx-basic-list-item-root__tooltip{
+  max-width: 310px;
+  .ant-tooltip-content{
+    .ant-tooltip-inner{
+      background: $white-color;
+      border: 1px solid $container-border-color;
+      box-shadow: 0 15px 30px rgba(0,0,0,.1);
+      color: $primary-text-color;
+      font-size: $font-12;
+      border-radius: 5px;
+      padding: 20px 20px 5px 20px;
+      width: 300px;
+      .frx-basic-list-item-root__tooltip--info{
+        display: grid;
+        grid-template-columns: 100px 150px;
+        font-weight: $font-weight-normal;
+        & > span{
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+  .ant-tooltip-arrow{
+    bottom: -3.071068px;
+    .ant-tooltip-arrow-content{
+        width: 8px;
+        height: 8px;
+        background-color: $white-color;
+        border: 1px solid $container-border-color;
+        box-shadow: none;
+    }
+}
+}

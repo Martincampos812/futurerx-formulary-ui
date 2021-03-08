@@ -1,0 +1,48 @@
+@import "../../../assets/style.scss";
+
+.action{
+  border-bottom: 1px solid $container-border-color;
+  padding: 10px 20px;
+.action-bar {
+  background: $color-white;
+  border: 1px solid $hyperlink-text-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 135px;
+  height: 30px;
+  padding: 2px;
+  .MuiButton-textPrimary {
+    background-color: $hyperlink-text-color;
+    color: $color-white;
+    padding: 0;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 2px;
+    .MuiButton-label {
+      text-transform: capitalize;
+      padding: 0 10px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: $hyperlink-text-color;
+    }
+  }
+  .MuiButton-textSecondary {
+    padding: 0;
+    color: $primary-text-color;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+    // min-width: auto;
+    .MuiButton-label {
+      text-transform: capitalize;
+      padding: 0 10px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+}

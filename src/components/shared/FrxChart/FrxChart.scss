@@ -1,0 +1,74 @@
+@import "./../../../assets/style.scss";
+
+.FrxChart-content {
+    min-width: 890px;
+    min-height: 317px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    display: grid;
+    height: calc(100% - 68px);
+    max-width: calc(100% - 270px);
+    position: relative;
+
+    .donut {
+        text-align: left;
+        .stats-summary-root {
+            min-width: 287px;
+            width: 287px;
+            float: right;
+            .stats-summary-box {
+                margin-top: 10px;
+                .stats-summary-item {
+                    .ss-label {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 10px;
+                        width: fit-content;
+                        cursor: pointer;
+                        color: $primary-text-color;
+                    }
+                    .ss-number {
+                        width: fit-content;
+                        line-height: 40px;
+                        height: 36px;
+                    }
+                    &:first-child {
+                        .ss-number {
+                            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%2359B35E' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                            border-bottom: 1px solid transparent;
+                            border-image-repeat: repeat;
+                            border-image-slice: 4 4 4 4;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .ss-number {
+                            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%23F65A1C' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                            border-bottom: 1px solid transparent;
+                            border-image-repeat: repeat;
+                            border-image-slice: 4 4 4 4;
+                        }
+                    }
+                    &:last-child {
+                        .ss-number {
+                            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055B5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                            border-bottom: 1px solid transparent;
+                            border-image-repeat: repeat;
+                            border-image-slice: 4 4 4 4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .barChart-container {
+        display: grid;
+        float: left;
+        grid-template-columns: repeat(12, auto);
+        column-gap: 5px;
+    }
+}
+

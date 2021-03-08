@@ -1,0 +1,109 @@
+
+  .tooltip-form-content {
+    width: 300px;
+
+    &__header {
+      width: 100%;
+      height: 36px;
+      background-color: #ffffff;
+      display: grid;
+      grid-template-columns: 1fr 32px;
+      border: 1px solid #E5E5E5;
+      border-radius: 4px;
+    }
+
+    .title-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+
+      .title {
+        display: flex;
+        padding: 0px 15px 0px 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #1D54B4;
+      }
+    }
+
+    .close-icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-left: 1px solid #E5E5E5;
+
+      .close-icon {
+        display: flex;
+      }
+    }
+
+    &__body {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 19px;
+    }
+
+
+    .form-field {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-bottom: 8px;
+      &__label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #666666;
+        margin-right: 16px;
+      }
+
+      &__input {
+        width: 227px;
+        height: 37px;
+      }
+    }
+
+    .form-action {
+      display: flex;
+      justify-content: flex-end;
+      &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        width: 67px;
+        height: 34px;
+        background: #FFFFFF;
+        color: #1D54B4;
+        border: 1px solid #1D54B4;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+    }
+  }
+
+
+.outside-vendor-form {
+  .ant-tooltip-inner {
+    width: 300px;
+    padding: 0px !important;
+    border-radius: 8px;
+  }
+
+  .tooltip-form-content {
+    width: 300px;
+    height: 192px;
+    margin-right: 0px;
+  }
+}

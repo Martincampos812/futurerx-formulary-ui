@@ -1,0 +1,17 @@
+@import "../../../../assets/style.scss";
+
+.rounded-simple-search {
+  .simple-search__input,
+  .simple-search__input--text {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    //width: 22rem;
+
+    .ant-input {
+      width: 20rem;
+    }
+  }
+}

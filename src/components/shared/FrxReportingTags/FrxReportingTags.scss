@@ -1,0 +1,196 @@
+@import "../../../assets/style.scss";
+.__root-frx-reporting-tags {
+  .MuiGrid-root {
+    .header-font {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #323c47;
+      margin-bottom: 15px;
+    }
+    .header-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      color: #707683;
+      margin-bottom: 10px;
+    }
+    .bordered {
+      padding: 10px;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 0 10px 0 20px;
+        // background-color: wheat;
+        .inner-container {
+          display: inline-flex;
+          flex-direction: column;
+          .tag-name {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            color: #323c47;
+            padding-bottom: 5px;
+          }
+
+          .category-container {
+            display: inline-flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+          }
+
+          .inner-text {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #707683;
+            padding-top: 5px;
+          }
+        }
+      }
+
+      .max-height-mini {
+        height: 58vh;
+        // width: 160vh;
+        width: auto;
+        max-height: 58vh;
+        overflow-y: scroll;
+      }
+      /* SCROLL-BAR */
+      .max-height-mini::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: transparent;
+      }
+      /* Track */
+      .max-height-mini::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px #999999;
+        border-radius: 3px;
+      }
+      /* Handle */
+      .max-height-mini::-webkit-scrollbar-thumb {
+        background: #aaaaaa;
+        border-radius: 3px;
+      }
+      /* Handle on hover */
+      .max-height-mini::-webkit-scrollbar-thumb:hover {
+        background: #aaaaaa;
+      }
+      /* SCROLL-BAR */
+    }
+    .max-height {
+      //   background-color: black;
+      height: 65vh;
+      width: auto;
+      max-height: 65vh;
+      overflow-y: scroll;
+    }
+
+    /* SCROLL-BAR */
+    .max-height::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color: transparent;
+    }
+    /* Track */
+    .max-height::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0px #999999;
+      border-radius: 3px;
+    }
+    /* Handle */
+    .max-height::-webkit-scrollbar-thumb {
+      background: #aaaaaa;
+      border-radius: 3px;
+    }
+    /* Handle on hover */
+    .max-height::-webkit-scrollbar-thumb:hover {
+      background: #aaaaaa;
+    }
+    /* SCROLL-BAR */
+  }
+}
+.MuiDialogTitle-root {
+  .header-flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .frx-dialog-root__close-icon {
+      margin-left: 20px;
+    }
+    .add-new-tag-btn {
+      width: 120px;
+      height: 38px;
+      background: #ffffff;
+      border: 1px solid #1d54b4;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Roboto;
+      font-style: normal;
+      font-size: 13px;
+      line-height: 35px;
+      color: #5f80b9;
+    }
+  }
+}
+
+.MuiDialog-root {
+  .MuiDialogContent-root {
+    height: auto;
+    // width: 160vh;
+    width: auto;
+    // this was 160vh . Changing it to 160vw
+    max-width: 160vw;
+    max-height: 80vh;
+  }
+
+  .bordered {
+    .input-label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+
+      color: #707683;
+    }
+    .input-style {
+      width: 512px;
+      height: 35px;
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      line-height: 30px;
+      font-weight: 200px;
+      //   outline-color: #4ca8fd;
+    }
+
+    .m-b-5 {
+      margin-bottom: 5px;
+    }
+  }
+}
+.select-box {
+  // z-index: 99999px;
+  .select-style {
+    height: 35px;
+    width: 512px;
+    margin-bottom: 20px;
+    // z-index: 9999999px;
+  }
+}

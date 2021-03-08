@@ -1,0 +1,89 @@
+.ListItemContianer__root {
+  position: relative;
+  display: inline-block;
+  // justify-content: space-around;
+  width: 90%;
+  //   margin-top: 50px;
+  margin: 10px;
+  .__root-card {
+    // border: 1px solid green;
+    padding: 0;
+    box-shadow: none;
+  }
+  .MuiCardContent-root {
+    padding: 0;
+  }
+  .green-border {
+    border: 2px solid green;
+  }
+  .red-border {
+    border: 2px solid red;
+  }
+  .default_class {
+    border: 1px solid gray;
+  }
+  .MuiCardContent-root:last-child {
+    // padding-bottom: 24px;
+    padding-bottom: 0;
+  }
+  // .__main-grid {
+  // .__content-grid {
+  .__card-content {
+    .card-header__container {
+      .__header {
+        .__title {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          /* identical to box height */
+
+          /* Text Black */
+
+          color: #323c47;
+        }
+        .title_info {
+          text-align: center;
+          margin: 10px 0 0 15px;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+
+      border-bottom: 1px solid green;
+      height: 55px;
+      background: #ffffff;
+      padding: 10px;
+
+      // margin: 5px;
+
+      .__icon-select-box {
+        height: 34px;
+        // width: 99px;
+        // width: 100px;
+
+        background: #e5e5e5;
+        border-radius: 5px;
+        padding: 5px;
+        .__select-box {
+          width: 100px;
+          //   height: 100%;
+          // color: #323c47;
+          .ant-select-selector {
+            background-color: transparent;
+            border: none;
+            .ant-select-selection-item {
+              color: #323c47;
+            }
+          }
+        }
+      }
+    }
+    .dynamic-contenet {
+      // margin-bottom: none;
+    }
+  }
+  // }
+  // }
+}

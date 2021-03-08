@@ -1,0 +1,520 @@
+@import "../../../assets/style.scss";
+@import "../../../assets/fonts.scss";
+.new-test-claim-popup-root {
+  z-index: 999 !important;
+  .MuiDialog-paperWidthFalse {
+    width: 1000px;
+    height: 800px;
+    max-height: calc(100% - 0px);
+    margin: 0 auto;
+  }
+ 
+  .new-test-claim-components-container{
+     font-size: 12px;
+     input{
+      font-size:12px;
+     }
+     .astrict{
+       color:red;
+       padding-left: 3px;
+     }
+     .response,.reject{
+      padding-top:10px;
+     }
+    .submission,.response,.reject{
+      .submission-header,.response-header{
+        height:50px;
+        background: #FFFFFF;
+        border-bottom: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 5px 5px 0px 0px;
+        span{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 50px;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          color: #666666;
+          width: 107px;
+          padding-left:20px
+        }
+      }
+
+      .submission-container,.response-container,.reject-container{
+        width: 1090px;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: auto;
+        .submission-field,.response-field,.reject-field{
+          display: flex;
+          padding-bottom:10px;
+          height: auto;
+          .MuiInput-underline:after,.MuiInput-underline:before{
+            border-bottom: none;
+          }
+          .column-1{
+            min-width: 338px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-left: 20px;
+          }
+          .column-2{
+            min-width: 337px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-left: 20px;
+          }
+          .column-3{
+            min-width: 410px;
+            display: inline-block;
+            box-sizing: border-box;
+            padding:0 20px;
+          }
+          .MuiGrid-align-items-xs-center{
+            padding-top: 10px;
+          }
+        }
+        .reject-field{
+          input{
+            width: 325px;
+          }
+          .column-1{
+            min-width: 540px;
+          }
+          .column-2{
+            min-width: 540px;
+          }
+        }
+        .ant-picker{
+          width: 145px;
+          height: 27px;
+          border: none;
+        }
+        .input{
+          background: #FFFFFF;
+          border: 1px solid #E5E5E5;
+          box-sizing: border-box;
+          border-radius: 2px;
+          input{
+            text-indent:10px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #666666;
+          }
+        }
+        .label{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .MuiDialog-paper{
+    width: 1170px;
+  }
+  
+  .mr-20{
+    margin-right: 20px;
+  }
+  .mr-8{
+    margin-right:8px;
+  }
+  .claims-search .label{
+    width:42%;
+    font-size: 12px;
+  }
+
+  .member-notification-root{
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .topsection .member-notification-root {
+     height: 100px;
+     border:none;
+    .MuiGrid-container{
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  .btn {
+    width: 114px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #2055b5;
+    background-color: #2055b5;
+  }
+  .saparator{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .test-claim-search__icon{
+    margin-left: 10px;
+  }
+  .higlighted-value input{
+    color:#2055b5 !important;
+    font-weight: bold !important;
+  }
+  .claims-history-search .claims-search__input--date{
+    width: 170px !important
+  }
+  .member-notification-root .claims-search{
+    padding:10px 0 0 10px;
+  }
+
+  .MuiDialogContent-root{
+    border-top: 1px solid #e5e5e5;
+  }
+  .frx-dialog-root__heading .MuiTypography-root{
+    margin-left: 17px;
+  }
+
+  #alert-dialog-title label{
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: normal;
+  }
+  #alert-dialog-title span{
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  .topsection{
+    padding-bottom: 10px;
+  }
+  .MuiDialogContent-root {
+    position: relative !important;
+    margin-top: 0px;
+    flex: 1 1 auto;
+    overflow-y: unset !important;
+  }
+  .cost,.authrization-prescriber,.diagnosis-durpps{
+    padding-top: 15px;
+  }
+
+  .MuiDialog-paper {
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 6px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0px #999999;
+      border-radius: 3px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #999999;
+      border-radius: 3px;
+      border-right: 4px solid white;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #999999;
+    }
+  }
+  .frx-dialog-root__heading {
+    border-bottom: none !important;
+  }
+  .frx-dialog-root__heading .frx-dialog-root__close-icon {
+    margin-top: 12px;
+  }
+  .MuiDialogContent-root {
+    padding: 0px 0px 0px 0px;
+    // width: 1000px;
+    // height: 660px;
+    // padding-left: 20px;
+    // overflow-y: hidden;
+  }
+  .new-test-claim-root__header-text{
+    line-height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+  }
+  .ant-spin-nested-loading > div > .ant-spin {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+  }
+  .accordion-container {
+    position: absolute;
+    left: 341px;
+    top: 80px;
+    min-width: 648px;
+    max-width: 648px;
+    border-right: 1px solid #e5e5e5 !important;
+    // overflow: scroll;
+    .MuiAccordionSummary-root {
+      // margin:10px;
+    }
+    .MuiPaper-rounded {
+      margin: 0px;
+    }
+    .MuiAccordion-root.Mui-expanded {
+      margin-top: 0;
+      box-shadow: none;
+    }
+    .MuiAccordion-root.Mui-expanded:last-child {
+      margin-top: 0;
+      box-shadow: none;
+      border-bottom: none !important;
+    }
+    .MuiPaper-root {
+      border-radius: 0;
+      box-shadow: 0px 0px black !important;
+      border: 0px;
+      &::before {
+        display: none;
+      }
+      .MuiAccordionSummary-root {
+        height: 50px !important;
+        min-height: 50px !important;
+        // border-bottom: 1px solid $container-border-color;
+        border-top: 1px solid $container-border-color;
+      }
+      .Mui-expanded{
+        border-bottom: 1px solid $container-border-color;
+      }
+      &:last-child {
+        border-bottom: 1px solid $container-border-color;
+      }
+      .Mui-expanded {
+        // border-bottom: 1px solid $container-border-color;
+        // border-top: 1px solid $container-border-color;
+        margin: 0px;
+        height: 50px;
+        line-height: 50px;
+        .Mui-expanded {
+          border: 0px;
+          box-shadow: none !important;
+        }
+      }
+      .MuiIconButton-label {
+        .MuiSvgIcon-root {
+          margin-left: -10px !important;
+          height: 16.8px;
+        }
+      }
+      .MuiAccordionSummary-root {
+        height: 50px !important;
+      }
+    }
+    .claims-grid-root {
+      width: 100%;
+      table {
+        table-layout: fixed;
+      }
+      .ant-table-thead tr th.ant-table-column-has-sorters .ant-table-filter-column {
+        min-width: 161px !important;
+        width: max-content !important;
+      }
+      // .ant-table-body{
+      //    table{
+      //      width: 5436px;
+      //       min-width: max-content;
+      //       table-layout: auto;
+      //    }
+      // }
+      
+      .frx-grid-container .frx-grid .frx-grid__grid-block {
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 20px 0;
+      }
+    }
+    .MuiAccordionSummary-content p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 48px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #1d54b4;
+    }
+    .MuiAccordionDetails-root {
+      display: inherit;
+    }
+    // .MuiAccordionSummary-root{
+    //     margin-top: -5px;
+    //     height: 60px;
+    //     border-bottom: 1px solid red;
+    // }
+    .address-info {
+      margin-top: 23px;
+    }
+    .contact-minitabs {
+      // position: absolute;
+      // top: 80px;
+      margin-top: 23px;
+      .MuiTab-root {
+        min-height: 0px;
+      }
+      .MuiTabs-root {
+        min-height: 0px;
+      }
+      .frx-mini-tabs-root {
+        position: unset;
+        margin: 0px;
+        border-bottom: 0px solid $container-border-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+        background: $color-white;
+        padding: 0;
+        .frx-mini-tabs-root__tabs {
+          background-color: $color-white;
+          box-shadow: none;
+          border: 1px solid $mini-tab-border-color;
+          flex-direction: row;
+          border-radius: 4px;
+          padding: 3px;
+          width: max-content;
+          .frx-mini-tabs-root__tabs__tab {
+            padding: 0;
+            font-size: $font-12;
+            font-weight: $font-weight-bold;
+            color: $primary-text-color;
+            text-transform: capitalize;
+            opacity: unset;
+            border-radius: 2px;
+            .MuiTab-wrapper {
+              text-transform: capitalize;
+              font-size: $font-12;
+              font-weight: $font-weight-bold;
+              line-height: 24px;
+              padding: 0 10px;
+            }
+          }
+          .frx-mini-tabs-root__tabs__tab.Mui-selected {
+            background-color: $button-tab-active-background-color;
+            .MuiTab-wrapper {
+              color: $color-white;
+              // border: 1px solid $button-tab-active-background-color;  ## border was creating alignment issue removing will resolve alignment issue
+              border-radius: 2px;
+            }
+          }
+          .frx-mini-tabs-root__tabs__tab:first-child {
+            margin-left: 0px;
+          }
+          .frx-mini-tabs-root__tabs__tab:last-child {
+            margin-right: 0px;
+          }
+          .MuiTabs-indicator {
+            display: none !important;
+          }
+        }
+        .dev-status.wip {
+          display: none;
+        }
+        .frx-mini-tabs-root__active-line {
+          position: unset;
+        }
+        @media (min-width: 600px) {
+          .MuiTab-root {
+            min-width: 0px;
+          }
+        }
+      }
+      .pcp_info {
+        background-color: red;
+      }
+    }
+    .demographics-card {
+      width: 608px;
+      height: 72px;
+      margin-top: 20px !important;
+      background: #f9f9f9;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: #666666;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      .keyValue {
+        font-size: 12px;
+        margin: -14px;
+        width: 105px;
+        border-right: 1px solid #e5e5e5;
+      }
+      .keyValue_last {
+        font-size: 12px;
+        margin: -14px;
+        width: 105px;
+      }
+    }
+    .pcp-title {
+      position: static;
+      width: 69px;
+      height: 20px;
+      left: 15px;
+      // top: 65px;
+      margin-top: 20px !important;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333333;
+    }
+    .pcp-title_contact_info {
+      position: absolute;
+      width: 69px;
+      height: 20px;
+      left: 15px;
+      top: 65px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333333;
+    }
+    .conatct-info {
+      margin-top: 20px;
+      margin-bottom: 23px;
+    }
+    .egbTitle {
+      // margin-top: 10px;
+      margin-bottom: -10px;
+      font-size: 16px;
+      color: #666666;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    .eligibility-popup {
+      margin-top: 30px;
+    }
+    .EligibilityInsurance-Popup {
+      margin-top: 70px !important;
+    }
+  }
+}

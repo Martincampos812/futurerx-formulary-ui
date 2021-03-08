@@ -1,0 +1,363 @@
+@import "../../assets/style.scss";
+@import "../../assets/fonts.scss";
+.tablet-details-info-popup-root {
+  z-index: 999 !important;
+  .MuiDialog-paperWidthFalse {
+    width: 626px;
+    height: 526px;
+    max-height: calc(100% - 0px);
+    margin: 0 auto;
+    background: linear-gradient(0deg, #ffffff, #ffffff), #f9f9f9;
+  }
+  .MuiDialogContent-root {
+    position: relative;
+    margin-top: 0px;
+    flex: 1 1 auto;
+    overflow-y: hidden;
+    padding: 0;
+    display: contents;
+  }
+  .MuiDialog-paper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .frx-dialog-root__heading .MuiTypography-root {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+  }
+  .TabletDetailsHeading {
+    width: 626px;
+    height: 53px !important;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .TabletDetailsHeading > h3 {
+    position: absolute;
+    width: 221px;
+    height: 14px;
+    left: 22px;
+    top: 19px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #323c47;
+  }
+  .TabletDetailsHeading > h3 + h3 {
+    position: absolute;
+    width: 2165px;
+    height: 14px;
+    left: 289px;
+    top: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #f65a1c;
+  }
+  .Head-Btn {
+    border: 1px solid $primary-btn-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: $color-white;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    left: 536px;
+    top: 8px;
+    width: 81px;
+    height: 35px;
+    line-height: 16.41px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: $primary-btn-color;
+    padding: 8px;
+    text-transform: capitalize;
+    margin: 0 20px 0 auto;
+  }
+  .TabletBodyDetails {
+    display: flex;
+    .TabletBodyDetails__leftside {
+      position: absolute;
+      width: 308px;
+      height: 413px;
+      left: 0px;
+      background: #f9f9f9;
+      border-right: 1px solid #e5e5e5;
+      border-radius: 0px 0px 0px 5px;
+
+      .TabletBodyDetails__leftside_bgimg {
+        position: absolute;
+        width: 268px;
+        height: 144px;
+        left: 20px;
+        top: 20px;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+      }
+
+      .TabletBodyDetails__leftside_bgimg + span {
+        position: absolute;
+        width: 263px;
+        height: 14px;
+        left: 20px;
+        top: 175px;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        color: #323c47;
+        .astreak{
+          color: #f65a1c;
+        }
+      }
+      .TabletBodyDetails__leftside_typography {
+        position: absolute;
+        width: 268px;
+        height: 84px;
+        left: 20px;
+        top: 200px;
+
+        .paraTypo {
+          margin-top: 15px !important;
+        }
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: #323c47;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .TabletBodyDetails__rightside {
+      position: absolute;
+      left: 307px;
+      width: 316px;
+      height: 400px;
+      overflow-y: overlay;
+      overflow-x: hidden;
+      // &::-webkit-scrollbar {
+      //   width: 8px;
+      //   height: 6px;
+      // }
+      // /* Track */
+      // &::-webkit-scrollbar-track {
+      //   box-shadow: inset 0 0 0px #999999;
+      //   border-radius: 3px;
+      // }
+      // /* Handle */
+      // &::-webkit-scrollbar-thumb {
+      //   background: #999999;
+      //   border-radius: 3px;
+      //   border-right: 4px solid white;
+      // }
+      // /* Handle on hover */
+      // &::-webkit-scrollbar-thumb:hover {
+      //   background: #999999;
+      // }
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 0px #c4c4c4;
+        border-radius: 3px;
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #c4c4c4;
+        border-radius: 3px;
+      }
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #c4c4c4;
+      }
+      .TabletBodyDetails__rightside_box {
+        min-height: 251px;
+        padding: 20px 20px 13px 20px;
+        .container {
+          text-align: left;
+          position: relative;
+          margin-bottom: 12px;
+          cursor: pointer;
+          display: flex;
+          color: #323c47;
+
+          /* font-size: 22px; */
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .TabletBodyDetails__data_container {
+          margin-top: 22px !important;
+        }
+        .svgIcon {
+          margin-left: 8px;
+        }
+        .brandName {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: right;
+          color: #000000;
+        }
+        .brandValue {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: right;
+          color: #323c47;
+        }
+        .brandValueText {
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .checkRadio {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          height: 16px;
+          width: 16px;
+          background-color: #ffffff;
+          // border-radius: 50%;
+          // border: 2px solid #dddddd;
+          box-sizing: border-box;
+        }
+        .savingBox {
+          position: absolute;
+          top: 35px;
+          width: 80px;
+          height: 18px;
+          padding: 3px 0px 0px 6px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          background: #f65a1c;
+          border-radius: 5px;
+          color: #ffffff;
+        }
+
+        .price {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: left;
+          color: #323c47;
+        }
+        .companyName {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 14px;
+          color: #323c47;
+          margin-top: 14px;
+        }
+        .address {
+          width: 122.28px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #666666;
+          margin-top: 10px;
+        }
+        .address_inner {
+          width: 122.28px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #666666;
+          margin: 0;
+        }
+        .phoneNumber {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #666666;
+          margin-top: 10px;
+        }
+        .operatingHours {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #323c47;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+        .anticon > * {
+          height: 10px;
+          margin-left: 8px;
+          color: black;
+        }
+        .hours-container {
+          position: relative;
+          left: 10% !important;
+          top: -7%;
+          margin-bottom: 30px;
+          margin-top: 10px;
+        }
+
+        .hoursBox {
+          display: flex;
+        }
+        .monthsTitle {
+          min-width: 20px;
+          font-size: 9px;
+          line-height: 24px;
+          font-weight: 700;
+          text-align: right;
+          margin-right: 20.55px;
+          color: #666666;
+        }
+        .timeTitle {
+          font-size: 12px;
+          line-height: 24px;
+          font-weight: 700;
+          color: #666666;
+        }
+        &:last-of-type ~ hr {
+          display: none !important;
+        }
+      }
+      hr {
+        position: absolute;
+        color: #e5e5e5;
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid #e5e5e5;
+
+        //   top:165px;
+      }
+    }
+  }
+}

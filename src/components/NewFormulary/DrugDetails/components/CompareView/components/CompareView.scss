@@ -1,0 +1,156 @@
+.compare-formularies-container h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #707683;
+  padding-left: 10px;
+}
+
+.formulary-form {
+  padding: 10px 0px 10px 0px;
+  .MuiGrid-container{
+    width: 950px !important;
+    margin:auto;
+  }
+  .input-element {
+    margin-top: 6px;
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .bordered {
+      .hide-edit-icon {
+        display: none;
+      }
+      background: #eef3f7;
+      border: 1px solid #e5e5e5;
+      height: 35px;
+      width: 338px;
+
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      box-sizing: border-box;
+      border-radius: 3px;
+      text-decoration: underline dotted #1d54b4;
+      .inner-font {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        // line-height: 14px;
+        color: #1d54b4;
+        // border-bottom: 1px dashed #1d54b4;
+      }
+
+      .no-inner-font {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #323c47;
+      }
+    }
+    .bg-green {
+      background-color: #d5ffd7;
+    }
+  }
+}
+
+.formulay-label label {
+  display: block;
+  font-size: 12px;
+  color: #707683;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  .astrict {
+    color: red;
+  }
+}
+
+.formulary-form input,
+.view-formulary-form input {
+  width: 385px !important;
+  border-radius: 3px !important;
+  height: 35px !important;
+  position: initial !important;
+}
+
+.base-input {
+  background: #eef3f7;
+  border: 1px solid #e5e5e5;
+}
+
+.reference-input {
+  background: #d5ffd7;
+  border: 1px solid #e5e5e5;
+}
+
+::placeholder {
+  color: #323c47;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.vector-icon {
+  padding: 35px 50px;
+}
+
+.compare-btn {
+  padding-top: 5px;
+}
+
+.formulary-relative {
+  position: relative;
+}
+
+.select-formulary {
+  text-decoration: underline dashed !important;
+  color: #1d54b4;
+  position: absolute;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  left: 9px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.select-formulary:hover {
+  color: #1d54b4 !important;
+}
+
+.view-formulary-form {
+  padding: 10px;
+}
+
+.select-formulary-name {
+  position: relative;
+
+  input {
+    width: 100% !important;
+  }
+}
+.select-formulary-write-icon {
+  position: absolute;
+  right: 15px;
+  top: 33px;
+  cursor: pointer;
+}
+
+.view-formulary-btn button {
+  margin-right: 80px !important;
+  margin-top: 25px !important;
+  width: 65px !important;
+}
+
+.compare-vector-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

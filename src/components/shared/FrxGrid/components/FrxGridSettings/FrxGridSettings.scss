@@ -1,0 +1,127 @@
+@import "../../../../../assets/style.scss";
+
+.ant-drawer {
+  .ant-drawer-mask {
+    display: none;
+  }
+  .ant-drawer-content-wrapper {
+    height: 100%;
+    top: 30%;
+    max-height: 307px;
+    width: 428px !important;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5px;
+  }
+  .ant-drawer-content {
+    border-radius: 7px;
+    .ant-drawer-header {
+      background-color: $hyperlink-text-color;
+      position: relative;
+      padding: 12px 14px;
+      .ant-drawer-title {
+        font-size: $font-14;
+        color: $color-white;
+        text-align: left;
+        font-weight: normal;
+      }
+      .ant-drawer-close {
+        padding: 13px;
+        .anticon {
+          padding: 4px;
+          font-size: 11px;
+          font-weight: 400;
+          color: $hyperlink-text-color;
+          background-color: $color-white;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .ant-drawer-body {
+      padding: 14px 20px 20px 20px;
+      overflow: hidden;
+      .frx-grid-settings{
+        .frx-grid-settings__column-heading{
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+          margin: 0;
+        }
+        .frx-grid-settings__column-container{
+          border-radius: 5px;
+          margin: 24px 0 21px;
+          display: flex;
+          .frx-grid-settings__column-container__available-columns, 
+          .frx-grid-settings__column-container__displayed-columns{
+            width: 50%;
+            text-align: left;
+            padding: 0;
+            .frx-grid-settings__column-container__available-columns__title,
+            .frx-grid-settings__column-container__displayed-columns__title{
+              color: $primary-text-color;
+              font-size: $font-14;
+              font-weight: $font-weight-bold;
+            }
+            .frx-grid-settings__column-container__displayed-columns__list,
+            .frx-grid-settings__column-container__available-columns__list{
+              overflow-y: auto;
+              height: 126px;
+              padding: 8px;
+              border: 1px solid $container-border-color;
+              border-radius: 5px;
+              &__item{
+                cursor: pointer;
+                position: relative;
+                line-height: 30px;
+                &__label{
+                  color: $primary-text-color;
+                  font-size: $font-12;
+                  font-weight: $font-weight-bold;
+                  text-transform: uppercase;
+                  &__icon{
+                    color: #fff;
+                    margin: 0 0 auto;
+                    font-size: 15px;
+                    position: absolute;
+                    right: 0;
+                    font-weight: 400;
+                    cursor: pointer;
+                    top: 2px;
+                    line-height: 30px;
+                  }
+                }
+              }
+              &__item:hover i{
+                color: $hyperlink-text-color;
+              }
+            }
+          }
+          .frx-grid-settings__column-container__displayed-columns{
+            padding: 0 0 0 20px;
+          }
+        }
+        .frx-grid-settings__actions{
+          float: right;
+          .frx-grid-settings__actions__btn{
+            width: 74px;
+            height: 18px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            font-size: $font-12;
+            cursor: pointer;
+            background-color: $color-white;
+            border: 1px solid $container-border-color;
+            border-radius: 5px;
+            color: $primary-text-color;
+            font-weight: $font-weight-500;
+          }
+          .frx-grid-settings__actions__btn--apply{
+            background-color: $hyperlink-text-color;
+            color: $color-white;
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

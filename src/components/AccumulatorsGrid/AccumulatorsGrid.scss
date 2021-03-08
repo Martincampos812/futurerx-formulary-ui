@@ -1,0 +1,46 @@
+.accumulator-grid-root {
+  width: 100%;
+  .frx-grid-container {
+    .frx-grid {
+      .frx-grid__grid-block {
+        padding: 0 !important;
+        &__table-block {
+          .ant-table {
+            .ant-table-header .ant-table-thead > tr > th {
+              padding: 0 8px 0 8px; /* 0 0 0 19 => 0 8 0 8 */
+              line-height: unset;
+              .ant-table-filter-trigger-container{
+                top: 15px;
+              }
+            }
+            .ant-table-header .ant-table-thead > tr > th:first-child {
+              line-height: 50px;
+            }
+            .ant-table-body {
+              max-height: 210px !important;
+              bottom: 0;
+              & > table {
+                border-collapse: separate;
+                border-spacing: 0;
+                .ant-table-tbody {
+                  & > tr > td:first-child {
+                    border-radius: 0;
+                    .frx-grid-settings-cell {
+                      display: none;
+                    }
+                  }
+                  & > tr > td {
+                    border-top: none;
+                  }
+                }
+              }
+            }
+            .ant-table-header {
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

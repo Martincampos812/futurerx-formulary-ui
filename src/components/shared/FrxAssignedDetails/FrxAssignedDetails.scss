@@ -1,0 +1,225 @@
+.FrxAssignedDetails-root {
+    .assignedTo-root {
+        width: 220px;
+        height: 63px;
+        margin-top: 31px;
+        margin-left: 30px;
+        .label {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            /* Light Black */
+
+            color: #707683;
+            margin-bottom: 9px;
+            margin-left: 3px;
+        }
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: 0px;
+        }
+        .MuiInput-underline:not(.Mui-disabled):after {
+            border-bottom: 0px;
+        }
+        .selectBox {
+            width: 220px;
+            height: 40px;
+            padding: 4px 0px;
+            padding-left: 44px;
+            border: 1px solid #e5e5e5;
+            border-radius: 28px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            width: 100%;
+            /* identical to box height, or 200% */
+
+            color: #c4c4c4;
+            cursor: pointer;
+
+            .MuiSelect-select:focus {
+                background-color: unset;
+            }
+            &::before {
+                content: attr(data-name);
+                position: absolute;
+                background-color: #1fbbc4;
+                border: 0px;
+                height: 26px;
+                width: 26px;
+                border-radius: 50px;
+                top: 6px;
+                bottom: 6px;
+                left: 8px;
+                text-align: center;
+
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 30px;
+                /* identical to box height, or 200% */
+
+                /* White */
+
+                color: #ffffff;
+            }
+        }
+    }
+    .grid2x2 {
+        width: 100%;
+        padding: 20px 35px;
+        div {
+            width: 100%;
+            div {
+                width: 50%;
+                span {
+                    &:first-child {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 20px;
+                        /* identical to box height, or 167% */
+
+                        text-transform: uppercase;
+
+                        /* Light Black */
+
+                        color: #707683;
+                    }
+                    &:last-child {
+                        margin-top: 10px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        /* identical to box height, or 143% */
+
+                        /* Text Black */
+
+                        color: #323c47;
+                    }
+                }
+            }
+        }
+    }
+    .grid1x2 {
+        padding: 0px 35px;
+        .grid2x2 {
+            padding: 0px;
+        }
+
+        span {
+            &:first-child {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #707683;
+                .selectBox:first-child {
+                    div {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        padding: 9px 30px;
+                        border: 0px;
+                    }
+                    .MuiInput-underline:after {
+                        display: none;
+                    }
+                }
+            }
+            &:last-child {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                color: #323c47;
+                margin-top: 10px;
+            }
+        }
+        .selectBox {
+            width: 176px;
+            padding: 0px;
+            height: 38px;
+            border: 1px solid #c4c4c4;
+            box-sizing: border-box;
+            border-radius: 5px;
+            cursor: pointer;
+            div {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: #c4c4c4;
+                text-transform: capitalize;
+                padding: 10px 14px;
+            }
+            .MuiSelect-select:focus {
+                background-color: unset;
+            }
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border-bottom: 0px;
+            }
+            .MuiInput-underline:not(.Mui-disabled):after {
+                border-bottom: 0px;
+            }
+        }
+        .selectBox[data-value="closed"] {
+            &::before {
+                position: absolute;
+                content: "\25CF";
+                width: 8px;
+                height: 8px;
+                left: 15px;
+                top: 9px;
+                color: #f89090;
+                border: 0px;
+            }
+        }
+        .progress-root {
+            height: 24px;
+            width: 220px;
+            position: relative;
+            .label {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #323c47;
+                position: absolute;
+                z-index: 9999;
+                margin-top: 5px;
+                margin-left: 41px;
+            }
+            .progress {
+                height: 24px;
+                width: 220px;
+                box-shadow: 0px 0px 0px 1px  #c4c4c4 inset;
+                box-sizing: border-box;
+                border-radius: 15px;
+                background-color: #ffffff;
+                .bar {
+                    color: black;
+                    background-color: rgba(128, 196, 131, 0.5);
+                    border-radius: 15px;
+                    border: 1px solid #80C483;
+                }
+            }
+        }
+    }
+}

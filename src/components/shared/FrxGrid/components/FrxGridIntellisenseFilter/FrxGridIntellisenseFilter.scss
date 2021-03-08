@@ -1,0 +1,168 @@
+@import "../../../../../assets/colors.scss";
+@import "../../../../../assets/fonts.scss";
+
+.ant-table-filter-dropdown {
+  width: 247px;
+  .frx-grid-intellisense-filter {
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 16px #00000026;
+    border: 1px solid $container-border-color;
+    .frx-grid-intellisense-filter__filters {
+      font-weight: 500;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.01em;
+      color: $color-white;
+      background-color: $hyperlink-text-color;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      .frx-grid-intellisense-filter__filters__close-icon {
+        margin: 0 0 0 auto;
+        cursor: pointer;
+      }
+    }
+    .frx-grid-intellisense-filter__filter-block {
+      padding: 20px;
+      .frx-grid-intellisense-filter__filter-block__select {
+        width: 200px;
+        border: 1px solid $container-border-color;
+        border-radius: 5px;
+        .ant-select-selector {
+          height: 40px;
+          border: none;
+          background: none;
+          .ant-select-selection-item {
+            line-height: 40px;
+            color: $primary-text-color;
+            font-size: $font-12;
+          }
+        }
+        // Removing default border color on hover//
+        &:not(.ant-select-disabled):hover .ant-select-selector {
+          border-color: $container-border-color !important;
+        }
+      }
+      .frx-grid-intellisense-filter__filter-block__value-block {
+        // margin-top: 20px;
+        .frx-grid-intellisense-filter__filter-block__value-block__label {
+          color: $primary-text-color;
+          text-transform: uppercase;
+          font-size: $font-10;
+          font-weight: $font-weight-normal;
+        }
+        .frx-grid-intellisense-filter__filter-block__value-block__input {
+          width: 200px;
+          height: 40px;
+          border: 1px solid $container-border-color;
+          border-radius: 5px;
+          font-size: $font-12;
+        }
+        .MuiInput-input {
+          text-indent: 10px;
+          color: $primary-text-color;
+        }
+        // Removing default bottom line //
+        .MuiInput-underline:before,
+        .MuiInput-underline:after {
+          border-bottom: none;
+        }
+      }
+    }
+    .filter-btns {
+      display: table;
+      margin: 20px 0 0 auto;
+      .clear-button,
+      .filter-button {
+        width: 62px;
+        height: 18px;
+        line-height: 11px;
+        font-size: $font-12;
+        border-radius: 5px;
+        border: 1px solid $container-border-color;
+      }
+      .clear-button {
+        color: $primary-text-color;
+        margin-right: 10px;
+      }
+      .filter-button {
+        color: $color-white;
+        background-color: $hyperlink-text-color;
+      }
+      .ant-btn:hover,
+      .ant-btn:focus {
+        color: $hyperlink-text-color;
+        border-color: $hyperlink-text-color;
+        background: none;
+      }
+    }
+    .frx-grid-intellisense-filter__filter-block {
+      &__suggestions-block {
+        padding-top: 10px;
+        &__checkboxes {
+          width: 100%;
+          .MuiFormLabel-root {
+            color: $primary-text-color;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: normal;
+            margin: 10px 0;
+          }
+          .MuiFormGroup-root {
+            // overflow-y: auto;
+            max-height: 150px;
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+          }
+          .MuiFormGroup-root::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+          }
+          /* Track */
+          .MuiFormGroup-root::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 0px #999999;
+            border-radius: 3px;
+          }
+          /* Handle */
+          .MuiFormGroup-root::-webkit-scrollbar-thumb {
+            background: #999999;
+            border-radius: 3px;
+          }
+          /* Handle on hover */
+          .MuiFormGroup-root::-webkit-scrollbar-thumb:hover {
+            background: #999999;
+          }
+
+          &__checkboxlabel {
+            margin: 0 0 15px 0;
+
+            &__checkbox {
+              padding: 0;
+            }
+            .MuiCheckbox-root {
+              color: #d5d5d5;
+              padding: 0;
+              .MuiIconButton-label {
+                .MuiSvgIcon-root {
+                  width: 18px;
+                  height: 18px;
+                }
+              }
+            }
+            .MuiTypography-root {
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 14px;
+              color: #323c47;
+              padding-left: 8px;
+            }
+            .MuiCheckbox-colorSecondary.Mui-checked {
+              color: $hyperlink-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

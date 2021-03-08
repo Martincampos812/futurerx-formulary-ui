@@ -1,0 +1,55 @@
+@import "../../assets/style.scss";
+
+.member-notification-root {
+  height: 100%;
+  width: 100%;
+  // width: 458px;
+  margin: 0px 0px 0px auto;
+  background: $white-color;
+  border: 1px solid $container-border-color;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  .member-notification-header {
+    height: 50px;
+    border-bottom: 1px solid $container-border-color;
+    position: relative;
+    padding: 0px 22px 0px 20px;
+    
+    .member-notification-root__header-text{
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: $font-weight-500;
+      font-size: $font-12;
+      line-height: 50px;
+      margin-right: 180px;
+      /* identical to box height, or 417% */
+
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #2055B5;
+    }
+
+    .member-notification-header__icon-container{
+      float: right;
+      height: 50px;
+      line-height: 50px;
+
+      .member-notification-header--noteicon {
+        margin-left: 20.800px;
+        cursor: pointer;
+      }
+
+      .member-notification-header--editicon{
+        margin-left: 20.800px;
+        cursor: pointer;
+      }
+      
+    }
+  }
+}
+
+.member-notification-list-container {
+  height: calc(100% - 50px);
+  padding-bottom: 3px;
+}

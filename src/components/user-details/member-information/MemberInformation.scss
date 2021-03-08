@@ -1,0 +1,102 @@
+@import "../../../assets/style.scss";
+
+.MemberInformation {
+  /* width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px; */
+}
+.member-heading {
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  /* line-height: 10px; */
+  letter-spacing: 0.1px;
+  color: #666666;
+  margin: 0 0 20px 0;
+  /* margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 18px; */
+}
+.member {
+  padding: 15px;
+}
+.member-lables {
+  width: 40%;
+}
+.member-fields > .fields {
+  margin-bottom: 10px;
+}
+.member-lables > label {
+  display: block;
+  line-height: 2.85;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #323c47;
+}
+.member-formfields {
+  margin-top: 2px;
+  width: 50%;
+}
+
+.menber-radioButton {
+  width: 205px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* margin-top: 2px; */
+  /* margin-bottom: 10px; */
+  text-align: left;
+}
+
+.menber-radioButton > label {
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 5px;
+}
+
+.member-fields > .fields > label {
+  line-height: 35px;
+  font-weight: normal;
+}
+.member-fields > .fields {
+  display: flex;
+  justify-content: space-between;
+}
+.member-fields > .fields > .ant-picker {
+  width: 58.55%;
+  height: 32px;
+}
+.custom-memberinfo-datepicker {
+  width: 205px;
+  height: 35px;
+}
+.custom-memberinfo-datepicker > .ant-picker-input > input {
+  font-size: 12px;
+  color: #999999;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+}
+
+.member-fields{
+  .fields{
+    .ant-picker-input > input{
+      font-size: $font-12 !important;
+      color: #999999 !important;
+      font-weight: normal;
+      letter-spacing: 0.1px;
+    }    
+  }
+}
+

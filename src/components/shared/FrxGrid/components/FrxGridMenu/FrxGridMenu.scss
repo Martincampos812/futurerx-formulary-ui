@@ -1,0 +1,25 @@
+@import "../../../../../assets/style.scss";
+
+.frx-grid-menu{
+    .MuiPopover-paper{
+        width: 200px;
+        background: $color-white;
+        border: 1px solid $container-border-color;
+        box-sizing: border-box;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.041);
+        border-radius: 3px;
+        .MuiMenu-list{
+            padding: 0 21px;
+            .frx-grid-menu__item {
+                padding: 0;
+                font-size: $font-12;
+                font-weight: $font-weight-normal;
+                line-height: 38px;
+                color: $primary-text-color;
+                &:hover{
+                    background: none;
+                }
+            }
+        }
+    }
+}

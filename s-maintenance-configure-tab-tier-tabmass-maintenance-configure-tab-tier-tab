@@ -1,0 +1,953 @@
+[33mcommit 6ea26ee539a27cd482811046207be7522999c4c2[m[33m ([m[1;36mHEAD -> [m[1;32msetup-tab[m[33m)[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Mon Nov 30 17:59:42 2020 +0530
+
+    mass-maintenance-configure-tab-tier-tab
+
+[33mcommit 07e9e5971f9ac2c8ecaba372a0ab31ef13e39b7d[m
+Merge: 8be4265 aab1ad2
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Mon Nov 30 16:08:43 2020 +0530
+
+    Merge branch 'dev' into setup-tab
+
+[33mcommit 8be4265a705693c3b49bdebef5ba77666e6d13e7[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Mon Nov 30 16:07:42 2020 +0530
+
+    mass-maintenance-configure-tab
+
+[33mcommit aab1ad2353c8b3c6711c360ab1feb1ab105f14c6[m[33m ([m[1;31morigin/formulary-drug-advanced-search-popup[m[33m, [m[1;31morigin/dev[m[33m, [m[1;32mdev[m[33m)[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Mon Nov 30 14:15:53 2020 +0530
+
+    advance search append to grid
+
+[33mcommit 9539a59d89953009fdedc7798888877dfaa96a03[m
+Merge: 361bd3e 29a3391
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Mon Nov 30 13:44:23 2020 +0530
+
+    Merge branch 'dev' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into formulary-drug-advanced-search-popup
+
+[33mcommit 361bd3e92b4d85c41a224a13435b7e0c997ac2cb[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Mon Nov 30 13:44:08 2020 +0530
+
+    drug details advance search update
+
+[33mcommit 29a3391142885386f5cc22fb4195a82b67776408[m[33m ([m[1;31morigin/setup-tab[m[33m)[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Mon Nov 30 13:00:10 2020 +0530
+
+    resolved pinning issue
+
+[33mcommit 049a5389ebbb39a369605ea1a8752b3c9ba173ff[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Mon Nov 30 12:42:37 2020 +0530
+
+    fixed issue
+
+[33mcommit 57da4aa05aa798e81ab0fd0438862325403d35d0[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Mon Nov 30 10:41:12 2020 +0530
+
+    Grid without border-spacing
+
+[33mcommit dc5ce6270bb60bd5ecdc4fb28438e1d95f69d37a[m[33m ([m[1;31morigin/feature-drug-grid[m[33m)[m
+Merge: 7cc97ff e8da710
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Fri Nov 27 22:44:34 2020 +0000
+
+    Merged in bilal-tier-screen (pull request #21)
+    
+    Bilal tier screen
+
+[33mcommit e8da710a73fc15b36c4c30930dca91a4b5459ea1[m[33m ([m[1;31morigin/bilal-tier-screen[m[33m)[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Sat Nov 28 03:43:29 2020 +0500
+
+    revert checkbox commit
+
+[33mcommit d263060d004392ed55360057fdf08ddac2cbae1e[m
+Merge: 261b4b1 7cc97ff
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Sat Nov 28 03:39:28 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 7cc97ffc3a97900f2e8b28f01d19897aedceffc9[m[33m ([m[1;31morigin/shahzaib-formulary-dashboard-screen[m[33m)[m
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Sat Nov 28 03:31:31 2020 +0500
+
+    - develop the medicare table with expandable details
+
+[33mcommit 261b4b1e937a57f1e8c5c0b1c1ea50bdb890d7ee[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Sat Nov 28 01:36:10 2020 +0500
+
+    checkbox styling fixed
+
+[33mcommit cdb551c1e6a97b3f26e0dd141f0a33d645a2e51f[m
+Merge: 6f69501 12b74b8
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Sat Nov 28 01:35:14 2020 +0500
+
+    Merge branch 'pakistan-master' of bitbucket.org:futurerx-evaluation/futurerx-formulary-ui into shahzaib-formulary-dashboard-screen
+
+[33mcommit 48802cfa36702f6c879f3fb31bf4658469398970[m
+Merge: 1ab396f 12b74b8
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Sat Nov 28 01:06:35 2020 +0500
+
+    conflict resolved
+
+[33mcommit 12b74b8d472567a910035f8a9cbdcc487847a110[m
+Merge: adc51da d30e795
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Fri Nov 27 20:03:39 2020 +0000
+
+    Merged in usama-marketing-materials-and-formulary-search-tool (pull request #20)
+    
+    styles fixed again using parent child method
+
+[33mcommit d30e7951a8c2ea83d4bfe127b076ad97d4800de2[m[33m ([m[1;31morigin/usama-marketing-materials-and-formulary-search-tool[m[33m)[m
+Merge: 98c1aca adc51da
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Sat Nov 28 01:01:04 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into usama-marketing-materials-and-formulary-search-tool
+
+[33mcommit adc51dad22ecd2641e4861cefcbd8c6b8bb14679[m
+Merge: 2065224 9f07b42
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Fri Nov 27 20:00:24 2020 +0000
+
+    Merged in umair-css-issue (pull request #19)
+    
+    label css issue fixed
+
+[33mcommit 9f07b42a9d7fb1c6e9bfdb2c74793a8eb0d2d9a0[m[33m ([m[1;31morigin/umair-css-issue[m[33m)[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Sat Nov 28 00:01:46 2020 +0500
+
+    label css issue fixed
+
+[33mcommit 98c1aca84bbabd26bb387c62314caad471d38d67[m
+Author: Usama Muhammad <usamamuhammad45678@gmail.com>
+Date:   Fri Nov 27 23:54:13 2020 +0500
+
+    styles fixed again using parent child method
+
+[33mcommit 6f69501c0dcbf3309136a8ae77c3ba6e32806b6a[m
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Fri Nov 27 23:31:01 2020 +0500
+
+    - developed expanded formulary details
+
+[33mcommit 20652242d84b17a422dd5d13f9e74ee369d7c1b8[m
+Merge: 024e6b9 b12dbd5
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 23:40:13 2020 +0530
+
+    resolve conflict
+
+[33mcommit b12dbd536769daa1c3a9bbacaeca5d29df394c22[m[33m ([m[1;31morigin/formulary-drug-details[m[33m)[m
+Merge: 61b8159 532a652
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 23:28:31 2020 +0530
+
+    Merge setup-tab branch
+    Merge branch 'setup-tab' into formulary-drug-details
+
+[33mcommit 532a652101e82f083e5a49e74a6a04e5a053f8ae[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 23:18:52 2020 +0530
+
+    minor css issue fix
+
+[33mcommit c7d9f66fdfdd0433a01f561f7b80f8a424136631[m
+Merge: 7dc55e9 ef523cc
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 23:13:13 2020 +0530
+
+    Merge branch 'setup-tab' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into setup-tab
+
+[33mcommit 7dc55e9f9863fe896d30b5d2872ddd7b186bc144[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 23:13:01 2020 +0530
+
+    Cost Share Details updated
+
+[33mcommit ef523cc747fa691c396866ff3b723fc74ca893ca[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 20:30:19 2020 +0530
+
+    resolved css issue
+
+[33mcommit 72e169b85bc8b8265e282fb448a38ccaec90828d[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 20:21:06 2020 +0530
+
+    removed duplicate form, dynemic checkbox to srch form
+
+[33mcommit d614de05d39b5db5b6a0f9e368d5fae46af1f4cb[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 19:36:02 2020 +0530
+
+    Completed screen SearchToolConfiguration Screen
+
+[33mcommit 61b815975411119a8e18129d9b12b10da064529f[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 17:38:36 2020 +0530
+
+    removed tt
+
+[33mcommit 889a6f84d06f355b50fd7f734029df533c26213f[m
+Merge: 6cf2e9d 30c612e
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 17:32:27 2020 +0530
+
+    Merge branch 'formulary-drug-advanced-search-popup' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into formulary-drug-advanced-search-popup
+
+[33mcommit 30c612e57796e9e80f5fff57a7ea6ac09558074c[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 17:30:36 2020 +0530
+
+    fix advance search popup
+
+[33mcommit d243c76298ed418bad0d9bf98348f28fb939a547[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 17:11:06 2020 +0530
+
+    added drug grid subtabs
+
+[33mcommit 64e83da9489efa6ca5b19f13081365fb79555978[m
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Fri Nov 27 15:11:02 2020 +0500
+
+    - developed status field block and pill for tables record
+
+[33mcommit ca3176accbe51696dcce660c524066af264251ab[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 15:35:02 2020 +0530
+
+    update
+
+[33mcommit 93f1a97fd274ae35b1816fe942fb93f3cbbf6220[m
+Merge: 21ad39a 01d86d6
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 14:46:13 2020 +0530
+
+    Merge branch 'feature-drug-grid' into setup-tab
+
+[33mcommit 21ad39a41d7204ca9fcb1d4d05429d142f3d1e3f[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 14:38:35 2020 +0530
+
+    completed formulary-maintainance-form
+
+[33mcommit 509bb16a052329ad11066d85ced7c4e3f3124fda[m
+Merge: f137ac2 024e6b9
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Fri Nov 27 13:53:22 2020 +0500
+
+    Merge branch 'pakistan-master' of bitbucket.org:futurerx-evaluation/futurerx-formulary-ui into shahzaib-formulary-dashboard-screen
+
+[33mcommit 6cf2e9d1592ddc022cf794bf369ad9b3a912c438[m
+Merge: c158d73 01d86d6
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 14:18:17 2020 +0530
+
+    Merge branch 'feature-drug-grid' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into formulary-drug-advanced-search-popup
+
+[33mcommit c158d73dd177ccfd66d0d5ec7de3cb186d336598[m
+Merge: 1c7afd8 00fb5ba
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 14:17:20 2020 +0530
+
+    Merge branch 'dev' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into formulary-drug-advanced-search-popup
+
+[33mcommit 1c7afd84ac465a8d3dad8f4dc09994a62e454722[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Fri Nov 27 14:07:25 2020 +0530
+
+    advanced search
+
+[33mcommit 01d86d68e8c0225621f77f23d9d6d7cee646e419[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 14:04:27 2020 +0530
+
+    add drug grid to FFF component
+
+[33mcommit 024e6b9f1ad234f6659ef843e71f7e60d258f521[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 12:50:38 2020 +0500
+
+    fix imports
+
+[33mcommit 187b8c4a2092f7bcbb9a67741afbef48afd6cc26[m
+Merge: 91ac92b 648ae91
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 12:42:32 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into pakistan-master
+
+[33mcommit 648ae91a832cf5281d1b0b78cb9c1b983d0b1612[m
+Merge: 6b44a12 24efd2d
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Fri Nov 27 07:42:06 2020 +0000
+
+    Merged in huzaifa-validation (pull request #18)
+    
+    Huzaifa validation
+
+[33mcommit 24efd2d7b1101fb670a84a8e1286ad2752a5cea5[m[33m ([m[1;31morigin/huzaifa-validation[m[33m)[m
+Merge: 696691a 6b44a12
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 12:41:18 2020 +0500
+
+    conflict resolved
+
+[33mcommit 696691a54ec16879a4f186230c518cc36151e817[m
+Author: Huzaifa Sajjad Malik <mhuzaifasajjad@gmail.com>
+Date:   Fri Nov 27 12:29:50 2020 +0500
+
+    Formulary Configure PA Added
+
+[33mcommit 0a2078dd28e4abf13360657bc19740cc6ef34676[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Fri Nov 27 12:47:44 2020 +0530
+
+    update drug grid
+
+[33mcommit f137ac265352fbd79c07a1a5be75b1c99c88ae13[m
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Fri Nov 27 12:08:25 2020 +0500
+
+    - developed time progressbard
+
+[33mcommit 1ab396fd0a8412f607d3d898132f807d9c535f3c[m
+Merge: 7864078 6b44a12
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 12:01:18 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 91ac92b4195f684343c366e51d7dc6468e5d5c9c[m
+Merge: 4eab2bb 6b44a12
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 12:00:54 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into pakistan-master
+
+[33mcommit 6b44a121722bf89acbe4f464e070cc74fd632c68[m
+Merge: d1a11ef 6944c0b
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Fri Nov 27 06:59:02 2020 +0000
+
+    Merged in feature/sidebar-marketing-material (pull request #16)
+    
+    Feature/sidebar marketing material
+
+[33mcommit 5874729ee1c1467cc7eba6b43666d0848e216602[m
+Merge: 85bad8c 6944c0b
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 12:19:47 2020 +0530
+
+    Updated with latest branch
+
+[33mcommit fdf7493d33d60f13f0ef9a32a5783ccd363d9db9[m
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Fri Nov 27 11:13:37 2020 +0500
+
+    - developed process stepper
+
+[33mcommit 6944c0bb2f2b4f5769ebb8ddea99c140b3edb8b2[m[33m ([m[1;31morigin/feature/sidebar-marketing-material[m[33m)[m
+Merge: 805ce87 d1a11ef
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 11:13:07 2020 +0530
+
+    Merge branch 'pakistan-master' into feature/sidebar-marketing-material
+
+[33mcommit 805ce873a2c56ef8c1ba5c1bb3b0b3ea2cec1ea9[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 11:02:21 2020 +0530
+
+    Marketing Material sidebar structure
+
+[33mcommit 85bad8cf866d2a8a6265d0625130b2c5b05892e7[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Fri Nov 27 07:29:07 2020 +0530
+
+    Mass Maintenance setup tab second commit
+
+[33mcommit d1a11ef2a787876d67e1989fd40853bdbec8901e[m
+Merge: 1854050 171bfcd
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 22:49:40 2020 +0000
+
+    Merged in umair-formulary-setup (pull request #15)
+    
+    add formulary setup action buttons
+
+[33mcommit 171bfcde4e6d3c1961e2133bda86e480e2b2df54[m[33m ([m[1;31morigin/umair-formulary-setup[m[33m)[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Fri Nov 27 03:35:55 2020 +0500
+
+    add formulary setup action buttons
+
+[33mcommit 7864078b72e732720bee8f6c79ded519bb3180eb[m
+Merge: 8a2a361 1854050
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 03:16:43 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 8a2a361b08de69833bf5ddba31aec9bcf379d7a6[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 03:16:25 2020 +0500
+
+    added checkboxes
+
+[33mcommit 1854050032b477e6b4eb35d286d397ffb77860f0[m
+Merge: 64901d1 985f5e5
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 22:15:51 2020 +0000
+
+    Merged in umair-view-formularies (pull request #14)
+    
+    view formularies screen
+
+[33mcommit 985f5e549109a4279bc1db99966002158ddda109[m[33m ([m[1;31morigin/umair-view-formularies[m[33m)[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Fri Nov 27 03:03:00 2020 +0500
+
+    view formularies screen
+
+[33mcommit 14afa10cc0a6ecc91f9af55bd6254aa47c3c87a4[m
+Merge: f083e64 64901d1
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 02:58:22 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 4eab2bbd08b0b07debfb992cca5442286e87b254[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Fri Nov 27 02:57:49 2020 +0500
+
+    added checkboxes
+
+[33mcommit 64901d1f8b8ce69d277d44f5094763eaa10fbbf6[m
+Merge: b505534 426c1fb
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 21:12:58 2020 +0000
+
+    Merged in umair-formulary-setup (pull request #13)
+    
+    Umair formulary setup
+
+[33mcommit 426c1fb89e37e31bb7ed48afd91f039f705a2b34[m
+Merge: 34198a1 b505534
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Fri Nov 27 00:31:30 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into umair-formulary-setup
+
+[33mcommit 34198a127cb70a6fc3b7546cb36da0c2fc89a5b1[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Fri Nov 27 00:31:13 2020 +0500
+
+    formulary set up screen
+
+[33mcommit 00fb5ba03b90c3d4fbd1fbc488985c267f6a739f[m
+Merge: 405603f b505534
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Thu Nov 26 23:14:35 2020 +0530
+
+    fix some issue and resolve merge conflict
+
+[33mcommit b505534432806320a55438e830b5c6ad061e91ee[m
+Merge: fe3db71 cecb85f
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Thu Nov 26 22:45:55 2020 +0530
+
+    conflict resolved
+
+[33mcommit 6a05de49a46b3315d8bded47b304cf9fa0595582[m
+Merge: caca0e0 fe3db71
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Thu Nov 26 21:40:26 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into umair-formulary-setup
+
+[33mcommit caca0e02122241041a10d5e1beab659570ceb521[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Thu Nov 26 21:40:11 2020 +0500
+
+    formaly design component
+
+[33mcommit 405603f5709276976a35a371c4932bb6338f3dfb[m
+Merge: cecb85f 7f02462
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Thu Nov 26 22:09:11 2020 +0530
+
+    Merge branch 'formulary-drug-subtabs' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into formulary-drug-subtabs
+
+[33mcommit cecb85f6044a3d091838b46e92b2d823a1fd134d[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Thu Nov 26 22:05:10 2020 +0530
+
+    update for drug grid layout
+
+[33mcommit f083e641bec832527836dddcbd485b118007dedd[m
+Merge: b930300 fe3db71
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 18:17:31 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit fe3db71ae5e4cee06a79c43323a1ba6b667a75f9[m
+Merge: 96100e7 733a549
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 13:16:50 2020 +0000
+
+    Merged in umair-formulary-setup (pull request #12)
+    
+    formulary set general information component bug fixed
+
+[33mcommit 733a549f7b67c02b05e03b9ddd1c7c8c5da4f5e6[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Thu Nov 26 18:14:54 2020 +0500
+
+    formulary set general information component bug fixed
+
+[33mcommit b930300e6b9e9df64fd30a19fcaf83454f6ab477[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 17:23:58 2020 +0500
+
+    added button
+
+[33mcommit 96100e7a95623dd98cd99852e1a3d3b6f1c515fe[m
+Merge: f1ef73d 4e5efa7
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 11:22:00 2020 +0000
+
+    Merged in nauman-st (pull request #11)
+    
+    screen 21 done
+
+[33mcommit 7f02462f98c371674a41f90dfb61780f1259b15e[m[33m ([m[1;31morigin/formulary-drug-subtabs[m[33m)[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Thu Nov 26 15:12:14 2020 +0530
+
+    removed pading
+
+[33mcommit d963c295563b012e20385f3432f00798939aafd7[m
+Author: Santosh J Sutar <ssutar@futurerx.com>
+Date:   Thu Nov 26 14:52:24 2020 +0530
+
+    :Mass Maintenance setup tab first commit
+
+[33mcommit a0eeb66ad16338273aa8c2c017e012bb6576e422[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Thu Nov 26 13:50:47 2020 +0530
+
+    deleted unused files
+
+[33mcommit 4e5efa7a35bace3a6519d182eee34d01633806b9[m
+Author: Muhammad Nauman <muhammadnauman475@gmail.com>
+Date:   Thu Nov 26 13:19:35 2020 +0500
+
+    screen 21 done
+
+[33mcommit 21b3446b45eab1efa0570fd79eed2e2164e32ddc[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Thu Nov 26 13:46:45 2020 +0530
+
+    Formulary-drugs subtabs
+
+[33mcommit f1ef73d51dbd4576ce1ba8224e3f424f7175ea02[m
+Merge: 249e37f 790a85e
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 08:03:21 2020 +0000
+
+    Merged in umair-compare-formularies (pull request #10)
+    
+    CSS fixed
+
+[33mcommit 790a85ed3a2e103d9c65f587015ff97a990af728[m[33m ([m[1;31morigin/umair-compare-formularies[m[33m)[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Thu Nov 26 12:15:31 2020 +0500
+
+    compare formulary view screen input field issue fixed
+
+[33mcommit b9d08027f4d36d5bad19e106f0e49beecf66b6c4[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 11:17:28 2020 +0500
+
+    added component to the tab
+
+[33mcommit f7e050f9e91739c9a2c1a1e38295a9a6b58f7b73[m
+Merge: 310e980 249e37f
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 11:08:09 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into huzaifa-validation
+
+[33mcommit 249e37f9367b75145cc75d3e5d387de2988d1381[m
+Merge: ac872d0 fc738e4
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 06:07:02 2020 +0000
+
+    Merged in usama-hmps-marketing-materials-hmps-submission-files-exports (pull request #9)
+    
+    Usama hmps marketing materials hmps submission files exports
+
+[33mcommit fc738e46e6971d26cda7b761ebc01eb612129051[m[33m ([m[1;31morigin/usama-hmps-marketing-materials-hmps-submission-files-exports[m[33m)[m
+Merge: d2cd91d ac872d0
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 11:03:13 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into usama-hmps-marketing-materials-hmps-submission-files-exports
+
+[33mcommit ac872d0c3b3430069ea809f3570b0c95820becd2[m
+Merge: 6f4a3b5 a9ec446
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Thu Nov 26 06:01:38 2020 +0000
+
+    Merged in bilal-tier-screen (pull request #8)
+    
+    Bilal tier screen
+
+[33mcommit 310e980002d7687b4dbbd5d76936ee4030050e30[m
+Author: Huzaifa Sajjad Malik <mhuzaifasajjad@gmail.com>
+Date:   Thu Nov 26 06:20:52 2020 +0500
+
+    Validation Component Created
+
+[33mcommit d2cd91d860ab542e2f2875717ddcc788ba83766e[m
+Author: Usama Muhammad <usamamuhammad45678@gmail.com>
+Date:   Thu Nov 26 03:39:26 2020 +0500
+
+    checkbox styles fixed
+
+[33mcommit a9ec4468d2858aad6f5cb98c94f4202aec333a84[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 03:28:07 2020 +0500
+
+    added dropdown completed
+
+[33mcommit 9b3fe6561a2e701667b519a6201a4bd298b46468[m
+Author: Usama Muhammad <usamamuhammad45678@gmail.com>
+Date:   Thu Nov 26 01:53:03 2020 +0500
+
+    page 2 and 4 done
+
+[33mcommit d82fcf2ba34463f1a7a9c5fbef2be994238ad37f[m
+Merge: c4fbebf 6f4a3b5
+Author: Usama Muhammad <usamamuhammad45678@gmail.com>
+Date:   Thu Nov 26 01:52:31 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into usama-hmps-marketing-materials-hmps-submission-files-exports
+
+[33mcommit 469265b900295a4742b6365e361b03456dc4619c[m
+Merge: b7345b4 6f4a3b5
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 01:48:18 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 6f4a3b5e95a3e8019089ed1dee3c9adddd110e19[m
+Merge: 077a022 c750967
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Wed Nov 25 20:47:27 2020 +0000
+
+    Merged in umair-formulary-setup (pull request #7)
+    
+    general information
+
+[33mcommit b7345b42208247057b8829df79ae60617ec79b48[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Thu Nov 26 01:44:32 2020 +0500
+
+    added dropdown
+
+[33mcommit c7509679660caac6fa9ac0e325de517fd7e87dc0[m
+Merge: 9600203 077a022
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Thu Nov 26 01:32:01 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into umair-formulary-setup
+
+[33mcommit 9600203db650e9ff87a97ee6e0ed27bf9d4b7382[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Thu Nov 26 01:31:46 2020 +0500
+
+    general information
+
+[33mcommit 894a41b2f502f315c0c9abb9f6cdefada2e12ace[m
+Merge: 960ad31 077a022
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 23:57:40 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 077a02212f2cb7da72190daf5b70d4254c00592b[m
+Merge: b811960 a8f74d5
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Wed Nov 25 18:56:35 2020 +0000
+
+    Merged in shahzaib-formulary-dashboard-screen (pull request #6)
+    
+    - developed circle stats chart
+
+[33mcommit a8f74d57d2c13bfd1887061f8734820704debe05[m
+Author: Shahzaib Shahid <shahzaib.shahid912@gmail.com>
+Date:   Wed Nov 25 23:21:33 2020 +0500
+
+    - developed circle stats chart
+    - developed stats card
+    - developed formulary dashboard stats container
+
+[33mcommit 960ad31b5a28edc698f34096163b29ee91f77105[m
+Merge: 6721325 b811960
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 22:34:54 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit b81196078222b68528b8fbace3c24b73621a34a2[m
+Merge: 4f14eba aa3947b
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Wed Nov 25 17:32:41 2020 +0000
+
+    Merged in umair-compare-formularies (pull request #5)
+    
+    formulary screen header
+
+[33mcommit 6721325f76c19b6d341906da75f863305ded7b27[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 22:17:50 2020 +0500
+
+    added dropdown
+
+[33mcommit 323e5dbee5d92b3a65bcc9d342ea5d1e9227cbc7[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 22:09:46 2020 +0500
+
+    added mini tabs
+
+[33mcommit aa3947b68150d23956d76fd17438b56b9b958f54[m
+Merge: c5b3b5e 4f14eba
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Wed Nov 25 22:00:49 2020 +0500
+
+    Merge branch 'pakistan-master' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into umair-compare-formularies
+
+[33mcommit c5b3b5e9da4d82048d2805741d215cd587691fbc[m
+Merge: ff151ea a34b4e5
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Wed Nov 25 22:00:14 2020 +0500
+
+    compare formulary screen
+
+[33mcommit 4f14eba024dd2c1b5ddb1b4570109fbe9cd0d102[m
+Merge: 4667f73 108ff98
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Wed Nov 25 16:46:58 2020 +0000
+
+    Merged in bilal-tier-screen (pull request #4)
+    
+    Bilal tier screen
+
+[33mcommit 108ff9889d51be3178a5ac33a4b4adb09bd5965d[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 20:40:26 2020 +0500
+
+    added tier defition component
+
+[33mcommit c4fbebf943844262e95f984c6690e5141bc7aac5[m
+Author: Usama Muhammad <usamamuhammad45678@gmail.com>
+Date:   Wed Nov 25 20:38:15 2020 +0500
+
+    hmps table structured
+
+[33mcommit 3d2016327d1c41ad375ee54ba46b0b66831e9cea[m
+Merge: 4667f73 a34b4e5
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 19:55:08 2020 +0500
+
+    added ST component
+
+[33mcommit ff151ea64a7cd753af9048e4fa229eba6937dc64[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Wed Nov 25 19:41:57 2020 +0500
+
+    formulary screen header
+
+[33mcommit cd581f93a82c9d690e2dd7859a293e7ff4e65e4b[m
+Merge: e52a775 a34b4e5
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Wed Nov 25 18:34:49 2020 +0530
+
+    conflict resolved
+
+[33mcommit e52a775aae1376e6e7e79b6114b1285913cfc1d2[m
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Wed Nov 25 18:06:08 2020 +0530
+
+    update formulary drug deatils sub tabs
+
+[33mcommit a34b4e5350dc008b197c9900b55c99878676ead7[m[33m ([m[1;31morigin/drug-details-subtab[m[33m)[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Wed Nov 25 17:40:29 2020 +0530
+
+    add condition for disable tabs on minitabs and other drug details subtabs update
+
+[33mcommit 4667f7355502a86a1cfda2ac64565c5fe9d51724[m
+Merge: 86dcf7b 13ee02f
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Wed Nov 25 08:53:53 2020 +0000
+
+    Merged in umair-compare-formularies (pull request #3)
+    
+    added formularies file structure
+
+[33mcommit 86dcf7be432e29707eb87e37eee2e7395ef42555[m
+Merge: 09fe80e 42f931d
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Wed Nov 25 08:52:26 2020 +0000
+
+    Merged in bilal-tier-screen (pull request #2)
+    
+    Bilal tier screen
+
+[33mcommit 13ee02f38b7b6b20dbeb1b013351074398352b77[m
+Author: umair-alii <umairsajjadcs@gmail.com>
+Date:   Wed Nov 25 13:48:46 2020 +0500
+
+    added formularies file structure
+
+[33mcommit 42f931ddea124c1cfef3ca1182afd7d629ac08b5[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 13:26:58 2020 +0500
+
+    added tier table with tooltip
+
+[33mcommit 3746dc0eac18b54f23859af02a20a5c2f9e0649b[m
+Merge: 1bceafc 488c91c
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 12:54:00 2020 +0500
+
+    Merge branch 'formulary-drug-details' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into bilal-tier-screen
+
+[33mcommit 1bceafc8e7a109259e0759225a07a66b52b16989[m
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 12:53:39 2020 +0500
+
+    added tier folder and filer
+
+[33mcommit b6ae60c86bbaa7c888c611e9157a92de8b8a1a37[m
+Merge: bdde150 488c91c
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Wed Nov 25 12:58:56 2020 +0530
+
+    Merge with latest code
+    Merge branch 'formulary-drug-details' into drug-details-subtab
+
+[33mcommit 488c91c0879b909925c8a7de3570012e448c8e41[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Wed Nov 25 12:58:05 2020 +0530
+
+    get all shared latest component
+
+[33mcommit bdde150f1e46141410ce3bab23afae3e237b797d[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Wed Nov 25 12:27:03 2020 +0530
+
+    switch component modify
+
+[33mcommit 78e588b2678fe96402df5ceb9cfc3fc9987eb27d[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Wed Nov 25 11:49:39 2020 +0530
+
+    inprogress
+
+[33mcommit ed3df6066a11c953720641d84c8a7701312cb7aa[m
+Merge: 62747f2 d42eeb0
+Author: rprajapati <rprajapati@futurerx.com>
+Date:   Wed Nov 25 10:27:35 2020 +0530
+
+    Merge branch 'formulary-drug-details' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into formulary-drug-details
+
+[33mcommit 893d34b0b25145507843a2c6654a2adfe81f3105[m
+Author: Usama Muhammad <usamamuhammad45678@gmail.com>
+Date:   Wed Nov 25 08:19:50 2020 +0500
+
+    setting up skeleton
+
+[33mcommit 09fe80ee402fd5df802baea21383d174da10d410[m
+Merge: cd326d5 d42eeb0
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Wed Nov 25 01:10:20 2020 +0500
+
+    Merge branch 'formulary-drug-details' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into pakistan-master
+
+[33mcommit d42eeb0502d7f1369fe4a97a65883463c6be6c28[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Tue Nov 24 23:38:42 2020 +0530
+
+    fix issue
+
+[33mcommit e4d6b9ddb060cd50f484c3500349ce65bcbf4a52[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Tue Nov 24 23:35:28 2020 +0530
+
+    add all formulary -> configure -> drug details tab component
+
+[33mcommit cd326d58ab4fdc64641984092c027593c93bae79[m
+Merge: 62747f2 e2459d2
+Author: Bilal Bhatti <bilal@yobo.dev>
+Date:   Tue Nov 24 22:16:22 2020 +0500
+
+    Merge branch 'formulary-drug-details' of https://bitbucket.org/futurerx-evaluation/futurerx-formulary-ui into pakistan-master
+
+[33mcommit e2459d2ce2d9cddda6437356beec5bd0c4191804[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Tue Nov 24 13:16:59 2020 +0530
+
+    update the basic structure for formulary details page
+
+[33mcommit 9a70886c526d9e61c5edadd6862457e161f10e0f[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Tue Nov 24 10:05:23 2020 +0530
+
+    update layout and basic structure
+
+[33mcommit 62747f2ef803ed40bf6d3dcc6b6f8efccfe28307[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: b33735c f76ebe1
+Author: bilal bhatti <bilalbhatti139@gmail.com>
+Date:   Mon Nov 23 16:02:49 2020 +0000
+
+    Merged in formulary-drug-details (pull request #1)
+    
+    Formulary drug details
+
+[33mcommit f76ebe18ba9e5d726f766d9ddaddf5ab481cc005[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Mon Nov 23 17:05:50 2020 +0530
+
+    add tabs on formulary page
+
+[33mcommit 7c5ce5dbf7ad7c522115fa00211dafed70b7c06e[m
+Author: Dhaval Vadher <vadher.dhaval@gmail.com>
+Date:   Mon Nov 23 15:06:50 2020 +0530
+
+    initial setup - clone of futurerx-ui-component
+
+[33mcommit b33735c48590dbce0be4a2114bb0ecfbba0c3c33[m
+Author: Harish Anehosur <hanehosur@futurerx.com>
+Date:   Mon Nov 23 05:22:41 2020 +0000
+
+    Initial commit

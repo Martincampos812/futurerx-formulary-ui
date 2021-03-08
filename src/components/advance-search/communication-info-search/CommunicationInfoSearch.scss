@@ -1,0 +1,328 @@
+@import "./../../../assets/style.scss";
+
+.CommunicationsInfoSearch {
+  .pa-info-Search-container {
+    .member-info-container,
+    .pa-info-container,
+    .pa-info-date-container {
+      .member-info-heading,
+      .pa-info-heading,
+      .date-heading {
+        text-align: left;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 35px;
+        padding-left: 9%;
+        color: #707683;
+        height: 40px;
+      }
+
+      .member-info-search-field {
+        .member-search__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+        }
+      }
+
+      .pa-info-search-field,
+      .pa-info-caseid {
+        margin-top: 10px;
+        .member-search__input {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 8px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+        }
+      }
+      .member-info-buttons {
+        padding-left: 35px;
+
+        .new-pa-button,
+        .appeal-button {
+          .new-pa,
+          .appeal {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            // line-height: 35px;
+            color: #5f80b9;
+            width: 100px;
+            height: 35px;
+          }
+        }
+        .new-pa-button {
+          padding-right: 15px;
+        }
+      }
+
+      .pa-info-search-field {
+        .pa-info-mintabs {
+          //   .frx-mini-tabs-root {
+          //     // position: unset;
+          //     width: 136px;
+          //     position: relative;
+          //     // top: 20px;
+          //     // left: 20px;
+          //     z-index: 999;
+          //     .frx-mini-tabs-root__tabs {
+          //       min-height: 30px;
+          //       .frx-mini-tabs-root__tabs__tab {
+          //         min-height: 24px;
+          //         min-width: 54px;
+          //         .MuiTab-wrapper {
+          //           text-transform: none;
+          //         }
+          //       }
+          //     }
+          //   }
+
+          //   .csr-root {
+          .frx-mini-tabs-root {
+            position: unset;
+            width: 250px;
+            margin: 0px;
+            border-bottom: 0px solid $container-border-color;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: none;
+            background: $color-white;
+            padding: 0;
+            .frx-mini-tabs-root__tabs {
+              min-height: 30px;
+              .frx-mini-tabs-root__tabs__tab {
+                min-height: 24px;
+                min-width: 81px;
+                // background-color: $hyperlink-text-color;
+                // color: $color-white;
+                // box-shadow: none;
+                // // border: 1px solid $mini-tab-border-color;
+                .MuiTab-wrapper {
+                  text-transform: none;
+                }
+              }
+              .MuiTabs-indicator {
+                display: none !important;
+              }
+            }
+          }
+          //   }
+        }
+        .pa-info-classification-case-type-container {
+          .case-type-field {
+            padding-left: 10px;
+          }
+        }
+        .pa-info-classification-case-type-container {
+          .classification-field,
+          .case-type-field {
+            .pa-info__input--dropdown {
+              .ant-select-selector {
+                height: 100%;
+                border: none;
+              }
+              background: $color-white;
+              border: 1px solid $input-field-border;
+              box-sizing: border-box;
+              border-radius: 3px;
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+              //   text-indent: 10px;
+              width: 100%;
+              height: 35px;
+              line-height: 14px;
+              outline: none;
+              margin-bottom: 8px;
+              .ant-select-selector
+                > .ant-select-selection-searchr
+                > input::placeholder {
+                font-size: 12px;
+                font-weight: $font-weight-normal;
+                // color: $input-text-placeholder;
+                color: black;
+                // text-indent: 10px;
+              }
+            }
+          }
+        }
+
+        .priority-review-stage-container {
+          .review-stage-field {
+            padding-left: 10px;
+          }
+        }
+        .priority-review-stage-container {
+          .priority-field,
+          .review-stage-field {
+            .priority__input--dropdown,
+            .review-stage__input--dropdown {
+              .ant-select-selector {
+                height: 100%;
+                border: none;
+              }
+              background: $color-white;
+              border: 1px solid $input-field-border;
+              box-sizing: border-box;
+              border-radius: 3px;
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+              //   text-indent: 10px;
+              width: 100%;
+              height: 35px;
+              line-height: 14px;
+              outline: none;
+              margin-bottom: 8px;
+              .ant-select-selector
+                > .ant-select-selection-searchr
+                > input::placeholder {
+                font-size: 12px;
+                font-weight: $font-weight-normal;
+                // color: $input-text-placeholder;
+                color: black;
+                // text-indent: 10px;
+              }
+            }
+          }
+        }
+
+        .status-container {
+          .status-field {
+            .status__input--dropdown {
+              .ant-select-selector {
+                height: 100%;
+                border: none;
+              }
+              background: $color-white;
+              border: 1px solid $input-field-border;
+              box-sizing: border-box;
+              border-radius: 3px;
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+              //   text-indent: 10px;
+              width: 100%;
+              height: 35px;
+              line-height: 14px;
+              outline: none;
+              margin-bottom: 8px;
+              .ant-select-selector
+                > .ant-select-selection-searchr
+                > input::placeholder {
+                font-size: 12px;
+                font-weight: $font-weight-normal;
+                // color: $input-text-placeholder;
+                color: black;
+                // text-indent: 10px;
+              }
+            }
+          }
+        }
+        .drug-lable-container {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .pa-info-date-container {
+      .date-container {
+        .date-end-date-contianer {
+          padding-left: 10px;
+        }
+      }
+    }
+    .pa-info-date-container {
+      margin-top: 20px;
+      .date-container {
+        .date-start-date-contianer,
+        .date-end-date-contianer {
+          .start-date-picker__input,
+          .end-date-picker__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin-bottom: 10px;
+            .ant-picker-input > input::placeholder {
+              font-size: 12px;
+              font-weight: $font-weight-normal;
+              // color: $input-text-placeholder;
+              color: #999999;
+              // text-indent: 10px;
+            }
+            .ant-picker-input{
+              &>input{
+                font-size: $font-12;
+                color: #999999;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

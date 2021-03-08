@@ -1,0 +1,182 @@
+.FrxTermRecord-root {
+    background-color: #ffffff;
+    min-width: 861px;
+    .noteEdit-area {
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 735px 96px;
+        column-gap: 10px;
+        border-top: 1px solid #e5e5e5;
+        .textArea {
+            height: 35px !important;
+            min-width: 735px !important;
+            background: #ffffff;
+            border: none;
+            box-shadow: 0px 0px 0px 1px #e5e5e5 inset;
+            box-sizing: border-box;
+            border-radius: 3px;
+            resize: none;
+            padding: 11px 0px 8px 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #999999;
+        }
+        .saveNote {
+            opacity: 0.5;
+            border: 1px solid #2055b5;
+            box-sizing: border-box;
+            border-radius: 3px;
+            height: 35px;
+            padding: 0px 10px;
+            .MuiButton-label {
+                text-transform: capitalize !important;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 35px;
+                /* identical to box height, or 292% */
+                color: #2055b5;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1px;
+
+                box-sizing: border-box;
+            }
+        }
+    }
+    .termRecord-root {
+        min-width: 861px;
+        min-height: 230px;
+        display: grid;
+        grid-template-columns: 409px 451px;
+        grid-template-areas: "f n";
+        .form {
+            .form-row {
+                grid-area: f;
+                display: grid;
+                padding: 18px 10px 10px 22px;
+                grid-template-columns: 60px 277px;
+                column-gap: 40px;
+                grid-template-areas: "ll ff";
+                .label {
+                    grid-area: ll;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 14px;
+                    /* identical to box height */
+                    margin: auto;
+                    color: #323c47;
+                    span {
+                        color: red;
+                    }
+                }
+                .formField {
+                    grid-area: ff;
+                    textArea {
+                        min-width: 275px !important;
+                        height: 82px !important;
+                        resize: none;
+                        background: #ffffff;
+                        border: none;
+                        box-shadow: 0px 0px 0px 1px #e5e5e5 inset;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+                        padding: 11px 0px 8px 10px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+                        /* identical to box height, or 133% */
+
+                        color: #999999 !important;
+                        &::placeholder {
+                            font-family: Roboto !important;
+                            font-style: normal !important;
+                            font-weight: normal !important;
+                            font-size: 12px !important;
+                            line-height: 14px !important;
+                            letter-spacing: 0.1px !important;
+
+                            color: #999999 !important;
+                        }
+                    }
+                    .FrxGenericSearch-root__form__datepicker {
+                        width: 277px;
+                        height: 35px;
+                        input {
+                            font-family: Roboto !important;
+                            font-style: normal !important;
+                            font-weight: normal !important;
+                            font-size: 12px !important;
+                            line-height: 14px !important;
+                            letter-spacing: 0.1px !important;
+
+                            color: #999999 !important;
+                        }
+                    }
+                }
+            }
+            .buttonRow {
+                display: grid;
+                grid-template-columns: 78px 68px;
+                column-gap: 10px;
+                justify-content: right;
+                padding-right: 10px;
+                button {
+                    &:first-child {
+                        width: 78px;
+                        height: 35px;
+                        background: #ffffff;
+                        border: 1px solid #8faada;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+                        .MuiButton-label {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 35px;
+                            /* identical to box height, or 292% */
+
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: 0.1px;
+
+                            color: #8faada;
+                        }
+                    }
+                    &:last-child {
+                        width: 67px;
+                        height: 35px;
+                        background: #8faada;
+                        border-radius: 3px;
+                        .MuiButton-label {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 35px;
+                            /* identical to box height, or 292% */
+
+                            display: flex;
+                            align-items: center;
+                            letter-spacing: 0.1px;
+
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .notes {
+            grid-area: n;
+            border-left: 1px solid #e5e5e5;
+        }
+    }
+}

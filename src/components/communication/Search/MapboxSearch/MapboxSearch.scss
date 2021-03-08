@@ -1,0 +1,159 @@
+@import "../../../../assets/style.scss";
+
+.mapbox-search {
+  display: flex;
+
+  &__first-row {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  &__second-row {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+  .mapbox-search__input {
+    background: $color-white;
+    border: 1px solid $input-field-border;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    color: $input-text-placeholder;
+    text-indent: 10px;
+    width: 170px;
+    height: 35px;
+    line-height: 14px;
+    outline: none;
+    margin: 0 10px 0 0;
+    & > input {
+      text-indent: 10px;
+    }
+
+    .MuiInput-input {
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+    }
+  }
+  .mapbox-search__input_pharmacy_name {
+    background: $color-white;
+    border: 1px solid $input-field-border;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    color: $input-text-placeholder;
+    text-indent: 10px;
+    width: 300px;
+    height: 35px;
+    line-height: 14px;
+    outline: none;
+    margin: 0 10px 0 0;
+    & > input {
+      text-indent: 10px;
+    }
+
+    .MuiInput-input {
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+    }
+  }
+  .MuiInput-underline:after,
+  .MuiInput-underline:before {
+    border-bottom: none;
+  }
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: none;
+  }
+  .mapbox-search__input--dropdown {
+    background-color: #ffffff;
+    .ant-select-selection-placeholder {
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $input-text-placeholder;
+      line-height: 33px;
+    }
+    .ant-select-selector {
+      border: none !important;
+      padding: 0 !important;
+
+      .ant-select-selection-item {
+        padding: 0;
+        line-height: 35px;
+      }
+      .ant-select-selection-placeholder {
+        line-height: 33px;
+      }
+      .mapbox-search__input--dropdown:after {
+        border-bottom: none;
+      }
+    }
+    .ant-select-arrow {
+      top: 15px;
+    }
+  }
+
+  .mapbox-search__btn {
+    height: 35px;
+    .MuiButton-label {
+      line-height: 14px;
+      text-transform: capitalize;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: $primary-text-color;
+      & > span {
+        margin-left: 7px;
+        border-bottom: 1px solid transparent;
+        border-image: url("data:image/svg+xml,%3Csvg width='28' height='1' viewBox='0 0 28 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='28' y2='0.5' stroke='%23666666' stroke-dasharray='1 1'/%3E%3C/svg%3E%0A");
+        border-image-repeat: repeat;
+        border-image-slice: 4 4 4 4;
+      }
+    }
+  }
+  .mapbox-search__btn-field {
+    border: 1px solid $primary-btn-color;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: $color-white;
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    width: 75px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: $primary-btn-color;
+    padding: 0;
+    text-transform: capitalize;
+    margin: 0 20px 0 auto;
+  }
+}
+
+.mapbox-search-select-drpDwn {
+  // margin-top: -10px!important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border: 1px solid #dddddd !important;
+  border-top: 0px !important;
+  height: max-content;
+  .ant-select-item-option {
+    padding: 0px !important;
+    height:  35px;
+    line-height: 35px !important;
+    margin: 0px;
+    min-width: 100%;
+    .ant-select-item-option-content {
+      font-family: Roboto!important;
+      font-style: normal!important;
+      font-weight: normal!important;
+      font-size: 12px!important;
+      line-height: 35px!important;
+      color: #666666;
+      padding: 0px!important;
+      margin-left: 10px;
+    }
+  }
+}

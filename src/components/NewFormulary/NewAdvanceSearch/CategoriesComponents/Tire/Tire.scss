@@ -1,0 +1,69 @@
+.__root-tire-container {
+  background: #f9f9f9;
+  height: 100%;
+  .tire-header {
+    padding: 10px;
+    .heading {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+
+      /* Text – Dark Grey */
+
+      color: #323c47;
+    }
+    .select_all_button {
+      // width: 150px;
+      // height: 35px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+
+      letter-spacing: 0.01em;
+
+      width: 100px;
+      height: 20px;
+
+      /* Blue – FutureRX Primary */
+
+      background: #1d54b4;
+      border-radius: 5px;
+
+      /* White */
+
+      color: #ffffff;
+      /* Blue – FutureRX Primary */
+    }
+  }
+  .tire-list-contianer {
+    background: #f9f9f9;
+    height: 100%;
+    .tire-list {
+      width: 90%;
+      .__list {
+        // border: 1px solid green;
+        display: inline-block;
+        width: 150px;
+        .__list-lable {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 25px;
+          /* identical to box height, or 208% */
+
+          letter-spacing: 0.01em;
+
+          color: #000000;
+        }
+      }
+    }
+    // border: 1px solid green;
+    // padding: 15px;
+  }
+}

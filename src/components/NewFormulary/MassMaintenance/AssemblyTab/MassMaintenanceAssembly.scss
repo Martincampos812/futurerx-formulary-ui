@@ -1,0 +1,58 @@
+@import "../../../../assets/style.scss";
+
+.mass-maintenance-assembly-root{
+    background-color: $color-white;
+    .complete-header{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        border-bottom: 1px solid $container-border-color;
+        & > span{
+            color: #1D54B4;
+            font-size: $font-12;
+            font-weight: $font-weight-500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    }
+    .assembly-root{
+        display: grid;
+        grid-template-columns: 50% 49%;
+        column-gap: 10px;
+        padding: 16px 20px;
+    .formulary-components{
+        .formulary-components__container-body-header{
+            .frx-mini-tabs-root{
+                position: unset;
+                box-shadow: none;
+                background: transparent;
+            }
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              justify-items: end;
+          .search-box-container {
+            width :175px;
+            .search-input {
+              padding-left: 26px;
+            }
+          }
+        } 
+        } 
+    }
+    .action-btn{
+        margin: 0 0 0 auto;
+        display: block;
+        text-align: right;
+        padding: 0 20px 16px 0px;
+        & > button{
+            width: auto;
+            text-transform: capitalize;
+            margin: 0 0 0 10px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            padding: 0 20px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}

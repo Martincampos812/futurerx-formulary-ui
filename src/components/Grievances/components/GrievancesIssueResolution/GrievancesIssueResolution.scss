@@ -1,0 +1,75 @@
+@import "../../../../assets/style.scss";
+
+.issue-resolution{
+    padding: 5px 0 20px;
+    .resolution-header{
+        margin-bottom: 15px;
+        .heading{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: $primary-text-color;
+        }
+    }
+    .label{
+        font-size: 12px;
+        line-height: 14px;
+        color: $primary-text-color;
+        display: block;
+    }
+    
+    .input-counter-field{
+        position: relative;
+        .character-counter{
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            font-size: 10px;
+            line-height: 11.72px;
+            color: $search-field-color;
+        }
+    }
+    .resolution_description_form-textarea{
+        height: 51px !important;
+        width: 100%;
+        margin: 0;
+        padding: 12px 25px 12px 10px;
+        background: $white-color;
+        border: 1px solid $container-border-color;
+        box-sizing: border-box;
+        border-radius: 4px;
+        resize: none;
+        font-weight: $font-weight-normal;
+        font-size: $font-12;
+        line-height: 14px;
+        letter-spacing: 0.1px;
+        color: $search-field-color;
+        &::placeholder {
+            color: $search-field-color;
+        }
+    }
+    .input-dropdown{
+        height: 35px;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        display: flex;
+        .input-field{
+            width: calc(100% - 38px);
+            height: 33px;
+            line-height: 33px;
+            background: white;
+            outline: none;
+            border: none;
+            text-shadow: none;
+            font-weight: normal;
+            font-size: 12px;
+            color: $search-field-color;
+        }
+        .dropdown-button{
+            background: white;
+        }
+    }
+}

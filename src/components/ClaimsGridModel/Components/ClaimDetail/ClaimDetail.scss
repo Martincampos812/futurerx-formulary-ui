@@ -1,0 +1,445 @@
+@import "../../../../assets/style.scss";
+
+.claim-detail-root{
+    padding: 0px 0px 10px 0px;
+    overflow-y: scroll;
+    max-height: calc(100vh - 400px);
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    // display: flex;
+    .MuiGrid-root{
+      display: flex;
+      margin: 10px auto 0 auto;
+      justify-content: space-between;
+      // padding: 0 20px;
+      width: 96.5%;
+    }
+    //for modals tabs css not applying have to check
+    .frx-mini-tabs-root {
+        position: unset;
+        margin: 0px;
+        border-bottom: 0px solid $container-border-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: none;
+        background: $color-white;
+        padding: 10px !important;
+        height: 50px;
+        .frx-mini-tabs-root__tabs {
+          background-color: $color-white;
+          box-shadow: none;
+          border: 1px solid $mini-tab-border-color;
+          flex-direction: row;
+          border-radius: 4px;
+          padding: 3px;
+          width: max-content;
+          min-height: 30px;
+          .frx-mini-tabs-root__tabs__tab {
+            padding: 0;
+            font-size: $font-12;
+            font-weight: $font-weight-bold;
+            color: $primary-text-color;
+            text-transform: capitalize;
+            opacity: unset;
+            border-radius: 2px;
+            min-height: 24px;
+              min-width: auto;
+            .MuiTab-wrapper {
+              text-transform: capitalize;
+              font-size: $font-12;
+              font-weight: $font-weight-bold;
+              line-height: 24px;
+              padding: 0 10px;
+            }
+          }
+          .frx-mini-tabs-root__tabs__tab.Mui-selected {
+            background-color: $button-tab-active-background-color;
+            .MuiTab-wrapper {
+              color: $color-white;
+              // border: 1px solid $button-tab-active-background-color;  ## border was creating alignment issue removing will resolve alignment issue
+              border-radius: 2px;
+            }
+          }
+          .frx-mini-tabs-root__tabs__tab:first-child {
+            margin-left: 0px;
+          }
+          .frx-mini-tabs-root__tabs__tab:last-child {
+            margin-right: 0px;
+          }
+    
+          .MuiTabs-indicator {
+            display: none !important;
+          }
+        }
+    
+        .dev-status.wip {
+          display: none;
+        }
+        .frx-mini-tabs-root__active-line {
+          position: unset;
+        }
+      }
+      &__info-box, &__columns-two, &__rejected-dur{
+          width: 32.7%;
+          border: 1px solid $container-border-color;
+          border-radius: 5px;
+          // margin-left: 10px;
+          &__header{
+              font-size: $font-12;
+              font-weight: $font-weight-bold;
+              line-height: 50px;
+              color: $primary-text-color;
+              text-transform: capitalize;
+              letter-spacing: 0.5px;
+              padding: 0 10px;
+          }
+          &-list{
+              border-top: 1px solid $container-border-color;
+              padding: 10px;
+              &__heading{
+                display: grid;
+                grid-template-columns: 40% 50%;
+                margin: 0 0 0 auto;
+                column-gap: 18px;
+                width: 50%;
+                  & > span{
+                      text-align: left;
+                      font-size: $font-12;
+                      font-weight: $font-weight-bold;
+                      color: $primary-text-color;
+                      letter-spacing: 0.5px;
+                      line-height: 24px;
+                      text-transform: capitalize;
+                  }
+              }
+              .fields{
+                display: grid;
+                grid-template-columns: 50% 25% 25%;
+                & > label, span{
+                    text-align: left;
+                    font-size: $font-12;
+                    font-weight: $font-weight-normal;
+                    color: $primary-text-color;
+                    line-height: 24px;
+                }
+                & > span {
+                    font-weight: $font-weight-bold;
+                    // margin-left: 16px;
+                }
+                .field-normal{
+                    font-weight: $font-weight-normal;
+                }
+            }
+          }
+        }
+        &__rejected-dur{
+          width: 66.6%;
+        }
+        &__columns-two{
+          .pde-status__header{
+            display: grid;
+            grid-template-columns: auto auto auto auto !important;
+          }
+          .pde-status__field{
+            .fields{
+              display: grid;
+              grid-template-columns: auto auto auto auto !important;
+            }
+          }
+          .fields{
+            grid-template-columns: 50% 50%;
+            .higlighted-value{
+              color: $hyperlink-text-color;
+              border-bottom: 1px solid transparent;
+              border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+              border-image-repeat: repeat;
+              border-image-slice: 4 4 4 4;
+              width: fit-content;
+              height: 21px;
+              cursor: pointer;
+            }
+            .rejected-value{
+              color: #E76262;
+              border-bottom: 1px dotted #E76262;
+              // border-bottom: 1px solid transparent;
+              // border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+              // border-image-repeat: repeat;
+              // border-image-slice: 4 4 4 4;
+              width: fit-content;
+              height: 21px;
+              cursor: pointer;
+            }
+          }
+        }
+        .claim-detail-root__moop-pde{
+          width: 32.7%;
+          .claim-detail-root__columns-two{
+            width: unset;
+            margin-bottom: 10px;
+          }
+          .claim-detail-root__columns-two:last-child{
+            margin: 0 0 0 0px;
+          }
+        }
+        .claim-detail-root__additional-info{
+            border: 1px solid $container-border-color;
+            border-radius: 5px;
+            display: block;
+            // margin-left: 10px;
+            width: 96.5%;
+          &__header{
+              font-size: $font-12;
+              font-weight: $font-weight-bold;
+              line-height: 50px;
+              color: $primary-text-color;
+              text-transform: capitalize;
+              letter-spacing: 0.5px;
+              padding: 0 10px;
+          }
+          &__box{
+            border-top: 1px solid $container-border-color;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 20px;
+            .fields{
+              display: grid;
+              grid-template-columns: 60% 40%;
+              & > label, span{
+                  text-align: left;
+                  font-size: $font-12;
+                  font-weight: $font-weight-normal;
+                  color: $primary-text-color;
+                  line-height: 24px;
+              }
+              & > span {
+                  font-weight: $font-weight-bold;
+                  // margin-left: 16px;
+              }
+              .higlighted-value{
+                color: $hyperlink-text-color;
+                border-bottom: 1px solid transparent;
+                border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+                border-image-repeat: repeat;
+                border-image-slice: 4 4 4 4;
+                width: fit-content;
+                height: 21px;
+              }
+            }
+          }
+          .ingredient-fields{
+            grid-template-columns: auto auto;
+            .fields{
+              grid-template-columns: 45% 55%;
+            }
+          }
+      &__table{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        border-top: 1px solid $container-border-color;
+        .fields{
+        border-right: 1px solid $container-border-color;
+        height: 120px;
+        & > header {
+          height: 70px;
+          text-align: left;
+          padding: 10px;
+          border-bottom: 1px solid $container-border-color;
+          position: relative;
+          & > p{
+            font-size: 12px;
+            color: $primary-text-color;
+            width: 106px;
+            line-height: 24px;
+            font-weight: $font-weight-normal;
+            & > span{
+              color: #E76262;
+            }
+          }
+          & > span{
+            font-size: 12px;
+            font-weight: normal;
+            color: #E76262;
+            float: right;
+            line-height: 0;
+            position: absolute;
+            top: 13px;
+            right: 8px;
+          }
+        }
+        & > span{
+          height: 50px;
+          line-height: 50px;
+          padding: 10px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+      }
+      .fields:last-child{
+        border-right: none;
+      }
+    }
+    .integrted-table{
+      grid-template-columns: auto auto auto auto auto auto;
+      border-top: none;
+    }
+  }
+  .claim-detail-root__benefits-fields{
+    width: 96.5%;
+    padding: 0;
+    display: grid;
+    // margin-left: 10px;
+    margin-top: 5px;
+    grid-template-columns: 59% 40%;
+    grid-column-gap: 10px;
+    &__table, &__table2{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      border: 1px solid $container-border-color;
+      border-radius: 5px;
+      height: 120px;
+      .fields{
+        border-left: 1px solid $container-border-color;
+        & > header {
+          height: 70px;
+          text-align: left;
+          padding: 10px;
+          border-bottom: 1px solid $container-border-color;
+          position: relative;
+          & > p{
+            font-size: 12px;
+            color: $primary-text-color;
+            font-weight: $font-weight-normal;
+            width: 120px;
+            line-height: 24px;
+            & > span{
+              color: #E76262;
+            }
+          }
+          & > span{
+            font-size: 12px;
+            font-weight: normal;
+            color: #E76262;
+            float: right;
+            line-height: 0;
+            position: absolute;
+            top: 13px;
+            right: 8px;
+          }
+        }
+        & > span{
+          height: 50px;
+          line-height: 50px;
+          padding: 10px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $primary-text-color;
+        }
+      }
+      .fields:first-child{
+        border-left: none;
+      }
+    }
+    &__table2{
+      grid-template-columns: auto auto auto;
+    }
+  }
+  &__detail-table{
+    width: 100%;
+    margin-left: 10px;
+    .claim-detail-root__detail-table-root{
+      width: 100%;
+    }
+    .claim-detail-root__detail-table-root-commercial{
+      width: 50%;
+    }
+    .ant-table-container{
+      .ant-table-thead{
+        & > tr{
+          & > th{
+            background-color: #F5F5F5;
+            height: 50px;
+            padding: 0 20px;
+            border-right: 1px solid $container-border-color;
+            border-top: 1px solid $container-border-color;
+            font-size: $font-11;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+            font-weight: $font-weight-500;
+            width: 149px;
+          }
+          & > th:first-child{
+            border-left: 1px solid $container-border-color;
+          }
+        }
+      } 
+      .ant-table-tbody{
+        & > tr {
+          & > td{
+            border-right: 1px solid $container-border-color;
+            padding: 0 20px;
+            height: 50px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+            line-height: 50px;
+            width: 149px;
+          }
+          & > td:first-child {
+            border-left: 1px solid $container-border-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gpi-tooltip{
+  max-width: 450px !important;
+  .ant-tooltip-arrow{
+    left: -4.071068px !important;
+  }
+  .ant-tooltip-inner{
+    height: 60px;
+    line-height: 60px;
+    font-size: $font-12;
+  }
+}
+
+.scc-tooltip{
+  .ant-tooltip-arrow{
+    // top: -12.071068px;
+    bottom: -4.071068px !important;
+  }
+  .ant-tooltip-inner{
+    font-size: $font-12;
+    display: grid;
+    padding: 20px !important;
+  }
+}
+
+.claim-detail-root__additional-info__box--tooltip{
+  .ant-tooltip-inner{
+    background-color: $color-white;
+    color: $primary-text-color;
+    border: 1px solid $container-border-color;
+    border-radius: 5px;
+    padding: 0 20px;
+  }
+  .ant-tooltip-arrow{
+    // top: -12.071068px;
+    .ant-tooltip-arrow-content{
+        background-color: $color-white;
+        box-shadow: none;
+        width: 10px;
+        height: 10px;
+        border: 1px solid $container-border-color;
+        border-bottom: none;
+    }
+  }
+}

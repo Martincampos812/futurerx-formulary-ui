@@ -1,0 +1,81 @@
+.ant-table-expanded-row{
+    .frx-grid-container{
+        padding: 0 15px;
+        .frx-grid__grid-block{
+            background: transparent;
+        }
+        .frx-grid__grid-block__table-block{
+            &::before{
+                display: none;
+            }
+            colgroup{
+                display: none !important;
+                col{
+                    width: 25%;
+                }
+            }
+            .ant-table-tbody{
+                table{
+                    margin-top: -20px;
+                }
+                .ant-table-row{
+                    .ant-table-cell{
+                        border: 1px solid #e3e3e3 !important;
+                        padding: 0 18px !important;
+                        border-left: none !important;
+                        border-right: none !important;
+                        &:first-child{
+                            border-left: 1px solid #e3e3e3 !important;
+                        }
+                        &:last-child{
+                            border-left: 1px solid #e3e3e3 !important;
+                            border-right: 1px solid #e3e3e3 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.import-fl-dialog{
+    colgroup{
+        display: none !important;
+        col{
+            width: 25%;
+        }
+    }
+    table{
+        // table-layout: auto !important;
+    }
+    .ant-table-thead{
+        th{
+            width: 25%;
+            display: table-cell !important;
+            &:last-child{
+                position: sticky !important;
+                display: block;
+                width: 0 !important;
+                padding: 0 !important;
+                
+            }
+        }
+    }
+    .frx-grid-container .frx-grid .frx-grid__grid-block .frx-grid__grid-block__table-block {
+        .ant-table-tbody{
+            td{
+                width: 25%;
+                &:last-child{
+                    position: sticky !important;
+                    width: 48px !important;
+                    
+                }
+            }
+            .ant-table-body{
+                overflow: visible !important;
+            }
+        }
+    }
+    .file-upload-dialog .expanded-data{
+        width: 100% !important;
+    }
+}

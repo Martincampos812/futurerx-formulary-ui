@@ -1,0 +1,56 @@
+@import "../../../../../assets/style.scss";
+
+.frx-grid-cell__tooltip{
+    max-width: 400px;
+    .ant-tooltip-content{
+        .ant-tooltip-inner{
+            width: 400px;
+            color: $hyperlink-text-color;
+            background-color: $color-white;
+            border: 1px solid $container-border-color;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            font-size: $font-12;
+            font-weight: $font-weight-500;
+            padding: 0;
+            .frx-grid-cell__tooltip--innercontent{
+                height: 60px;
+                line-height: 60px;
+                padding: 0 40px;
+                border-bottom: 1px solid $container-border-color;
+                &__druglabel{
+                    color: $hyperlink-text-color;
+                    font-weight: $font-weight-bold;
+                    font-size: $font-12;
+                    border-bottom: 1px solid #6E90CF;
+                }
+            }
+            .frx-grid-cell__tooltip--innerdata{
+                padding: 20px 40px 30px 40px;
+            .frx-grid-cell__tooltip--innerdata-block{
+                display: grid;
+                grid-template-columns: auto 83px;
+                line-height: 20px;
+                &__label, &__labelvalue{
+                    color: $primary-text-color;
+                    font-size: $font-12;
+                    font-weight: $font-weight-normal;
+                }
+                &__labelvalue{
+                    font-weight: $font-weight-bold;
+                }
+            }
+        }
+        }
+        .ant-tooltip-arrow{
+            bottom: -4.071068px;
+            .ant-tooltip-arrow-content{
+                width: 10px;
+                height: 10px;
+                background-color: $white-color;
+                border: 1px solid $container-border-color;
+                box-shadow: none;
+            }
+        }
+    }
+}

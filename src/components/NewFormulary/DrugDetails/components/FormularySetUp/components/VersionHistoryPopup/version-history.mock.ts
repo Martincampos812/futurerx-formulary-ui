@@ -1,0 +1,52 @@
+import { VersionHistoryData } from "./version-hisory.model";
+
+export const versionHistoryMock: () => VersionHistoryData[] = () => [
+  {
+    id_base_formulary: 2581,
+    id: 3074,
+    id_parent: 2581,
+    formulary_name: "2021Comm1119",
+    formulary_type: "Commercial",
+    cms_formulary_id: "",
+    contract_year: 2021,
+    number_of_tiers: 2,
+    id_formulary: 3074,
+    version_number: 1,
+    effective_date: "01/01/2021",
+    insert_datetime: "11/20/2020",
+    is_setup_complete: true,
+    lob_name: "Commercial",
+    id_lob: 4,
+    number_of_drugs: 249,
+    assigned_to: "",
+    status: "Completed",
+    step: "Completed",
+    due_date: "11/20/2020",
+    is_add_new_version: false,
+    is_editable: false
+  },
+  {
+    id_base_formulary: 2581,
+    id: 3075,
+    id_parent: 2581,
+    formulary_name: "2021Comm1119",
+    formulary_type: "Commercial",
+    cms_formulary_id: "",
+    contract_year: 2021,
+    number_of_tiers: 2,
+    id_formulary: 3075,
+    version_number: 2,
+    effective_date: "01/02/2021",
+    insert_datetime: "11/20/2020",
+    is_setup_complete: true,
+    lob_name: "Commercial",
+    id_lob: 4,
+    number_of_drugs: 312,
+    assigned_to: "",
+    status: "Completed",
+    step: "Completed",
+    due_date: "11/20/2020",
+    is_add_new_version: false,
+    is_editable: false
+  }
+];

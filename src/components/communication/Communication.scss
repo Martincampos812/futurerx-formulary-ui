@@ -1,0 +1,139 @@
+@import "../../assets/style.scss";
+
+.communication-root {
+  padding-top: 23px;
+  .frx-mini-tabs-root {
+    width: 200px !important;
+    top: 0 !important;
+  }
+  .communication-root--legend {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0px 20px 20px; // right padding coming from card margin-right
+    .stats-summary-root {
+      width: 19%;
+      margin-right: 20px;
+      .stats-summary-heading {
+        font-size: $font-18;
+        font-weight: $font-weight-normal;
+        line-height: 20px;
+        color: $primary-text-color;
+        margin-bottom: 10px;
+      }
+      .stats-summary-box {
+        // width: 213px;
+        padding: 20px 0;
+        .stats-summary-item {
+          padding: 0 0 0 20px;
+          // border-right: 1px solid $container-border-color;
+          .ss-label {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $primary-text-color;
+            text-transform: uppercase;
+            line-height: 10px;
+          }
+          .ss-number {
+            color: $primary-heading-text-color !important;
+            width: fit-content;
+            height: 36px;
+            border-bottom: 1px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewbox='0 0 16 12' class='border'%3E%3Cg fill='none' stroke='grey' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 2 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 2 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 2 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='green' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 6 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 6 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 6 h2' /%3E%3C/g%3E%3Cg fill='none' stroke='%232055b5' stroke-width='4'%3E%3Cpath stroke-dasharray='2,4' d='M0 10 h6' /%3E%3Cpath stroke-dasharray='4,4' d='M6 10 h8' /%3E%3Cpath stroke-dasharray='2' d='M14 10 h2' /%3E%3C/g%3E%3C/svg%3E");
+            border-image-repeat: repeat;
+            border-image-slice: 4 4 4 4;
+          }
+          .ss-rectangle {
+            top: 0;
+            width: 1px;
+          }
+        }
+      }
+    }
+    &__accordion {
+      .MuiAccordion-root {
+        .MuiAccordionDetails-root {
+          padding: 0 20px;
+        }
+        .MuiAccordionSummary-root {
+          line-height: 50px;
+          min-height: 50px;
+          border-top: 1px solid $container-border-color;
+          padding: 0 20px;
+          .Mui-expanded {
+            line-height: 50px;
+            // border-top: 1px solid $container-border-color;
+          }
+          .MuiAccordionSummary-content {
+            margin: 0;
+            .Mui-expanded {
+              margin: 0;
+            }
+            .communication-root--legend__accordion-summary {
+              &-heading {
+                font-size: $font-12;
+                font-weight: $font-weight-500;
+                text-transform: uppercase;
+                color: $primary-heading-text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.communication-root--legend__accordion__grid-container {
+  width: 100%;
+  padding-top: 20px;
+  .frx-grid {
+    .frx-grid__grid-block {
+      padding-top: 0px;
+    }
+  }
+  .doc_other_clearBtn {
+    position: absolute;
+    right: 10px;
+    button {
+      vertical-align: middle;
+      .MuiButton-label {
+        margin: 0px;
+      }
+    }
+  }
+  .calls_other_clearBtn {
+    position: absolute;
+    right: 10px;
+    button {
+      vertical-align: middle;
+      .MuiButton-label {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+.QL-root
+  .frx-grid-container
+  .frx-grid
+  .frx-grid__grid-block
+  .frx-grid__grid-block__table-block
+  .ant-table
+  .ant-table-header
+  .ant-table-thead
+  > tr
+  > th {
+  line-height: normal !important;
+}
+
+.QL-root
+  .frx-grid-container
+  .frx-grid
+  .frx-grid__grid-block
+  .frx-grid__grid-block__table-block
+  .ant-table
+  .ant-table-header
+  .ant-table-thead
+  > tr
+  > th:first-child {
+  padding: 10px 18px 0 18px !important;
+}

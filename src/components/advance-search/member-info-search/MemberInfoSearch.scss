@@ -1,0 +1,141 @@
+@import "./../../../assets/style.scss";
+.member-info-search-main-grid-container {
+  .member-info-search-heading {
+    padding-top: 12px;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 9%;
+    color: #707683;
+    // color: black;
+  }
+  .member-info-search-container {
+    .member-info-search-form {
+      .member-search__input {
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: black; //$input-text-placeholder;
+        text-indent: 10px;
+        width: 100%;
+        height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin-bottom: 10px;
+        & > input::placeholder {
+          font-size: 12px;
+          font-weight: $font-weight-normal;
+          // color: $input-text-placeholder;
+          color: black;
+          // text-indent: 10px;
+        }
+        .member-search__icon {
+          margin: 10px;
+        }
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          border-bottom: 0;
+        }
+      }
+      .member-search__input--dropdown {
+        width: 100%;
+        height: 100% !important;
+        border: none !important;
+        // background-color: red;
+
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        //   text-indent: 10px;
+        width: 100%;
+        height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin-bottom: 8px;
+        & > input::placeholder {
+          font-size: 12px;
+          font-weight: $font-weight-normal;
+          // color: $input-text-placeholder;
+          color: black;
+          // text-indent: 10px;
+        }
+        .member-search__icon {
+          margin: 10px;
+        }
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          border-bottom: 0;
+        }
+        .ant-select-selector {
+          // .ant-select-selection-search {
+          .ant-select-selection-placeholder {
+            color: inherit;
+          }
+        }
+        // }
+      }
+
+      .member-info-search-date-select-field-container {
+        width: 175px;
+        .member-search__input--date {
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 10px;
+          .ant-picker-input > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: #999999;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// .member-search-dropdownMenu-class
+// // .ant-select-dropdown
+// {
+//   position: relative !important;
+//   // color: red;
+//   // background-color: blue;
+//   margin: 0;
+//   padding: 0;
+//   border: 1px solid $input-field-border !important;
+//   border-top: 0 !important;
+//   top: 30.5rem !important;
+//   box-shadow: none !important;
+// }

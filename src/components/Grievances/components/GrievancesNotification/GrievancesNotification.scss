@@ -1,0 +1,66 @@
+@import "../../../../assets/style.scss";
+
+.grievance-notification{
+    padding: 5px 0 20px;
+    .mb-15{
+        margin-bottom: 15px;
+    }
+    .notification-header{
+        margin-bottom: 15px;
+        .heading{
+            font-weight: $font-weight-500;
+            font-size: 15px;
+            line-height: 18px;
+            color: $primary-text-color;
+        }
+    }
+    .label{
+        font-size: 12px;
+        line-height: 14px;
+        color: $primary-text-color;
+        display: block;
+    }
+    .menber-radioButton{
+        .label{
+            display: inline-block;
+        }
+    }
+    .number-of-issues{
+        span{
+            font-size: 12px;
+            line-height: 14px;
+            color: $primary-text-color;
+            &.issue-number{
+                font-weight: $font-weight-500;
+                padding-left: 17px;
+            }
+        }
+    }
+    .input-counter-field{
+        position: relative;
+        .character-counter{
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            font-size: 10px;
+            line-height: 11.72px;
+            color: $search-field-color;
+        }
+    }
+    .ant-picker{
+        height: 32px;
+        width: 50%;
+    }
+    p{
+        font-weight: $font-weight-bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: $primary-text-color;
+        &.dateTime{
+            display: flex;
+            .date{
+                margin-right: 20px;
+            }
+        }
+    }
+}

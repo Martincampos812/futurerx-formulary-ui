@@ -1,0 +1,242 @@
+@import "./../../../assets/style.scss";
+
+// GrievancesInfoSearch start
+.GrievancesInfoSearch {
+  //    main grid Container start
+  .grievance-info-search-container {
+    // member ifo container star
+    .member-info-container,
+    // .grievance-info-container,
+    .pa-info-date-container {
+      margin-top: 20px;
+      // member info heading start
+      .member-info-heading,
+      .date-heading {
+        text-align: left;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 9%;
+        padding-top: 15px;
+
+        color: #707683;
+      }
+      // member info heading end
+      //   member info search field container start
+      .member-info-search-field {
+        .member-search__input {
+          //   width: 353px;
+          background: $color-white;
+          border: 1px solid $input-field-border;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          //   text-indent: 10px;
+          width: 100%;
+          height: 35px;
+          line-height: 14px;
+          outline: none;
+          margin-bottom: 10px;
+          & > input::placeholder {
+            font-size: 12px;
+            font-weight: $font-weight-normal;
+            // color: $input-text-placeholder;
+            color: black;
+            // text-indent: 10px;
+          }
+          .member-search__icon {
+            margin: 10px;
+          }
+          .MuiInput-input {
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            border-bottom: 0;
+          }
+        }
+        .grievance-select-field-continer {
+          .classification-field {
+            padding-left: 10px;
+          }
+        }
+        .grievance-select-field-continer {
+          .category-field,
+          .classification-field {
+            .category__input--dropdown,
+            .classification__input--dropdown {
+              .ant-select-selector {
+                height: 100%;
+                border: none;
+              }
+              background: $color-white;
+              border: 1px solid $input-field-border;
+              box-sizing: border-box;
+              border-radius: 3px;
+              font-size: $font-12;
+              font-weight: $font-weight-normal;
+              color: $input-text-placeholder;
+              //   text-indent: 10px;
+              width: 100%;
+              height: 35px;
+              line-height: 14px;
+              outline: none;
+              margin-bottom: 10px;
+              .ant-select-selector
+                > .ant-select-selection-searchr
+                > input::placeholder {
+                font-size: 12px;
+                font-weight: $font-weight-normal;
+                // color: $input-text-placeholder;
+                color: black;
+                // text-indent: 10px;
+              }
+            }
+          }
+        }
+      }
+      //member info search field container end
+
+      //   member info button section start
+      .member-info-button {
+        padding-left: 15%;
+        .new-grievance {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          height: 35px;
+          //   line-height: 35px;
+          /* identical to box height, or 292% */
+
+          /* Blue – FutureRX Secondary */
+
+          color: #5f80b9;
+        }
+      }
+
+      //   member info button section end
+    }
+    //    member ifo container end
+
+    .pa-info-date-container {
+      .date-container {
+        .date-end-date-contianer {
+          padding-left: 10px;
+        }
+      }
+    }
+    .pa-info-date-container {
+      .date-container {
+        .date-start-date-contianer,
+        .date-end-date-contianer {
+          .start-date-picker__input,
+          .end-date-picker__input {
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            text-indent: 10px;
+            width: 100%;
+            height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin-bottom: 10px;
+            .ant-picker-input > input::placeholder {
+              font-size: 12px;
+              font-weight: $font-weight-normal;
+              // color: $input-text-placeholder;
+              color: #999999;
+              // text-indent: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .grievance-info-container {
+    .member-info-search-field {
+      .member-search__input {
+        //   width: 353px;
+        background: $color-white;
+        border: 1px solid $input-field-border;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-size: $font-12;
+        font-weight: $font-weight-normal;
+        color: $input-text-placeholder;
+        //   text-indent: 10px;
+        width: 100%;
+        height: 35px;
+        line-height: 14px;
+        outline: none;
+        margin-bottom: 10px;
+        & > input::placeholder {
+          font-size: 12px;
+          font-weight: $font-weight-normal;
+          // color: $input-text-placeholder;
+          color: black;
+          // text-indent: 10px;
+        }
+        .member-search__icon {
+          margin: 10px;
+        }
+        .MuiInput-input {
+          font-size: $font-12;
+          font-weight: $font-weight-normal;
+          color: $input-text-placeholder;
+          border-bottom: 0;
+        }
+      }
+      .grievance-select-field-continer {
+        .classification-field {
+          padding-left: 10px;
+        }
+      }
+      .grievance-select-field-continer {
+        .category-field,
+        .classification-field {
+          .category__input--dropdown,
+          .classification__input--dropdown {
+            .ant-select-selector {
+              height: 100%;
+              border: none;
+              .ant-select-selection-placeholder {
+                color: inherit;
+              }
+            }
+            background: $color-white;
+            border: 1px solid $input-field-border;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-size: $font-12;
+            font-weight: $font-weight-normal;
+            color: $input-text-placeholder;
+            //   text-indent: 10px;
+            width: 100%;
+            height: 35px;
+            line-height: 14px;
+            outline: none;
+            margin-bottom: 10px;
+            .ant-select-selector
+              > .ant-select-selection-searchr
+              > input::placeholder {
+              font-size: 12px;
+              font-weight: $font-weight-normal;
+              // color: $input-text-placeholder;
+              color: black;
+              // text-indent: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //    main grid Container end
+}
+// GrievancesInfoSearch end

@@ -1,0 +1,108 @@
+.access-management-modal {
+  width: 863px;
+
+  &__header {
+    height: 60px;
+    padding: 0px 16px;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .section-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #1D54B4;
+    }
+
+    .section-action {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #1D54B4;
+      padding: 10px 20px;
+      width: 150px;
+      height: 34px;
+      border-radius: 5px;
+      text-align: center;
+      border: 1px solid #1D54B4;
+    }
+  }
+
+  &__body {
+    padding: 18px 16px;
+
+    .select-form-section {
+      margin-top: 18px;
+      display: flex;
+
+      .role-dropdown {
+        margin-right: 10px;
+      }
+    }
+
+    .dates-form-section {
+      margin-top: 25px;
+      padding-left: 36px;
+      display: grid;
+      grid-template-columns: 250px 250px;
+
+      .date-form-field {
+        display: flex;
+        align-items: center;
+
+        &__label {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: capitalize;
+          color: #707683;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+.action-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #1D54B4;
+  padding: 10px 20px;
+  height: 34px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #1D54B4;
+  cursor: pointer;
+}
+
+.access-management-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 16px;
+
+  .action-button {
+    margin-left: 16px;
+  }
+}

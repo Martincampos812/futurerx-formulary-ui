@@ -1,0 +1,37 @@
+.__root-filetype-contianer {
+  padding-top: 10px;
+  background-color: #f9f9f9;
+  .__main-grid-container {
+    .__item-grid-sm-4-container {
+      .__root_file_type_category {
+        .__fileTypeHeader-wrapper {
+          .__file-lable {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 25px;
+            letter-spacing: 0.01em;
+
+            color: #323c47;
+          }
+        }
+        .__file_types_wraper {
+          margin-left: 10%;
+          .__filt_type_list {
+            .__type-lable {
+              font-family: "Roboto";
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 25px;
+              letter-spacing: 0.01em;
+
+              color: #323c47;
+            }
+          }
+        }
+      }
+    }
+  }
+}

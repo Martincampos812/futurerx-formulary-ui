@@ -1,0 +1,52 @@
+.BreadCrumPanel {
+  .breadCrumPanel-grid-container {
+    .breadCrumPanel-grid-item-checkbox {
+      .MuiCheckbox-root {
+        // background-color: ..red;
+        border-radius: 4px;
+        span {
+          input {
+            // border-radius: 24px;
+          }
+        }
+      }
+    }
+
+    .breadCrumPanel-grid-item-arrowIcon {
+      .arrow-icon-container {
+        .arrow-icon {
+          // background-color: red;
+          // padding: 10px;
+        }
+      }
+    }
+
+    .breadCrumPanel-grid-label-starIcon-container {
+      .label-starIcon-container {
+        .label {
+          display: inline;
+          color: #1d54b4;
+          border-bottom: 1px dotted blue;
+          text-transform: capitalize;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+        }
+        .value {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+          color: #323c47;
+          margin-left: 10px;
+        }
+        .star-icon-container {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

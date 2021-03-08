@@ -1,0 +1,65 @@
+.gm-control-active.gm-fullscreen-control {
+    display: none;
+}
+
+.gmnoprint{
+    display: none;
+}
+.gm-style-cc{
+    display: none;
+}
+
+a[href^="http://maps.google.com/maps"],
+a[href^="https://maps.google.com/maps"],
+a[href^="https://www.google.com/maps"] {
+    display: none !important;
+}
+
+.demo{
+    // width: 10px;
+    // height: 10px;
+    position: absolute;
+    left: -17.25px;
+    cursor: pointer;
+}
+
+.map-tooltip {
+    min-width: 200px !important;
+    color: black !important;
+    padding: 18px 18px 18px 20px !important;
+    font-family: Roboto !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    color: #323c47 !important;
+
+    background: #ffffff !important;
+    border: 1px solid #e5e5e5 !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px !important;
+    margin: 5px 0px !important;
+
+    div{
+        padding: 2px 0px;
+    }
+    .pharmacy{
+        font-weight: 500;
+    }
+    .address{
+
+    }
+    .phone{
+
+    }
+    .time{
+        text-transform: capitalize;
+    }
+}
+.map-tooltip-arrow {
+    color: #ffffff !important;
+    &::before {
+        border: 1px solid #e5e5e5 !important;
+    }
+}

@@ -1,0 +1,67 @@
+/* .defaultDropDown {
+  width: 205px;
+  height: 35px;
+
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+} */
+.select-box {
+  position: relative;
+  outline: none;
+}
+
+.select-box .ant-select {
+  /* height: 42px; */
+  /* width: 100%; */
+  /* padding-left: 10px; */
+  color: #888080;
+  /* line-height: 22px; */
+  /* font-size: 16px; */
+  width: 205px;
+  /* height: 35px; */
+  background: #ffffff;
+  /* border: 1px solid #e5e5e5; */
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* margin-bottom: 10px; */
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-outline: none;
+  outline: none;
+}
+.select-box > .ant-select > .ant-select-selector {
+  /* border: none !important; */
+  border: 1px solid #e5e5e5;
+}
+.select-box
+  > .ant-select
+  > .ant-select-selector
+  > .ant-select-selection-placeholder,
+.ant-select-selection-item {
+  font-size: 12px;
+  line-height: 30px;
+  color: #999999;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+}
+.select-box > .ant-select > .ant-select-arrow {
+  top: 65%;
+}
+/* .select-box::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: 40%;
+  margin-top: -4px;
+  border-top: 8px solid #ccc;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  pointer-events: none;
+} */
+// .ant-select-dropdown {
+//   position: absolute;
+//   top: 10px !important;
+// }

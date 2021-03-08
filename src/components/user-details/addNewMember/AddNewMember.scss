@@ -1,0 +1,100 @@
+.AddNewMember {
+  position: relative;
+  /* width: 810px; */
+  display: block;
+  flex-direction: column;
+  justify-content: space-around;
+  /* left: 20%; */
+  background: #ffffff;
+  border-radius: 5px;
+  /* border: 2px solid whitesmoke; */
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding: 0px 20px 0 0px;
+  overflow-y: scroll;
+  height: 403px;
+}
+.addNewMemberHeader {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 20px 0 50px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #1d54b4;
+  margin-bottom: 10px;
+}
+.closePopUp {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+hr {
+  background: #e5e5e5;
+  width: 100%;
+}
+.addNewMemberHeader {
+  text-align: left;
+}
+.divContainerForMembers {
+  display: flex;
+}
+
+.divAccAndCont {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.divAccAndCont > div {
+  margin-bottom: 15px;
+}
+.btn-container {
+  margin: 15px 0 15px auto;
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-right: 20px;
+  color: #2055b5;
+  border: 1px solid #2055b5;
+}
+.btnSave {
+  background-color: #2055b5;
+  color: #ffffff;
+}
+.btnCancel {
+  width: 80px;
+}
+
+.AddNewMember > .frx-add-member-container > .frx-member-info{
+  padding: 0;
+}
+.AddNewMember > .frx-add-member-container{
+  padding: 0px;
+  margin: 0;
+}
+.AddNewMember > .frx-add-member-container > .MuiGrid-container{
+  padding: 0;
+  margin: 0 auto;
+}
+
+.AddNewMember > .frx-add-member-container > .MuiGrid-container > 
+.frx-member-account-info, .frx-member-contact-info, .frx-member-info{
+  width: 375px;
+  height: fit-content;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box !important;
+  border-radius: 4px;
+  padding: 20px !important;
+}
+
+.AddNewMember > .frx-add-member-container > .MuiGrid-container > .frx-member-account-info{
+  margin-bottom: 20px;
+  margin-right: 15px;
+}

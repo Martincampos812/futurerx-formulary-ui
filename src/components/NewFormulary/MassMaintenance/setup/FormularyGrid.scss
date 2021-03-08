@@ -1,0 +1,33 @@
+@import "../../../../assets/style.scss";
+
+.frx-grid-container {
+  .frx-grid {
+    .frx-grid__grid-block {
+      padding: 0;
+
+      .frx-grid__grid-block__table-block {
+        .ant-table {
+          .ant-table-header {
+            border: 1px solid #e5e5e5;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            // background-color: #fff;
+          }
+          .ant-table-body > table {
+            border-spacing: 0;
+            // background-color: #fff;
+          }
+          .ant-table-body > table > tbody > tr > td {
+            border-radius: 0 !important;
+            // background-color: #fff;
+          }
+
+          .ant-table-body > thead {
+            border-radius: 0;
+            // background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

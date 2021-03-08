@@ -1,0 +1,23 @@
+.Card-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 294px;
+}
+
+.Card-value {
+  font-size: 64px;
+  color: white;
+  display: block;
+  margin-bottom: 2rem;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.Card-label {
+  font-size: 15px;
+  display: block;
+  color: white;
+  font-weight: 500;
+}

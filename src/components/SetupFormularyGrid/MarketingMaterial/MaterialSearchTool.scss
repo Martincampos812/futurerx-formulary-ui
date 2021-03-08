@@ -1,0 +1,108 @@
+.material-search-wrapper {
+  padding: 20px 0px;
+
+  .MuiTypography-root {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #323c47;
+  }
+  .MuiAccordionSummary-root {
+    background: #f9f9f9;
+  }
+
+  .all-label {
+    text-transform: uppercase;
+    color: #707683;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .MuiContainer-root,
+  .material-radio {
+    padding: 10px;
+
+    .checkmark {
+      margin-top: 4px;
+    }
+  }
+
+  .material-search-grid-container {
+    display: grid;
+    grid-template-columns: 93px 115px 170px 115px 115px 115px auto;
+    border: 1px solid #e5e5e5;
+  }
+
+  .material-search-headings {
+    text-align: center;
+    padding: 15px;
+    background: #f9f9f9;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #707683;
+  }
+
+  .special-character-heading {
+    display: flex;
+    padding: 7px 15px;
+  }
+
+  .legend-abbrevation input,
+  .material-special-characters input {
+    width: 107px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+  }
+
+  .material-dms-dropd-down {
+    width: 107px;
+    height: 35px;
+    border-radius: 3px;
+  }
+
+  .legend-display-text input {
+    width: 163px;
+    height: 35px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  .legend-display-text span,
+  .material-dms i {
+    visibility: hidden;
+  }
+
+  .panel.header.field-group__label-special-character {
+    display: block;
+    background: none;
+    padding: 0px;
+    border-bottom: none;
+    margin-left: -3px;
+  }
+
+  span.ant-select-selection-placeholder {
+    color: #323c47 !important;
+  }
+
+  .plain-img {
+    padding-top: 5px;
+    padding-left: 20px;
+    display: flex;
+  }
+
+  .material-write-icon svg {
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .material-icon-left svg {
+    margin-left: 10px !important;
+  }
+}

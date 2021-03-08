@@ -1,0 +1,449 @@
+@import "../../../../../../assets/style.scss";
+
+.drug-detail-LA-root {
+  .drug-detail-la-container {
+    box-sizing: border-box;
+    border-radius: 5px 5px 0px 0px;
+    background: #ffffff;
+    .la-header {
+      height: 52px;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 11px 0px 11px 20px;
+      span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #1d54b4;
+      }
+    }
+    .drug-detail-la-inner {
+      .drug-type {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .limited-access {
+        background: #f9f9f9;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border-radius: 5px;
+        .limited-access-header {
+          height: 50px;
+          background: #ffffff;
+          border-bottom: 1px solid #e5e5e5;
+          box-sizing: border-box;
+          border-radius: 5px 5px 0px 0px;
+          padding-top: 10px;
+          padding-left: 19px;
+          span {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: #1d54b4;
+          }
+        }
+        .limited-access-inner {
+          padding: 10px;
+          .first {
+            padding: 10px;
+            .rowheader {
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              box-sizing: border-box;
+              border-radius: 3px 3px 0px 0px;
+              .MuiGrid-item {
+                border-right: 1px solid #e5e5e5;
+                height: 40px;
+              }
+            }
+            .rowcontent {
+              background: #ffffff;
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              box-sizing: border-box;
+              border-radius: 0px 0px 3px 3px;
+              .MuiGrid-item {
+                border-right: 1px solid #e5e5e5;
+                height: 40px;
+              }
+            }
+            span {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              color: #707683;
+              padding: 0 20px;
+              &.text-left {
+                justify-content: flex-start;
+              }
+            }
+          }
+
+          .second {
+            padding: 10px;
+            margin-top: 10px;
+            .rowcontent {
+              height: 40px;
+              border: 1px solid #e5e5e5;
+              box-sizing: border-box;
+              border-radius: 3px 3px 0px 0px;
+              background: #ffffff;
+            }
+            span {
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tier-dropdown {
+    padding: 20px;
+    border-top: 1px solid #e5e5e5;
+
+    .select-box {
+      margin-right: 20px;
+    }
+
+    .select-box .ant-select {
+      width: 100%;
+    }
+
+    button {
+      margin: 24px 10px 10px 0;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: #707683;
+      line-height: 20px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    .astrict {
+      color: red;
+    }
+  }
+
+  .tier-popup-btn {
+    text-align: right;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+}
+
+.tier-definition-popup-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #e5e5e5;
+  width: 630px;
+
+  .heading {
+    background: #f9f9f9;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #707683;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px;
+  }
+
+  .border-right {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .tier-number,
+  .tier-descripption {
+    padding: 5px 15px;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .tier-description-dropdown {
+    width: 300px;
+  }
+
+  .tier-modify-buttons {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tier-checkbox .ant-checkbox-inner {
+  padding: 0px !important;
+  background: #80c483 !important;
+  height: 20px !important;
+  width: 20px !important;
+  border-radius: 50px !important;
+  border: 1px solid #80c483 !important;
+}
+
+.tier-grid-container {
+  padding: 0px 20px;
+}
+
+.tier-checkbox .top {
+  background: #f9f9f9;
+}
+
+.tier-grid-container .ant-checkbox.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #1d54b4;
+  border: 2px solid #1d54b4;
+}
+
+.tier-grid-remove-container {
+  padding: 20px;
+}
+.tier-grid-remove-container {
+  .ant-table-cell .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+    background: #1890ff;
+  }
+}
+
+.tier-grid-remove-container .ant-table-wrapper {
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+
+.tier-modify-panel .modify-panel {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tier-grid-remove-container th {
+  border-right: 1px solid #e5e5e5;
+}
+
+.tier-grid-remove-container td {
+  border-right: 1px solid #e5e5e5;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707683 !important;
+  font-weight: 400 !important;
+}
+
+.tier-grid-remove-container th {
+  border-right: 1px solid #e5e5e5;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707683 !important;
+  font-weight: 400 !important;
+}
+
+.add-file-button {
+  align-items: center;
+  padding: 10px 20px;
+  width: 93px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #1d54b4;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1d54b4;
+  text-align: center;
+  letter-spacing: 0.01em;
+  float: left;
+  text-transform: none;
+}
+
+.advance-search-button {
+  color: #5f80b9;
+  width: 137px;
+  align-items: center;
+  padding: 10px 20px;
+  height: 35px;
+  border: 1px solid #5f80b9;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  float: left;
+  text-transform: none;
+}
+.advance-search-button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: #1d54b4;
+}
+.add-file-button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: #1d54b4;
+}
+.member-search__input {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: $color-white;
+  border: 1px solid $input-field-border;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: $font-12;
+  font-weight: $font-weight-normal;
+  color: $input-text-placeholder;
+  height: 35px;
+  line-height: 14px;
+  outline: none;
+  & > input::placeholder {
+    font-size: 12px;
+    font-weight: $font-weight-normal;
+    color: black;
+  }
+  .member-search__icon {
+    margin: 10px;
+  }
+  .MuiInput-input {
+    font-size: $font-12;
+    font-weight: $font-weight-normal;
+    color: $input-text-placeholder;
+    border-bottom: 0;
+  }
+}
+.float-left {
+  float: left;
+}
+.margin-right {
+  margin-right: 10px;
+}
+.tier-dialog-popup {
+  z-index: 0 !important;
+  .MuiButton-label {
+    padding: 10px !important;
+  }
+  .red-bold {
+    color: red;
+    font-weight: bold;
+  }
+  .delete-tier-wrapper p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #323c47;
+  }
+  .delete-tier-wrapper {
+    height: 80px;
+    width: 600px;
+  }
+}
+
+.mini-tabs {
+  .frx-mini-tabs-root {
+    z-index: 0 !important;
+    position: unset;
+  }
+}
+
+.body-checkbox {
+  border-spacing: 0px;
+}
+
+.tier-drug-grid-header-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  align-items: baseline;
+  .search-input {
+    padding-left: 28px;
+  }
+}
+.remove-btn-wrapper {
+  justify-content: space-between !important;
+}
+
+.remove-btn-wrapper-right {
+  justify-content: flex-end !important;
+}
+
+.tier-mini-tabs {
+  border-right: none !important;
+}
+
+.delete-replace-popup {
+  .gridRow {
+    display: flex;
+    margin-bottom: 0;
+    &.header {
+      background: #2055b5;
+      color: white;
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+      border: none;
+      padding: 0;
+    }
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    padding: 8px 0;
+    > div {
+      text-align: center;
+    }
+    .dropdown-col {
+      width: 285px;
+      .ant-select {
+        text-align: left;
+      }
+    }
+    .tiername-col {
+      width: 240px;
+    }
+    .tierdesc-col {
+      width: 240px;
+    }
+    &:last-child {
+      border-bottom: 1px solid #e5e5e5;
+      border-radius: 0 0 3px 3px;
+    }
+  }
+}
+.class-category
+  .frx-grid-container
+  .frx-grid
+  .frx-grid__grid-block
+  .frx-grid__grid-block__table-block
+  .ant-table
+  .ant-table-header
+  .ant-table-thead
+  > tr
+  > th {
+  line-height: 50px !important;
+}

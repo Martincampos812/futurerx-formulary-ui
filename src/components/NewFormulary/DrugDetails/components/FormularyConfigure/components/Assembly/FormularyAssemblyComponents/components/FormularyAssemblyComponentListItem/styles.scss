@@ -1,0 +1,74 @@
+.formulary-assembly-component-list-item {
+  margin-top: 20px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  &__title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323C47;
+  }
+  
+  &__tag {
+    background: #E5E5E5;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 6px;
+    height: 18px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #323C47;
+    margin-left: 10px;
+  }
+  
+  &__actions-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__action {
+    margin-left: 20px;
+    span {
+      cursor: pointer;
+      display: flex;
+    }
+  }
+  
+  &__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #707683;
+  }
+}
+
+.remove-icon {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background: #1f54b4;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 50%;
+}

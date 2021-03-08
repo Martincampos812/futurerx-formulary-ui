@@ -1,0 +1,142 @@
+@import "./../../../assets/style.scss";
+
+// ._claim-root-note-icon {
+//   position: relative;
+//   top: 36px;
+//   right: 22px;
+//   z-index: 999;
+//   float: right;
+//   cursor: pointer;
+// }
+.MuiAppBar-root {
+  box-shadow: none !important;
+}
+.frx-claims-tabs-root {
+  margin: 0px;
+  border-bottom: 0px solid $container-border-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: none !important;
+  border-left: 1px solid $container-border-color;
+  border-top: 1px solid $container-border-color;
+  border-right: 1px solid $container-border-color;
+  background: $color-white;
+  padding: 0 !important;
+
+  .frx-tabs-root-card {
+    // box-shadow: 0 2px 2px 2px #f9f9f9;
+    // box-shadow: none !important;
+    // color: #3333;
+
+    .ant-tabs-nav {
+      background-color: #f9f9f9;
+      margin: 0 !important;
+      &::before {
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #ffffff;
+      }
+    }
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        font-weight: 500;
+        color: #2055b5 !important;
+        font-size: 12px;
+        line-height: 50px;
+        border-bottom: 1px solid #fff !important;
+      }
+      // border-bottom: 1px solid #fff !important;
+    }
+    .ant-tabs-tab {
+      align-self: center;
+      flex-grow: 0;
+      margin: 0px 0px 0px 0px !important;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      // padding: 0 20px;
+      // line-height: 50px;
+      border: none;
+      // border-bottom: 1px solid #e5e5e5;
+      border-radius: 0px !important;
+      // text-transform: uppercase;
+      font-size: $font-12;
+      font-weight: $font-weight-normal;
+      color: #666666;
+      // line-height: 50px;
+      letter-spacing: 0px;
+      border-right: 1px solid #e5e5e5;
+      &:hover {
+        color: #666666;
+      }
+      .ant-tabs-tab-btn {
+        width: 100%;
+        padding: 0 20px;
+        line-height: 50px;
+        border-bottom: 1px solid #e5e5e5;
+        &:active {
+          color: #666666;
+        }
+      }
+    }
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+  }
+  .frx-tabs-root-line {
+    .ant-tabs-nav {
+      // padding: 0 0 2.5px 0!important;
+      background-color: #fff;
+      border-radius: 10px !important;
+      margin: 0px;
+      &::before {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 0px;
+        height: 3.5px;
+        background-color: #f9f9f9;
+      }
+    }
+    .ant-tabs-nav-list {
+      // padding: 0 0 2.5px 0!important;
+      border-radius: 10px !important;
+    }
+    .ant-tabs-tab {
+      padding: 0 0 !important;
+      margin: 0px 0 0 19.97px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 50px;
+
+      color: #666666;
+      transition: 0s;
+      &:hover {
+        color: #666666 !important;
+      }
+      .ant-tabs-tab-btn {
+        &:active {
+          color: #666666;
+        }
+      }
+    }
+    .ant-tabs-tab-active {
+      height: 52px;
+      .ant-tabs-tab-btn {
+        font-weight: 700 !important;
+        color: #2055b5 !important;
+        font-size: 14px !important;
+        line-height: 50px !important;
+      }
+    }
+    .ant-tabs-ink-bar {
+      position: absolute;
+      pointer-events: none;
+      background: #2055b5;
+      border-radius: 3px;
+      // top: -1px;
+      height: 5px;
+      bottom: 0.5px;
+    }
+  }
+}

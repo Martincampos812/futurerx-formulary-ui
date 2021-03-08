@@ -1,0 +1,275 @@
+@import "../../../assets/style.scss";
+
+.date-picker {
+    top: 0px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.frx-search-form-root {
+    width: 95% !important;
+    padding: 24px 30px 10px 30px;
+    margin: 40px 0 0 0;
+    background: $container-background-color;
+    border: 1px solid $container-border-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    .MuiGrid-root {
+        width: 100% !important;
+    }
+    .date-picker-field {
+        width: 43.7% !important;
+    }
+    .frx-search-form-root__form__fields {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        .frx-search-form-root__form__field-name {
+            height: 35px;
+            line-height: 35px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: $font-weight-normal;
+            font-size: $font-12;
+            padding: 0px;
+            color: $label-text-color;
+            width: 80px;
+        }
+        .frx-search-form-root__form__search-field {
+            height: 35px;
+            width: 668px;
+            margin: 0px 0px 0px 40px;
+            background: $white-color;
+            border: 1px solid $container-border-color;
+            box-sizing: border-box;
+            border-radius: 3px;
+            color: $search-field-color !important;
+            .frx-search-form-root__form__search-field--container {
+                position: relative;
+                .frx-search-form-root__form__search-field--container__search-icon {
+                    position: absolute;
+                    top: 10px;
+                    right: 11px;
+                }
+                .MuiOutlinedInput-notchedOutline {
+                    background: none;
+                    outline: none;
+                    border: none;
+                }
+            }
+            // .frx-search-form-root__form__search-field--container:hover{
+            //     .frx-search-form-root__form__search-field--container__search-icon{
+            //     display: none;
+            // }
+            // }
+            .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+                border: 1px solid $container-border-color;
+                outline: none;
+            }
+            .PrivateNotchedOutline-root-34 {
+                border: none;
+            }
+            .MuiAutocomplete-option {
+                background: $container-border-color;
+                border-radius: 4px;
+                font-weight: $font-weight-normal;
+                font-size: $font-12;
+                line-height: 14px;
+                letter-spacing: 0.1px;
+                color: $primary-text-color;
+                margin-top: 6px;
+            }
+            .MuiInputBase-input {
+                font-weight: $font-weight-normal;
+                font-size: $font-12;
+                line-height: 14px;
+                letter-spacing: 0.1px;
+                color: $search-field-color;
+            }
+            .MuiInputBase-root {
+                padding: 0px;
+                outline: none;
+                &:hover {
+                    border: none;
+                }
+            }
+            .MuiInputBase-input::placeholder {
+                color: $search-field-color !important;
+            }
+            .MuiFormControl-root {
+                margin: 0px;
+            }
+        }
+
+        .frx-search-form-root__form__search-field:hover {
+            border: 1px solid $container-border-color;
+        }
+
+        .frx-search-form-root__form__search-field::placeholder {
+            color: $search-field-color;
+        }
+
+        .frx-search-form-root__form__text-area {
+            height: 115px !important;
+            width: 668px;
+            margin: 0px 0px 0px 40px;
+            padding: 12px 25px 12px 10px;
+            background: $white-color;
+            border: 1px solid $container-border-color;
+            box-sizing: border-box;
+            border-radius: 4px;
+            resize: none;
+            font-weight: $font-weight-normal;
+            font-size: $font-12;
+            line-height: 14px;
+            letter-spacing: 0.1px;
+            color: $search-field-color;
+            &::placeholder {
+                color: $search-field-color;
+            }
+        }
+
+        .frx-search-form-root__form__text-area:focus {
+            outline: none;
+        }
+
+        .frx-search-form-root__form__datepicker {
+            height: 35px;
+            width: 204px;
+            margin: 0px 0px 0px 40px!important;
+
+            background: $white-color;
+            border: 1px solid $container-border-color;
+            box-sizing: border-box;
+            border-radius: 3px;
+            .ant-picker-input {
+                & > input {
+                    font-size: $font-12;
+                    color: $search-field-color;
+                }
+                input::placeholder {
+                    font-size: $font-12;
+                    color: $search-field-color;
+                }
+                .ant-picker-clear {
+                    display: none;
+                }
+            }
+        }
+
+        .ant-space {
+            margin: 0px 0px 0px auto;
+            .ant-picker-input {
+                font-weight: $font-weight-normal;
+                font-size: $font-12;
+                line-height: 14px;
+                letter-spacing: 0.1px;
+                color: $search-field-color;
+                .ant-picker-clear {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//  Auto complete css done with global//
+.MuiAutocomplete-option {
+    background-color: $container-border-color;
+    color: $primary-text-color;
+    margin-top: 6px;
+    // height: 40px;
+    padding: 13px 15px 13px 20px !important;
+    // line-height: 40px;
+    font-size: $font-12;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid $container-border-color;
+    width: 100%;
+    .frx-search-form-root__form__search-field--checkicon {
+        margin: 0 0 0 auto;
+        & > path {
+            fill: $container-border-color;
+        }
+    }
+}
+.MuiAutocomplete-option[data-focus="true"] {
+    background-color: $hyperlink-text-color !important;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+}
+
+.frx-search-form-root__form__search-field {
+    .frx-search-form-root__form__search-field--container {
+        .MuiAutocomplete-clearIndicator {
+            // margin-right: 15px;
+            margin: 2px 0;
+            .MuiIconButton-label {
+                border: 1px solid $search-field-color;
+                background: $search-field-color;
+                border-radius: 10px;
+                padding: 0;
+            }
+            .MuiSvgIcon-fontSizeSmall {
+                font-size: 12px;
+                color: $color-white;
+            }
+        }
+        .MuiAutocomplete-tag {
+            border: none;
+            background: $hyperlink-text-color;
+            height: 23px;
+            border-radius: 3px;
+            .MuiChip-label {
+                color: $color-white;
+                font-size: $font-12;
+                font-weight: $font-weight-500;
+                line-height: 14px;
+                padding: 5px;
+                letter-spacing: 0.1px;
+            }
+            .MuiChip-deleteIcon {
+                display: none;
+            }
+        }
+    }
+}
+.frx-search-form-root__buttons_root {
+    // margin-top: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    div {
+        &:first-child {
+            button {
+                color: #2055b5;
+                margin-right: 10px;
+                margin-left: 685px;
+            }
+        }
+        &:last-child {
+            button {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .MuiButton-root {
+        margin-right: 0px;
+        padding: 0 20px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 35px;
+        /* identical to box height, or 292% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1px;
+    }
+}
+
+//  Auto complete css //

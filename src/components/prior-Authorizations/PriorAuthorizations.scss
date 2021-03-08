@@ -1,0 +1,83 @@
+.prior-auth-root-container {
+    .content {
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        // margin-top: 20px;
+        .frx-mini-tabs-root {
+            width: max-content !important;
+            margin-left: 20px;
+            margin-bottom: 11px;
+            margin-top: 10px;
+        }
+        .frx-mini-tabs-root__tabs {
+            min-height: 30px;
+            .MuiTab-root {
+                min-width: 50px;
+                min-height: 24px;
+            }
+        }
+        .buttongroup-root {
+            display: flex;
+            justify-content: flex-start;
+            color: #2055b5;
+            // Typography
+            letter-spacing: 0.01em;
+            text-align: left;
+            padding: 0px 22px;
+            height: 50px;
+            width: 100%;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 11px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 35px;
+            /* identical to box height, or 292% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+
+            color: #2055b5;
+            .heading {
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 50px;
+                letter-spacing: 0em;
+            }
+            .button {
+                margin: auto;
+                margin-left: 20px;
+                // border: solid 1px;
+                border-radius: 3px;
+            }
+
+            button {
+                text-transform: none;
+                color: #2055b5;
+                width: 165px;
+                height: 35px;
+                border-radius: 3px;
+                width: 88px;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35px;
+                letter-spacing: 0.01em;
+                text-align: left;
+                padding: 0px;
+                border: solid 1px;
+                &:first-child {
+                    margin-right: 10px;
+                    width: 93px;
+                }
+            }
+        }
+        .grid {
+            padding: 0px 20px;
+        }
+    }
+}

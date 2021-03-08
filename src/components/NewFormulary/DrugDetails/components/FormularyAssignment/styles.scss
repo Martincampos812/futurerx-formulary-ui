@@ -1,0 +1,51 @@
+.modules-modal-container {
+  .MuiDialogContent-root {
+    padding: 0px;
+  }
+}
+
+.module-management-container {
+  background: #fff;
+}
+
+.formulary-tree-container {
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  border-radius: 5px;
+
+  .identificationTable {
+    border-right: 1px solid #e5e5e5;
+    padding: 20px;
+  }
+
+  .formulary-tree {
+    padding: 20px;
+  }
+}
+
+.tree-node-tag-list {
+  display: flex;
+  margin-left: 16px;
+}
+
+.tree-node-tag {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2055B5;
+  padding: 3px 6px;
+  border: 1px solid #2055B5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 18px;
+}
+
+.tree-value-container {
+  width: 335px !important;
+}

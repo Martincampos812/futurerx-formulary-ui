@@ -1,0 +1,156 @@
+@import "../../../assets/style.scss";
+
+.members-dropDown {
+  position: relative;
+  width: 627px;
+  min-height: 53px;
+
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  /* border-radius: 15px; */
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+
+  box-sizing: border-box;
+}
+.members-dropDown > .member-info:not(:first-child) {
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0;*/
+  border-radius: 0;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  width: 627px;
+  margin: 0 0 0 -1px;
+}
+.members-dropDown
+  > .member-info:not(:first-child)
+  > .member-name
+  > .bottom-border {
+  border-bottom: none;
+}
+.members-dropDown > .member-info > .member-status > .arrowIcon {
+  // width: 20px;
+  // margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid green;
+}
+.members-dropDown > .member-info > .member-status:not(:first-child) > .Tag {
+  margin-right: 0;
+}
+
+.members-dropDown > .member-info:nth-child(2) {
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-radius: 0; */
+  border-top: 1px solid #e5e5e5;
+}
+
+.members-dropDown:hover {
+  /* box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); */
+}
+.members-dropDown:last-child {
+  display: inline-block;
+}
+
+.addMember {
+  width: 627px;
+  margin: 0 0 0 -1px;
+  min-height: 50px;
+  display: flex;
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+  /* border: thin solid #e5e5e5; */
+  /* border: 1px solid #e5e5e5; */
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  color: #999999;
+  background: #ffffff;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.addMember > .AddIcon {
+  /* margin: 5px 15px 0 15px; */
+  margin: 0px 13px 0 12px;
+  cursor: "pointer";
+}
+.frx-add-new-member {
+  z-index: 999 !important;
+}
+
+.frx-add-new-member > .MuiPaper-root {
+  width: 810px;
+}
+.frx-add-new-member
+  > .MuiDialog-container
+  > .MuiDialog-paper
+  > .frx-dialog-root__btn-actions {
+  border-top: 1px solid $container-border-color;
+  padding-top: 20px;
+}
+.frx-add-new-member
+  > .MuiDialog-container
+  > .MuiDialog-paper
+  > .frx-dialog-root__btn-actions
+  > .frx-dialog-root__save-btn {
+  width: 116px;
+  text-transform: capitalize;
+}
+.frx-add-new-member
+  > .MuiDialog-container
+  > .MuiDialog-paper
+  > .frx-dialog-root__btn-actions
+  > .frx-dialog-root__cancel-btn {
+  text-transform: capitalize;
+  width: 78px;
+  margin-right: 15px;
+}
+
+.frx-add-new-member
+  > .MuiDialog-container
+  > .MuiDialog-paper
+  > .MuiDialogContent-root {
+  padding: 20px 10px 0 20px;
+  overflow-y: hidden;
+}
+.frx-member-search
+  > .MuiDialog-container
+  > .MuiDialog-paper
+  > .frx-dialog-root__btn-actions
+  > .frx-dialog-root__cancel-btn {
+  display: none;
+}
+
+.frx-member-search
+  > .MuiDialog-container
+  > .MuiDialog-paper
+  > .frx-dialog-root__btn-actions
+  > .frx-dialog-root__save-btn {
+  // text-transform: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 35px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 35px;
+  padding: 0;
+
+  text-transform: capitalize;
+  width: 78px;
+}

@@ -1,0 +1,77 @@
+@import "../../../../../assets/style.scss";
+.root-pchl-limit-settings {
+  .input-field-group {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+
+    &__flex-container {
+      display: flex;
+      flex-direction: column;
+
+      &__label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: #323c47;
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
+      &__dropdown-field {
+        .select-box {
+          margin-left: 20px;
+          margin-bottom: 10px;
+
+          .ant-select {
+            width: 10em;
+          }
+        }
+      }
+      &__text-field {
+        margin-left: 20px;
+        height: 35px !important;
+        margin-bottom: 10px;
+
+        width: 9rem;
+        background: #ffffff;
+        border: 1px solid #c4c4c4 !important;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+
+      &__autocomplete-select {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 9rem;
+
+        .ant-select-selector {
+          overflow-y: scroll;
+          height: auto;
+          max-height: 80px;
+          cursor: pointer;
+        }
+        .ant-select-selector::-webkit-scrollbar {
+          width: 4px;
+          height: 6px;
+        }
+        /* Track */
+        .ant-select-selector::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 0px #999999;
+          border-radius: 3px;
+        }
+        /* Handle */
+        .ant-select-selector::-webkit-scrollbar-thumb {
+          background: #999999;
+          border-radius: 3px;
+        }
+        /* Handle on hover */
+        .ant-select-selector::-webkit-scrollbar-thumb:hover {
+          background: #999999;
+        }
+      }
+    }
+  }
+}

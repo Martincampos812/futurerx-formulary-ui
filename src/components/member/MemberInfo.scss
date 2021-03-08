@@ -1,0 +1,177 @@
+.member-generic {
+    background-color: #FFFFFF;
+}
+
+
+
+.attributes-container {
+
+    .MuiGrid-grid-xs-4 {
+        flex-grow: 0;
+        max-width: 33.333333%;
+        flex-basis: 1%;
+    }
+}
+
+.attributes-list {
+    margin-top: 19px;
+    border-right: 1px solid grey;
+    width: 239px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+
+    // text-transform: uppercase;
+
+    /* Light Black */
+
+    color: #323C47;
+
+    .MuiDialogContent-root {
+        padding: 8px 2px;
+    }
+
+    .MuiListItem-gutters {
+        padding: 0px;
+    }
+
+    .list-container {
+        padding: 0px;
+
+        .MuiList-root {
+            padding-inline-start: 0px;
+        }
+
+        .list-item {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .list-item-active {
+            background-color: #ECF5FA;
+            color: #707683;
+        }
+    }
+}
+
+.searchbar {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+
+    position: relative;
+    width: 300px;
+    height: 50px;
+    left: 240px;
+
+    .text-box {
+        width: 250px;
+        height: 50px;
+    }
+}
+
+
+
+.right-side-container {
+    border-top: 1px solid grey;
+}
+
+.notes-form {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.NotesList-root-14 {
+    width: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    max-height: none;
+}
+
+.notes-main-container {
+    width: 90%;
+    height: 80%;
+}
+
+.member-notes-dialog {
+        width: 90%;
+        height: 95%;
+        overflow-y: auto;
+        margin: 0 auto;
+
+        .MuiPaper-root .MuiDialogContent-root {
+            padding: 0px, 0px, 0px, 20px;
+        }
+    
+}
+
+.notes-list {
+    max-height: 400px;
+    overflow-y: scroll;
+
+    .MuiList-root {
+        overflow-y: hidden;
+    }
+}
+
+.membernotes-noteslist {
+    height: 79px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 12px;
+
+    .note-heading {
+        font-weight: 500;
+        line-height: 20px;
+        color: #323C47;
+    }
+
+    .note-timeago {
+        font-weight: normal;
+        line-height: 20px;
+        color: #707683;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 11px;
+    }
+
+    .para {
+        margin: 0px;
+    }
+
+    .content-text {
+        font-weight: normal;
+        line-height: 16px;
+        color: #323C47;
+
+        .NoteItem-inline-17 {
+            display: inline;
+        }
+    }
+
+    .category-chip {
+        font-weight: bold;
+        line-height: 24px;
+        /* identical to box height, or 200% */
+        color: #999999;
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        align-self: center;
+        flex-grow: 0;
+        margin: 10px 0px;
+        justify-content: space-between;
+        float: right;
+        margin: 0px 0px;
+        height: 24px;
+    }
+
+    .MuiAvatar-root {
+        position: absolute;
+        width: 31px;
+        height: 31px;
+        background-blend-mode: normal;
+    }
+}

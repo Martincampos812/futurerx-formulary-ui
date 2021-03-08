@@ -1,0 +1,184 @@
+@import "../../assets/style.scss";
+
+.clone-modal{
+  z-index: 999 !important;
+  .claims-grid-model-root{
+    z-index: 999 !important;
+    background-color: $color-white;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0;
+      .claims-grid-model-root__content{
+                &--header{
+                    display: flex;
+                    height: 100px;
+                    padding: 40px 20px 0 20px;
+                    border-bottom: 1px solid $container-border-color;
+                    &__claimid{
+                        // width: 188px;
+                        & > label, span{
+                            font-size: $font-16;
+                            line-height: 50px;
+                            letter-spacing: 0.5px;
+                            text-transform: uppercase;
+                            color: $primary-text-color;
+                            font-weight: normal;
+                        }
+                        & > span{
+                            color: $hyperlink-text-color;
+                            margin-left: 5px;
+                        }
+                    }
+                    &__sequence{
+                        display: flex;
+                        padding-top: 7px;
+                        margin-left: 90px;
+                        & > label{
+                            font-size: $font-14;
+                            font-weight: normal;
+                            line-height: 35px;
+                            color: $primary-text-color;
+                            margin-right: 10px;
+                        }
+                        .select-box{
+                            .ant-select{
+                                width: 150px;
+                                .ant-select-selector{
+                                  // border: none !important;
+                                  .ant-select-selection-placeholder{
+                                    line-height: 30px;
+                                  }
+                                }
+                            }
+                        }
+                        &--btn__actions{
+                          margin: 0px 0 0 auto;
+                          & > Button{
+                              color: $hyperlink-text-color;
+                              font-size: $font-12;
+                              font-weight: $font-weight-normal;
+                              line-height: 35px;
+                              padding: 0 20px;
+                              border: 1px solid $hyperlink-text-color;
+                              box-sizing: border-box;
+                              border-radius: 3px;
+                              height: 35px;
+                              margin: 0 20px 0 0;
+                          }
+                        }
+                    }
+                    &__closeicon{
+                        // margin: 0px 0 0 auto;
+                        cursor: pointer;
+                        & > svg{
+                            margin-top: 5px;
+                    }
+                }
+            }
+            .claims-grid-model-root__content--data{
+              // margin: 0 20px;
+              overflow-y: scroll;
+              max-height: calc(100vh - 100px);
+              padding-bottom: 20px;
+              &__folder-tab, &__folder-tabreversed{
+                box-shadow: none;
+                // border: 1px solid #e5e5e5;
+                // border-radius: 5px;
+                margin: 0 20px;
+                position: relative;
+                   .frx-tabs-root{
+                       position: unset;
+                       box-shadow: none;
+                       padding-right: 0 !important;
+                       background: none;
+                       .frx-tabs-root-card{
+                        border: 1px solid $container-border-color;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom: none;
+                        .ant-tabs-nav {
+                            background-color: #f9f9f9;
+                            margin: 0 !important;
+                            &::before {
+                              border-bottom: 1px solid #e5e5e5;
+                              background-color: #ffffff;
+                            }
+                          }
+                          .ant-tabs-tab-active {
+                            .ant-tabs-tab-btn {
+                              font-weight: 500;
+                              color: #2055b5 !important;
+                              font-size: 12px;
+                              line-height: 50px;
+                              border-bottom: 1px solid #fff!important;
+                            }
+                            // border-bottom: 1px solid #fff !important;
+                          }
+                          .ant-tabs-tab {
+                            align-self: center;
+                            flex-grow: 0;
+                            margin: 0px 0px 0px 0px !important;
+                            padding:0px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            // padding: 0 20px;
+                            // line-height: 50px;
+                            border: none;
+                            // border-bottom: 1px solid #e5e5e5;
+                            border-radius: 0px !important;
+                            text-transform: uppercase;
+                            font-size: $font-12;
+                            font-weight: $font-weight-normal;
+                            color: #666666;
+                            // line-height: 50px;
+                            letter-spacing: 0.05px;
+                            text-transform: capitalize;
+                            border-right: 1px solid #e5e5e5;
+                            &:hover {
+                              color: #666666;
+                            }
+                            .ant-tabs-tab-btn {
+                              width: 100%;
+                              padding: 0 20px;
+                              line-height: 50px;
+                              border-bottom: 1px solid #e5e5e5;
+                              &:active {
+                                color: #666666;
+                              }
+                            }
+                          }
+                          .ant-tabs-ink-bar {
+                            display: none;
+                          }
+                      }
+                }
+                &__note{
+                  position: absolute;
+                  top: 16px;
+                  right: 22px;
+                  z-index: 999;
+                  cursor: pointer;
+                }
+            }
+            &__folder-tabreversed{
+              .frx-tabs-root{
+                .frx-tabs-root-card{
+                  .ant-tabs-nav{
+                    .ant-tabs-nav-wrap{
+                      .ant-tabs-nav-list{
+                        .ant-tabs-tab:nth-child(1n+4){
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+

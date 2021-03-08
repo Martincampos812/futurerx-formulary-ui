@@ -1,0 +1,54 @@
+@import "../../../../assets/style.scss";
+
+.dropdown-button{
+    .popover-button{
+        height: 33px;
+        width: 38px;
+        min-width: 0 !important;
+        border-left: 1px solid #e5e5e5 !important;
+        border-radius: 0 !important;
+        background: white !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        list-style-type: none;
+        padding: 11px 0;
+        margin: 0;
+        li{
+            padding: 11px 18px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            svg{
+                margin-right: 10px;
+            }
+            span{
+                font-size: 12px;
+                color: $primary-text-color;
+            }
+        }
+    }
+}
+#input-button-popover{
+    
+    .MuiPopover-paper{
+        padding-bottom: 15px;
+    }
+    .option-item{
+        padding: 15px 18px 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        svg{
+            margin-right: 10px;
+        }
+        span{
+            font-size: 12px;
+            color: $primary-text-color;
+        }
+    }
+}

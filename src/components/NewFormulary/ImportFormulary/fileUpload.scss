@@ -1,0 +1,206 @@
+.file-upload-dialog{
+    .ant-table-header, .ant-table-body{
+        table{
+            width: 100% !important;
+            th,td{
+                padding: 0 18px !important;
+            }
+            th:last-child, td:last-child{
+                width: 0px;
+                min-width: 0;
+            }
+            .ant-table-expanded-row{
+                td{
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+    
+    .expanded-data{
+        position: sticky;
+        left: 0;
+        border: 1px solid #e5e5e5;
+        margin-top: -11px;
+        .MuiGrid-grid-xs-8{
+            border-right: 1px solid #e5e5e5;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        .MuiGrid-grid-xs-4{
+            padding: 40px 0;
+        }
+        .row-details{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 50px;
+            padding-left: 18px;
+            margin-bottom: 15px;
+            .file-name{
+                width: 230px;
+                color: #1D54B4;
+                text-decoration: underline dashed;
+                font-weight: bold;
+                font-size: 12px;
+            }
+            .status{
+                width: 60px;
+                text-align: center;
+                font-size: 12px;
+            }
+            .load-details{
+                width: 100px;
+                padding: 0 10px;
+                font-size: 12px;
+                color: #1D54B4;
+                text-decoration: underline dashed;
+                font-weight: bold;
+                cursor: pointer;
+                svg{
+                    margin-left: 3px;
+                }
+            }
+            .user{
+                width: 40px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+                span{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    border: 1px solid #e5e5e5;
+                    display: block;
+                }
+            }
+            .date{
+                width: 140px;
+                font-size: 12px;
+            }
+            .label{
+                text-decoration: none;
+                color: #707683;
+                font-weight: normal;
+            }
+        }
+        .drag-drop-upload{
+            display: flex;
+            justify-content: center;
+            label{
+                border: 3px dashed #5F80B9;
+                border-radius: 5px;
+                display: block;
+                width: 300px;
+                text-align: center;
+                padding: 20px;
+                p{
+                    color: #5F80B9;
+                    font-weight: 500;
+                }
+                p:nth-child(2){
+                    padding: 25px 0;
+                }
+            }
+            input{
+                display: none;
+            }
+        }
+    }
+    .file-details-wrapper{
+        background: #F9F9F9;
+        padding: 10px 30px 40px;
+        .back{
+            color: #1D54B4;
+            text-decoration: underline dashed;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .up-file-top{
+            width: 100%;
+            display: flex;
+            background: white;
+            padding: 22px 6px;
+            margin-bottom: 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            > div{
+                padding: 0 14px;
+                border-right: 1px solid #e5e5e5;
+                label{
+                    font-size: 12px;
+                }
+                &:last-child{
+                    border: none;
+                }
+            }
+        }
+        .up-file-bottom{
+            header{
+                position: relative;
+                background: transparent;
+                box-shadow: none;
+                border: 1px solid #e5e5e5;
+                border-radius: 5px 5px 0 0;
+                border-bottom: none;
+                .ant-tabs-nav{
+                    margin-bottom: 0;
+                    
+                }
+                .ant-tabs-tab{
+                    border: none !important;
+                    border-right: 1px solid #e5e5e5 !important;
+                    border-bottom: 1px solid #e5e5e5 !important;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    &:first-child{
+                        border-radius: 5px 0 0 0;
+                    }
+                    .ant-tabs-tab-btn{
+                        color: #707683;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 40px;
+                    }
+                    &.ant-tabs-tab-active{
+                        border-bottom-color: transparent !important;
+                        .ant-tabs-tab-btn{
+                            color: #1D54B4;
+                        }
+                    }
+                }
+            }
+            .tab-content{
+                background: white;
+                padding: 10px;
+                border: 1px solid #e5e5e5;
+                margin-top: -1px;
+            }
+            .change-report-table{
+                .ant-table-wrapper{
+                    border-bottom: 1px solid #e5e5e5;
+                }
+                .ant-table-body{
+                    table{
+                        border-spacing: 0 !important;
+                        tbody{
+                            tr{
+                                td{
+                                    border-bottom: none !important;
+                                    border-radius: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.file-details-dialog{
+    .MuiDialogContent-root {
+        padding: 0 !important;
+    }
+}

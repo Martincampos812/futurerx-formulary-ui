@@ -1,0 +1,559 @@
+.common-workflow-dialog-action .frx-dialog-root__heading {
+  border-bottom: 0;
+  height: 43px !important;
+}
+.worflowDialogContainer {
+  width: 1000px;
+  height: 60px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  .workFlowlabel {
+    position: relative;
+    float: left;
+    height: 35px;
+    padding-top: 10px;
+    margin-left: 8px;
+    color: #707683;
+    margin-right: 20px;
+  }
+
+  .workFlowControl {
+    position: relative;
+    float: left;
+    margin-right: 35px;
+    width: 182px;
+    height: 35px;
+
+    .drop-down-icon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  .workFlowControl-dot {
+    .ant-select-selection-item {
+      padding-left: 15px !important;
+    }
+  }
+
+  .workFlowBarControl {
+    position: relative;
+    float: left;
+    margin-right: 35px;
+    width: 200px;
+    height: 35px;
+    padding-top: 7px;
+  }
+
+  .workFlowIcon {
+    position: relative;
+    float: left;
+    text-align: right;
+    height: 35px;
+    width: 7px;
+    padding-top: 13px;
+  }
+  .workFlowIcon:hover {
+    cursor: pointer;
+  }
+
+  .ant-select {
+    width: 100% !important;
+  }
+
+  .expandedDetailWrapper {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 515px;
+    margin-top: 19px;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .expandedLeftSection {
+    padding-top: 25px;
+    position: relative;
+    float: left;
+    width: 211px;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
+    .button {
+      font-size: 12px;
+      line-height: 20px;
+      color: #1d54b4;
+      font-weight: bold;
+    }
+  }
+  .expandedMiddleSection {
+    position: relative;
+    float: left;
+    width: 379px;
+    border-right: 1px solid #e5e5e5;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #707683;
+    padding-left: 25px;
+    .taskAssigned {
+      padding-top: 30px;
+    }
+    .searchWrapper {
+      margin-top: 9px;
+      width: 220px;
+      height: 40px;
+      border-radius: 28px;
+      border: 1px solid #e5e5e5;
+      display: flex;
+      flex-direction: row;
+      .ant-select-selector {
+        border: none !important;
+      }
+      .nameIcon {
+        width: 39px;
+        height: 100%;
+
+        span {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          background-color: #1fbbc4;
+          color: white;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 26px;
+          margin-top: 6px;
+          margin-left: 8px;
+          float: left;
+          text-align: center;
+        }
+      }
+      .dropDown {
+        width: 77%;
+      }
+
+      .ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+      .ant-select-single.ant-select-show-arrow
+        .ant-select-selection-placeholder {
+        padding-top: 4px;
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      //margin-top: 15px;
+      .spacer {
+        flex: 1;
+      }
+      .columnWrapper {
+        margin-top: 10px;
+        width: 70%;
+        position: relative;
+        float: left;
+
+        .rowOne {
+          display: flex;
+          flex-direction: row;
+
+          .spacer {
+            flex: 1;
+          }
+          .spanTwo {
+            position: relative;
+            float: right;
+          }
+        }
+        .rowTwo {
+          display: flex;
+          flex-direction: row;
+          margin-top: 10px;
+
+          .spanOne {
+            font-size: 14px;
+            line-height: 20px;
+            color: #323c47;
+          }
+
+          .spanTwo {
+            position: relative;
+            float: right;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5f80b9;
+          }
+        }
+      }
+    }
+    .descriptionWrapper {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+
+      .spacer {
+        flex: 1;
+      }
+
+      .description {
+        width: 90%;
+        position: relative;
+        float: left;
+        label {
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #707683;
+          font-weight: normal;
+        }
+        p {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 20px;
+          color: #323c47;
+        }
+      }
+    }
+    .createdWrapper {
+      display: flex;
+      flex-direction: row;
+      margin-top: 13px;
+      .spacer {
+        flex: 1;
+      }
+      .columnWrapper {
+        width: 71%;
+        position: relative;
+        float: left;
+
+        .rowOne {
+          display: flex;
+          flex-direction: row;
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #707683;
+
+          .spacer {
+            flex: 1;
+          }
+          .spanTwo {
+            position: relative;
+            float: right;
+          }
+        }
+        .rowTwo {
+          display: flex;
+          flex-direction: row;
+          margin-top: 7px;
+          font-size: 14px;
+          line-height: 20px;
+          color: #323c47;
+          .spanTwo {
+            position: relative;
+            float: right;
+          }
+        }
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      .spacer {
+        flex: 1;
+      }
+      .remaining {
+        margin-top: 5px;
+        label {
+          //margin-top: 18px;
+          margin-bottom: 5px;
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #707683;
+          position: relative;
+          float: left;
+        }
+
+        .statusLabel {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .lastWrapper {
+      position: relative;
+      float: left;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+
+      .select-box {
+        position: relative;
+        //outline: none;
+        width: 143px;
+        height: 34px;
+      }
+      .dropDown {
+        margin-right: 5px;
+      }
+    }
+  }
+  .expandedRightSection {
+    position: relative;
+    float: left;
+    width: 410px;
+    height: 85%;
+  }
+  .workFlowNotesWrapper {
+    overflow-y: auto;
+    height: 370px;
+    width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 20px;
+    background: #c4c4c4;
+    border-radius: 5px;
+  }
+
+  .expandedRightSectionWrapper {
+    width: 339px;
+    margin-left: 30px;
+  }
+
+  .workFlowNotes {
+    position: relative;
+    float: left;
+    height: 75px;
+    width: 100%;
+    padding-top: 30px;
+    text-transform: uppercase;
+    color: #707683;
+  }
+
+  .workFlowNoteDetail {
+    position: relative;
+    float: left;
+    height: 102px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 10px;
+  }
+
+  .workFlowNoteDetailPic {
+    position: relative;
+    float: left;
+    width: 45px;
+    height: 100%;
+    //background: url(.png);
+
+    span {
+      float: left;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      //border:1px solid grey;
+    }
+  }
+  .workFlowNoteDetailText {
+    position: relative;
+    float: left;
+    width: 264px;
+    height: 100%;
+    background: white;
+    color: #323c47;
+  }
+  .workFlowNoteDetailText label {
+    font-weight: 500;
+    line-height: 20px;
+    color: #323c47;
+  }
+  .workFlowNoteDetailText span {
+    line-height: 20px;
+    color: #c4c4c4;
+    margin-left: 15px;
+  }
+  .workFlowNoteDetailText div {
+    line-height: 16px;
+    color: #707683;
+  }
+  .workFlowNoteDetailText p {
+    line-height: 16px;
+    color: #323c47;
+    font-weight: normal;
+  }
+
+  .searchBar {
+    position: relative;
+    float: left;
+    padding: 38px 0px 0px 30px;
+    width: 390px;
+    height: 72px;
+    bottom: 0;
+
+    input {
+      position: relative;
+      float: left;
+      width: 242px;
+      height: 34px;
+      border: 1px solid #c4c4c4;
+    }
+
+    button {
+      position: relative;
+      float: left;
+      width: 104px;
+      height: 34px;
+      background: #1d54b4;
+      border-radius: 5px;
+      margin-left: 10px;
+
+      font-weight: 500;
+      border: none;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+    }
+  }
+
+  .subtask-row {
+    padding-top: 27px;
+    padding-left: 24px;
+    width: 100%;
+    height: 35px;
+  }
+
+  .row {
+    padding-top: 7px;
+    padding-left: 8px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+
+    .statusIcon {
+      position: relative;
+      float: left;
+      width: 16px;
+      height: 100%;
+      padding-top: 7px;
+    }
+
+    label {
+      position: relative;
+      float: left;
+      width: 110px;
+      height: 100%;
+      padding-top: 7px;
+      font-weight: 500;
+      color: #323c47;
+    }
+    p {
+      position: relative;
+      float: left;
+      width: 110px;
+      height: 100%;
+      padding-top: 5px;
+      font-weight: normal;
+      line-height: 20px;
+      color: #323c47;
+    }
+    .taskPicWrapper {
+      position: relative;
+      float: left;
+      width: 50px;
+      height: 100%;
+      span {
+        float: left;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        //background: url(.png);
+        //border:1px solid grey;
+      }
+    }
+
+    .lockIcon {
+      position: relative;
+      float: left;
+      width: 10px;
+      height: 100%;
+      padding-top: 7px;
+      margin-left: 10px;
+    }
+    .eyeIcon {
+      position: relative;
+      float: left;
+      width: 20px;
+      height: 100%;
+      padding-top: 7px;
+    }
+  }
+  .row:hover {
+    cursor: pointer;
+  }
+}
+.common-workflow-dialog-action {
+  .MuiDialog-paper {
+    // height: 720px !important;
+    max-height: 1200px !important;
+  }
+
+  .MuiDialogContent-root {
+    max-height: inherit !important;
+    padding: 0;
+  }
+
+  // .MuiDialog-root .MuiDialogContent-root {
+
+  //   max-height: 1200px !important;
+  // }
+  .frx-dialog-root__heading .MuiTypography-root {
+    padding-left: 0px !important;
+  }
+  h2 span:nth-child(2) {
+    display: none;
+  }
+
+  // padding-right: 0;
+  z-index: 999 !important;
+
+  // height: 100% !important;
+  > .MuiDialog-container
+    > .MuiDialog-paper
+    > .frx-dialog-root__btn-actions
+    > .frx-dialog-root__cancel-btn {
+    display: none;
+  }
+  > .MuiDialog-container > .MuiDialog-paper > .frx-dialog-root__btn-actions {
+    margin-right: 40px;
+  }
+
+  > .MuiDialog-container
+    > .MuiDialog-paper
+    > .frx-dialog-root__btn-actions
+    > .frx-dialog-root__save-btn {
+    width: 99px;
+    // background: #e5e5e5;
+  }
+
+  .frx-dialog-root__heading {
+    border-bottom: 0;
+    .MuiTypography-root {
+      padding-top: 15px;
+      padding-left: 12px;
+      font-family: "Roboto";
+      font-style: normal;
+      // font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.1px;
+      color: #323c47 !important;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,189 @@
+@import "./../../assets/style.scss";
+
+.csr-root {
+  .claim-root {
+    position: relative;
+    .claim-root__note-icon {
+      position: absolute;
+      top: 16px;
+      right: 22px;
+      z-index: 999;
+      cursor: pointer;
+    }
+    .frx-tabs-root {
+      .frx-tabs-root__tabs {
+        background-color: $container-background-color;
+
+        .frx-tabs-root__tabs__tab {
+          border-right: 1px solid $container-border-color;
+          margin: 0px;
+          padding: 0 20px;
+
+          .MuiTab-wrapper {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+          }
+        }
+
+        .frx-tabs-root__tabs__tab.Mui-selected {
+          background-color: $white-color !important;
+          border-right: 1px solid $container-border-color !important;
+
+          .MuiTab-wrapper {
+            color: $hyperlink-text-color;
+            font-weight: $font-weight-normal;
+            background-color: $white-color;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+          }
+        }
+
+        .frx-tabs-root__tabs__tab:first-child {
+          margin-left: 0px;
+        }
+        .frx-tabs-root__tabs__tab:last-child {
+          margin-right: 0px;
+        }
+
+        .MuiTabs-indicator {
+          background: none !important;
+          height: 5px;
+          border-radius: 0;
+          z-index: 50;
+        }
+      }
+
+      .frx-tabs-root__active-line {
+        position: unset;
+      }
+    }
+    .top-5-drugs-content {
+      padding-top: 60px;
+      min-height: 303px;
+      .MuiContainer-maxWidthLg{
+        padding:0px;
+        .pie-chart-root{
+          width: max-content;
+          margin-left: 60px;
+        }
+      }
+      .stats-summary-root {
+        margin-left: 55px;
+        min-width: 737px;
+        .summary-container {
+          padding-top: 15px;
+        }
+      }
+      // This rule is to offset a bad rule at a higher level.
+      // Should be rectified.
+      // @Manoj, please take a look.
+      .MuiGrid-container {
+        margin-top: unset !important;
+        margin-bottom: unset !important;
+      }
+    }
+    .claims-grid-container {
+      width: 100%;
+      padding-top: 20px;
+      .claims-grid-root {
+        .frx-grid-container {
+          .frx-grid__grid-block {
+            padding: 10px 0 20px 0;
+          }
+        }
+      }
+    }
+    .claims-content {
+      .prior-auth-root-container{
+        .frx-mini-tabs-root{
+          margin: 0px;
+        }
+        .grid{
+          margin-top: 30px;
+        }
+      }
+      .frx-mini-tabs-root {
+        width: 136px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 999;
+        .frx-mini-tabs-root__tabs {
+          min-height: 30px;
+          .frx-mini-tabs-root__tabs__tab {
+            min-height: 24px;
+            min-width: 54px;
+            .MuiTab-wrapper {
+              text-transform: none;
+            }
+          }
+        }
+      }
+      .claims-accordion {
+        border-top: solid 1px #e5e5e5;
+        .MuiAccordionDetails-root {
+          padding: 0 20px;
+        }
+        .MuiAccordionSummary-content{
+          margin: 0;
+        }
+        .claims-accordion-summary {
+          display: flex;
+          justify-content: flex-start;
+
+          color: #2055b5;
+          // Typography
+          font-family: Roboto;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 35px;
+          letter-spacing: 0.01em;
+          text-align: left;
+
+          .claims-accordion-summary-heading {
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 50px;
+            letter-spacing: 0em;
+          }
+          .claims-accordion-summary-button {
+            margin: auto;
+            margin-left: 20px;
+            // border: solid 1px;
+            border-radius: 3px;
+          }
+          button {
+            text-transform: none;
+            color: #2055b5;
+            // width: 165px;
+            height: 35px;
+            border-radius: 3px;
+            border: solid 1px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            padding: 0px 20px;
+          }
+        }
+      }
+      .MuiAccordionSummary-root.Mui-expanded {
+        // border-top: solid 1px #e5e5e5;
+        border-bottom: solid 1px #e5e5e5;
+        height: 50px !important;
+        min-height: unset;
+        padding: 0 20px;
+      }
+      .MuiAccordionSummary-root{
+        padding: 0 20px;
+      }
+    }
+  }
+}
